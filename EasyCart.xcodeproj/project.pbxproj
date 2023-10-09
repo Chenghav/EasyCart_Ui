@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		C2BD61D52AD3B7A100939CA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61D42AD3B7A100939CA7 /* AppDelegate.swift */; };
 		C2BD61D72AD3B7A100939CA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61D62AD3B7A100939CA7 /* SceneDelegate.swift */; };
 		C2BD61D92AD3B7A100939CA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61D82AD3B7A100939CA7 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
+		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
+		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD61D12AD3B7A100939CA7 /* EasyCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD61D42AD3B7A100939CA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2BD61D62AD3B7A100939CA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4247E8D571EB9320A3CB6A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		642EEE30391A8ED1D2E9DC73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */,
+				8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C2BD61C82AD3B7A100939CA7 = {
 			isa = PBXGroup;
 			children = (
 				C2BD61D32AD3B7A100939CA7 /* EasyCart */,
 				C2BD61D22AD3B7A100939CA7 /* Products */,
+				642EEE30391A8ED1D2E9DC73 /* Pods */,
+				4247E8D571EB9320A3CB6A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2BD61E82AD3B7A300939CA7 /* Build configuration list for PBXNativeTarget "EasyCart" */;
 			buildPhases = (
+				3A56BC186CF1AD1BCCB1C207 /* [CP] Check Pods Manifest.lock */,
 				C2BD61CD2AD3B7A100939CA7 /* Sources */,
 				C2BD61CE2AD3B7A100939CA7 /* Frameworks */,
 				C2BD61CF2AD3B7A100939CA7 /* Resources */,
+				B7E89664C4D1A15692D4C10D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A56BC186CF1AD1BCCB1C207 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyCart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E89664C4D1A15692D4C10D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2BD61CD2AD3B7A100939CA7 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		C2BD61E92AD3B7A300939CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +383,7 @@
 		};
 		C2BD61EA2AD3B7A300939CA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
