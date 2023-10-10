@@ -54,14 +54,6 @@
 		DFD5E78A2AD50650006E101F /* CutomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7502AD50650006E101F /* CutomCollectionViewCell.swift */; };
 		DFD5E78B2AD50650006E101F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7512AD50650006E101F /* CustomTabBar.swift */; };
 		DFD5E78C2AD50650006E101F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7522AD50650006E101F /* CollectionViewController.swift */; };
-		DFD5E7A12AD506F0006E101F /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7932AD506F0006E101F /* CategoryModel.swift */; };
-		DFD5E7A22AD506F0006E101F /* TopItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7942AD506F0006E101F /* TopItemsModel.swift */; };
-		DFD5E7A32AD506F0006E101F /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD5E7972AD506F0006E101F /* Explore.storyboard */; };
-		DFD5E7A42AD506F0006E101F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E79B2AD506F0006E101F /* CategoryCollectionViewCell.swift */; };
-		DFD5E7A52AD506F0006E101F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5E79C2AD506F0006E101F /* CategoryCollectionViewCell.xib */; };
-		DFD5E7A62AD506F0006E101F /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E79E2AD506F0006E101F /* ExploreTableViewCell.swift */; };
-		DFD5E7A72AD506F0006E101F /* ExploreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5E79F2AD506F0006E101F /* ExploreTableViewCell.xib */; };
-		DFD5E7A82AD506F0006E101F /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7A02AD506F0006E101F /* ExploreViewController.swift */; };
 		DFD5E7B62AD50A8E006E101F /* CategoryNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5E7AB2AD50A8D006E101F /* CategoryNibCell.xib */; };
 		DFD5E7B72AD50A8E006E101F /* RecentCollectionNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5E7AC2AD50A8D006E101F /* RecentCollectionNibCell.xib */; };
 		DFD5E7B92AD50A8E006E101F /* CategoryNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E7AE2AD50A8D006E101F /* CategoryNibCell.swift */; };
@@ -126,14 +118,6 @@
 		DFD5E7502AD50650006E101F /* CutomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutomCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFD5E7512AD50650006E101F /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		DFD5E7522AD50650006E101F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		DFD5E7932AD506F0006E101F /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		DFD5E7942AD506F0006E101F /* TopItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopItemsModel.swift; sourceTree = "<group>"; };
-		DFD5E7972AD506F0006E101F /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
-		DFD5E79B2AD506F0006E101F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		DFD5E79C2AD506F0006E101F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		DFD5E79E2AD506F0006E101F /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
-		DFD5E79F2AD506F0006E101F /* ExploreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreTableViewCell.xib; sourceTree = "<group>"; };
-		DFD5E7A02AD506F0006E101F /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		DFD5E7AB2AD50A8D006E101F /* CategoryNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryNibCell.xib; sourceTree = "<group>"; };
 		DFD5E7AC2AD50A8D006E101F /* RecentCollectionNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCollectionNibCell.xib; sourceTree = "<group>"; };
 		DFD5E7AE2AD50A8D006E101F /* CategoryNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryNibCell.swift; sourceTree = "<group>"; };
@@ -320,7 +304,6 @@
 		DFD5E7412AD50650006E101F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DFD5E7912AD506F0006E101F /* Explore */,
 				DFD5E7422AD50650006E101F /* Saved */,
 				DFD5E7462AD50650006E101F /* ForYou */,
 			);
@@ -397,78 +380,6 @@
 				DFD5E7522AD50650006E101F /* CollectionViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DFD5E7912AD506F0006E101F /* Explore */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E7922AD506F0006E101F /* Model */,
-				DFD5E7952AD506F0006E101F /* View */,
-			);
-			name = Explore;
-			path = "../../../../Salin/ios-we-commerce-ui/Easycart/Home/Explore";
-			sourceTree = "<group>";
-		};
-		DFD5E7922AD506F0006E101F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E7932AD506F0006E101F /* CategoryModel.swift */,
-				DFD5E7942AD506F0006E101F /* TopItemsModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DFD5E7952AD506F0006E101F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E7962AD506F0006E101F /* Storyboard */,
-				DFD5E7982AD506F0006E101F /* Controller */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DFD5E7962AD506F0006E101F /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E7972AD506F0006E101F /* Explore.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DFD5E7982AD506F0006E101F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E7992AD506F0006E101F /* TableCell */,
-				DFD5E7A02AD506F0006E101F /* ExploreViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DFD5E7992AD506F0006E101F /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E79A2AD506F0006E101F /* CategoryCollectionViewCell */,
-				DFD5E79D2AD506F0006E101F /* TopItems */,
-			);
-			path = TableCell;
-			sourceTree = "<group>";
-		};
-		DFD5E79A2AD506F0006E101F /* CategoryCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E79B2AD506F0006E101F /* CategoryCollectionViewCell.swift */,
-				DFD5E79C2AD506F0006E101F /* CategoryCollectionViewCell.xib */,
-			);
-			path = CategoryCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		DFD5E79D2AD506F0006E101F /* TopItems */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5E79E2AD506F0006E101F /* ExploreTableViewCell.swift */,
-				DFD5E79F2AD506F0006E101F /* ExploreTableViewCell.xib */,
-			);
-			path = TopItems;
 			sourceTree = "<group>";
 		};
 		DFD5E7A92AD50A8D006E101F /* View */ = {
@@ -574,13 +485,10 @@
 				DFD5E7702AD50650006E101F /* ThirdSectionTableViewCell.xib in Resources */,
 				DFD5E7862AD50650006E101F /* CutomCollectionViewCell.xib in Resources */,
 				DFD5E7732AD50650006E101F /* TableViewCell.xib in Resources */,
-				DFD5E7A52AD506F0006E101F /* CategoryCollectionViewCell.xib in Resources */,
-				DFD5E7A32AD506F0006E101F /* Explore.storyboard in Resources */,
 				DFD5E7BB2AD50A8E006E101F /* PopularNibCell.xib in Resources */,
 				DFD5E7742AD50650006E101F /* BankSetupTableViewCell.xib in Resources */,
 				DFD5E7752AD50650006E101F /* FirstEditSectionTableViewCell.xib in Resources */,
 				DFD5E7772AD50650006E101F /* ThirdCellsTableViewCell.xib in Resources */,
-				DFD5E7A72AD506F0006E101F /* ExploreTableViewCell.xib in Resources */,
 				DFD5E7712AD50650006E101F /* Section1TableViewCell.xib in Resources */,
 				DFD5E7642AD50650006E101F /* Assets.xcassets in Resources */,
 				DFD5E7722AD50650006E101F /* SecondSectionTableViewCell.xib in Resources */,
@@ -646,7 +554,6 @@
 				DFD5E76A2AD50650006E101F /* Section2.swift in Sources */,
 				DFD5E7622AD50650006E101F /* ViewController.swift in Sources */,
 				DFD5E78C2AD50650006E101F /* CollectionViewController.swift in Sources */,
-				DFD5E7A62AD506F0006E101F /* ExploreTableViewCell.swift in Sources */,
 				DFD5E7852AD50650006E101F /* collection.swift in Sources */,
 				DFD5E7872AD50650006E101F /* TabMainViewController.swift in Sources */,
 				DFD5E77E2AD50650006E101F /* SecondSectionTableViewCell.swift in Sources */,
@@ -656,7 +563,6 @@
 				DFD5E7802AD50650006E101F /* BankSetupTableViewCell.swift in Sources */,
 				DFD5E7612AD50650006E101F /* SceneDelegate.swift in Sources */,
 				DFD5E76F2AD50650006E101F /* FirstSectionEdit.swift in Sources */,
-				DFD5E7A42AD506F0006E101F /* CategoryCollectionViewCell.swift in Sources */,
 				DFD5E76D2AD50650006E101F /* Section3.swift in Sources */,
 				DFD5E7832AD50650006E101F /* PopLogOutViewController.swift in Sources */,
 				DFD5E7882AD50650006E101F /* CollectionViewCell.swift in Sources */,
@@ -665,7 +571,6 @@
 				DFD5E7822AD50650006E101F /* FirstEditSectionTableViewCell.swift in Sources */,
 				DFD5E77A2AD50650006E101F /* EditProfileViewController.swift in Sources */,
 				DFD5E7682AD50650006E101F /* NetworkConstans.swift in Sources */,
-				DFD5E7A82AD506F0006E101F /* ExploreViewController.swift in Sources */,
 				DFD5E7B92AD50A8E006E101F /* CategoryNibCell.swift in Sources */,
 				DFD5E7672AD50650006E101F /* APICaller.swift in Sources */,
 				DFD5E76C2AD50650006E101F /* Section1.swift in Sources */,
@@ -681,9 +586,7 @@
 				DFD5E7BA2AD50A8E006E101F /* PopularNibCell.swift in Sources */,
 				DFD5E7BF2AD50A8E006E101F /* SearchController.swift in Sources */,
 				DFD5E7812AD50650006E101F /* ProfileViewController.swift in Sources */,
-				DFD5E7A12AD506F0006E101F /* CategoryModel.swift in Sources */,
 				DFD5E78A2AD50650006E101F /* CutomCollectionViewCell.swift in Sources */,
-				DFD5E7A22AD506F0006E101F /* TopItemsModel.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
