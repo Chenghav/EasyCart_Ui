@@ -229,12 +229,12 @@
 			isa = PBXGroup;
 			children = (
 				DFD5E7C02AD50BBF006E101F /* Create */,
-				DFD5E7132AD50650006E101F /* App */,
 				DFD5E7412AD50650006E101F /* Home */,
 				DFD5E7162AD50650006E101F /* MainView + MainSB + Asset */,
 				DFD5E71E2AD50650006E101F /* Networking */,
 				DFD5E7212AD50650006E101F /* Profile */,
 				DFD5E70B2AD50650006E101F /* Search */,
+				DFD5E7132AD50650006E101F /* App */,
 				C2BD61E52AD3B7A300939CA7 /* Info.plist */,
 				C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */,
 			);
