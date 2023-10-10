@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CutomCollectionViewCell" id="gTV-IL-0wX" customClass="CutomCollectionViewCell" customModule="Easycart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kil-Eo-FhW">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="bfj-SU-lt1"/>
+                            <constraint firstAttribute="height" constant="130" id="irn-Vi-gVB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-xy-A9H">
+                        <rect key="frame" x="136" y="16" width="202" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="202" id="gvX-do-Nw9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta8-ND-39D">
+                        <rect key="frame" x="136" y="97" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="6Db-OQ-rt6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="QFQ-ed-QFI">
+                        <rect key="frame" x="318" y="90" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="tQj-a5-cNO"/>
+                            <constraint firstAttribute="height" constant="24" id="vPK-c6-qX1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Kil-Eo-FhW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Ch-qb-858"/>
+                <constraint firstItem="rhW-xy-A9H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="42z-AH-Yb8"/>
+                <constraint firstItem="Kil-Eo-FhW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ITH-3B-5JW"/>
+                <constraint firstAttribute="bottom" secondItem="Ta8-ND-39D" secondAttribute="bottom" constant="16" id="IeE-yB-eKC"/>
+                <constraint firstAttribute="trailing" secondItem="QFQ-ed-QFI" secondAttribute="trailing" constant="16" id="UfU-ZK-cAM"/>
+                <constraint firstItem="rhW-xy-A9H" firstAttribute="leading" secondItem="Kil-Eo-FhW" secondAttribute="trailing" constant="16" id="Ymd-hg-aEM"/>
+                <constraint firstAttribute="bottom" secondItem="QFQ-ed-QFI" secondAttribute="bottom" constant="16" id="aXr-Rw-Nfv"/>
+                <constraint firstItem="Ta8-ND-39D" firstAttribute="leading" secondItem="Kil-Eo-FhW" secondAttribute="trailing" constant="16" id="jX1-pG-X0g"/>
+            </constraints>
+            <connections>
+                <outlet property="LabCus" destination="rhW-xy-A9H" id="89p-dR-tW1"/>
+                <outlet property="LabPri" destination="Ta8-ND-39D" id="DEz-f2-TQs"/>
+                <outlet property="imageCus" destination="Kil-Eo-FhW" id="cMV-Xg-vO9"/>
+            </connections>
+            <point key="canvasLocation" x="-50.381679389312978" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Button" width="24" height="24"/>
+    </resources>
+</document>
