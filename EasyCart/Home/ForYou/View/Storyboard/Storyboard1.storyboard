@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="sKA-lO-kRl">
+            <objects>
+                <viewController id="yBb-NA-XO8" customClass="HomeViewController" customModule="Easycart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQc-ru-WN2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMN-ND-Qhm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="Xxb-BS-5gi">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="ico_list" id="SBB-DJ-ODW">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="layoutChange:" destination="yBb-NA-XO8" id="YX1-IC-EGi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-dd-Eax">
+                                <rect key="frame" x="0.0" y="106" width="393" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qSg-Rk-VLw"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="For you"/>
+                                    <segment title="Explore"/>
+                                    <segment title="Saved"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="yBb-NA-XO8" eventType="valueChanged" id="NUe-af-IyA"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hS-OZ-LEd">
+                                <rect key="frame" x="104" y="476" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqz-rh-W9n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SMN-ND-Qhm" firstAttribute="top" secondItem="eqz-rh-W9n" secondAttribute="top" id="14c-Li-rcf"/>
+                            <constraint firstItem="SMN-ND-Qhm" firstAttribute="leading" secondItem="ZNO-dd-Eax" secondAttribute="leading" id="Ilo-UD-gJy"/>
+                            <constraint firstItem="ZNO-dd-Eax" firstAttribute="top" secondItem="SMN-ND-Qhm" secondAttribute="bottom" constant="12" id="Kwy-OM-b7P"/>
+                            <constraint firstItem="SMN-ND-Qhm" firstAttribute="trailing" secondItem="ZNO-dd-Eax" secondAttribute="trailing" id="axv-Kp-ufd"/>
+                            <constraint firstItem="ZNO-dd-Eax" firstAttribute="trailing" secondItem="eqz-rh-W9n" secondAttribute="trailing" id="eOd-Kr-lNU"/>
+                            <constraint firstItem="ZNO-dd-Eax" firstAttribute="leading" secondItem="eqz-rh-W9n" secondAttribute="leading" id="fbi-7d-k3h"/>
+                            <constraint firstItem="eqz-rh-W9n" firstAttribute="bottom" secondItem="ZNO-dd-Eax" secondAttribute="bottom" constant="623" id="lAw-Lq-NZf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="ico_shopbag" selectedImage="ico_shopbag" id="ulM-hu-Egp">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="layoutToChange" destination="SBB-DJ-ODW" id="uF9-JD-dZu"/>
+                        <outlet property="segment" destination="ZNO-dd-Eax" id="ttV-Np-7j7"/>
+                        <outlet property="testBtn" destination="3hS-OZ-LEd" id="NAo-4f-go9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOk-OI-e0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2917" y="727"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Zd6-GO-Lqh">
+            <objects>
+                <viewController id="vXo-bo-kaB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qsT-Xz-Zln">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v0k-jN-BZq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="ico_searchstar" selectedImage="ico_searchstar" id="fEe-19-Hxw">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEN-wd-OJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2050" y="727"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q9F-Qd-INQ">
+            <objects>
+                <viewController id="w57-gP-haQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QwR-jx-Vdd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e3J-qM-HsF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ico_addPrimary" selectedImage="ico_addPrimary" id="wYX-Xo-M5z">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJF-xa-PP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1266" y="727"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="2l4-m9-8wK">
+            <objects>
+                <viewController id="CfF-Ag-efy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJQ-nG-7zQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MWw-ya-mqc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notification" image="ico_bell" selectedImage="ico_bell" id="b2l-tD-xQz">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJd-c4-F7v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="727"/>
+        </scene>
+        <!--Tab Main View Controller-->
+        <scene sceneID="Xlz-Uw-o4q">
+            <objects>
+                <tabBarController storyboardIdentifier="TabMainViewController" id="ZMx-8Y-JKk" customClass="TabMainViewController" customModule="Easycart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="phw-AU-APT" customClass="CustomTabBar" customModule="Easycart" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40000003579999999" green="0.1019607931" blue="0.8392156959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.40000003579999999" green="0.1019607931" blue="0.8392156959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="myTabBar" destination="phw-AU-APT" id="wM6-jP-B37"/>
+                        <segue destination="yBb-NA-XO8" kind="relationship" relationship="viewControllers" id="roC-cA-F6m"/>
+                        <segue destination="vXo-bo-kaB" kind="relationship" relationship="viewControllers" id="si5-uk-rZ3"/>
+                        <segue destination="w57-gP-haQ" kind="relationship" relationship="viewControllers" id="y8i-rz-b8m"/>
+                        <segue destination="CfF-Ag-efy" kind="relationship" relationship="viewControllers" id="0BL-1l-0Al"/>
+                        <segue destination="h7R-mN-F7c" kind="relationship" relationship="viewControllers" id="1PD-xa-Snv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0E8-ay-M7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="6"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="bd2-6y-VWg">
+            <objects>
+                <viewController id="h7R-mN-F7c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArB-UM-yvI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Quj-oD-DmR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="ico_menu" selectedImage="ico_menu" id="Ca1-tv-Rb6">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJG-h1-fYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_addPrimary" width="38" height="38"/>
+        <image name="ico_bell" width="24" height="24"/>
+        <image name="ico_list" width="24" height="24"/>
+        <image name="ico_menu" width="24" height="24"/>
+        <image name="ico_searchstar" width="24" height="24"/>
+        <image name="ico_shopbag" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
