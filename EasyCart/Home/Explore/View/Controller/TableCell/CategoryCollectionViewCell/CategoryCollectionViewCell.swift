@@ -9,11 +9,13 @@ import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
+
+    @IBOutlet weak var categoryRec: UIView!
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        categoryRec.layer.cornerRadius = 10
     }
     
     func config(with categories: CategoryModel){
