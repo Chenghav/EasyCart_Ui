@@ -19,10 +19,6 @@
 		DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67822AD65156006ECEE7 /* Main.storyboard */; };
 		DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB678A2AD65167006ECEE7 /* APICaller.swift */; };
 		DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB678B2AD65167006ECEE7 /* NetworkConstans.swift */; };
-		DFDB67D12AD6517B006ECEE7 /* RecentCollectionNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67CC2AD6517B006ECEE7 /* RecentCollectionNibCell.xib */; };
-		DFDB67D22AD6517B006ECEE7 /* SearchSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67CD2AD6517B006ECEE7 /* SearchSb.storyboard */; };
-		DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67CE2AD6517B006ECEE7 /* RecentCollectionNibCell.swift */; };
-		DFDB67D42AD6517B006ECEE7 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67D02AD6517B006ECEE7 /* SearchController.swift */; };
 		DFDB67F42AD65787006ECEE7 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67D92AD65787006ECEE7 /* CategoryData.swift */; };
 		DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67DA2AD65787006ECEE7 /* CategoryTVC.swift */; };
 		DFDB67F62AD65787006ECEE7 /* InfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67DD2AD65787006ECEE7 /* InfoTVC.xib */; };
@@ -87,6 +83,25 @@
 		DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB686C2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift */; };
 		DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB686D2AD65DBA006ECEE7 /* PopLogOutViewController.swift */; };
 		DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB688A2AD65E25006ECEE7 /* Storyboard1.storyboard */; };
+		DFDB689A2AD65FB2006ECEE7 /* CategoryNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB688F2AD65FB2006ECEE7 /* CategoryNibCell.xib */; };
+		DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68902AD65FB2006ECEE7 /* RecentCollectionNibCell.xib */; };
+		DFDB689C2AD65FB2006ECEE7 /* SearchSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68912AD65FB2006ECEE7 /* SearchSb.storyboard */; };
+		DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68922AD65FB2006ECEE7 /* CategoryNibCell.swift */; };
+		DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68932AD65FB2006ECEE7 /* PopularNibCell.swift */; };
+		DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68942AD65FB2006ECEE7 /* PopularNibCell.xib */; };
+		DFDB68A02AD65FB2006ECEE7 /* PopularSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68952AD65FB2006ECEE7 /* PopularSection.swift */; };
+		DFDB68A12AD65FB2006ECEE7 /* SectionCellNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68962AD65FB2006ECEE7 /* SectionCellNib.swift */; };
+		DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68972AD65FB2006ECEE7 /* RecentCollectionNibCell.swift */; };
+		DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68992AD65FB2006ECEE7 /* SearchController.swift */; };
+		DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68BF2AD67446006ECEE7 /* TotalTableViewCell.xib */; };
+		DFDB68CB2AD67446006ECEE7 /* PayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */; };
+		DFDB68CD2AD67446006ECEE7 /* PaymentSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C22AD67446006ECEE7 /* PaymentSb.storyboard */; };
+		DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */; };
+		DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C52AD67446006ECEE7 /* PayTableViewCell.swift */; };
+		DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C62AD67446006ECEE7 /* DeliveryTableViewCell.swift */; };
+		DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */; };
+		DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */; };
+		DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C92AD67446006ECEE7 /* PaymentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,10 +120,6 @@
 		DFDB67832AD65156006ECEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFDB678A2AD65167006ECEE7 /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		DFDB678B2AD65167006ECEE7 /* NetworkConstans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstans.swift; sourceTree = "<group>"; };
-		DFDB67CC2AD6517B006ECEE7 /* RecentCollectionNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCollectionNibCell.xib; sourceTree = "<group>"; };
-		DFDB67CD2AD6517B006ECEE7 /* SearchSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchSb.storyboard; sourceTree = "<group>"; };
-		DFDB67CE2AD6517B006ECEE7 /* RecentCollectionNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentCollectionNibCell.swift; sourceTree = "<group>"; };
-		DFDB67D02AD6517B006ECEE7 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		DFDB67D92AD65787006ECEE7 /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		DFDB67DA2AD65787006ECEE7 /* CategoryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 		DFDB67DD2AD65787006ECEE7 /* InfoTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTVC.xib; sourceTree = "<group>"; };
@@ -173,6 +184,25 @@
 		DFDB686C2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstEditSectionTableViewCell.swift; sourceTree = "<group>"; };
 		DFDB686D2AD65DBA006ECEE7 /* PopLogOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopLogOutViewController.swift; sourceTree = "<group>"; };
 		DFDB688A2AD65E25006ECEE7 /* Storyboard1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
+		DFDB688F2AD65FB2006ECEE7 /* CategoryNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryNibCell.xib; sourceTree = "<group>"; };
+		DFDB68902AD65FB2006ECEE7 /* RecentCollectionNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCollectionNibCell.xib; sourceTree = "<group>"; };
+		DFDB68912AD65FB2006ECEE7 /* SearchSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchSb.storyboard; sourceTree = "<group>"; };
+		DFDB68922AD65FB2006ECEE7 /* CategoryNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryNibCell.swift; sourceTree = "<group>"; };
+		DFDB68932AD65FB2006ECEE7 /* PopularNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularNibCell.swift; sourceTree = "<group>"; };
+		DFDB68942AD65FB2006ECEE7 /* PopularNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularNibCell.xib; sourceTree = "<group>"; };
+		DFDB68952AD65FB2006ECEE7 /* PopularSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularSection.swift; sourceTree = "<group>"; };
+		DFDB68962AD65FB2006ECEE7 /* SectionCellNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCellNib.swift; sourceTree = "<group>"; };
+		DFDB68972AD65FB2006ECEE7 /* RecentCollectionNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentCollectionNibCell.swift; sourceTree = "<group>"; };
+		DFDB68992AD65FB2006ECEE7 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		DFDB68BF2AD67446006ECEE7 /* TotalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
+		DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTableViewCell.xib; sourceTree = "<group>"; };
+		DFDB68C22AD67446006ECEE7 /* PaymentSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PaymentSb.storyboard; sourceTree = "<group>"; };
+		DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		DFDB68C52AD67446006ECEE7 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		DFDB68C62AD67446006ECEE7 /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		DFDB68C92AD67446006ECEE7 /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,12 +256,14 @@
 		C2BD61D32AD3B7A100939CA7 /* EasyCart */ = {
 			isa = PBXGroup;
 			children = (
+				DFDB68D52AD6763E006ECEE7 /* Helper */,
+				DFDB68D42AD6761C006ECEE7 /* Resource */,
+				DFDB68BC2AD67446006ECEE7 /* Payment */,
+				DFDB688C2AD65FB2006ECEE7 /* Search */,
 				DFDB684D2AD65DBA006ECEE7 /* Profile */,
 				DFDB67542AD6514C006ECEE7 /* Home */,
 				DFDB67D52AD65787006ECEE7 /* Create */,
-				DFDB67C92AD6517B006ECEE7 /* Search */,
-				DFDB67892AD65167006ECEE7 /* Networking */,
-				DFDB677C2AD65156006ECEE7 /* MainView + MainSB + Asset */,
+				DFDB677C2AD65156006ECEE7 /* MainView + MainSB */,
 				DFDB674F2AD65046006ECEE7 /* App */,
 				C2BD61E52AD3B7A300939CA7 /* Info.plist */,
 				C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */,
@@ -282,16 +314,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DFDB677C2AD65156006ECEE7 /* MainView + MainSB + Asset */ = {
+		DFDB677C2AD65156006ECEE7 /* MainView + MainSB */ = {
 			isa = PBXGroup;
 			children = (
 				DFDB688A2AD65E25006ECEE7 /* Storyboard1.storyboard */,
 				DFDB677D2AD65156006ECEE7 /* ViewController.swift */,
-				DFDB677F2AD65156006ECEE7 /* Assets.xcassets */,
 				DFDB67802AD65156006ECEE7 /* LaunchScreen.storyboard */,
 				DFDB67822AD65156006ECEE7 /* Main.storyboard */,
 			);
-			path = "MainView + MainSB + Asset";
+			path = "MainView + MainSB";
 			sourceTree = "<group>";
 		};
 		DFDB67892AD65167006ECEE7 /* Networking */ = {
@@ -301,41 +332,6 @@
 				DFDB678B2AD65167006ECEE7 /* NetworkConstans.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		DFDB67C92AD6517B006ECEE7 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67CA2AD6517B006ECEE7 /* View */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		DFDB67CA2AD6517B006ECEE7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67CB2AD6517B006ECEE7 /* Storyboard */,
-				DFDB67CF2AD6517B006ECEE7 /* Controller */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DFDB67CB2AD6517B006ECEE7 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67CC2AD6517B006ECEE7 /* RecentCollectionNibCell.xib */,
-				DFDB67CD2AD6517B006ECEE7 /* SearchSb.storyboard */,
-				DFDB67CE2AD6517B006ECEE7 /* RecentCollectionNibCell.swift */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DFDB67CF2AD6517B006ECEE7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67D02AD6517B006ECEE7 /* SearchController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		DFDB67D52AD65787006ECEE7 /* Create */ = {
@@ -645,6 +641,103 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DFDB688C2AD65FB2006ECEE7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB688D2AD65FB2006ECEE7 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DFDB688D2AD65FB2006ECEE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB688E2AD65FB2006ECEE7 /* Storyboard */,
+				DFDB68982AD65FB2006ECEE7 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFDB688E2AD65FB2006ECEE7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB688F2AD65FB2006ECEE7 /* CategoryNibCell.xib */,
+				DFDB68902AD65FB2006ECEE7 /* RecentCollectionNibCell.xib */,
+				DFDB68912AD65FB2006ECEE7 /* SearchSb.storyboard */,
+				DFDB68922AD65FB2006ECEE7 /* CategoryNibCell.swift */,
+				DFDB68932AD65FB2006ECEE7 /* PopularNibCell.swift */,
+				DFDB68942AD65FB2006ECEE7 /* PopularNibCell.xib */,
+				DFDB68952AD65FB2006ECEE7 /* PopularSection.swift */,
+				DFDB68962AD65FB2006ECEE7 /* SectionCellNib.swift */,
+				DFDB68972AD65FB2006ECEE7 /* RecentCollectionNibCell.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DFDB68982AD65FB2006ECEE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68992AD65FB2006ECEE7 /* SearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFDB68BC2AD67446006ECEE7 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68BD2AD67446006ECEE7 /* View */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		DFDB68BD2AD67446006ECEE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68BE2AD67446006ECEE7 /* Storyboard */,
+				DFDB68C42AD67446006ECEE7 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFDB68BE2AD67446006ECEE7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68BF2AD67446006ECEE7 /* TotalTableViewCell.xib */,
+				DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */,
+				DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */,
+				DFDB68C22AD67446006ECEE7 /* PaymentSb.storyboard */,
+				DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DFDB68C42AD67446006ECEE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68C52AD67446006ECEE7 /* PayTableViewCell.swift */,
+				DFDB68C62AD67446006ECEE7 /* DeliveryTableViewCell.swift */,
+				DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */,
+				DFDB68C92AD67446006ECEE7 /* PaymentController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFDB68D42AD6761C006ECEE7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB677F2AD65156006ECEE7 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DFDB68D52AD6763E006ECEE7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB67892AD65167006ECEE7 /* Networking */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -714,25 +807,32 @@
 			files = (
 				DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */,
 				DFDB68782AD65DBA006ECEE7 /* TableViewCell.xib in Resources */,
+				DFDB689A2AD65FB2006ECEE7 /* CategoryNibCell.xib in Resources */,
+				DFDB689C2AD65FB2006ECEE7 /* SearchSb.storyboard in Resources */,
 				DFDB68762AD65DBA006ECEE7 /* Section1TableViewCell.xib in Resources */,
 				DFDB68032AD65787006ECEE7 /* CreateItemSB.storyboard in Resources */,
-				DFDB67D12AD6517B006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
 				DFDB68302AD65968006ECEE7 /* ExploreTableViewCell.xib in Resources */,
 				DFDB68772AD65DBA006ECEE7 /* SecondSectionTableViewCell.xib in Resources */,
 				DFDB67F62AD65787006ECEE7 /* InfoTVC.xib in Resources */,
-				DFDB67D22AD6517B006ECEE7 /* SearchSb.storyboard in Resources */,
 				DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */,
+				DFDB68CB2AD67446006ECEE7 /* PayTableViewCell.xib in Resources */,
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
+				DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */,
+				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
 				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
+				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
+				DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */,
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
 				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
+				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
 				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
+				DFDB68CD2AD67446006ECEE7 /* PaymentSb.storyboard in Resources */,
 				DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */,
 				DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */,
 				DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */,
@@ -793,16 +893,18 @@
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
+				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,
 				DFDB68852AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
-				DFDB67D42AD6517B006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */,
 				DFDB67F42AD65787006ECEE7 /* CategoryData.swift in Sources */,
+				DFDB68A12AD65FB2006ECEE7 /* SectionCellNib.swift in Sources */,
 				DFDB68862AD65DBA006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
+				DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */,
 				DFDB68842AD65DBA006ECEE7 /* AllitemViewController.swift in Sources */,
 				DFDB68052AD65787006ECEE7 /* CategoryTC.swift in Sources */,
 				DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
@@ -813,18 +915,24 @@
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
 				DFDB67FA2AD65787006ECEE7 /* Name.swift in Sources */,
+				DFDB68A02AD65FB2006ECEE7 /* PopularSection.swift in Sources */,
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
+				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
+				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
+				DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
+				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
+				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
+				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
-				DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
