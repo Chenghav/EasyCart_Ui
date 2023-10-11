@@ -21,10 +21,6 @@
 		DFDB67752AD6514C006ECEE7 /* CutomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67632AD6514C006ECEE7 /* CutomCollectionViewCell.swift */; };
 		DFDB67762AD6514C006ECEE7 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67642AD6514C006ECEE7 /* CustomTabBar.swift */; };
 		DFDB67772AD6514C006ECEE7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67652AD6514C006ECEE7 /* CollectionViewController.swift */; };
-		DFDB67782AD6514C006ECEE7 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67692AD6514C006ECEE7 /* Explore.storyboard */; };
-		DFDB67792AD6514C006ECEE7 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB676C2AD6514C006ECEE7 /* ExploreTableViewCell.swift */; };
-		DFDB677A2AD6514C006ECEE7 /* ExploreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB676D2AD6514C006ECEE7 /* ExploreTableViewCell.xib */; };
-		DFDB677B2AD6514C006ECEE7 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB676E2AD6514C006ECEE7 /* ExploreViewController.swift */; };
 		DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB677D2AD65156006ECEE7 /* ViewController.swift */; };
 		DFDB67852AD65156006ECEE7 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB677E2AD65156006ECEE7 /* Storyboard1.storyboard */; };
 		DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFDB677F2AD65156006ECEE7 /* Assets.xcassets */; };
@@ -81,6 +77,14 @@
 		DFDB68032AD65787006ECEE7 /* CreateItemSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67F02AD65787006ECEE7 /* CreateItemSB.storyboard */; };
 		DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67F22AD65787006ECEE7 /* CreateItemVC.swift */; };
 		DFDB68052AD65787006ECEE7 /* CategoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67F32AD65787006ECEE7 /* CategoryTC.swift */; };
+		DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68202AD65968006ECEE7 /* CategoryModel.swift */; };
+		DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68212AD65968006ECEE7 /* TopItemsModel.swift */; };
+		DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68262AD65968006ECEE7 /* CategoryCollectionViewCell.swift */; };
+		DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68272AD65968006ECEE7 /* CategoryCollectionViewCell.xib */; };
+		DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68292AD65968006ECEE7 /* ExploreTableViewCell.swift */; };
+		DFDB68302AD65968006ECEE7 /* ExploreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB682A2AD65968006ECEE7 /* ExploreTableViewCell.xib */; };
+		DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68322AD65A67006ECEE7 /* Explore.storyboard */; };
+		DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68342AD65B1A006ECEE7 /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,10 +105,6 @@
 		DFDB67632AD6514C006ECEE7 /* CutomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutomCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDB67642AD6514C006ECEE7 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		DFDB67652AD6514C006ECEE7 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		DFDB67692AD6514C006ECEE7 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
-		DFDB676C2AD6514C006ECEE7 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
-		DFDB676D2AD6514C006ECEE7 /* ExploreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreTableViewCell.xib; sourceTree = "<group>"; };
-		DFDB676E2AD6514C006ECEE7 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		DFDB677D2AD65156006ECEE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFDB677E2AD65156006ECEE7 /* Storyboard1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
 		DFDB677F2AD65156006ECEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +161,14 @@
 		DFDB67F02AD65787006ECEE7 /* CreateItemSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemSB.storyboard; sourceTree = "<group>"; };
 		DFDB67F22AD65787006ECEE7 /* CreateItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		DFDB67F32AD65787006ECEE7 /* CategoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTC.swift; sourceTree = "<group>"; };
+		DFDB68202AD65968006ECEE7 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		DFDB68212AD65968006ECEE7 /* TopItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopItemsModel.swift; sourceTree = "<group>"; };
+		DFDB68262AD65968006ECEE7 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFDB68272AD65968006ECEE7 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		DFDB68292AD65968006ECEE7 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
+		DFDB682A2AD65968006ECEE7 /* ExploreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreTableViewCell.xib; sourceTree = "<group>"; };
+		DFDB68322AD65A67006ECEE7 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		DFDB68342AD65B1A006ECEE7 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,12 +222,12 @@
 		C2BD61D32AD3B7A100939CA7 /* EasyCart */ = {
 			isa = PBXGroup;
 			children = (
+				DFDB67542AD6514C006ECEE7 /* Home */,
 				DFDB67D52AD65787006ECEE7 /* Create */,
 				DFDB67C92AD6517B006ECEE7 /* Search */,
 				DFDB678E2AD6516F006ECEE7 /* Profile */,
 				DFDB67892AD65167006ECEE7 /* Networking */,
 				DFDB677C2AD65156006ECEE7 /* MainView + MainSB + Asset */,
-				DFDB67542AD6514C006ECEE7 /* Home */,
 				DFDB674F2AD65046006ECEE7 /* App */,
 				C2BD61E52AD3B7A300939CA7 /* Info.plist */,
 				C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */,
@@ -239,9 +247,9 @@
 		DFDB67542AD6514C006ECEE7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DFDB681E2AD65968006ECEE7 /* Explore */,
 				DFDB67552AD6514C006ECEE7 /* Saved */,
 				DFDB67592AD6514C006ECEE7 /* ForYou */,
-				DFDB67662AD6514C006ECEE7 /* Explore */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -315,49 +323,6 @@
 				DFDB67652AD6514C006ECEE7 /* CollectionViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DFDB67662AD6514C006ECEE7 /* Explore */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67672AD6514C006ECEE7 /* View */,
-			);
-			path = Explore;
-			sourceTree = "<group>";
-		};
-		DFDB67672AD6514C006ECEE7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67682AD6514C006ECEE7 /* Storyboard */,
-				DFDB676A2AD6514C006ECEE7 /* Controller */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DFDB67682AD6514C006ECEE7 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67692AD6514C006ECEE7 /* Explore.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DFDB676A2AD6514C006ECEE7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB676B2AD6514C006ECEE7 /* TableCell */,
-				DFDB676E2AD6514C006ECEE7 /* ExploreViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DFDB676B2AD6514C006ECEE7 /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB676C2AD6514C006ECEE7 /* ExploreTableViewCell.swift */,
-				DFDB676D2AD6514C006ECEE7 /* ExploreTableViewCell.xib */,
-			);
-			path = TableCell;
 			sourceTree = "<group>";
 		};
 		DFDB677C2AD65156006ECEE7 /* MainView + MainSB + Asset */ = {
@@ -603,6 +568,77 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DFDB681E2AD65968006ECEE7 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB681F2AD65968006ECEE7 /* Model */,
+				DFDB68222AD65968006ECEE7 /* View */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		DFDB681F2AD65968006ECEE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68202AD65968006ECEE7 /* CategoryModel.swift */,
+				DFDB68212AD65968006ECEE7 /* TopItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFDB68222AD65968006ECEE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68312AD65A67006ECEE7 /* Storyboard */,
+				DFDB68232AD65968006ECEE7 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFDB68232AD65968006ECEE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68342AD65B1A006ECEE7 /* ExploreViewController.swift */,
+				DFDB68242AD65968006ECEE7 /* TableCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFDB68242AD65968006ECEE7 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68252AD65968006ECEE7 /* CategoryCollectionViewCell */,
+				DFDB68282AD65968006ECEE7 /* TopItems */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		DFDB68252AD65968006ECEE7 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68262AD65968006ECEE7 /* CategoryCollectionViewCell.swift */,
+				DFDB68272AD65968006ECEE7 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DFDB68282AD65968006ECEE7 /* TopItems */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68292AD65968006ECEE7 /* ExploreTableViewCell.swift */,
+				DFDB682A2AD65968006ECEE7 /* ExploreTableViewCell.xib */,
+			);
+			path = TopItems;
+			sourceTree = "<group>";
+		};
+		DFDB68312AD65A67006ECEE7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68322AD65A67006ECEE7 /* Explore.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -674,24 +710,25 @@
 				DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */,
 				DFDB68032AD65787006ECEE7 /* CreateItemSB.storyboard in Resources */,
 				DFDB67D12AD6517B006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
+				DFDB68302AD65968006ECEE7 /* ExploreTableViewCell.xib in Resources */,
 				DFDB67B82AD6516F006ECEE7 /* TableViewCell.xib in Resources */,
 				DFDB67B62AD6516F006ECEE7 /* Section1TableViewCell.xib in Resources */,
 				DFDB67B92AD6516F006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
 				DFDB67B52AD6516F006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB67B72AD6516F006ECEE7 /* SecondSectionTableViewCell.xib in Resources */,
-				DFDB677A2AD6514C006ECEE7 /* ExploreTableViewCell.xib in Resources */,
-				DFDB67782AD6514C006ECEE7 /* Explore.storyboard in Resources */,
 				DFDB67712AD6514C006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB67F62AD65787006ECEE7 /* InfoTVC.xib in Resources */,
 				DFDB67BB2AD6516F006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB67BA2AD6516F006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
 				DFDB67D22AD6517B006ECEE7 /* SearchSb.storyboard in Resources */,
 				DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */,
+				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
 				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
 				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
 				DFDB67852AD65156006ECEE7 /* Storyboard1.storyboard in Resources */,
 				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
+				DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */,
 				DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +783,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDB67BF2AD6516F006ECEE7 /* EditProfileViewController.swift in Sources */,
+				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB67C22AD6516F006ECEE7 /* LogOutTableViewCell.swift in Sources */,
@@ -758,9 +796,10 @@
 				DFDB67F42AD65787006ECEE7 /* CategoryData.swift in Sources */,
 				DFDB68052AD65787006ECEE7 /* CategoryTC.swift in Sources */,
 				DFDB67C52AD6516F006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
+				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
+				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				DFDB67FA2AD65787006ECEE7 /* Name.swift in Sources */,
-				DFDB67792AD6514C006ECEE7 /* ExploreTableViewCell.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
 				DFDB67742AD6514C006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67C82AD6516F006ECEE7 /* PopLogOutViewController.swift in Sources */,
@@ -770,6 +809,7 @@
 				DFDB67B32AD6516F006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB67B02AD6516F006ECEE7 /* Bank.swift in Sources */,
 				DFDB67762AD6514C006ECEE7 /* CustomTabBar.swift in Sources */,
+				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				DFDB67C42AD6516F006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
 				DFDB67BD2AD6516F006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
@@ -778,8 +818,8 @@
 				DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
+				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
 				DFDB67B22AD6516F006ECEE7 /* Section3.swift in Sources */,
-				DFDB677B2AD6514C006ECEE7 /* ExploreViewController.swift in Sources */,
 				DFDB67C72AD6516F006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
 				DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */,
 				DFDB67722AD6514C006ECEE7 /* TabMainViewController.swift in Sources */,

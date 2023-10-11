@@ -23,7 +23,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-L1-ccP">
                                 <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-Yq-6WR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-Yq-6WR">
                                 <rect key="frame" x="111" y="16" width="161" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -73,7 +73,9 @@
             <color key="backgroundColor" red="0.95328146219999998" green="0.95934706930000002" blue="0.97018021350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="exploreCardRec" destination="laC-bq-you" id="KQ8-ZM-tUs"/>
+                <outlet property="exploreDesc" destination="LJM-Yq-6WR" id="3nu-I6-4ad"/>
                 <outlet property="exploreImgCard" destination="lgq-L1-ccP" id="jsz-A1-95Q"/>
+                <outlet property="explorePrice" destination="fsT-kp-ujr" id="bk0-1d-LzR"/>
             </connections>
             <point key="canvasLocation" x="10.687022900763358" y="13.380281690140846"/>
         </tableViewCell>
