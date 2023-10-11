@@ -11,7 +11,6 @@ class ConnectBankViewController: UIViewController, UITableViewDataSource, UITabl
     
     var section1 = [BankSection]()
     
-//    let sectionTitle = "Connect your bank account to receive money"
     @IBOutlet weak var View1: UIView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {

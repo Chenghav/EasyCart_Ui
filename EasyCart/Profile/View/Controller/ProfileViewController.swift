@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     var section1 = [Section1]()
     var section2 = [Section]()
     var section3 = [Section3]()
@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     override func  viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-//        self.navigationController?.isNavigationBarHidden = false
+        //        self.navigationController?.isNavigationBarHidden = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(TableViewCell.nib(), forCellReuseIdentifier: "TableViewCell")
@@ -30,13 +30,13 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-                    return section1.count
-                } else if section == 1 {
-                    return section2.count
-                } else if section == 2 {
-                    return section3.count
-                }
-                return 0
+            return section1.count
+        } else if section == 1 {
+            return section2.count
+        } else if section == 2 {
+            return section3.count
+        }
+        return 0
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -66,8 +66,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentIndex = indexPath.section
         if currentIndex == 2 {
-                       let story = UIStoryboard(name: "Storyboard1", bundle: nil)
-                       let controller = story.instantiateViewController(identifier: "PopLogOutViewController") as! PopLogOutViewController
+            let story = UIStoryboard(name: "Storyboard1", bundle: nil)
+            let controller = story.instantiateViewController(identifier: "PopLogOutViewController") as! PopLogOutViewController
             self.addChild(controller)
             self.view.addSubview(controller.view)
             controller.didMove(toParent: self)
@@ -75,17 +75,23 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             if let nextController = storyboard?.instantiateViewController(identifier: "ConnectBankViewController") as? ConnectBankViewController {
                 navigationController?.pushViewController(nextController, animated: true)
             }
+        }else if currentIndex == 1 && indexPath.row == 0 {
+            if let nextController = storyboard?.instantiateViewController(identifier: "AllitemViewController") as? AllitemViewController {
+                navigationController?.pushViewController(nextController, animated: true)
+            }
         }
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let currentSections = indexPath.section
-        if currentSections == 0 {
-            return 64
-        }else if currentSections == 1{
-            return 74
-        }else {
-            return 34
+    
         }
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            let currentSections = indexPath.section
+            if currentSections == 0 {
+                return 64
+            }else if currentSections == 1{
+                return 74
+            }else {
+                return 34
+            }
+        }
+        
     }
 
-}

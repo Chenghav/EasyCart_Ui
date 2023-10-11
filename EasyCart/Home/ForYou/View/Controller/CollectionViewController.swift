@@ -10,7 +10,8 @@ import UIKit
 class CollectionViewController: UIViewController{
    // MARK:  - Properties -
     var toggleItem : Bool   = true
-    var isCustomCellVisible = false
+    //var isCustomCellVisible = false
+    var owner : HomeViewController?
     @IBOutlet weak var collectionView: UICollectionView!
     
 
@@ -30,10 +31,11 @@ class CollectionViewController: UIViewController{
         }
 
     func toggleCellLayout() {
-        isCustomCellVisible.toggle()
+        owner?.isCustomCellVisible.toggle()
         collectionView.reloadData()
         }
     }
+
 // MARK:  - UICollectionViewDelegateFlowLayout -
 extension CollectionViewController : UICollectionViewDelegateFlowLayout{
     

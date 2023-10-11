@@ -32,12 +32,13 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         carbonSwapNavigation = CarbonTabSwipeNavigation(items: controllerName, delegate: self)
+        carbonSwapNavigation.pagesScrollView?.isScrollEnabled = true
         carbonSwapNavigation.insert(intoRootViewController: self)
         carbonSwapNavigation.carbonSegmentedControl?.backgroundColor = UIColor.white
         carbonSwapNavigation.setTabBarHeight(40)
-        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3 , forSegmentAt: 0)
-        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3 , forSegmentAt: 1)
-        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3 , forSegmentAt: 2)
+        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 0)
+        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 1)
+        carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 2)
         carbonSwapNavigation.setNormalColor(UIColor.black, font: UIFont.systemFont(ofSize: 19))
         carbonSwapNavigation.setSelectedColor(UIColor.purple, font: UIFont.systemFont(ofSize: 19, weight: .bold))
         carbonSwapNavigation.setIndicatorColor(UIColor.purple)
@@ -48,15 +49,13 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
     
     @IBAction func layoutChange(_ sender: Any) {
         let isImageSelected = !UserDefaults.standard.bool(forKey: userDefaultsKey)
-        UserDefaults.standard.set(isImageSelected, forKey: userDefaultsKey)
-        layoutToChange.image = isImageSelected ? UIImage(named: "4Grid") : UIImage(named: "ico_list")
-        UserDefaults.standard.synchronize()
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "layoutChange"), object: nil,userInfo: ["layoutChange" : isCustomCellVisible])
-        
-        isCustomCellVisible.toggle()
-            if let collectionViewController = currentViewController as? CollectionViewController {
-                collectionViewController.toggleCellLayout()
-            }
+                UserDefaults.standard.set(isImageSelected, forKey: userDefaultsKey)
+                layoutToChange.image = isImageSelected ? UIImage(named: "4Grid") : UIImage(named: "ico_list")
+                isCustomCellVisible.toggle()
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "layoutChange"), object: nil,userInfo: ["layoutChange" : isCustomCellVisible])
+                    if let collectionViewController = currentViewController as? CollectionViewController {
+                        collectionViewController.toggleCellLayout()
+                    }
     }
     func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
         guard let storyboard = storyboard else {
