@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
+		BF401E552AD6871A00F5FBE9 /* TitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E532AD6871A00F5FBE9 /* TitleTVC.swift */; };
+		BF401E562AD6871A00F5FBE9 /* TitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E542AD6871A00F5FBE9 /* TitleTVC.xib */; };
+		BF401E592AD6872E00F5FBE9 /* PriceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E572AD6872E00F5FBE9 /* PriceTVC.swift */; };
+		BF401E5A2AD6872E00F5FBE9 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */; };
+		BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */; };
+		BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */; };
+		BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
 		DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67502AD65046006ECEE7 /* AppDelegate.swift */; };
@@ -25,10 +32,6 @@
 		DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67DE2AD65787006ECEE7 /* InfoTVC.swift */; };
 		DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67E02AD65787006ECEE7 /* DiscountTVC.xib */; };
 		DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67E12AD65787006ECEE7 /* DiscountTVC.swift */; };
-		DFDB67FA2AD65787006ECEE7 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67E22AD65787006ECEE7 /* Name.swift */; };
-		DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67E42AD65787006ECEE7 /* Data.swift */; };
-		DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67E52AD65787006ECEE7 /* CustomeFieldTVC.swift */; };
-		DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67E62AD65787006ECEE7 /* CustomeFieldTVC.xib */; };
 		DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67E92AD65787006ECEE7 /* CollectionImageCVC.xib */; };
 		DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67EA2AD65787006ECEE7 /* CollectionImageCVC.swift */; };
 		DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67EB2AD65787006ECEE7 /* BeforeAddTVC.swift */; };
@@ -108,6 +111,13 @@
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF401E532AD6871A00F5FBE9 /* TitleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTVC.swift; sourceTree = "<group>"; };
+		BF401E542AD6871A00F5FBE9 /* TitleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTVC.xib; sourceTree = "<group>"; };
+		BF401E572AD6872E00F5FBE9 /* PriceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTVC.swift; sourceTree = "<group>"; };
+		BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
+		BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
+		BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
+		BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailData.swift; sourceTree = "<group>"; };
 		C2BD61D12AD3B7A100939CA7 /* EasyCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD61DE2AD3B7A100939CA7 /* EasyCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCart.xcdatamodel; sourceTree = "<group>"; };
 		C2BD61E52AD3B7A300939CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,10 +136,6 @@
 		DFDB67DE2AD65787006ECEE7 /* InfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTVC.swift; sourceTree = "<group>"; };
 		DFDB67E02AD65787006ECEE7 /* DiscountTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
 		DFDB67E12AD65787006ECEE7 /* DiscountTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
-		DFDB67E22AD65787006ECEE7 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
-		DFDB67E42AD65787006ECEE7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		DFDB67E52AD65787006ECEE7 /* CustomeFieldTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeFieldTVC.swift; sourceTree = "<group>"; };
-		DFDB67E62AD65787006ECEE7 /* CustomeFieldTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomeFieldTVC.xib; sourceTree = "<group>"; };
 		DFDB67E92AD65787006ECEE7 /* CollectionImageCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionImageCVC.xib; sourceTree = "<group>"; };
 		DFDB67EA2AD65787006ECEE7 /* CollectionImageCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionImageCVC.swift; sourceTree = "<group>"; };
 		DFDB67EB2AD65787006ECEE7 /* BeforeAddTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddTVC.swift; sourceTree = "<group>"; };
@@ -235,6 +241,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BF401E502AD686D000F5FBE9 /* title */ = {
+			isa = PBXGroup;
+			children = (
+				BF401E532AD6871A00F5FBE9 /* TitleTVC.swift */,
+				BF401E542AD6871A00F5FBE9 /* TitleTVC.xib */,
+			);
+			path = title;
+			sourceTree = "<group>";
+		};
+		BF401E512AD686D900F5FBE9 /* price */ = {
+			isa = PBXGroup;
+			children = (
+				BF401E572AD6872E00F5FBE9 /* PriceTVC.swift */,
+				BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */,
+			);
+			path = price;
+			sourceTree = "<group>";
+		};
+		BF401E522AD686F800F5FBE9 /* moreDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */,
+				BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */,
+			);
+			path = moreDetail;
+			sourceTree = "<group>";
+		};
+		BF401E5F2AD6923A00F5FBE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF401E622AD6A14800F5FBE9 /* collapseTVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */,
+			);
+			path = collapseTVC;
+			sourceTree = "<group>";
+		};
 		C2BD61C82AD3B7A100939CA7 = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +385,7 @@
 		DFDB67D52AD65787006ECEE7 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				BF401E5F2AD6923A00F5FBE9 /* Model */,
 				DFDB67D62AD65787006ECEE7 /* View */,
 			);
 			path = Create;
@@ -374,10 +423,12 @@
 		DFDB67DB2AD65787006ECEE7 /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				BF401E622AD6A14800F5FBE9 /* collapseTVC */,
+				BF401E522AD686F800F5FBE9 /* moreDetail */,
+				BF401E512AD686D900F5FBE9 /* price */,
+				BF401E502AD686D000F5FBE9 /* title */,
 				DFDB67DC2AD65787006ECEE7 /* category */,
 				DFDB67DF2AD65787006ECEE7 /* discount */,
-				DFDB67E22AD65787006ECEE7 /* Name.swift */,
-				DFDB67E32AD65787006ECEE7 /* titlePrice */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -398,16 +449,6 @@
 				DFDB67E12AD65787006ECEE7 /* DiscountTVC.swift */,
 			);
 			path = discount;
-			sourceTree = "<group>";
-		};
-		DFDB67E32AD65787006ECEE7 /* titlePrice */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67E42AD65787006ECEE7 /* Data.swift */,
-				DFDB67E52AD65787006ECEE7 /* CustomeFieldTVC.swift */,
-				DFDB67E62AD65787006ECEE7 /* CustomeFieldTVC.xib */,
-			);
-			path = titlePrice;
 			sourceTree = "<group>";
 		};
 		DFDB67E72AD65787006ECEE7 /* photo */ = {
@@ -805,6 +846,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF401E562AD6871A00F5FBE9 /* TitleTVC.xib in Resources */,
 				DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */,
 				DFDB68782AD65DBA006ECEE7 /* TableViewCell.xib in Resources */,
 				DFDB689A2AD65FB2006ECEE7 /* CategoryNibCell.xib in Resources */,
@@ -821,10 +863,10 @@
 				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
 				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
 				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
+				BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */,
 				DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */,
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
-				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
@@ -834,6 +876,7 @@
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
 				DFDB68CD2AD67446006ECEE7 /* PaymentSb.storyboard in Resources */,
 				DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */,
+				BF401E5A2AD6872E00F5FBE9 /* PriceTVC.xib in Resources */,
 				DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */,
 				DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */,
 			);
@@ -889,6 +932,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDB687F2AD65DBA006ECEE7 /* EditProfileViewController.swift in Sources */,
+				BF401E592AD6872E00F5FBE9 /* PriceTVC.swift in Sources */,
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
@@ -914,11 +958,11 @@
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
-				DFDB67FA2AD65787006ECEE7 /* Name.swift in Sources */,
 				DFDB68A02AD65FB2006ECEE7 /* PopularSection.swift in Sources */,
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
+				BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
@@ -931,14 +975,13 @@
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
+				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
-				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
-				DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */,
 				DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
@@ -949,6 +992,7 @@
 				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
+				BF401E552AD6871A00F5FBE9 /* TitleTVC.swift in Sources */,
 				DFDB68812AD65DBA006ECEE7 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

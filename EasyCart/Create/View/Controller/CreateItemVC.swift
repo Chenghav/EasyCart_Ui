@@ -12,22 +12,25 @@ class CreateItemVC: UIViewController{
     @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
+//    var models = [Data]()
+//
+//    var roeSection2 = ["Title", "Place"]
+    
     // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(InfoTVC.nib(), forCellReuseIdentifier: "InfoTVC")
-        tableView.register(CustomeFieldTVC.nib(), forCellReuseIdentifier: "CustomeFieldTVC")
         tableView.register(DiscountTVC.nib(), forCellReuseIdentifier: "DiscountTVC")
+        tableView.register(UINib(nibName: "TitleTVC", bundle: .none), forCellReuseIdentifier: "TitleTVC")
+        tableView.register(UINib(nibName: "PriceTVC", bundle: .none), forCellReuseIdentifier: "PriceTVC")
+        tableView.register(UINib(nibName: "MoreDetailTVC", bundle: .none), forCellReuseIdentifier: "MoreDetailTVC")
         
-//skip
-        tableView.register(UINib(nibName: "CreateItemVC", bundle: .none), forCellReuseIdentifier: "customCell")
-        tableView.register(UINib(nibName: "CustomFieldTVC", bundle: .none), forCellReuseIdentifier: "customCell")
         
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
-
 }
 
  // MARK: - UITableViewDelegate -
@@ -39,7 +42,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         }else if section == 1 {
-            return 3
+            return 5
         }else if section == 2 {
             return 1
         }
@@ -55,10 +58,16 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "InfoTVC", for: indexPath) as! InfoTVC
                 return labelCel
             }else if indexPath.row == 1 {
-                let labelCel = tableView.dequeueReusableCell(withIdentifier: "CustomeFieldTVC", for: indexPath) as! CustomeFieldTVC
+                let TitleCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
+                return TitleCel
+            }else if indexPath.row == 2{
+                let labelCel = tableView.dequeueReusableCell(withIdentifier: "PriceTVC", for: indexPath) as! PriceTVC
                 return labelCel
-            }else if indexPath.row == 2 {
+            }else if indexPath.row == 3{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "DiscountTVC", for: indexPath) as! DiscountTVC
+                return labelCel
+            }else if indexPath.row == 4 {
+                let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 return labelCel
             }
         }else{
@@ -69,6 +78,16 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        if indexPath.section == 0{
+            return 147
+        }else if indexPath.section == 1{
+            if indexPath.row == 3 {
+                return 62
+            }else{
+                return 50
+            }
+        }else{
+            return 167
+        }
     }
 }
