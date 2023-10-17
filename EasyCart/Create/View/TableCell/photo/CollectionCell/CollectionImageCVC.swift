@@ -8,8 +8,11 @@
 import UIKit
 
 class CollectionImageCVC: UICollectionViewCell {
-    @IBOutlet weak var uiImage: UIImageView!
+
+    var imagepicker : Completion = {}
+    
     @IBOutlet weak var btnAddImage: UIButton!
+    @IBOutlet weak var uiImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,8 +37,9 @@ class CollectionImageCVC: UICollectionViewCell {
         
 //        imagePicker.delegate = self
     }
-
+ 
     @IBAction func uploadImageMore(_ sender: Any) {
-        
+        imagepicker()
     }
 }
+

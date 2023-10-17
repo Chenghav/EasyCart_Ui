@@ -9,12 +9,16 @@ import UIKit
 
 class CreateItemVC: UIViewController{
     
+    var image: [UIImage] = []
+    let pickerImage = UIImagePickerController()
+    var isReloadCollection = false
+    
+    func didTapCell(){
+        print("success")
+    }
+    
     @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
-//    var models = [Data]()
-//
-//    var roeSection2 = ["Title", "Place"]
     
     // MARK: - Life Cycle -
     override func viewDidLoad() {
@@ -29,12 +33,13 @@ class CreateItemVC: UIViewController{
         
         tableView.delegate = self
         tableView.dataSource = self
+        pickerImage.delegate = self
         
     }
 }
 
  // MARK: - UITableViewDelegate -
-extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
+extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -51,7 +56,22 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! CustomPhotoTVC
+            cell.photo = image
+            
+            if self.isReloadCollection{
+                cell.ReloadCollection(isReloadCollection: self.isReloadCollection)
+                self.isReloadCollection = false
+            }
+            
+            cell.imagePicker = {
+                self.pickerImage.allowsEditing = false
+                self.pickerImage.sourceType = .photoLibrary
+                self.pickerImage.delegate = self
+                self.present(self.pickerImage, animated: true, completion: nil)
+                
+            }
+            
             return cell
         }else if indexPath.section == 1{
             if indexPath.row == 0{
@@ -88,6 +108,29 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource {
             }
         }else{
             return 167
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
+            if indexPath.section == 1{
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
+}
+
+extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[.originalImage] as? UIImage{
+            if image.count == 0{
+                image.append(selectedImage)
+            }else{
+                image.insert(selectedImage, at: image.count - 1)
+            }
+            
+            dismiss(animated: true)
+            self.isReloadCollection = true
+            tableView.reloadData()
         }
     }
 }

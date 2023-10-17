@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
+		BF319A412ADE3D8900E43FAE /* CustomPhotoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF319A402ADE3D8900E43FAE /* CustomPhotoTVC.swift */; };
+		BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF319A452ADE706D00E43FAE /* CollectionImageCVC.swift */; };
+		BF319A482ADE712600E43FAE /* ButtonCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF319A472ADE712600E43FAE /* ButtonCVC.swift */; };
 		BF401E552AD6871A00F5FBE9 /* TitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E532AD6871A00F5FBE9 /* TitleTVC.swift */; };
 		BF401E562AD6871A00F5FBE9 /* TitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E542AD6871A00F5FBE9 /* TitleTVC.xib */; };
 		BF401E592AD6872E00F5FBE9 /* PriceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E572AD6872E00F5FBE9 /* PriceTVC.swift */; };
@@ -32,11 +35,6 @@
 		DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67DE2AD65787006ECEE7 /* InfoTVC.swift */; };
 		DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67E02AD65787006ECEE7 /* DiscountTVC.xib */; };
 		DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67E12AD65787006ECEE7 /* DiscountTVC.swift */; };
-		DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67E92AD65787006ECEE7 /* CollectionImageCVC.xib */; };
-		DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67EA2AD65787006ECEE7 /* CollectionImageCVC.swift */; };
-		DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67EB2AD65787006ECEE7 /* BeforeAddTVC.swift */; };
-		DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67ED2AD65787006ECEE7 /* ButtonCVC.swift */; };
-		DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67EE2AD65787006ECEE7 /* ButtonCVC.xib */; };
 		DFDB68032AD65787006ECEE7 /* CreateItemSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDB67F02AD65787006ECEE7 /* CreateItemSB.storyboard */; };
 		DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67F22AD65787006ECEE7 /* CreateItemVC.swift */; };
 		DFDB68052AD65787006ECEE7 /* CategoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67F32AD65787006ECEE7 /* CategoryTC.swift */; };
@@ -111,6 +109,9 @@
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF319A402ADE3D8900E43FAE /* CustomPhotoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhotoTVC.swift; sourceTree = "<group>"; };
+		BF319A452ADE706D00E43FAE /* CollectionImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImageCVC.swift; sourceTree = "<group>"; };
+		BF319A472ADE712600E43FAE /* ButtonCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCVC.swift; sourceTree = "<group>"; };
 		BF401E532AD6871A00F5FBE9 /* TitleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTVC.swift; sourceTree = "<group>"; };
 		BF401E542AD6871A00F5FBE9 /* TitleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTVC.xib; sourceTree = "<group>"; };
 		BF401E572AD6872E00F5FBE9 /* PriceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTVC.swift; sourceTree = "<group>"; };
@@ -136,11 +137,6 @@
 		DFDB67DE2AD65787006ECEE7 /* InfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTVC.swift; sourceTree = "<group>"; };
 		DFDB67E02AD65787006ECEE7 /* DiscountTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
 		DFDB67E12AD65787006ECEE7 /* DiscountTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
-		DFDB67E92AD65787006ECEE7 /* CollectionImageCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionImageCVC.xib; sourceTree = "<group>"; };
-		DFDB67EA2AD65787006ECEE7 /* CollectionImageCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionImageCVC.swift; sourceTree = "<group>"; };
-		DFDB67EB2AD65787006ECEE7 /* BeforeAddTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddTVC.swift; sourceTree = "<group>"; };
-		DFDB67ED2AD65787006ECEE7 /* ButtonCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCVC.swift; sourceTree = "<group>"; };
-		DFDB67EE2AD65787006ECEE7 /* ButtonCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCVC.xib; sourceTree = "<group>"; };
 		DFDB67F02AD65787006ECEE7 /* CreateItemSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemSB.storyboard; sourceTree = "<group>"; };
 		DFDB67F22AD65787006ECEE7 /* CreateItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		DFDB67F32AD65787006ECEE7 /* CategoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTC.swift; sourceTree = "<group>"; };
@@ -239,6 +235,23 @@
 				8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF319A3F2ADE3D5400E43FAE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF319A402ADE3D8900E43FAE /* CustomPhotoTVC.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BF319A422ADE6FAB00E43FAE /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF319A452ADE706D00E43FAE /* CollectionImageCVC.swift */,
+				BF319A472ADE712600E43FAE /* ButtonCVC.swift */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		BF401E502AD686D000F5FBE9 /* title */ = {
@@ -454,29 +467,10 @@
 		DFDB67E72AD65787006ECEE7 /* photo */ = {
 			isa = PBXGroup;
 			children = (
-				DFDB67E82AD65787006ECEE7 /* collectionImage */,
-				DFDB67EB2AD65787006ECEE7 /* BeforeAddTVC.swift */,
-				DFDB67EC2AD65787006ECEE7 /* collectionButton */,
+				BF319A422ADE6FAB00E43FAE /* CollectionCell */,
+				BF319A3F2ADE3D5400E43FAE /* TableViewCell */,
 			);
 			path = photo;
-			sourceTree = "<group>";
-		};
-		DFDB67E82AD65787006ECEE7 /* collectionImage */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67E92AD65787006ECEE7 /* CollectionImageCVC.xib */,
-				DFDB67EA2AD65787006ECEE7 /* CollectionImageCVC.swift */,
-			);
-			path = collectionImage;
-			sourceTree = "<group>";
-		};
-		DFDB67EC2AD65787006ECEE7 /* collectionButton */ = {
-			isa = PBXGroup;
-			children = (
-				DFDB67ED2AD65787006ECEE7 /* ButtonCVC.swift */,
-				DFDB67EE2AD65787006ECEE7 /* ButtonCVC.xib */,
-			);
-			path = collectionButton;
 			sourceTree = "<group>";
 		};
 		DFDB67EF2AD65787006ECEE7 /* Storyboard */ = {
@@ -861,7 +855,6 @@
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
 				DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */,
 				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
-				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
 				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
 				BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */,
 				DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */,
@@ -871,7 +864,6 @@
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
 				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
-				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
 				DFDB68CD2AD67446006ECEE7 /* PaymentSb.storyboard in Resources */,
@@ -933,6 +925,7 @@
 			files = (
 				DFDB687F2AD65DBA006ECEE7 /* EditProfileViewController.swift in Sources */,
 				BF401E592AD6872E00F5FBE9 /* PriceTVC.swift in Sources */,
+				BF319A482ADE712600E43FAE /* ButtonCVC.swift in Sources */,
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
@@ -942,6 +935,7 @@
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
+				BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */,
@@ -964,6 +958,7 @@
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
 				BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
+				BF319A412ADE3D8900E43FAE /* CustomPhotoTVC.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
 				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
@@ -973,7 +968,6 @@
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
-				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
@@ -982,14 +976,12 @@
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
-				DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
 				DFDB68492AD65D67006ECEE7 /* greenViewController.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
-				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
 				BF401E552AD6871A00F5FBE9 /* TitleTVC.swift in Sources */,
