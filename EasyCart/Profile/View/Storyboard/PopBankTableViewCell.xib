@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopBankTableViewCell" id="KGk-i7-Jjw" customClass="PopBankTableViewCell" customModule="EasyCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZX-WV-OiR">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl1-Wv-bNs">
+                                <rect key="frame" x="100" y="16" width="177" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="1ac-Dm-jdh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkbox (3)" translatesAutoresizingMaskIntoConstraints="NO" id="TIb-pQ-WRZ">
+                                <rect key="frame" x="16" y="9" width="28" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3P7-WE-TDB"/>
+                                    <constraint firstAttribute="width" constant="28" id="lru-Ot-WSI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aba" translatesAutoresizingMaskIntoConstraints="NO" id="2ix-PL-wWd">
+                                <rect key="frame" x="60" y="14" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="0mb-Li-1oo"/>
+                                    <constraint firstAttribute="height" constant="24" id="XaD-6r-dEK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2ix-PL-wWd" firstAttribute="leading" secondItem="TIb-pQ-WRZ" secondAttribute="trailing" constant="16" id="Xgy-e5-31V"/>
+                            <constraint firstItem="pl1-Wv-bNs" firstAttribute="leading" secondItem="2ix-PL-wWd" secondAttribute="trailing" constant="16" id="edV-dd-ZII"/>
+                            <constraint firstItem="TIb-pQ-WRZ" firstAttribute="leading" secondItem="ZZX-WV-OiR" secondAttribute="leading" constant="16" id="gUR-MO-Zlp"/>
+                            <constraint firstItem="2ix-PL-wWd" firstAttribute="centerY" secondItem="ZZX-WV-OiR" secondAttribute="centerY" id="mBr-Am-eaL"/>
+                            <constraint firstItem="pl1-Wv-bNs" firstAttribute="centerY" secondItem="ZZX-WV-OiR" secondAttribute="centerY" id="n1i-po-pKq"/>
+                            <constraint firstItem="TIb-pQ-WRZ" firstAttribute="centerY" secondItem="ZZX-WV-OiR" secondAttribute="centerY" id="zfi-5D-jgP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZZX-WV-OiR" secondAttribute="bottom" constant="16" id="9P0-Mr-SUH"/>
+                    <constraint firstItem="ZZX-WV-OiR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ARD-a4-bYR"/>
+                    <constraint firstAttribute="trailing" secondItem="ZZX-WV-OiR" secondAttribute="trailing" id="UjO-hd-epz"/>
+                    <constraint firstItem="ZZX-WV-OiR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="V0V-5G-t0P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankImg" destination="2ix-PL-wWd" id="bJY-U9-2mk"/>
+                <outlet property="bankName" destination="pl1-Wv-bNs" id="0cY-mU-Mpw"/>
+                <outlet property="checkBoxImg" destination="TIb-pQ-WRZ" id="Tcw-ug-smK"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Aba" width="24" height="24"/>
+        <image name="Checkbox (3)" width="34" height="34"/>
+    </resources>
+</document>

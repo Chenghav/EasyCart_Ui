@@ -15,11 +15,12 @@ class Section1TableViewCell: UITableViewCell {
         return UINib(nibName: "Section1TableViewCell", bundle: nil)
     }
     
-    @IBOutlet weak var LabTitle: UILabel!
-    @IBOutlet weak var LabDetail: UILabel!
-    @IBOutlet weak var imageView1: UIImageView!
+    // MARK:  - Outlets -
+    @IBOutlet weak var LabTitle   : UILabel!
+    @IBOutlet weak var LabDetail  : UILabel!
+    @IBOutlet weak var imageView1 : UIImageView!
     
-    
+    // MARK:  - Life Cycle -
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -29,9 +30,10 @@ class Section1TableViewCell: UITableViewCell {
 
     }
     
+    // MARK:  - Functions -
     func config(with section1: Section1){
-        LabTitle.text = section1.lab1
-        LabDetail.text = section1.lab2
+        LabTitle.text    = section1.lab1
+        LabDetail.text   = section1.lab2
         imageView1.image = section1.image
     }
 }

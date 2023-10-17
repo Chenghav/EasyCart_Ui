@@ -10,9 +10,9 @@ import UIKit
 
 struct Section{
     let image : UIImage
-    let lab1 : String
-    let lab2 : String
-    let lab3 : String
+    let lab1  : String
+    let lab2  : String
+    let lab3  : String
 }
 
 var Sections : [Section] = [

@@ -9,33 +9,33 @@ import UIKit
 
 class PopLogOutViewController: UIViewController {
 
-    @IBOutlet var mainView1: UIView!
+    // MARK:  - Outlets -
+    @IBOutlet weak var Cancel: UIButton!
+    @IBOutlet weak var logOut: UIButton!
+    @IBOutlet weak var lab1: UILabel!
+    var titleButton : String?
+    var titleLab : String?
+    
+    
+    // MARK:  - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        self.addAnimate()
+        logOut.layer.cornerRadius = 10
+        Cancel.layer.cornerRadius = 10
+        logOut.setTitle(titleButton, for: .normal)
+        lab1.text = titleLab
+        Cancel.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        logOut.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        
     }
-    
-    
-    
+
+    // MARK:  - Outlet Actions -
     @IBAction func CancelBtn(_ sender: Any) {
-        CancelAnimate()
+        dismiss(animated: true, completion: nil)
     }
-    func addAnimate(){
-        self.mainView1.transform = CGAffineTransform(translationX: 0, y: self.mainView1.frame.height)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.mainView1.transform = .identity
-        })
+    
+    @IBAction func LogoutBtn(_ sender: Any) {
+        
     }
-    func CancelAnimate(){
-        self.mainView1.transform = .identity
-        UIView.animate(withDuration: 0.5, animations: {
-            self.mainView1.transform = CGAffineTransform(translationX: 0, y: self.mainView1.frame.height)
-        }){
-            (complete) in
-            self.view.removeFromSuperview()
-        }
-    }
-
-
+    
 }

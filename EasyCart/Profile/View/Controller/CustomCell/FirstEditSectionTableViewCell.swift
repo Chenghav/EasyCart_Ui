@@ -14,9 +14,9 @@ class FirstEditSectionTableViewCell: UITableViewCell {
         return UINib(nibName: "FirstEditSectionTableViewCell", bundle: nil)
     }
     
-    @IBOutlet weak var FirstLab: UILabel!
-    @IBOutlet weak var imageView1: UIImageView!
-    @IBOutlet weak var SecondLab: UILabel!
+    @IBOutlet weak var FirstLab   : UILabel!
+    @IBOutlet weak var imageView1 : UIImageView!
+    @IBOutlet weak var SecondLab  : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,8 +29,8 @@ class FirstEditSectionTableViewCell: UITableViewCell {
     }
     
     func setUp(with firstStart: FirstSection){
-        FirstLab.text = firstStart.lab1
-        SecondLab.text = firstStart.lab2
+        FirstLab.text    = firstStart.lab1
+        SecondLab.text   = firstStart.lab2
         imageView1.image = firstStart.image
     }
     

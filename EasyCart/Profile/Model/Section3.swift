@@ -11,6 +11,6 @@ struct Section3{
     let logOut : String
 }
 
-var Section3s : [Section3] = [
+var Section3s  : [Section3] = [
 Section3(logOut: "Log Out")
 ]

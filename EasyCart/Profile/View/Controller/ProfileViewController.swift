@@ -6,18 +6,25 @@
 //
 
 import UIKit
+import FittedSheets
 
-class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
+
+
+class ProfileViewController: UIViewController,Demoable {
+
+    // MARK:  - Array Data -
     var section1 = [Section1]()
     var section2 = [Section]()
     var section3 = [Section3]()
     
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    // MARK:  - Life Cycle -
     override func  viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        //        self.navigationController?.isNavigationBarHidden = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(TableViewCell.nib(), forCellReuseIdentifier: "TableViewCell")
@@ -28,6 +35,11 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         section3 = Section3s
         tableView.reloadData()
     }
+    }
+
+
+// MARK:  - UITableViewDataSource and UITableViewDelegate -
+extension ProfileViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return section1.count
@@ -35,9 +47,11 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             return section2.count
         } else if section == 2 {
             return section3.count
+            
         }
         return 0
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -66,11 +80,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentIndex = indexPath.section
         if currentIndex == 2 {
-            let story = UIStoryboard(name: "Storyboard1", bundle: nil)
-            let controller = story.instantiateViewController(identifier: "PopLogOutViewController") as! PopLogOutViewController
-            self.addChild(controller)
-            self.view.addSubview(controller.view)
-            controller.didMove(toParent: self)
+            ProfileViewController.openDemo(from: self, in: nil, btnName: "Log out", titleLab1: "Log out of EasyCart?")
         }else if currentIndex == 0 {
             if let nextController = storyboard?.instantiateViewController(identifier: "ConnectBankViewController") as? ConnectBankViewController {
                 navigationController?.pushViewController(nextController, animated: true)
@@ -92,6 +102,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
                 return 34
             }
         }
-        
-    }
+}
+
+
+
 

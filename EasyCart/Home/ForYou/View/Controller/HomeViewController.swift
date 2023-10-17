@@ -9,24 +9,28 @@ import UIKit
 import CarbonKit
 
 class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
-    let exploreStoryboard = UIStoryboard(name: "Explore", bundle: Bundle(identifier: "ExploreViewController"))
-    var controllerName = ["For you", "Explore", "Saved"]
+    
+    // MARK:  - Propertises -
+    let exploreStoryboard    = UIStoryboard(name: "Explore", bundle: Bundle(identifier: "ExploreViewController"))
+    var controllerName       = ["For you", "Explore", "Saved"]
     var carbonSwapNavigation = CarbonTabSwipeNavigation()
     
+    // MARK:  - Outlets -
     @IBOutlet weak var layoutToChange: UIBarButtonItem!
     
+    // MARK:  - Propertises -
     var isChangeBtn = false
-    var selectedSegmentIndex: Int = 0
+    var selectedSegmentIndex: Int           = 0
     var previouslySelectedSegmentIndex: Int = 0
-    let bottomBorderView = UIView()
-    var isImageSelected = true
-    let userDefaultsKey = "isImageSelected"
-    var currentViewController: UIViewController?
-    var currentViewControllerIndex: UInt = 0
-    var isCollectionViewControllerVisible = true
-    var isCustomCellVisible = true
+    let bottomBorderView                    = UIView()
+    var isImageSelected                     = true
+    let userDefaultsKey                     = "isImageSelected"
+    var currentViewController               : UIViewController?
+    var currentViewControllerIndex          : UInt = 0
+    var isCollectionViewControllerVisible   = true
+    var isCustomCellVisible                 = true
     
-    
+    // MARK:  - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -47,6 +51,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         
     }
     
+    // MARK:  - Actions -
     @IBAction func layoutChange(_ sender: Any) {
         let isImageSelected = !UserDefaults.standard.bool(forKey: userDefaultsKey)
                 UserDefaults.standard.set(isImageSelected, forKey: userDefaultsKey)
@@ -57,6 +62,8 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
                         collectionViewController.toggleCellLayout()
                     }
     }
+    
+    // MARK:  - Carbon Function -
     func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
         guard let storyboard = storyboard else {
             return UIViewController()
@@ -73,6 +80,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         }
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
         layoutToChange.image = UserDefaults.standard.bool(forKey: userDefaultsKey) ? UIImage(named: "4Grid") : UIImage(named: "ico_list")

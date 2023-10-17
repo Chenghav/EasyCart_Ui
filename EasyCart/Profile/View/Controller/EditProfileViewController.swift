@@ -6,38 +6,47 @@
 //
 
 import UIKit
+//import FittedSheets
 
-class EditProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate   {
+class EditProfileViewController: UIViewController,Demoable{
     
-    var FirstSec = [FirstSection]()
+    
+    // MARK:  - Properties -
+    var FirstSec  = [FirstSection]()
     var SecondSec = [SecondSection]()
-    var ThirdSec = [ThirdSection]()
+    var ThirdSec  = [ThirdSection]()
     
-    @IBOutlet weak var backBtnStyle: UIButton!
-    @IBOutlet weak var tableView: UITableView!
+    // MARK:  - Outlets -
+    @IBOutlet weak var backBtnStyle : UIButton!
+    @IBOutlet weak var tableView    : UITableView!
     
+    // MARK:  - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationController?.navigationBar.prefersLargeTitles = false
-//        self.navigationController?.isNavigationBarHidden = false
         backBtnStyle.contentHorizontalAlignment = .left
         tableView.dataSource = self
-        tableView.delegate = self
+        tableView.delegate   = self
         tableView.register(FirstEditSectionTableViewCell.nib(), forCellReuseIdentifier: "FirstEditSectionTableViewCell")
         tableView.register(SecondSectionTableViewCell.nib(), forCellReuseIdentifier: "SecondSectionTableViewCell")
         tableView.register(ThirdCellsTableViewCell.nib(), forCellReuseIdentifier: "ThirdCellsTableViewCell")
         tableView.register(UINib(nibName: "ThirdSectionTableViewCell", bundle: nil), forCellReuseIdentifier: "ThirdSectionTableViewCell")
-        FirstSec = firstSection
+        FirstSec  = firstSection
         SecondSec = secondSection
-        ThirdSec = thirdSection
+        ThirdSec  = thirdSection
         tableView.reloadData()
     }
     
-    
+    // MARK:  - Outlet Actions -
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+
+}
+
+// MARK:  - UITableViewDataSource and UITableViewDelegate -
+extension EditProfileViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return FirstSec.count
@@ -83,6 +92,18 @@ class EditProfileViewController: UIViewController, UITableViewDataSource, UITabl
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 2 && indexPath.row == 0 {
+            EditProfileViewController.openDemo(from: self, in: nil,btnName: "Delete", titleLab1: "Delete your account?")
+        }else if indexPath.section == 1 && indexPath.row == 1{
+            EditProfileViewController.openDemo(from: self, in: nil,btnName: "confirm", titleLab1: "unlink your address?")
+        }else if indexPath.section == 0 && indexPath.row == 4{
+            EditProfileViewController.openDemo(from: self, in: nil,btnName: "Disconnect my social login", titleLab1: "Disconnect your social login")
+                    }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let currentRow = indexPath.row
         if indexPath.section == 0 {
@@ -98,7 +119,5 @@ class EditProfileViewController: UIViewController, UITableViewDataSource, UITabl
         }
         return 0
     }
-    
 
 
-}

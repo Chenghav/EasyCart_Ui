@@ -8,10 +8,12 @@
 import UIKit
 
 class CollectionViewController: UIViewController{
-   // MARK:  - Properties -
+
+    // MARK:  - Properties -
     var toggleItem : Bool   = true
-    //var isCustomCellVisible = false
     var owner : HomeViewController?
+    
+    // MARK:  - Outlet -
     @IBOutlet weak var collectionView: UICollectionView!
     
 
@@ -19,7 +21,7 @@ class CollectionViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
-        collectionView.delegate = self
+        collectionView.delegate   = self
         collectionView.register(UINib(nibName: "CutomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CutomCollectionViewCell")
         NotificationCenter.default.addObserver(self, selector: #selector(LayoutActionChange(_:)), name: Notification.Name(rawValue: "layoutChange"), object: nil)
     }
@@ -59,19 +61,19 @@ extension CollectionViewController:  UICollectionViewDataSource,UICollectionView
                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
                    cell.setUp(with: Collections[indexPath.row])
                 cell.layer.cornerRadius = 15.0
-                cell.layer.borderWidth = 1
-                cell.layer.borderColor = #colorLiteral(red: 0.8579366803, green: 0.8629106879, blue: 0.9100468755, alpha: 1)
-                cell.clipsToBounds     = true
-                cell.backgroundColor = .white
+                cell.layer.borderWidth  = 1
+                cell.layer.borderColor  = #colorLiteral(red: 0.8579366803, green: 0.8629106879, blue: 0.9100468755, alpha: 1)
+                cell.clipsToBounds      = true
+                cell.backgroundColor    = .white
                    return cell
                } else {
                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CutomCollectionViewCell", for: indexPath) as!  CutomCollectionViewCell
                    cell.config(with: Collections[indexPath.row])
                    cell.layer.cornerRadius = 15.0
-                   cell.layer.borderWidth = 1
-                   cell.layer.borderColor = #colorLiteral(red: 0.8579366803, green: 0.8629106879, blue: 0.9100468755, alpha: 1)
-                   cell.clipsToBounds = true
-                   cell.backgroundColor = .white
+                   cell.layer.borderWidth  = 1
+                   cell.layer.borderColor  = #colorLiteral(red: 0.8579366803, green: 0.8629106879, blue: 0.9100468755, alpha: 1)
+                   cell.clipsToBounds      = true
+                   cell.backgroundColor    = .white
                    return cell
                }
         }
