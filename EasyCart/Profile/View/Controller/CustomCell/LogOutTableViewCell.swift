@@ -15,6 +15,7 @@ class LogOutTableViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var LogOut: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

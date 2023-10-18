@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 struct ThirdSection{
-    let Map : String
-    let Linked : String
-    let image : UIImage
+    let Map     : String
+    let Linked  : String
+    let image   : UIImage
 }
 
 var thirdSection : [ThirdSection] = [

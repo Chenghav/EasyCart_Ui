@@ -9,9 +9,9 @@ import Foundation
 
 struct BankSection{
     let Title : String
-    
     let image : UIImage?
 }
+
 
 var bankSection : [BankSection] = [
   BankSection(Title: "Select Bank", image: UIImage(named: "ico_chevup")),

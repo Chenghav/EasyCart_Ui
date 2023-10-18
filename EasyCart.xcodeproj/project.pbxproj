@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
+		C26D6A102AD67CFF000235A8 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C26D6A0F2AD67CFF000235A8 /* FittedSheets */; };
+		C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */; };
+		C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA06E2AD92023008C2A37 /* AllTableViewController.swift */; };
+		C26DA0732AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA0712AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift */; };
+		C26DA0742AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26DA0722AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib */; };
+		C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA0752AD98E7D008C2A37 /* ForAllitemSection.swift */; };
+		C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF942ADE6AD500C5752A /* PopBankTableViewCell.swift */; };
+		C28BDF972ADE6AD500C5752A /* PopBankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C28BDF952ADE6AD500C5752A /* PopBankTableViewCell.xib */; };
+		C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF982ADE6C2000C5752A /* PopBankSetUp.swift */; };
+		C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF9A2ADE7D7600C5752A /* Demoable.swift */; };
+		C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF9C2ADE883900C5752A /* Demoable1.swift */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
 		DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67502AD65046006ECEE7 /* AppDelegate.swift */; };
@@ -50,7 +61,6 @@
 		DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB683D2AD65D67006ECEE7 /* TabMainViewController.swift */; };
 		DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB683E2AD65D67006ECEE7 /* CollectionViewCell.swift */; };
 		DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB683F2AD65D67006ECEE7 /* HomeViewController.swift */; };
-		DFDB68492AD65D67006ECEE7 /* greenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68402AD65D67006ECEE7 /* greenViewController.swift */; };
 		DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68412AD65D67006ECEE7 /* CutomCollectionViewCell.swift */; };
 		DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68422AD65D67006ECEE7 /* CustomTabBar.swift */; };
 		DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68432AD65D67006ECEE7 /* CollectionViewController.swift */; };
@@ -108,6 +118,16 @@
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPopViewController.swift; sourceTree = "<group>"; };
+		C26DA06E2AD92023008C2A37 /* AllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
+		C26DA0712AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForAllitemSec1TableViewCell.swift; sourceTree = "<group>"; };
+		C26DA0722AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForAllitemSec1TableViewCell.xib; sourceTree = "<group>"; };
+		C26DA0752AD98E7D008C2A37 /* ForAllitemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForAllitemSection.swift; sourceTree = "<group>"; };
+		C28BDF942ADE6AD500C5752A /* PopBankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopBankTableViewCell.swift; sourceTree = "<group>"; };
+		C28BDF952ADE6AD500C5752A /* PopBankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopBankTableViewCell.xib; sourceTree = "<group>"; };
+		C28BDF982ADE6C2000C5752A /* PopBankSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopBankSetUp.swift; sourceTree = "<group>"; };
+		C28BDF9A2ADE7D7600C5752A /* Demoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demoable.swift; sourceTree = "<group>"; };
+		C28BDF9C2ADE883900C5752A /* Demoable1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demoable1.swift; sourceTree = "<group>"; };
 		C2BD61D12AD3B7A100939CA7 /* EasyCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD61DE2AD3B7A100939CA7 /* EasyCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCart.xcdatamodel; sourceTree = "<group>"; };
 		C2BD61E52AD3B7A300939CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,7 +171,6 @@
 		DFDB683D2AD65D67006ECEE7 /* TabMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
 		DFDB683E2AD65D67006ECEE7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDB683F2AD65D67006ECEE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DFDB68402AD65D67006ECEE7 /* greenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = greenViewController.swift; sourceTree = "<group>"; };
 		DFDB68412AD65D67006ECEE7 /* CutomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutomCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDB68422AD65D67006ECEE7 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		DFDB68432AD65D67006ECEE7 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */,
+				C26D6A102AD67CFF000235A8 /* FittedSheets in Frameworks */,
 				71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +253,23 @@
 				8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C26DA0702AD92390008C2A37 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB68612AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift */,
+				DFDB68642AD65DBA006ECEE7 /* Section1TableViewCell.swift */,
+				DFDB68692AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift */,
+				DFDB686C2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift */,
+				DFDB68672AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift */,
+				DFDB686A2AD65DBA006ECEE7 /* BankSetupTableViewCell.swift */,
+				DFDB68652AD65DBA006ECEE7 /* TableViewCell.swift */,
+				DFDB68662AD65DBA006ECEE7 /* LogOutTableViewCell.swift */,
+				C26DA0712AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift */,
+				C28BDF942ADE6AD500C5752A /* PopBankTableViewCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		C2BD61C82AD3B7A100939CA7 = {
@@ -566,7 +603,6 @@
 				DFDB683D2AD65D67006ECEE7 /* TabMainViewController.swift */,
 				DFDB683E2AD65D67006ECEE7 /* CollectionViewCell.swift */,
 				DFDB683F2AD65D67006ECEE7 /* HomeViewController.swift */,
-				DFDB68402AD65D67006ECEE7 /* greenViewController.swift */,
 				DFDB68412AD65D67006ECEE7 /* CutomCollectionViewCell.swift */,
 				DFDB68422AD65D67006ECEE7 /* CustomTabBar.swift */,
 				DFDB68432AD65D67006ECEE7 /* CollectionViewController.swift */,
@@ -593,6 +629,8 @@
 				DFDB68532AD65DBA006ECEE7 /* Section3.swift */,
 				DFDB68542AD65DBA006ECEE7 /* ThirdSection.swift */,
 				DFDB68552AD65DBA006ECEE7 /* FirstSectionEdit.swift */,
+				C26DA0752AD98E7D008C2A37 /* ForAllitemSection.swift */,
+				C28BDF982ADE6C2000C5752A /* PopBankSetUp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -609,6 +647,7 @@
 		DFDB68572AD65DBA006ECEE7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C28BDF952ADE6AD500C5752A /* PopBankTableViewCell.xib */,
 				DFDB68582AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib */,
 				DFDB68592AD65DBA006ECEE7 /* Section1TableViewCell.xib */,
 				DFDB685A2AD65DBA006ECEE7 /* SecondSectionTableViewCell.xib */,
@@ -617,6 +656,7 @@
 				DFDB685D2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib */,
 				DFDB685E2AD65DBA006ECEE7 /* LogOutTableViewCell.xib */,
 				DFDB685F2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib */,
+				C26DA0722AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -624,19 +664,16 @@
 		DFDB68602AD65DBA006ECEE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DFDB68612AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift */,
+				C26DA0702AD92390008C2A37 /* CustomCell */,
 				DFDB68622AD65DBA006ECEE7 /* ConnectBankViewController.swift */,
 				DFDB68632AD65DBA006ECEE7 /* EditProfileViewController.swift */,
-				DFDB68642AD65DBA006ECEE7 /* Section1TableViewCell.swift */,
-				DFDB68652AD65DBA006ECEE7 /* TableViewCell.swift */,
-				DFDB68662AD65DBA006ECEE7 /* LogOutTableViewCell.swift */,
-				DFDB68672AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift */,
 				DFDB68682AD65DBA006ECEE7 /* AllitemViewController.swift */,
-				DFDB68692AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift */,
-				DFDB686A2AD65DBA006ECEE7 /* BankSetupTableViewCell.swift */,
 				DFDB686B2AD65DBA006ECEE7 /* ProfileViewController.swift */,
-				DFDB686C2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift */,
 				DFDB686D2AD65DBA006ECEE7 /* PopLogOutViewController.swift */,
+				C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */,
+				C26DA06E2AD92023008C2A37 /* AllTableViewController.swift */,
+				C28BDF9A2ADE7D7600C5752A /* Demoable.swift */,
+				C28BDF9C2ADE883900C5752A /* Demoable1.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -758,6 +795,7 @@
 			name = EasyCart;
 			packageProductDependencies = (
 				DFD5E7ED2AD50CB4006E101F /* Kingfisher */,
+				C26D6A0F2AD67CFF000235A8 /* FittedSheets */,
 			);
 			productName = EasyCart;
 			productReference = C2BD61D12AD3B7A100939CA7 /* EasyCart.app */;
@@ -790,6 +828,7 @@
 			mainGroup = C2BD61C82AD3B7A100939CA7;
 			packageReferences = (
 				DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C26D6A0E2AD67CFF000235A8 /* XCRemoteSwiftPackageReference "FittedSheets" */,
 			);
 			productRefGroup = C2BD61D22AD3B7A100939CA7 /* Products */;
 			projectDirPath = "";
@@ -823,8 +862,10 @@
 				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
 				DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */,
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
+				C28BDF972ADE6AD500C5752A /* PopBankTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
 				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
+				C26DA0742AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
@@ -899,10 +940,12 @@
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
+				C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */,
 				DFDB67F42AD65787006ECEE7 /* CategoryData.swift in Sources */,
 				DFDB68A12AD65FB2006ECEE7 /* SectionCellNib.swift in Sources */,
+				C26DA0732AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift in Sources */,
 				DFDB68862AD65DBA006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
 				DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */,
 				DFDB68842AD65DBA006ECEE7 /* AllitemViewController.swift in Sources */,
@@ -910,6 +953,7 @@
 				DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
+				C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */,
 				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
@@ -925,25 +969,30 @@
 				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
 				DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */,
+				C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
+				C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
+				DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
+				C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */,
 				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
 				DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */,
+				C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */,
 				DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
+				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
-				DFDB68492AD65D67006ECEE7 /* greenViewController.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
@@ -1107,6 +1156,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1141,6 +1191,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1180,6 +1231,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C26D6A0E2AD67CFF000235A8 /* XCRemoteSwiftPackageReference "FittedSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gordontucker/FittedSheets.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -1191,6 +1250,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C26D6A0F2AD67CFF000235A8 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C26D6A0E2AD67CFF000235A8 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
+		};
 		DFD5E7ED2AD50CB4006E101F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */;

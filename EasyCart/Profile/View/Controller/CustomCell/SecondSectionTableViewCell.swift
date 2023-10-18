@@ -9,8 +9,8 @@ import UIKit
 
 class SecondSectionTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var Address: UILabel!
-    @IBOutlet weak var AddressDetail: UILabel!
+    @IBOutlet weak var Address       : UILabel!
+    @IBOutlet weak var AddressDetail : UILabel!
     
     static let identifier = "SecondSectionTableViewCell"
     static func nib() -> UINib{
@@ -25,7 +25,7 @@ class SecondSectionTableViewCell: UITableViewCell {
     }
     
     func config(with secondCell : SecondSection){
-        Address.text = secondCell.Address
+        Address.text       = secondCell.Address
         AddressDetail.text = secondCell.AddressDetail
     }
     

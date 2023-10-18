@@ -9,8 +9,10 @@ import UIKit
 
 class ThirdSectionTableViewCell: UITableViewCell {
 
+    // MARK:  - Outlets -
+
     
-    @IBOutlet weak var DeleteAccBtn: UIButton!
+    // MARK:  - Life Cycle -
     override func awakeFromNib() {
         super.awakeFromNib()
        

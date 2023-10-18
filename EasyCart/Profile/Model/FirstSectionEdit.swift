@@ -10,8 +10,8 @@ import UIKit
 
 struct FirstSection{
     let image : UIImage?
-    let lab1 : String
-    let lab2 : String
+    let lab1  : String
+    let lab2  : String
 }
 
 let firstSection : [FirstSection] = [

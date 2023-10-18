@@ -7,7 +7,7 @@
 
 import Foundation
 struct SecondSection{
-    let Address : String
+    let Address       : String
     let AddressDetail : String
 }
 

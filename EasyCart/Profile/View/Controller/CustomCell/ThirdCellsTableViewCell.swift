@@ -14,9 +14,9 @@ class ThirdCellsTableViewCell: UITableViewCell {
         return UINib(nibName: "ThirdCellsTableViewCell", bundle: nil)
     }
     
-    @IBOutlet weak var imageView1: UIImageView!
-    @IBOutlet weak var Map: UILabel!
-    @IBOutlet weak var Linked: UILabel!
+    @IBOutlet weak var imageView1 : UIImageView!
+    @IBOutlet weak var Map        : UILabel!
+    @IBOutlet weak var Linked     : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +30,7 @@ class ThirdCellsTableViewCell: UITableViewCell {
     }
     func setUps(with thirdCell : ThirdSection){
         imageView1.image = thirdCell.image
-        Linked.text = thirdCell.Linked
-        Map.text = thirdCell.Map
+        Linked.text      = thirdCell.Linked
+        Map.text         = thirdCell.Map
     }
 }
