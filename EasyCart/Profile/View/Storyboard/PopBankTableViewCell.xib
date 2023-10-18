@@ -63,6 +63,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.97254902119999997" green="0.95686274770000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <connections>
                 <outlet property="bankImg" destination="2ix-PL-wWd" id="bJY-U9-2mk"/>
                 <outlet property="bankName" destination="pl1-Wv-bNs" id="0cY-mU-Mpw"/>
