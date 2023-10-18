@@ -22,6 +22,7 @@ class BankPopViewController: UIViewController{
         tableView.dataSource = self
         tableView.delegate = self
         tableView.isScrollEnabled = false
+        tableView.separatorStyle = .none
         tableView.register(PopBankTableViewCell.nib(), forCellReuseIdentifier: "PopBankTableViewCell")
         confirmBtn.layer.cornerRadius = 10
         section1 = Banks
@@ -46,6 +47,6 @@ extension BankPopViewController : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 52
+        return 76
     }
 }
