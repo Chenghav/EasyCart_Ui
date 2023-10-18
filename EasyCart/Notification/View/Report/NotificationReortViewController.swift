@@ -7,23 +7,33 @@
 
 import UIKit
 
-class NotificationReortViewController: UIViewController {
+class NotificationReortViewController: UIViewController, UITextViewDelegate {
+
+    @IBOutlet weak var reportTextField: UITextView!
+    @IBOutlet weak var notificationReportRec: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        reportTextField.delegate = self
+        reportTextField.text = "Write here"
+        reportTextField.textColor = UIColor.lightGray
 
-        // Do any additional setup after loading the view.
+        notificationReportRec.layer.cornerRadius = 10
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = ""
+            textView.textColor = UIColor.black
+        }
     }
-    */
-
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Write here"
+            textView.textColor = UIColor.lightGray
+        }
+    }
+    
 }

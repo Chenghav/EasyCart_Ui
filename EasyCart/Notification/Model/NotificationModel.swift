@@ -17,11 +17,12 @@ struct NotificationModel{
 }
 
 let notificationModel : [NotificationModel] = [
-    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-9-10T06:20:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-9-10T08:20:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-7-10T08:20:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-10T09:20:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-1T06:24:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T09:22:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T06:22:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T06:22:09.000+00:00"),
-    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T06:22:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "watch")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-18T06:22:09.000+00:00"),
 ]

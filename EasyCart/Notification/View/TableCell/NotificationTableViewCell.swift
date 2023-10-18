@@ -8,6 +8,8 @@ class NotificationTableViewCell: UITableViewCell {
     @IBOutlet weak var notificationImage: UIImageView!
     @IBOutlet weak var notificatonCreateAt: UILabel!
     
+    var openModalAction: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         notificationRec.layer.cornerRadius = 10
@@ -69,10 +71,7 @@ class NotificationTableViewCell: UITableViewCell {
     }
     
     @IBAction func notificationPopUp(_ sender: Any) {
-//        print("hello")
-//        let storyboard = UIStoryboard(name: "Sheet", bundle: nil)
-//        let sheetPresentController = storyboard.instantiateViewController(withIdentifier: "SheetViewController") as! SheetViewController
-//        present(sheetPresentController, animated: true, completion: nil)
+        openModalAction?()
     }
     
 }

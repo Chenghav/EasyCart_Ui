@@ -11,6 +11,9 @@
 		315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */; };
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
+		31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */; };
+		31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */; };
+		31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */; };
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		BF319A412ADE3D8900E43FAE /* CustomPhotoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF319A402ADE3D8900E43FAE /* CustomPhotoTVC.swift */; };
 		BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF319A452ADE706D00E43FAE /* CollectionImageCVC.swift */; };
@@ -124,6 +127,9 @@
 		3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReortViewController.swift; sourceTree = "<group>"; };
+		31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDemoable.swift; sourceTree = "<group>"; };
+		31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopUpViewController.swift; sourceTree = "<group>"; };
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +274,7 @@
 		3155407A2ADE353100BFF8B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31E9FC8C2ADFCAA50057CC47 /* Report */,
 				315540862ADEB49100BFF8B5 /* PopUp */,
 				315540832ADE42A300BFF8B5 /* TableCell */,
 				3155407C2ADE354E00BFF8B5 /* Controller */,
@@ -303,8 +310,18 @@
 		315540862ADEB49100BFF8B5 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
+				31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */,
+				31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */,
 			);
 			path = PopUp;
+			sourceTree = "<group>";
+		};
+		31E9FC8C2ADFCAA50057CC47 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */,
+			);
+			path = Report;
 			sourceTree = "<group>";
 		};
 		4247E8D571EB9320A3CB6A37 /* Frameworks */ = {
@@ -969,7 +986,6 @@
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
 				C28BDF972ADE6AD500C5752A /* PopBankTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
-				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
 				C26DA0742AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
@@ -1040,6 +1056,7 @@
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
+				31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,
 				DFDB68852AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
@@ -1064,6 +1081,7 @@
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
 				C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */,
 				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
+				31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */,
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
@@ -1090,23 +1108,19 @@
 				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
-				DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */,
-				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
+				31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
-				DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */,
 				C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */,
-				DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
 				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
-				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
