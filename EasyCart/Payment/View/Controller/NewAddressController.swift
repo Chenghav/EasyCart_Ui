@@ -22,6 +22,9 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
         return 1
     }
  
+    @IBAction func btnBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = newTableView.dequeueReusableCell(withIdentifier: "NewAddressTableViewCell")  as! NewAddressTableViewCell
@@ -31,5 +34,10 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 334
+        
     }
 }

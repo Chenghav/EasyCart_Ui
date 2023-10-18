@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-class AddressAddTableViewCell: UITableViewCell  {
+class AddressAddTableViewCell: UITableViewCell {
    
     @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var addressView: UIView!
@@ -21,8 +21,10 @@ class AddressAddTableViewCell: UITableViewCell  {
         // Initialization code
       
     }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
-        self.window?.rootViewController?.performSegue(withIdentifier: "Add", sender: nil)
+        
+//        navigationController?.pushViewController(NewAddressController, animated: true)
      }
   
    
@@ -39,3 +41,4 @@ class AddressAddTableViewCell: UITableViewCell  {
     }
     
 }
+

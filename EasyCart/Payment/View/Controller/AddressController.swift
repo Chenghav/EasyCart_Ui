@@ -8,25 +8,25 @@
 import Foundation
 import UIKit
 
+
 class AddressController : UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-
-
-    
-  
     let sections = ["1","2","3"]
-    @IBOutlet weak var mytableView: UITableView!
+    @IBOutlet weak var mytableViewAdd: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        mytableView.delegate = self
-        mytableView.dataSource = self
-        mytableView.register(UINib(nibName: "AddressTableViewCell", bundle: .none), forCellReuseIdentifier: "AddressTableViewCell")
-        mytableView.register(UINib(nibName: "SectionAddTableViewCell", bundle: .none), forCellReuseIdentifier: "SectionAddTableViewCell")
-        mytableView.register(UINib(nibName: "AddressAddTableViewCell", bundle: .none), forCellReuseIdentifier: "AddressAddTableViewCell")
-        mytableView.layer.cornerRadius = 10
+        mytableViewAdd.delegate = self
+        mytableViewAdd.dataSource = self
+        mytableViewAdd.register(UINib(nibName: "AddressTableViewCell", bundle: .none), forCellReuseIdentifier: "AddressTableViewCell")
+        mytableViewAdd.register(UINib(nibName: "SectionAddTableViewCell", bundle: .none), forCellReuseIdentifier: "SectionAddTableViewCell")
+        mytableViewAdd.register(UINib(nibName: "AddressAddTableViewCell", bundle: .none), forCellReuseIdentifier: "AddressAddTableViewCell")
+        mytableViewAdd.layer.cornerRadius = 10
        
         
         
+    }
+  
+    @IBAction func bntback(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,24 +38,32 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableVieaw: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if sections[indexPath.section] == "1"{
-            let cell = mytableView.dequeueReusableCell(withIdentifier: "AddressTableViewCell") as! AddressTableViewCell
+            let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "AddressTableViewCell") as! AddressTableViewCell
             return cell
         } else if sections[indexPath.section] == "2" {
-            let cell = mytableView.dequeueReusableCell(withIdentifier: "SectionAddTableViewCell") as! SectionAddTableViewCell
+            let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "SectionAddTableViewCell") as! SectionAddTableViewCell
             return cell
         } else if sections[indexPath.section] == "3" {
-            let cell = mytableView.dequeueReusableCell(withIdentifier: "AddressAddTableViewCell") as! AddressAddTableViewCell
-           
+            let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "AddressAddTableViewCell") as! AddressAddTableViewCell
             cell.setup(with: AddressData[indexPath.row])
             return cell
         }
         return UITableViewCell()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "Add" {
-                // Handle any data passing here if needed
-            }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        if indexPath == [1,0]{
+          return
         }
+        
+        self.performSegue(withIdentifier: "Add", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let detailsVC = segue.destination as! NewAddressController
+   
+    }
+   
  
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -72,7 +80,7 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-
-
+   
+    
 
 }
