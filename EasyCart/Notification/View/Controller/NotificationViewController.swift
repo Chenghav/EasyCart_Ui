@@ -20,17 +20,11 @@ class NotificationViewController: UIViewController {
         tableView.reloadData()
     }
     
-    @objc func showMiracle() {
-        let slideVC = OverlayView()
-        slideVC.modalPresentationStyle = .custom
-        slideVC.transitioningDelegate = self
-        self.present(slideVC, animated: true, completion: nil)
-    }
     @IBAction func open(_ sender: Any) {
 //        let storyboard = UIStoryboard(name: "Sheet", bundle: nil)
 //        let sheetPresentController = storyboard.instantiateViewController(withIdentifier: "SheetViewController") as! SheetViewController
 //        present(sheetPresentController, animated: true, completion: nil)
-        showMiracle()
+//        showMiracle()
     }
     
     var notificationFilter: [(filterType: String, notifications: [NotificationModel])] = [
@@ -138,8 +132,3 @@ extension NotificationViewController: UITableViewDataSource {
     }
 }
 
-extension NotificationViewController: UIViewControllerTransitioningDelegate {
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        SheetViewController(presentedViewController: presented, presenting: presenting)
-    }
-}

@@ -11,10 +11,6 @@
 		315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */; };
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
-		315540882ADEB4A300BFF8B5 /* Sheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315540872ADEB4A300BFF8B5 /* Sheet.storyboard */; };
-		3155408A2ADEB4CA00BFF8B5 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540892ADEB4CA00BFF8B5 /* SheetViewController.swift */; };
-		3155408C2ADEBC4F00BFF8B5 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155408B2ADEBC4F00BFF8B5 /* OverlayView.swift */; };
-		31EFE70A2ADF7CF400EA6040 /* Sheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EFE7092ADF7CF400EA6040 /* Sheet.xib */; };
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
@@ -117,10 +113,6 @@
 		3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
-		315540872ADEB4A300BFF8B5 /* Sheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sheet.storyboard; sourceTree = "<group>"; };
-		315540892ADEB4CA00BFF8B5 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
-		3155408B2ADEBC4F00BFF8B5 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		31EFE7092ADF7CF400EA6040 /* Sheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sheet.xib; sourceTree = "<group>"; };
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,10 +281,6 @@
 		315540862ADEB49100BFF8B5 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				315540872ADEB4A300BFF8B5 /* Sheet.storyboard */,
-				315540892ADEB4CA00BFF8B5 /* SheetViewController.swift */,
-				3155408B2ADEBC4F00BFF8B5 /* OverlayView.swift */,
-				31EFE7092ADF7CF400EA6040 /* Sheet.xib */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -899,7 +887,6 @@
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
 				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
 				DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */,
-				315540882ADEB4A300BFF8B5 /* Sheet.storyboard in Resources */,
 				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
 				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
 				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
@@ -912,7 +899,6 @@
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
 				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
 				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
-				31EFE70A2ADF7CF400EA6040 /* Sheet.xib in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
 				DFDB68CD2AD67446006ECEE7 /* PaymentSb.storyboard in Resources */,
@@ -995,7 +981,6 @@
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
 				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
-				3155408A2ADEB4CA00BFF8B5 /* SheetViewController.swift in Sources */,
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
@@ -1015,7 +1000,6 @@
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
 				315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
-				3155408C2ADEBC4F00BFF8B5 /* OverlayView.swift in Sources */,
 				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
