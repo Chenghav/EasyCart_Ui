@@ -23,12 +23,10 @@ class CategoryTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
     func configure(with data : CategoryData ){
         self.uiIcon.image = data.image
         self.lbTIitle.text = data.title
         self.lbDesc.text = data.desc
-
     }
 
 }

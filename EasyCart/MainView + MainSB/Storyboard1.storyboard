@@ -271,7 +271,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gxn-vi-1E8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="412"/>
+            <point key="canvasLocation" x="349" y="413"/>
         </scene>
         <!--SearchController-->
         <scene sceneID="lMi-wF-46r">
@@ -281,7 +281,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vof-4u-ana" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="412"/>
+            <point key="canvasLocation" x="-621" y="414"/>
+        </scene>
+        <!--CreateItemVC-->
+        <scene sceneID="Obz-WT-xst">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CreateItemVC" storyboardName="CreateItemSB" referencedIdentifier="CreateItemVC" id="TOH-hH-pnR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="MGj-Fy-9Yl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9YY-am-p32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="414"/>
         </scene>
         <!--Tab Main View Controller-->
         <scene sceneID="Xlz-Uw-o4q">
@@ -301,6 +311,9 @@ CQ
                         <outlet property="myTabBar" destination="phw-AU-APT" id="wM6-jP-B37"/>
                         <segue destination="ttH-oR-LMd" kind="relationship" relationship="viewControllers" id="roC-cA-F6m"/>
                         <segue destination="R37-vY-XaG" kind="relationship" relationship="viewControllers" id="zKQ-fs-nGs"/>
+                        <segue destination="TOH-hH-pnR" kind="relationship" relationship="viewControllers" id="vH8-zC-vjF"/>
+                        <segue destination="w9B-dn-102" kind="relationship" relationship="viewControllers" id="N7H-JN-pml"/>
+                        <segue destination="vP0-jO-DHB" kind="relationship" relationship="viewControllers" id="9lL-QF-c2K"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0E8-ay-M7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -399,7 +412,7 @@ CQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-JM-UFI">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="2y9-f1-JUy">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
