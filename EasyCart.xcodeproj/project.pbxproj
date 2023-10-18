@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3155407D2ADE357400BFF8B5 /* NotificationSB.storyboard */; };
+		315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */; };
+		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
+		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		C26D6A102AD67CFF000235A8 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C26D6A0F2AD67CFF000235A8 /* FittedSheets */; };
 		C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */; };
@@ -115,6 +119,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3155407D2ADE357400BFF8B5 /* NotificationSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationSB.storyboard; sourceTree = "<group>"; };
+		3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +246,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		315540782ADE351400BFF8B5 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				315540792ADE352800BFF8B5 /* Model */,
+				3155407A2ADE353100BFF8B5 /* View */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		315540792ADE352800BFF8B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				315540812ADE390500BFF8B5 /* NotificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3155407A2ADE353100BFF8B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				315540862ADEB49100BFF8B5 /* PopUp */,
+				315540832ADE42A300BFF8B5 /* TableCell */,
+				3155407C2ADE354E00BFF8B5 /* Controller */,
+				3155407B2ADE354300BFF8B5 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3155407B2ADE354300BFF8B5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3155407D2ADE357400BFF8B5 /* NotificationSB.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3155407C2ADE354E00BFF8B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		315540832ADE42A300BFF8B5 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		315540862ADEB49100BFF8B5 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		4247E8D571EB9320A3CB6A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +360,7 @@
 		C2BD61D32AD3B7A100939CA7 /* EasyCart */ = {
 			isa = PBXGroup;
 			children = (
+				315540782ADE351400BFF8B5 /* Notification */,
 				DFDB68D52AD6763E006ECEE7 /* Helper */,
 				DFDB68D42AD6761C006ECEE7 /* Resource */,
 				DFDB68BC2AD67446006ECEE7 /* Payment */,
@@ -856,6 +924,7 @@
 				DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */,
 				DFDB68CB2AD67446006ECEE7 /* PayTableViewCell.xib in Resources */,
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
+				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
 				DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */,
 				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
 				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
@@ -939,6 +1008,7 @@
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
+				315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
@@ -973,6 +1043,7 @@
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
+				315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */,
 				C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
@@ -996,6 +1067,7 @@
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
+				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
 				DFDB68812AD65DBA006ECEE7 /* TableViewCell.swift in Sources */,
