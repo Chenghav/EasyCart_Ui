@@ -44,8 +44,8 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 1)
         carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 2)
         carbonSwapNavigation.setNormalColor(UIColor.black, font: UIFont.systemFont(ofSize: 19))
-        carbonSwapNavigation.setSelectedColor(UIColor.purple, font: UIFont.systemFont(ofSize: 19, weight: .bold))
-        carbonSwapNavigation.setIndicatorColor(UIColor.purple)
+        carbonSwapNavigation.setSelectedColor(#colorLiteral(red: 0.437166661, green: 0.06278865784, blue: 0.8730230927, alpha: 1), font: UIFont.systemFont(ofSize: 19, weight: .bold))
+        carbonSwapNavigation.setIndicatorColor(#colorLiteral(red: 0.437166661, green: 0.06278865784, blue: 0.8730230927, alpha: 1))
         carbonSwapNavigation.setIndicatorHeight(1)
         layoutToChange.image = isImageSelected ? UIImage(named: "4Grid") : UIImage(named: "ico_list")
         

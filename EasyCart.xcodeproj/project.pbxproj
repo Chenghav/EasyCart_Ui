@@ -383,6 +383,15 @@
 			path = collapseTVC;
 			sourceTree = "<group>";
 		};
+		C2008A572ADF9780008C07AA /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				C28BDF9A2ADE7D7600C5752A /* Demoable.swift */,
+				C28BDF9C2ADE883900C5752A /* Demoable1.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		C26DA0702AD92390008C2A37 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +776,7 @@
 		DFDB68602AD65DBA006ECEE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C2008A572ADF9780008C07AA /* PopUp */,
 				C26DA0702AD92390008C2A37 /* CustomCell */,
 				DFDB68622AD65DBA006ECEE7 /* ConnectBankViewController.swift */,
 				DFDB68632AD65DBA006ECEE7 /* EditProfileViewController.swift */,
@@ -775,8 +785,6 @@
 				DFDB686D2AD65DBA006ECEE7 /* PopLogOutViewController.swift */,
 				C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */,
 				C26DA06E2AD92023008C2A37 /* AllTableViewController.swift */,
-				C28BDF9A2ADE7D7600C5752A /* Demoable.swift */,
-				C28BDF9C2ADE883900C5752A /* Demoable1.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -969,7 +977,6 @@
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
 				C28BDF972ADE6AD500C5752A /* PopBankTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
-				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
 				C26DA0742AD92418008C2A37 /* ForAllitemSec1TableViewCell.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
@@ -1090,23 +1097,18 @@
 				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
-				DFDB67D32AD6517B006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */,
-				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
-				DFDB67FC2AD65787006ECEE7 /* CustomeFieldTVC.swift in Sources */,
 				C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */,
-				DFDB67FF2AD65787006ECEE7 /* CollectionImageCVC.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
 				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
-				DFDB68012AD65787006ECEE7 /* ButtonCVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
