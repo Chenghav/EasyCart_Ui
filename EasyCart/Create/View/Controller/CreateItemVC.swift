@@ -7,7 +7,14 @@
 
 import UIKit
 
-class CreateItemVC: UIViewController{
+class CreateItemVC: UIViewController, CustomCellDelegate{
+    
+    
+    func didSelectCustomCell() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
@@ -34,6 +41,10 @@ class CreateItemVC: UIViewController{
         tableView.delegate = self
         tableView.dataSource = self
         pickerImage.delegate = self
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
     }
 }
@@ -76,6 +87,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }else if indexPath.section == 1{
             if indexPath.row == 0{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "InfoTVC", for: indexPath) as! InfoTVC
+                labelCel.delegate = self
                 return labelCel
             }else if indexPath.row == 1 {
                 let TitleCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
@@ -110,19 +122,20 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             return 167
         }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
-            if indexPath.section == 1{
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("section",indexPath.section )
+//        print(indexPath.row, "\("Row")")
+//        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//    }
 }
 
 extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.originalImage] as? UIImage{
             if image.count == 0{
+                image.append(selectedImage)
                 image.append(selectedImage)
             }else{
                 image.insert(selectedImage, at: image.count - 1)

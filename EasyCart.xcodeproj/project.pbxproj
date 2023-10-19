@@ -17,7 +17,7 @@
 		BF401E5A2AD6872E00F5FBE9 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */; };
 		BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */; };
 		BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */; };
-		BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */; };
+		BF5F6CA22ADFDBC10083C474 /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F6CA12ADFDBC10083C474 /* Expandable.swift */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
 		DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67502AD65046006ECEE7 /* AppDelegate.swift */; };
@@ -118,7 +118,7 @@
 		BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
 		BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
 		BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
-		BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailData.swift; sourceTree = "<group>"; };
+		BF5F6CA12ADFDBC10083C474 /* Expandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
 		C2BD61D12AD3B7A100939CA7 /* EasyCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD61DE2AD3B7A100939CA7 /* EasyCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCart.xcdatamodel; sourceTree = "<group>"; };
 		C2BD61E52AD3B7A300939CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -284,16 +284,9 @@
 		BF401E5F2AD6923A00F5FBE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF5F6CA12ADFDBC10083C474 /* Expandable.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		BF401E622AD6A14800F5FBE9 /* collapseTVC */ = {
-			isa = PBXGroup;
-			children = (
-				BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */,
-			);
-			path = collapseTVC;
 			sourceTree = "<group>";
 		};
 		C2BD61C82AD3B7A100939CA7 = {
@@ -436,7 +429,6 @@
 		DFDB67DB2AD65787006ECEE7 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				BF401E622AD6A14800F5FBE9 /* collapseTVC */,
 				BF401E522AD686F800F5FBE9 /* moreDetail */,
 				BF401E512AD686D900F5FBE9 /* price */,
 				BF401E502AD686D000F5FBE9 /* title */,
@@ -954,6 +946,7 @@
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
 				DFDB68A02AD65FB2006ECEE7 /* PopularSection.swift in Sources */,
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
+				BF5F6CA22ADFDBC10083C474 /* Expandable.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
 				BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */,
@@ -969,7 +962,6 @@
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
-				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,

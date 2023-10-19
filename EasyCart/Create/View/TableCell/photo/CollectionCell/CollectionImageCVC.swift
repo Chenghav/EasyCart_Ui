@@ -35,7 +35,18 @@ class CollectionImageCVC: UICollectionViewCell {
         btnAddImage.layer.cornerRadius = cornerRadius
         btnAddImage.layer.masksToBounds = true
         
-//        imagePicker.delegate = self
+//        let yourColor = UIColor.red.cgColor
+//        let yourBorder = CAShapeLayer()
+//        yourBorder.strokeColor = yourColor
+//        yourBorder.lineDashPattern = [4, 4]
+//        yourBorder.frame = btnAddImage.bounds
+//        yourBorder.fillColor = nil
+//        yourBorder.path = UIBezierPath(rect: btnAddImage.bounds).cgPath
+//        btnAddImage.layer.addSublayer(yourBorder)
+        
+        //        btnAddImage.layer.cornerRadius = 10
+        uiImage.layer.cornerRadius = 10
+        
     }
  
     @IBAction func uploadImageMore(_ sender: Any) {
