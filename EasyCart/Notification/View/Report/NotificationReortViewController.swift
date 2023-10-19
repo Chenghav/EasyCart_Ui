@@ -11,7 +11,8 @@ class NotificationReortViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var reportTextField: UITextView!
     @IBOutlet weak var notificationReportRec: UIView!
-
+    @IBOutlet weak var notificatoinAttachmentRec: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +21,7 @@ class NotificationReortViewController: UIViewController, UITextViewDelegate {
         reportTextField.textColor = UIColor.lightGray
 
         notificationReportRec.layer.cornerRadius = 10
+        notificatoinAttachmentRec.layer.cornerRadius = 10
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
