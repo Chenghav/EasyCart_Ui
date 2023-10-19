@@ -7,11 +7,19 @@
 
 import UIKit
 
+protocol CustomTableViewCellDelegate {
+    func reloadRow(sender: MoreDetailTVC, flag: Bool)
+}
+
 class MoreDetailTVC: UITableViewCell {
 
+    @IBOutlet weak var headerTitle: UILabel!
+    @IBOutlet weak var expandbtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -19,6 +27,8 @@ class MoreDetailTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    @IBAction func btnExpandable(_ sender: UIButton) {
+        
+    }
     
 }

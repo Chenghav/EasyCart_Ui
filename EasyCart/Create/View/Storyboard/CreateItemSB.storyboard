@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="80N-bf-P7D">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,25 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-DP-d8Q">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-DP-d8Q">
                                 <rect key="frame" x="0.0" y="815" width="430" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-6i-qsI">
-                                        <rect key="frame" x="16" y="16" width="398" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Post"/>
-                                        <connections>
-                                            <action selector="PostButton:" destination="VDX-9Y-SXJ" eventType="touchUpInside" id="lOT-Ig-y5U"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="RgW-j5-tcy"/>
+                                </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="147" estimatedRowHeight="-1" sectionHeaderHeight="16" estimatedSectionHeaderHeight="-1" sectionFooterHeight="16" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-ku-yda">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="147" estimatedRowHeight="-1" sectionHeaderHeight="16" estimatedSectionHeaderHeight="-1" sectionFooterHeight="16" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-ku-yda">
                                 <rect key="frame" x="0.0" y="103" width="430" height="712"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89820247890000005" green="0.89775156970000003" blue="0.91372770069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.95310455559999996" green="0.96063715220000001" blue="0.96862882380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
@@ -46,16 +37,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py6-bQ-Aqj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py6-bQ-Aqj">
                                                     <rect key="frame" x="16" y="16" width="55" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-Rw-1UP">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-Rw-1UP">
                                                     <rect key="frame" x="16" y="51" width="358" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="dhQ-ml-EIq"/>
+                                                    </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U5F-lg-oXf">
                                                         <size key="itemSize" width="100" height="80"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -119,9 +111,8 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
                                                                         <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
@@ -132,6 +123,12 @@
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.77065739200000005" green="0.51510139030000002" blue="0.93668967439999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="TaZ-h5-0IC" secondAttribute="bottom" id="6Rn-v4-7Kz"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="TaZ-h5-0IC" secondAttribute="trailing" id="PnK-hi-Klz"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="leading" secondItem="sUc-lt-lgL" secondAttribute="leading" id="WZj-mp-BcL"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="top" secondItem="sUc-lt-lgL" secondAttribute="top" id="noZ-YQ-tk5"/>
+                                                                </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="326" height="80"/>
                                                             <connections>
@@ -142,6 +139,14 @@
                                                 </collectionView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Yoh-Rw-1UP" firstAttribute="leading" secondItem="aB9-Vn-edb" secondAttribute="leading" constant="16" id="4w7-YI-4Hi"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yoh-Rw-1UP" secondAttribute="trailing" constant="16" id="BY7-IJ-Z9a"/>
+                                                <constraint firstItem="Py6-bQ-Aqj" firstAttribute="leading" secondItem="aB9-Vn-edb" secondAttribute="leading" constant="16" id="EIo-mM-fPN"/>
+                                                <constraint firstItem="Yoh-Rw-1UP" firstAttribute="top" secondItem="Py6-bQ-Aqj" secondAttribute="bottom" constant="16" id="Pdv-by-CgR"/>
+                                                <constraint firstAttribute="bottom" secondItem="Yoh-Rw-1UP" secondAttribute="bottom" constant="16" id="spy-WC-nAO"/>
+                                                <constraint firstItem="Py6-bQ-Aqj" firstAttribute="top" secondItem="aB9-Vn-edb" secondAttribute="top" constant="16" id="zOe-Jz-nEW"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <connections>
@@ -190,14 +195,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vPQ-pz-EYM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOm-DP-d8Q" firstAttribute="leading" secondItem="vPQ-pz-EYM" secondAttribute="leading" id="1tK-dz-Zed"/>
+                            <constraint firstItem="LOm-DP-d8Q" firstAttribute="trailing" secondItem="vPQ-pz-EYM" secondAttribute="trailing" id="8Kj-0P-gWs"/>
+                            <constraint firstItem="V0c-ku-yda" firstAttribute="trailing" secondItem="vPQ-pz-EYM" secondAttribute="trailing" id="KDy-50-zWC"/>
+                            <constraint firstItem="V0c-ku-yda" firstAttribute="top" secondItem="vPQ-pz-EYM" secondAttribute="top" id="b8o-aF-ufs"/>
+                            <constraint firstItem="LOm-DP-d8Q" firstAttribute="top" secondItem="V0c-ku-yda" secondAttribute="bottom" id="gpH-Xs-1Zh"/>
+                            <constraint firstItem="V0c-ku-yda" firstAttribute="leading" secondItem="vPQ-pz-EYM" secondAttribute="leading" id="pJU-2R-YgF"/>
+                            <constraint firstAttribute="bottom" secondItem="LOm-DP-d8Q" secondAttribute="bottom" id="sFI-8K-x81"/>
+                            <constraint firstItem="LOm-DP-d8Q" firstAttribute="top" secondItem="V0c-ku-yda" secondAttribute="bottom" id="ut1-Qk-z37"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
-                        <barButtonItem key="leftBarButtonItem" image="iconav_close" id="uvZ-yk-guv">
-                            <color key="tintColor" red="0.78134435420000004" green="0.79071450229999996" blue="0.86667710539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="iconav_close" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnPost" destination="x4u-6i-qsI" id="Ipz-mG-OtN"/>
                         <outlet property="tableView" destination="V0c-ku-yda" id="moe-fc-aT9"/>
                     </connections>
                 </viewController>
@@ -265,8 +277,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Category" id="XzA-Ry-F9V">
-                        <barButtonItem key="leftBarButtonItem" image="iconav_close" id="Ef7-te-RhL">
-                            <color key="tintColor" systemColor="systemGray5Color"/>
+                        <barButtonItem key="leftBarButtonItem" image="iconav_close" landscapeImage="iconav_close" id="Ef7-te-RhL">
+                            <connections>
+                                <segue destination="VDX-9Y-SXJ" kind="push" id="zP1-MT-6I8"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -315,6 +329,9 @@
             <point key="canvasLocation" x="1091" y="-709"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zP1-MT-6I8"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="dancing-banana.gif" width="365" height="360"/>
         <image name="ico_addPrimary_1" width="38" height="38"/>

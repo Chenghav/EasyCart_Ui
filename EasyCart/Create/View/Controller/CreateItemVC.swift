@@ -7,9 +7,13 @@
 
 import UIKit
 
+protocol CreateItemViewDelegate {
+    func toggleSection(for header: CreateItemVC)
+}
+
 class CreateItemVC: UIViewController, CustomCellDelegate{
     
-    
+    var models = [ListItemExpandable]()
     func didSelectCustomCell() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
             self.navigationController?.pushViewController(vc, animated: true)
@@ -19,12 +23,12 @@ class CreateItemVC: UIViewController, CustomCellDelegate{
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
     var isReloadCollection = false
+    var hiddenSections = Set<Int>()
     
     func didTapCell(){
         print("success")
     }
     
-    @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -41,6 +45,10 @@ class CreateItemVC: UIViewController, CustomCellDelegate{
         tableView.delegate = self
         tableView.dataSource = self
         pickerImage.delegate = self
+        
+        
+        
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: true))
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -100,6 +108,12 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 return labelCel
             }else if indexPath.row == 4 {
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
+                let cell = models[indexPath.row]
+                if cell.isExpand{
+                    
+                }else{
+                    
+                }
                 return labelCel
             }
         }else{
@@ -122,13 +136,6 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             return 167
         }
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("section",indexPath.section )
-//        print(indexPath.row, "\("Row")")
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//    }
 }
 
 extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -147,3 +154,4 @@ extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationController
         }
     }
 }
+

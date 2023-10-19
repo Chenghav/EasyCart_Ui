@@ -9,12 +9,14 @@ import Foundation
 import UIKit
 
 
-class ListItem {
+class ListItemExpandable {
     let title: String
     let subTitle: String
-    init(title: String, subTitle: String) {
+    let isExpand: Bool
+    init(title: String, subTitle: String, isExpand: Bool) {
         self.title = title
         self.subTitle = subTitle
+        self.isExpand = isExpand
     }
 }
 
