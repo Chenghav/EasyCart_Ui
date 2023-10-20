@@ -36,7 +36,6 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         carbonSwapNavigation = CarbonTabSwipeNavigation(items: controllerName, delegate: self)
-        carbonSwapNavigation.pagesScrollView?.isScrollEnabled = true
         carbonSwapNavigation.insert(intoRootViewController: self)
         carbonSwapNavigation.carbonSegmentedControl?.backgroundColor = UIColor.white
         carbonSwapNavigation.setTabBarHeight(40)
