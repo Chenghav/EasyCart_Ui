@@ -164,7 +164,7 @@ extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationController
             }else{
                 image.insert(selectedImage, at: image.count - 1)
             }
-            
+             
             dismiss(animated: true)
             self.isReloadCollection = true
             tableView.reloadData()
