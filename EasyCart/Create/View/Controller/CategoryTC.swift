@@ -22,13 +22,6 @@ class CategoryTC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-//        models.append(CategoryData(image: UIImage(named: "ico_drinks")!, title: "Vehicle", desc: "Motor, car, truck, etc."))
-//        models.append(CategoryData(image: UIImage(named: "icon")!, title: "Vehicle", desc: "Motor, car, truck, etc."))
-//        models.append(CategoryData(image: UIImage(named: "ico_devices")!, title: "Electronic devices", desc: "Smartphone, tablet, laptop, etc."))
-//        models.append(CategoryData(image: UIImage(named: "ico_house")!, title: "Properties", desc: "House, condo, land, etc."))
-//        models.append(CategoryData(image: UIImage(named: "ico_fan")!, title: "Furniture", desc: "Table, refridgerator, drawer, etc."))
-//        models.append(CategoryData(image: UIImage(named: "ico_paw")!, title: "Pet", desc: "Dog, cat, bird, etc."))
-//        models.append(CategoryData(image: UIImage(named: "ico_guitar")!, title: "Hobbies", desc: "Guitar, stickers, posters, etc."))
         
         if let imageDrinks = UIImage(named: "ico_drinks") {
             models.append(CategoryData(image: imageDrinks, title: "Vehicle", desc: "Motor, car, truck, etc."))

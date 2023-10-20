@@ -72,14 +72,14 @@
                                                                             <constraint firstAttribute="width" constant="24" id="aWO-RR-V2e"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_clear"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_clear" title=" "/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-H2-AC3">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1" title=" "/>
                                                                         <connections>
                                                                             <action selector="uploadImageMore:" destination="ijq-1R-3b2" eventType="touchUpInside" id="Nvl-4q-SSh"/>
                                                                         </connections>
@@ -116,7 +116,7 @@
                                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1" title=" "/>
                                                                         <connections>
                                                                             <action selector="didTapPickerImage:" destination="VoC-KD-SuA" eventType="touchUpInside" id="dv1-k6-J8y"/>
                                                                         </connections>
@@ -337,9 +337,6 @@
         <image name="ico_addPrimary_1" width="38" height="38"/>
         <image name="ico_clear" width="24" height="24"/>
         <image name="iconav_close" width="45" height="44"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -348,6 +345,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

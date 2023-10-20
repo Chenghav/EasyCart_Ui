@@ -40,15 +40,17 @@ class CreateItemVC: UIViewController, CustomCellDelegate{
         tableView.register(UINib(nibName: "TitleTVC", bundle: .none), forCellReuseIdentifier: "TitleTVC")
         tableView.register(UINib(nibName: "PriceTVC", bundle: .none), forCellReuseIdentifier: "PriceTVC")
         tableView.register(UINib(nibName: "MoreDetailTVC", bundle: .none), forCellReuseIdentifier: "MoreDetailTVC")
-        
+        tableView.register(UINib(nibName: "ExpanableTVC", bundle: .none), forCellReuseIdentifier: "ExpandableTVC")
         
         tableView.delegate = self
         tableView.dataSource = self
         pickerImage.delegate = self
         
-        
-        
-        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: true))
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: false))
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: false))
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: false))
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: false))
+        models.append(ListItemExpandable( title: "Vehicle", subTitle: "Motor, car, truck, etc.", isExpand: false))
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -107,14 +109,16 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "DiscountTVC", for: indexPath) as! DiscountTVC
                 return labelCel
             }else if indexPath.row == 4 {
-                let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
-                let cell = models[indexPath.row]
-                if cell.isExpand{
-                    
-                }else{
-                    
+//                let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
+                
+                if indexPath.row == 0 {
+                    let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
+                    return labelCel
+                } else {
+                    let ExpandCell = tableView.dequeueReusableCell(withIdentifier: "ExpandableTVC", for: indexPath) as! ExpanableTVC
+                    ExpandCell.configureExpandable(with: models[indexPath.row])
+                    return ExpandCell
                 }
-                return labelCel
             }
         }else{
             let cellDesc = tableView.dequeueReusableCell(withIdentifier: "DescCell", for: indexPath)
@@ -134,6 +138,19 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             }
         }else{
             return 167
+        }
+    }
+    // MARK: - Expanable didSelectRowAt -
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let section = indexPath.section
+
+            var sectionData = models[section]
+            sectionData.isExpand.toggle()
+            models.remove(at: section)
+            models.insert(sectionData, at: section)
+            
+            tableView.reloadSections(.init(integer: section), with: .automatic)
         }
     }
 }

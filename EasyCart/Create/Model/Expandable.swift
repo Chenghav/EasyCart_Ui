@@ -12,7 +12,7 @@ import UIKit
 class ListItemExpandable {
     let title: String
     let subTitle: String
-    let isExpand: Bool
+    var isExpand: Bool
     init(title: String, subTitle: String, isExpand: Bool) {
         self.title = title
         self.subTitle = subTitle
