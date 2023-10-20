@@ -6,10 +6,13 @@
 //
 
 import UIKit
-
+protocol AddressTableViewCellDelegate: AnyObject {
+    func didTapButton(_ cell: AddressTableViewCell)
+}
 class AddressTableViewCell: UITableViewCell {
     @IBOutlet weak var myview : UIView!
     @IBOutlet weak var viewAddress: UIView!
+    weak var delegate: AddressTableViewCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +21,10 @@ class AddressTableViewCell: UITableViewCell {
                myview.layer.masksToBounds = true
     }
 
+    @IBAction func btnaddadderss(_ sender: Any) {
+        delegate?.didTapButton(self)
+        
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -26,6 +26,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="Add new address" imagePadding="10">
                                     <color key="baseForegroundColor" red="0.43921568630000002" green="0.062745098040000002" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnaddadderss:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YLc-pI-KXX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,8 +9,11 @@ import Foundation
 import UIKit
 
 
-class AddressController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AddressController : UIViewController, UITableViewDelegate, UITableViewDataSource, AddressAddTableViewCellDelegate {
+ 
+    
     let sections = ["1","2","3"]
+    var selectedCellIndexPath: IndexPath?
     @IBOutlet weak var mytableViewAdd: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,17 +49,45 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
         } else if sections[indexPath.section] == "3" {
             let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "AddressAddTableViewCell") as! AddressAddTableViewCell
             cell.setup(with: AddressData[indexPath.row])
-            return cell
-        }
+            
+            if indexPath == selectedCellIndexPath {
+                      cell.iamgebtn.setImage(UIImage(named: "Checkbox"), for: .normal)
+                      cell.isSelectedCell = true
+                  } else {
+                      cell.iamgebtn.setImage(UIImage(named: "Uncheck"), for: .normal)
+                      cell.isSelectedCell = false
+                  }
+            cell.delegate = self
+                  return cell
+              }
         return UITableViewCell()
-    }
+        }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
         if indexPath == [1,0]{
+            
           return
+        }else if indexPath == [0,0]{
+             self.performSegue(withIdentifier: "Add", sender: self)
         }
-        
-        self.performSegue(withIdentifier: "Add", sender: self)
+        else{
+            selectedCellIndexPath = indexPath
+            mytableViewAdd.reloadData()
+        }
+      
+
+//        self.performSegue(withIdentifier: "Add", sender: self)
+    }
+ 
+    
+    func didTapButtonInCell(_ cell: AddressAddTableViewCell) {
+        if let indexPath = mytableViewAdd.indexPath(for: cell) {
+                    if sections[indexPath.section] == "3" {
+                        // Perform the navigation when the button is tapped in the cell
+                        self.performSegue(withIdentifier: "Add", sender: self)
+                    }
+                }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

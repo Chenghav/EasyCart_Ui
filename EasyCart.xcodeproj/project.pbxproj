@@ -102,6 +102,7 @@
 		DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */; };
 		DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */; };
 		DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C92AD67446006ECEE7 /* PaymentController.swift */; };
+		E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36DD1532ADF943C00B22CBB /* RecieptController.swift */; };
 		E3A891CA2ADD25BC006E63C7 /* AddressAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */; };
 		E3A891CB2ADD25BC006E63C7 /* SectionAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */; };
 		E3A891CC2ADD25BC006E63C7 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BE2ADD25BC006E63C7 /* AddressTableViewCell.xib */; };
@@ -114,6 +115,8 @@
 		E3A891D32ADD25BC006E63C7 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */; };
 		E3A891D42ADD25BC006E63C7 /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891C72ADD25BC006E63C7 /* AddressController.swift */; };
 		E3A891D92ADD26D5006E63C7 /* addressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891D82ADD26D5006E63C7 /* addressData.swift */; };
+		E3AB7E022ADFBBE500AF4E37 /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */; };
+		E3AB7E032ADFBBE500AF4E37 /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +218,7 @@
 		DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		DFDB68C92AD67446006ECEE7 /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		E36DD1532ADF943C00B22CBB /* RecieptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
 		E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAddTableViewCell.xib; sourceTree = "<group>"; };
 		E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionAddTableViewCell.xib; sourceTree = "<group>"; };
 		E3A891BE2ADD25BC006E63C7 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 		E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
 		E3A891C72ADD25BC006E63C7 /* AddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
 		E3A891D82ADD26D5006E63C7 /* addressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressData.swift; sourceTree = "<group>"; };
+		E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -737,6 +743,9 @@
 				DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */,
 				DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */,
 				DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */,
+				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
+				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
+				E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -875,6 +884,7 @@
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
+				E3AB7E032ADFBBE500AF4E37 /* ReceiptTableViewCell.xib in Resources */,
 				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
 				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
 				E3A891CD2ADD25BC006E63C7 /* AddressSb.storyboard in Resources */,
@@ -942,6 +952,7 @@
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
+				E3AB7E022ADFBBE500AF4E37 /* ReceiptTableViewCell.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,
 				DFDB68852AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
@@ -990,6 +1001,7 @@
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				E3A891D12ADD25BC006E63C7 /* AddressAddTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
+				E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */,
 				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,

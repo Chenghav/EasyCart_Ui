@@ -39,7 +39,10 @@
                     <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR0-na-9Fm">
                         <rect key="frame" x="17" y="54" width="34" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="Checkbox-1"/>
+                        <state key="normal" image="Type=Radio, Enable=True, Select=True"/>
+                        <connections>
+                            <action selector="btnimageAct:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YRd-yU-jt3"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheata\" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-mm-m5b">
                         <rect key="frame" x="60" y="94" width="414" height="20"/>
@@ -88,13 +91,14 @@
                 <outlet property="addresslb" destination="kMP-Sk-ggR" id="wbe-Qi-Xg2"/>
                 <outlet property="btnEdit" destination="bv4-Yp-kKY" id="bL4-Vc-TFa"/>
                 <outlet property="buidlinglb" destination="Gko-s2-wIO" id="UZ2-5a-olW"/>
+                <outlet property="iamgebtn" destination="SR0-na-9Fm" id="FQW-5w-ORv"/>
                 <outlet property="userlb" destination="NK3-mm-m5b" id="VtX-Nv-RkH"/>
             </connections>
             <point key="canvasLocation" x="289.85507246376812" y="214.62053571428569"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Checkbox-1" width="34" height="34"/>
+        <image name="Type=Radio, Enable=True, Select=True" width="34" height="34"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -48,25 +48,13 @@ class PaymentController : UIViewController, UITableViewDelegate, UITableViewData
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
-        let vc = UIStoryboard.init(name: "AddressSb", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddressController") as? AddressController
-        self.navigationController?.pushViewController(vc!, animated: true)
-        
-//        let mvc = AddressController()
-//        let storyBoardNameString = mvc.restorationIdentifier!
-//        let storyboard = UIStoryboard(name: storyBoardNameString , bundle: nil)
-//        if let  secondViewController = storyboard.instantiateViewController(withIdentifier: "some-view-controller") as? AddressController{
-//            navigationController?.pushViewController(storyboard, animated: true)
-//        }
-        
-//        let storyboardName = "AddressStoryboard"  // Replace with your actual storyboard name
-//
-//            // Instantiate the target storyboard
-//            let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-//
-//            // Instantiate the view controller from the target storyboard using its identifier
-//            if let secondViewController = storyboard.instantiateViewController(withIdentifier: "AddressController") as? AddressController {
-//                navigationController?.pushViewController(secondViewController, animated: true)
-//            }
+        if indexPath == [1,0]{
+            
+            let vc = UIStoryboard.init(name: "AddressSb", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddressController") as? AddressController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }else{
+             return
+        }
 }
         
     

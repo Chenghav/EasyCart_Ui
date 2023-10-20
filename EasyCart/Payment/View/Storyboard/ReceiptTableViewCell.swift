@@ -9,9 +9,12 @@ import UIKit
 
 class ReceiptTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var itemview: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        itemview.layer.cornerRadius = itemview.frame.size.width / 2
+                itemview.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
