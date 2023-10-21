@@ -24,30 +24,40 @@ class PaymentController : UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
+        return 1
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            if sections[indexPath.section] == "1" {
-                let cell = mytableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath) as! OrderTableViewCell
-                return cell
-            } else if sections[indexPath.section] == "2" {
-                let cell = mytableView.dequeueReusableCell(withIdentifier: "DeliveryTableViewCell", for: indexPath) as! DeliveryTableViewCell
-                return cell
-            } else if sections[indexPath.section] == "3"{
-                let cell = mytableView.dequeueReusableCell(withIdentifier: "PayTableViewCell", for: indexPath) as! PayTableViewCell
-                return cell
-                
-            }else{
-                print("Unknown section: \(sections[indexPath.section])")
-                return UITableViewCell()
-            }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if sections[indexPath.section] == "1" {
+            let cell = mytableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath) as! OrderTableViewCell
+            return cell
+        } else if sections[indexPath.section] == "2" {
+            let cell = mytableView.dequeueReusableCell(withIdentifier: "DeliveryTableViewCell", for: indexPath) as! DeliveryTableViewCell
+            return cell
+        } else if sections[indexPath.section] == "3"{
+            let cell = mytableView.dequeueReusableCell(withIdentifier: "PayTableViewCell", for: indexPath) as! PayTableViewCell
+            return cell
+            
+        }else{
+            print("Unknown section: \(sections[indexPath.section])")
+            return UITableViewCell()
         }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        if indexPath == [1,0]{
+            
+            let vc = UIStoryboard.init(name: "AddressSb", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddressController") as? AddressController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }else{
+             return
+        }
+}
         
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if sections[indexPath.section] == "1" {
             return 164
@@ -59,6 +69,7 @@ class PaymentController : UIViewController, UITableViewDelegate, UITableViewData
             return 0
         }
         
-
+        
+        
     }
 }
