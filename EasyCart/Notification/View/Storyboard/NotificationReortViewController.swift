@@ -35,6 +35,10 @@ class NotificationReortViewController: UIViewController {
         print("---\(pickerImage)")
     }
     
+    @IBAction func btnBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        print("hello")
+    }
     
 }
 

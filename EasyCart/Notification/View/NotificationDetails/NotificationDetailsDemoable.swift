@@ -6,3 +6,50 @@
 //
 
 import Foundation
+import FittedSheets
+import UIKit
+
+protocol NotificationDetailsDemoable {
+
+}
+
+// MARK:  - PopUp FittedSheets -
+extension NotificationDetailsDemoable {
+    
+    static func addSheetEventLogging(to sheet: SheetViewController) {
+        let previousDidDismiss = sheet.didDismiss
+        sheet.didDismiss = {
+            print("did dismiss")
+            previousDidDismiss?($0)
+        }
+        
+        let previousShouldDismiss = sheet.shouldDismiss
+        sheet.shouldDismiss = {
+            print("should dismiss")
+            return previousShouldDismiss?($0) ?? true
+        }
+        
+        let previousSizeChanged = sheet.sizeChanged
+        sheet.sizeChanged = { sheet, size, height in
+            print("Changed to \(size) with a height of \(height)")
+            previousSizeChanged?(sheet , size, height)
+        }
+    }
+    static func openNotificationDetails(from parent: UIViewController, in view: UIView?) {
+        let useInlineMode = view != nil
+        
+        let controller = UIStoryboard(name: "NotificationSB", bundle: nil).instantiateViewController(withIdentifier: "NotificationDetailsViewController") as! NotificationDetailsViewController
+
+        let options = SheetOptions(
+            shouldExtendBackground: true,
+            useFullScreenMode: true,
+            shrinkPresentingViewController: true,
+            useInlineMode: useInlineMode
+        )
+        
+        let sheetController = SheetViewController(controller: controller, options: options)
+        sheetController.allowPullingPastMaxHeight = false
+        sheetController.setSizes([.fullscreen])
+        parent.present(sheetController, animated: true, completion: nil)
+    }
+}

@@ -12,6 +12,8 @@
 		315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */; };
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
+		31E6B5172AE3BB21000B5EFB /* NotificationDetailsDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */; };
+		31E6B5192AE3BB56000B5EFB /* NotificationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */; };
 		31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */; };
 		31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */; };
 		31EDD65A2AE0FE650097A6A8 /* AttachmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */; };
@@ -147,6 +149,8 @@
 		3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsDemoable.swift; sourceTree = "<group>"; };
+		31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsViewController.swift; sourceTree = "<group>"; };
 		31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReortViewController.swift; sourceTree = "<group>"; };
 		31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButton.swift; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 		3155407A2ADE353100BFF8B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31E6B5152AE3BAD3000B5EFB /* NotificationDetails */,
 				31E9FC8C2ADFCAA50057CC47 /* Report */,
 				315540862ADEB49100BFF8B5 /* PopUp */,
 				315540832ADE42A300BFF8B5 /* TableCell */,
@@ -361,6 +366,15 @@
 				31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */,
 			);
 			path = PopUp;
+			sourceTree = "<group>";
+		};
+		31E6B5152AE3BAD3000B5EFB /* NotificationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */,
+				31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */,
+			);
+			path = NotificationDetails;
 			sourceTree = "<group>";
 		};
 		31E9FC8C2ADFCAA50057CC47 /* Report */ = {
@@ -1206,6 +1220,7 @@
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
+				31E6B5172AE3BB21000B5EFB /* NotificationDetailsDemoable.swift in Sources */,
 				31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,
@@ -1213,6 +1228,7 @@
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				BBA013DC2AD69C800051BD7B /* HomeDetailCV.swift in Sources */,
+				31E6B5192AE3BB56000B5EFB /* NotificationDetailsViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */,
 				315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */,
@@ -1243,7 +1259,6 @@
 				BB560DB02ADE3A7100DBB585 /* SlideClickCVC.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
 				BBA013D82AD6999A0051BD7B /* image.swift in Sources */,
-				DFDB67FA2AD65787006ECEE7 /* Name.swift in Sources */,
 				DFDB68A02AD65FB2006ECEE7 /* PopularSection.swift in Sources */,
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
@@ -1265,7 +1280,6 @@
 				C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */,
 				31EDD6672AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
-				DFDB68002AD65787006ECEE7 /* BeforeAddTVC.swift in Sources */,
 				BB08BDEF2AD6B2F20075B32F /* DateOfitemCollCell.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
@@ -1284,7 +1298,6 @@
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
 				BBA013E12AD69D610051BD7B /* SlideCollectionViewCell.swift in Sources */,
 				BB08BDF92AD6CEB80075B32F /* ProductListCVC.swift in Sources */,
-				DFDB68492AD65D67006ECEE7 /* greenViewController.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,

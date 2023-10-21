@@ -20,11 +20,7 @@ class ExploreViewController: UIViewController {
         collectonView.delegate = self
         collectonView.dataSource = self
         collectonView.collectionViewLayout = UICollectionViewFlowLayout()
-        // Register the CategoryCollectionViewCell
         collectonView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionCell")
-        // Register the ExploreCategoryTableViewCell
-        //        tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "categoryCell")
-        // Register the ExploreTopItemTableViewCell
         tableView.register(UINib(nibName: "ExploreTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         
@@ -74,7 +70,7 @@ extension ExploreViewController: UICollectionViewDataSource {
 
 extension ExploreViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-           return UIEdgeInsets(top: 0, left: 16, bottom: 10, right: 16)
+           return UIEdgeInsets(top: 16, left: 16, bottom: 10, right: 16)
        }
 
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

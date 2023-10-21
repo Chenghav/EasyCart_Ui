@@ -13,6 +13,8 @@ class NotificationTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         notificationRec.layer.cornerRadius = 10
+        self.notificationImage.layer.cornerRadius = notificationImage.frame.size.width / 2
+        notificationImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

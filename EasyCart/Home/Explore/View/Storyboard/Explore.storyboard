@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" red="0.9534102082" green="0.96242624519999997" blue="0.9698640704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bpY-eo-O3G">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="224"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.95328146219999998" green="0.95934706930000002" blue="0.97018021350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fgA-Zw-hql">
@@ -43,7 +43,7 @@
                                 </collectionView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="145" id="ISZ-bD-LKF" customClass="ExploreTableViewCell" customModule="EasyCart" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="279.33333206176758" width="353" height="145"/>
+                                        <rect key="frame" x="20" y="308.33333206176758" width="353" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ISZ-bD-LKF" id="FLY-Pa-cyA">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="145"/>
