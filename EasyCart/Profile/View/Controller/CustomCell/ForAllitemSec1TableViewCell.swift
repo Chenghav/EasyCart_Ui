@@ -50,9 +50,11 @@ class ForAllitemSec1TableViewCell: UITableViewCell {
         if PurchasedLab.text == "Purchased" {
             PurchasedLab.backgroundColor = #colorLiteral(red: 0.8683370352, green: 0.9637517333, blue: 0.7658879161, alpha: 1)
             PurchasedLab.textColor = #colorLiteral(red: 0, green: 0.5138630271, blue: 0, alpha: 1)
+            PurchasedLab.frame.size = CGSize(width: 71, height: 24)
         }else if PurchasedLab.text == "Selling" {
             PurchasedLab.backgroundColor = #colorLiteral(red: 0.9410327077, green: 0.8965150714, blue: 0.9873706698, alpha: 1)
             PurchasedLab.textColor = #colorLiteral(red: 0.327924192, green: 0.001723796595, blue: 0.8208648562, alpha: 1)
+            PurchasedLab.frame.size = CGSize(width: 51, height: 24)
         }
     }
 }
