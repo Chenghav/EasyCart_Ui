@@ -12,10 +12,9 @@ import UIKit
 protocol NotificationDetailsDemoable {
 
 }
-
+var receiptType = "notificationReceipt"
 // MARK:  - PopUp FittedSheets -
 extension NotificationDetailsDemoable {
-    
     static func addSheetEventLogging(to sheet: SheetViewController) {
         let previousDidDismiss = sheet.didDismiss
         sheet.didDismiss = {
@@ -38,15 +37,14 @@ extension NotificationDetailsDemoable {
     static func openNotificationDetails(from parent: UIViewController, in view: UIView?) {
         let useInlineMode = view != nil
         
-        let controller = UIStoryboard(name: "NotificationSB", bundle: nil).instantiateViewController(withIdentifier: "NotificationDetailsViewController") as! NotificationDetailsViewController
-
+        let controller = UIStoryboard(name: "PaymentSb", bundle: nil).instantiateViewController(withIdentifier: "RecieptController") as! RecieptController
+        
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
             shrinkPresentingViewController: true,
             useInlineMode: useInlineMode
         )
-        
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
         sheetController.setSizes([.fullscreen])

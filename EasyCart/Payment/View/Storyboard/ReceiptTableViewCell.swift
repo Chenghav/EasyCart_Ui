@@ -10,6 +10,7 @@ import UIKit
 class ReceiptTableViewCell: UITableViewCell {
 
     @IBOutlet weak var itemview: UIImageView!
+    @IBOutlet weak var receiptSign: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +24,7 @@ class ReceiptTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+
+
+
 }

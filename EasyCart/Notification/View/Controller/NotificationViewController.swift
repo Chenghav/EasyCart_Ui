@@ -8,6 +8,9 @@
 import UIKit
 
 class NotificationViewController: UIViewController, NotificationDemoable, NotificationDetailsDemoable {
+    
+    var receiptSign: UIImageView?
+    
     var selectedNotification: NotificationModel?
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {

@@ -13,7 +13,6 @@
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
 		31E6B5172AE3BB21000B5EFB /* NotificationDetailsDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */; };
-		31E6B5192AE3BB56000B5EFB /* NotificationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */; };
 		31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */; };
 		31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */; };
 		31EDD65A2AE0FE650097A6A8 /* AttachmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */; };
@@ -180,7 +179,6 @@
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsDemoable.swift; sourceTree = "<group>"; };
-		31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsViewController.swift; sourceTree = "<group>"; };
 		31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReortViewController.swift; sourceTree = "<group>"; };
 		31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButton.swift; sourceTree = "<group>"; };
@@ -432,7 +430,6 @@
 			isa = PBXGroup;
 			children = (
 				31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */,
-				31E6B5182AE3BB56000B5EFB /* NotificationDetailsViewController.swift */,
 			);
 			path = NotificationDetails;
 			sourceTree = "<group>";
@@ -1272,7 +1269,6 @@
 				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
 				DFDB68CA2AD67446006ECEE7 /* TotalTableViewCell.xib in Resources */,
 				DFDB689B2AD65FB2006ECEE7 /* RecentCollectionNibCell.xib in Resources */,
-				DFDB67FE2AD65787006ECEE7 /* CollectionImageCVC.xib in Resources */,
 				E3A891CB2ADD25BC006E63C7 /* SectionAddTableViewCell.xib in Resources */,
 				DFDB68CE2AD67446006ECEE7 /* OrderTableViewCell.xib in Resources */,
 				BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */,
@@ -1289,7 +1285,6 @@
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
 				E3AB7E032ADFBBE500AF4E37 /* ReceiptTableViewCell.xib in Resources */,
 				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
-				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
 				E3A891CD2ADD25BC006E63C7 /* AddressSb.storyboard in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
@@ -1373,7 +1368,6 @@
 				E3A891D22ADD25BC006E63C7 /* NewAddressTableViewCell.swift in Sources */,
 				E3A891D02ADD25BC006E63C7 /* NewAddressController.swift in Sources */,
 				BBA013DC2AD69C800051BD7B /* HomeDetailCV.swift in Sources */,
-				31E6B5192AE3BB56000B5EFB /* NotificationDetailsViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */,
 				C268B5372AE0388200197B31 /* AddMoreCollectionViewCell.swift in Sources */,
