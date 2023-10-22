@@ -14,5 +14,7 @@ pod 'CarbonKit'
     end
   end
   # Pods for EasyCart
-
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
 end
