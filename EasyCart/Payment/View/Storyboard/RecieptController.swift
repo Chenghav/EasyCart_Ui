@@ -19,7 +19,7 @@ class RecieptController : UIViewController, UITableViewDelegate, UITableViewData
         tableReciept.delegate = self
         tableReciept.dataSource = self
         tableReciept.register(UINib(nibName: "ReceiptTableViewCell", bundle: .none), forCellReuseIdentifier: "ReceiptTableViewCell")
-        
+        print("hehehe")
     }
     
     
