@@ -9,12 +9,12 @@ import Foundation
 import FittedSheets
 import UIKit
 
-protocol NotificationDetailsDemoable {
-
+protocol ReceiptDemoable {
+    var receiptImage: UIImage? { get set }
+    var replceReceiptTitle: UILabel? { get set }
 }
-var receiptType = "notificationReceipt"
 // MARK:  - PopUp FittedSheets -
-extension NotificationDetailsDemoable {
+extension ReceiptDemoable {
     static func addSheetEventLogging(to sheet: SheetViewController) {
         let previousDidDismiss = sheet.didDismiss
         sheet.didDismiss = {
@@ -34,11 +34,14 @@ extension NotificationDetailsDemoable {
             previousSizeChanged?(sheet , size, height)
         }
     }
-    static func openNotificationDetails(from parent: UIViewController, in view: UIView?) {
+    
+    static func openReceipt(from parent: UIViewController, in view: UIView?, receiptImage: UIImage?, replaceReceiptTitle: UILabel?) {
         let useInlineMode = view != nil
         
         let controller = UIStoryboard(name: "PaymentSb", bundle: nil).instantiateViewController(withIdentifier: "RecieptController") as! RecieptController
         
+        controller.receiptImage = receiptImage // Pass the receipt image to the controller
+        controller.receiptTitle = replaceReceiptTitle
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,

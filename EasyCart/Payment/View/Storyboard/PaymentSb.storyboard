@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_Check" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-BI-daT">
-                                <rect key="frame" x="163" y="87" width="64" height="64"/>
+                                <rect key="frame" x="163" y="149" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="gT9-Eg-dgg"/>
                                     <constraint firstAttribute="height" constant="64" id="wfo-cb-tRK"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvc-Mr-MRa">
-                                <rect key="frame" x="162.66666666666666" y="161" width="65" height="21"/>
+                                <rect key="frame" x="164" y="228" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zDn-5f-5Vl">
-                                <rect key="frame" x="16" y="192.00000000000003" width="361" height="494.66666666666674"/>
+                                <rect key="frame" x="16" y="269" width="361" height="459"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.95395773650000004" green="0.96615344290000005" blue="0.97346097229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReceiptTableViewCell" rowHeight="183" id="ELt-Sb-TRL" customClass="ReceiptTableViewCell" customModule="EasyCart" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="183"/>
@@ -57,25 +57,48 @@
                                     <color key="baseForegroundColor" red="0.43921568630000002" green="0.062745098040000002" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76u-VY-dJx">
+                                <rect key="frame" x="16" y="94" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="DXP-1s-zDb"/>
+                                    <constraint firstAttribute="width" constant="33" id="TRA-2b-pDh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" title=""/>
+                                <connections>
+                                    <action selector="btnClose:" destination="MGf-TK-iIL" eventType="touchUpInside" id="PVk-Ua-Wsq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi5-fj-p4V">
+                                <rect key="frame" x="167.66666666666666" y="100.66666666666667" width="58" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ajd-SZ-HM1"/>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95395773650000004" green="0.96615344290000005" blue="0.97346097229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Mx4-Pv-GWo" secondAttribute="trailing" constant="23" id="0aj-vl-2FI"/>
-                            <constraint firstItem="P4h-BI-daT" firstAttribute="top" secondItem="Ajd-SZ-HM1" secondAttribute="top" constant="28" id="13c-1N-yQQ"/>
+                            <constraint firstItem="P4h-BI-daT" firstAttribute="top" secondItem="Ajd-SZ-HM1" secondAttribute="top" constant="90" id="13c-1N-yQQ"/>
+                            <constraint firstItem="pi5-fj-p4V" firstAttribute="centerX" secondItem="Ajd-SZ-HM1" secondAttribute="centerX" id="1fO-cU-X5e"/>
+                            <constraint firstItem="Ajd-SZ-HM1" firstAttribute="trailing" secondItem="zDn-5f-5Vl" secondAttribute="trailing" constant="16" id="31h-CG-bpa"/>
                             <constraint firstItem="P4h-BI-daT" firstAttribute="leading" secondItem="Ajd-SZ-HM1" secondAttribute="leading" constant="163" id="3qj-YG-4Sa"/>
-                            <constraint firstItem="Qvc-Mr-MRa" firstAttribute="top" secondItem="P4h-BI-daT" secondAttribute="bottom" constant="10" id="NRH-03-5Zd"/>
-                            <constraint firstItem="zDn-5f-5Vl" firstAttribute="top" secondItem="Qvc-Mr-MRa" secondAttribute="bottom" constant="10" id="VSo-dg-ZKQ"/>
-                            <constraint firstItem="Mx4-Pv-GWo" firstAttribute="top" secondItem="zDn-5f-5Vl" secondAttribute="bottom" constant="67.329999999999998" id="ap4-H2-hXC"/>
-                            <constraint firstItem="Qvc-Mr-MRa" firstAttribute="centerX" secondItem="P4h-BI-daT" secondAttribute="centerX" id="ay5-KM-7jQ"/>
+                            <constraint firstItem="zDn-5f-5Vl" firstAttribute="leading" secondItem="Ajd-SZ-HM1" secondAttribute="leading" constant="16" id="DbB-eL-a63"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zDn-5f-5Vl" secondAttribute="bottom" constant="90" id="N5r-7z-hbC"/>
+                            <constraint firstItem="76u-VY-dJx" firstAttribute="top" secondItem="Ajd-SZ-HM1" secondAttribute="top" constant="35" id="gfG-Vf-4Ud"/>
+                            <constraint firstItem="pi5-fj-p4V" firstAttribute="centerY" secondItem="76u-VY-dJx" secondAttribute="centerY" id="hmL-Jr-rsV"/>
                             <constraint firstItem="Mx4-Pv-GWo" firstAttribute="leading" secondItem="NyU-KV-xkf" secondAttribute="leadingMargin" constant="23" id="ieH-9f-lFQ"/>
-                            <constraint firstAttribute="trailing" secondItem="zDn-5f-5Vl" secondAttribute="trailing" constant="16" id="jrg-5a-ady"/>
-                            <constraint firstItem="zDn-5f-5Vl" firstAttribute="leading" secondItem="NyU-KV-xkf" secondAttribute="leading" constant="16" id="nMA-I9-Sz5"/>
+                            <constraint firstItem="zDn-5f-5Vl" firstAttribute="top" secondItem="Qvc-Mr-MRa" secondAttribute="bottom" constant="20" id="qAk-Mt-nwh"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Mx4-Pv-GWo" secondAttribute="bottom" constant="20" id="udL-9X-PS1"/>
+                            <constraint firstItem="76u-VY-dJx" firstAttribute="leading" secondItem="Ajd-SZ-HM1" secondAttribute="leading" constant="16" id="vvu-FC-vpC"/>
+                            <constraint firstItem="Qvc-Mr-MRa" firstAttribute="centerX" secondItem="Ajd-SZ-HM1" secondAttribute="centerX" id="xmU-Q1-rzL"/>
+                            <constraint firstItem="Qvc-Mr-MRa" firstAttribute="top" secondItem="P4h-BI-daT" secondAttribute="bottom" constant="15" id="xma-bq-9Hj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reciept" id="Hjy-pE-MjW"/>
                     <connections>
+                        <outlet property="receiptTitle" destination="Qvc-Mr-MRa" id="pPY-fv-HS6"/>
                         <outlet property="tableReciept" destination="zDn-5f-5Vl" id="XHA-iG-Zgh"/>
                     </connections>
                 </viewController>
@@ -86,5 +109,6 @@
     </scenes>
     <resources>
         <image name="ico_Check" width="64" height="64"/>
+        <image name="xmark" width="33" height="32"/>
     </resources>
 </document>

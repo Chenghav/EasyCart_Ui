@@ -12,7 +12,7 @@
 		315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */; };
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
-		31E6B5172AE3BB21000B5EFB /* NotificationDetailsDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */; };
+		31E6B5172AE3BB21000B5EFB /* ReceiptDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5162AE3BB21000B5EFB /* ReceiptDemoable.swift */; };
 		31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */; };
 		31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */; };
 		31EDD65A2AE0FE650097A6A8 /* AttachmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */; };
@@ -178,7 +178,7 @@
 		3155407F2ADE35D100BFF8B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
-		31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsDemoable.swift; sourceTree = "<group>"; };
+		31E6B5162AE3BB21000B5EFB /* ReceiptDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptDemoable.swift; sourceTree = "<group>"; };
 		31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReortViewController.swift; sourceTree = "<group>"; };
 		31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButton.swift; sourceTree = "<group>"; };
@@ -382,7 +382,6 @@
 		3155407A2ADE353100BFF8B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				31E6B5152AE3BAD3000B5EFB /* NotificationDetails */,
 				31E9FC8C2ADFCAA50057CC47 /* Report */,
 				315540862ADEB49100BFF8B5 /* PopUp */,
 				315540832ADE42A300BFF8B5 /* TableCell */,
@@ -426,12 +425,15 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
-		31E6B5152AE3BAD3000B5EFB /* NotificationDetails */ = {
+		31E932BF2AE4D0DA008B614B /* Receipt */ = {
 			isa = PBXGroup;
 			children = (
-				31E6B5162AE3BB21000B5EFB /* NotificationDetailsDemoable.swift */,
+				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
+				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
+				E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */,
+				31E6B5162AE3BB21000B5EFB /* ReceiptDemoable.swift */,
 			);
-			path = NotificationDetails;
+			path = Receipt;
 			sourceTree = "<group>";
 		};
 		31E9FC8C2ADFCAA50057CC47 /* Report */ = {
@@ -1133,9 +1135,7 @@
 				DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */,
 				DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */,
 				DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */,
-				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
-				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
-				E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */,
+				31E932BF2AE4D0DA008B614B /* Receipt */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -1358,7 +1358,7 @@
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
 				E3AB7E022ADFBBE500AF4E37 /* ReceiptTableViewCell.swift in Sources */,
-				31E6B5172AE3BB21000B5EFB /* NotificationDetailsDemoable.swift in Sources */,
+				31E6B5172AE3BB21000B5EFB /* ReceiptDemoable.swift in Sources */,
 				31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,

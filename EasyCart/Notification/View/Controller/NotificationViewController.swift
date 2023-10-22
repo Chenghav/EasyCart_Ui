@@ -7,9 +7,9 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController, NotificationDemoable, NotificationDetailsDemoable {
-    
-    var receiptSign: UIImageView?
+class NotificationViewController: UIViewController, NotificationDemoable, ReceiptDemoable {
+    var replceReceiptTitle: UILabel?
+    var receiptImage: UIImage?
     
     var selectedNotification: NotificationModel?
     @IBOutlet weak var tableView: UITableView!
@@ -25,6 +25,7 @@ class NotificationViewController: UIViewController, NotificationDemoable, Notifi
         tableView.reloadData()
         
         tableView.contentInset = UIEdgeInsets(top: -30, left: 0, bottom: 0, right: 0)
+        tableView.estimatedSectionHeaderHeight = 44
     }
     func openModal() {
         NotificationViewController.openDemo(from: self, in: nil)
@@ -123,7 +124,8 @@ extension NotificationViewController: UITableViewDelegate {
             .font: font,
             .foregroundColor: UIColor.black
         ]
-        let attributedString = NSAttributedString(string: headerView.textLabel?.text ?? "", attributes: attributes)
+        let title = tableView.dataSource?.tableView?(tableView, titleForHeaderInSection: section) ?? ""
+        let attributedString = NSAttributedString(string: title, attributes: attributes)
         headerView.textLabel?.attributedText = attributedString
     }
     
@@ -133,7 +135,11 @@ extension NotificationViewController: UITableViewDelegate {
         }
         // Change the color of notificationRec
         cell.notificationRec.backgroundColor = #colorLiteral(red: 0.9000977278, green: 0.9119441509, blue: 1, alpha: 1)
-        NotificationViewController.openNotificationDetails(from: self, in: nil)
+        // Navigation to receipt
+        let receiptImage = UIImage(named: "receive_notification_sign")
+        let receiptTitle = UILabel() // Create a new UILabel instance
+        receiptTitle.text = "Receive an order"
+        NotificationViewController.openReceipt(from: self, in: nil, receiptImage: receiptImage, replaceReceiptTitle: receiptTitle)
         
     }
     
