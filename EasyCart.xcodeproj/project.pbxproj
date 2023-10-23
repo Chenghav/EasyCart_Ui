@@ -13,6 +13,7 @@
 		315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540812ADE390500BFF8B5 /* NotificationModel.swift */; };
 		315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */; };
 		31E6B5172AE3BB21000B5EFB /* ReceiptDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5162AE3BB21000B5EFB /* ReceiptDemoable.swift */; };
+		31E932C12AE51A5D008B614B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31E932C02AE51A5D008B614B /* GoogleService-Info.plist */; };
 		31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */; };
 		31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */; };
 		31EDD65A2AE0FE650097A6A8 /* AttachmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */; };
@@ -179,6 +180,7 @@
 		315540812ADE390500BFF8B5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		315540842ADE42F600BFF8B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		31E6B5162AE3BB21000B5EFB /* ReceiptDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptDemoable.swift; sourceTree = "<group>"; };
+		31E932C02AE51A5D008B614B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31E9FC8D2ADFCAD60057CC47 /* NotificationReortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReortViewController.swift; sourceTree = "<group>"; };
 		31EDD6572AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		31EDD6592AE0FE650097A6A8 /* AttachmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButton.swift; sourceTree = "<group>"; };
@@ -707,6 +709,7 @@
 				DFDB67D52AD65787006ECEE7 /* Create */,
 				DFDB677C2AD65156006ECEE7 /* MainView + MainSB */,
 				DFDB674F2AD65046006ECEE7 /* App */,
+				31E932C02AE51A5D008B614B /* GoogleService-Info.plist */,
 				C2BD61E52AD3B7A300939CA7 /* Info.plist */,
 				C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */,
 			);
@@ -1299,6 +1302,7 @@
 				DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */,
 				C2008A622ADFB77E008C07AA /* SaveCollectionViewCell.xib in Resources */,
 				BBA013DE2AD69C950051BD7B /* HomeDetailSB.storyboard in Resources */,
+				31E932C12AE51A5D008B614B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1625,6 +1629,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${DT_TOOLCHAIN_DIR}",
+					/usr/lib/swift,
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UiKit.EasyCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1659,6 +1668,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${DT_TOOLCHAIN_DIR}",
+					/usr/lib/swift,
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UiKit.EasyCart;
