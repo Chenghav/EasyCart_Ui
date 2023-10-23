@@ -14,7 +14,7 @@ target 'EasyCart' do
     end
   end
   # Pods for EasyCart
-  #pod 'Firebase/Core'
-  #pod 'Firebase/Auth'
-  #pod 'GoogleSignIn'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 end
