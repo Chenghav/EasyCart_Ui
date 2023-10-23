@@ -151,6 +151,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="171" height="220"/>
                                         <connections>
+                                            <outlet property="bookMark" destination="QeM-DG-Eke" id="wSX-wr-DBH"/>
                                             <outlet property="imageView" destination="TzG-dQ-tCH" id="kel-rI-3vx"/>
                                             <outlet property="labelView" destination="V1F-aI-Lps" id="W66-bU-5ng"/>
                                             <outlet property="labelView1" destination="8N7-UI-4bX" id="U9I-Py-WKs"/>
@@ -487,7 +488,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03t-h9-1Zm">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="213"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_add" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-xG-OHt">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-xG-OHt">
                                                 <rect key="frame" x="16" y="94.666666666666657" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="dum-OB-cPM"/>
@@ -524,7 +525,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-r5-kGb">
                                         <rect key="frame" x="0.0" y="229" width="361" height="213"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item unsaved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-9u-R0F">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove from save" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-9u-R0F">
                                                 <rect key="frame" x="56" y="97" width="244" height="19.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="244" id="NXO-sN-c0x"/>
@@ -1367,7 +1368,7 @@ CQ
         <image name="Frame 427319564" width="44" height="44"/>
         <image name="Group 5707" width="110" height="108"/>
         <image name="easy_cart_logo" width="119" height="30"/>
-        <image name="ico_add" width="24" height="24"/>
+        <image name="ico_arrow" width="24" height="24"/>
         <image name="ico_bookmark" width="44" height="44"/>
         <image name="ico_edit" width="24" height="24"/>
         <image name="ico_link" width="32" height="32"/>

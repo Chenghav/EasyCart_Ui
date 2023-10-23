@@ -45,13 +45,13 @@ extension PopUp {
             useFullScreenMode: true,
             shrinkPresentingViewController: true,
             useInlineMode: useInlineMode
+            
         )
         
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
         sheetController.setSizes([.fixed(253)])
-        
-        
+                
         parent.present(sheetController, animated: true, completion: nil)
     }
 }

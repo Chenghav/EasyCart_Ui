@@ -13,7 +13,7 @@ class CutomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageCus : UIImageView!
     @IBOutlet weak var LabCus   : UILabel!
     @IBOutlet weak var LabPri   : UILabel!
-    
+    @IBOutlet weak var bookMark: UIImageView!
     // MARK:  - Life Cycle -
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +25,7 @@ class CutomCollectionViewCell: UICollectionViewCell {
         imageCus.image = conllection.image
         LabCus.text    = conllection.product
         LabPri.text    = conllection.price
+        bookMark.image = conllection.book
     }
 
 }

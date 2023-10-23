@@ -85,13 +85,17 @@ extension ProfileViewController : UITableViewDataSource, UITableViewDelegate {
             if let nextController = storyboard?.instantiateViewController(identifier: "ConnectBankViewController") as? ConnectBankViewController {
                 navigationController?.pushViewController(nextController, animated: true)
             }
-        }else if currentIndex == 1 && indexPath.row == 0 {
-            if let nextController = storyboard?.instantiateViewController(identifier: "AllitemViewController") as? AllitemViewController {
-                navigationController?.pushViewController(nextController, animated: true)
+        }else if currentIndex == 1 {
+            if indexPath.row == 4 {
+                
+            }else {
+                if let nextController = storyboard?.instantiateViewController(identifier: "AllitemViewController") as? AllitemViewController {
+                    navigationController?.pushViewController(nextController, animated: true)
+                }
             }
+            
         }
-    
-        }
+    }
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             let currentSections = indexPath.section
             if currentSections == 0 {
