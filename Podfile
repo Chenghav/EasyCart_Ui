@@ -4,7 +4,7 @@
 target 'EasyCart' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'CarbonKit'
+  pod 'CarbonKit'
   # Pods for Easycart
   post_install do |pi|
     pi.pods_project.targets.each do |t|
@@ -14,7 +14,7 @@ pod 'CarbonKit'
     end
   end
   # Pods for EasyCart
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
-pod 'GoogleSignIn'
+  #pod 'Firebase/Core'
+  #pod 'Firebase/Auth'
+  #pod 'GoogleSignIn'
 end

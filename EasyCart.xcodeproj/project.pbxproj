@@ -709,6 +709,7 @@
 				DFDB67D52AD65787006ECEE7 /* Create */,
 				DFDB677C2AD65156006ECEE7 /* MainView + MainSB */,
 				DFDB674F2AD65046006ECEE7 /* App */,
+				31E932C02AE51A5D008B614B /* GoogleService-Info.plist */,
 				C2BD61E52AD3B7A300939CA7 /* Info.plist */,
 				C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */,
 			);
@@ -718,7 +719,6 @@
 		DFDB674F2AD65046006ECEE7 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				31E932C02AE51A5D008B614B /* GoogleService-Info.plist */,
 				DFDB67502AD65046006ECEE7 /* AppDelegate.swift */,
 				DFDB67512AD65046006ECEE7 /* SceneDelegate.swift */,
 			);

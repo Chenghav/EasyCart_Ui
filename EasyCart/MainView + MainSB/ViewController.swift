@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import GoogleSignIn
-import FirebaseAuth
-import Firebase
+//import GoogleSignIn
+//import FirebaseAuth
+//import Firebase
 
 class ViewController: UIViewController {
     
@@ -32,55 +32,56 @@ class ViewController: UIViewController {
         googleBtn.tintColor = UIColor.white
         
         // handle signIn with google
-        guard let clientID = FirebaseApp.app()?.options.clientID else {
-            fatalError("No Client ID Found in Firebase configuration")
-        }
-        
-        let config = GIDConfiguration(clientID: clientID)
-        GIDSignIn.sharedInstance.configuration = config
+        //        guard let clientID = FirebaseApp.app()?.options.clientID else {
+        //            fatalError("No Client ID Found in Firebase configuration")
+        //        }
+        //
+        //        let config = GIDConfiguration(clientID: clientID)
+        //        GIDSignIn.sharedInstance.configuration = config
         
     }
     
     
     @IBAction func googleConection(_ sender: Any) {
-        GIDSignIn.sharedInstance.signIn(withPresenting: self)
-        { result, error in
-            guard error == nil else {
-                // ...
-                print("error NIL")
-                return
-            }
-            guard let user = result?.user,
-                  let idToken = user.idToken?.tokenString
-                    
-            else {
-                return
-            }
-            print("IDToken \(idToken) IDToken")
-            print(user.userID)
-            print(user.profile?.name)
-            print(user.profile?.email)
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                           accessToken: user.accessToken.tokenString)
-            print(user)
-            Auth.auth().signIn(with: credential){_,_ in
-                if let error = error {
-                    print("Firebase Authentication Error: \(error.localizedDescription)")
-                    return
-                }
-                else{
-                    print("Hello1 \(credential) hello1")
-                }
-                return
-            }
-        }
+        //        GIDSignIn.sharedInstance.signIn(withPresenting: self)
+        //        { result, error in
+        //            guard error == nil else {
+        //                // ...
+        //                print("error NIL")
+        //                return
+        //            }
+        //            guard let user = result?.user,
+        //                  let idToken = user.idToken?.tokenString
+        //
+        //            else {
+        //                return
+        //            }
+        //            print("IDToken \(idToken) IDToken")
+        //            print(user.userID)
+        //            print(user.profile?.name)
+        //            print(user.profile?.email)
+        //            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+        //                                                           accessToken: user.accessToken.tokenString)
+        //            print(user)
+        //            Auth.auth().signIn(with: credential){_,_ in
+        //                if let error = error {
+        //                    print("Firebase Authentication Error: \(error.localizedDescription)")
+        //                    return
+        //                }
+        //                else{
+        //                    print("Hello1 \(credential) hello1")
+        //                }
+        //                return
+        //            }
+        //        }
+        let storyboard = UIStoryboard(name: "Storyboard1", bundle: nil)
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "TabMainViewController")
+        secondViewController.modalPresentationStyle = .fullScreen
+        self.present(secondViewController, animated: true, completion: nil)
     }
     
-    //        let storyboard = UIStoryboard(name: "Storyboard1", bundle: nil)
-    //           let secondViewController = storyboard.instantiateViewController(withIdentifier: "TabMainViewController")
-    //           secondViewController.modalPresentationStyle = .fullScreen
-    //           self.present(secondViewController, animated: true, completion: nil)
-
-
+    
+    
+    
 }
 
