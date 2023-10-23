@@ -65,6 +65,7 @@
             <connections>
                 <outlet property="LabCus" destination="rhW-xy-A9H" id="89p-dR-tW1"/>
                 <outlet property="LabPri" destination="Ta8-ND-39D" id="DEz-f2-TQs"/>
+                <outlet property="bookMark" destination="QFQ-ed-QFI" id="jnr-la-Q8O"/>
                 <outlet property="imageCus" destination="Kil-Eo-FhW" id="cMV-Xg-vO9"/>
             </connections>
             <point key="canvasLocation" x="-50.381679389312978" y="-12.67605633802817"/>
