@@ -9,17 +9,18 @@ import UIKit
 
 class ExploreTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var tableCell: UIView!
+    @IBOutlet weak var exploreRec: UIView!
     @IBOutlet weak var exploreImgCard: UIImageView!
     @IBOutlet weak var explorePrice: UILabel!
     @IBOutlet weak var exploreDesc: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        tableCell.layer.cornerRadius = 10
         
-//        contentView.backgroundColor = UIColor.clear
-//        backgroundColor = UIColor.clear
-        separatorInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16) // Set the desired spacing for the cells
+        exploreRec.layer.cornerRadius = 10
+        exploreRec.layer.borderWidth = 1
+        exploreRec.layer.borderColor = #colorLiteral(red: 0.9000977278, green: 0.9119441509, blue: 1, alpha: 1)
+        exploreImgCard.layer.cornerRadius = 10
+        exploreImgCard.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,45 +18,56 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-L1-ccP">
-                        <rect key="frame" x="0.0" y="0.0" width="112" height="114"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-Yq-6WR">
-                        <rect key="frame" x="128" y="16" width="176" height="17"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-kp-ujr">
-                        <rect key="frame" x="128" y="81" width="176" height="17"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-HC-ZiP">
-                        <rect key="frame" x="287" y="77" width="17" height="21"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jR0-BW-BM7">
+                        <rect key="frame" x="0.0" y="8" width="320" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-L1-ccP">
+                                <rect key="frame" x="0.0" y="0.0" width="96" height="98"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-Yq-6WR">
+                                <rect key="frame" x="112" y="16" width="192" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-kp-ujr">
+                                <rect key="frame" x="112" y="61.666666666666671" width="192" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-HC-ZiP">
+                                <rect key="frame" x="287" y="61" width="17" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="0Uq-Ab-xpC"/>
+                                    <constraint firstAttribute="height" constant="21" id="OBi-Ip-ezo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="save_icon" title=""/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="17" id="1LO-Bc-Kv5"/>
-                            <constraint firstAttribute="height" constant="21" id="JhB-f9-urZ"/>
+                            <constraint firstItem="lgq-L1-ccP" firstAttribute="top" secondItem="jR0-BW-BM7" secondAttribute="top" id="2x3-pD-DmN"/>
+                            <constraint firstAttribute="bottom" secondItem="lgq-L1-ccP" secondAttribute="bottom" id="88K-yp-xn2"/>
+                            <constraint firstAttribute="trailing" secondItem="6hQ-HC-ZiP" secondAttribute="trailing" constant="16" id="C6U-M6-agA"/>
+                            <constraint firstItem="lgq-L1-ccP" firstAttribute="width" secondItem="jR0-BW-BM7" secondAttribute="width" multiplier="0.3" id="EP8-wW-TzD"/>
+                            <constraint firstAttribute="bottom" secondItem="6hQ-HC-ZiP" secondAttribute="bottom" constant="16" id="GGG-vp-YGq"/>
+                            <constraint firstAttribute="trailing" secondItem="LJM-Yq-6WR" secondAttribute="trailing" constant="16" id="LOo-cE-eAE"/>
+                            <constraint firstAttribute="bottom" secondItem="fsT-kp-ujr" secondAttribute="bottom" constant="19.5" id="LcC-l4-GcS"/>
+                            <constraint firstItem="lgq-L1-ccP" firstAttribute="leading" secondItem="jR0-BW-BM7" secondAttribute="leading" id="Rae-c7-R52"/>
+                            <constraint firstItem="fsT-kp-ujr" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="TMa-GX-pfw"/>
+                            <constraint firstItem="LJM-Yq-6WR" firstAttribute="top" secondItem="jR0-BW-BM7" secondAttribute="top" constant="16" id="WBP-pD-C3T"/>
+                            <constraint firstAttribute="trailing" secondItem="fsT-kp-ujr" secondAttribute="trailing" constant="16" id="jRu-8e-zgP"/>
+                            <constraint firstItem="LJM-Yq-6WR" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="yED-bj-Enj"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="save_icon" title=""/>
-                    </button>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="6hQ-HC-ZiP" secondAttribute="trailing" constant="16" id="1fV-wS-gpm"/>
-                    <constraint firstItem="LJM-Yq-6WR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="EpP-iJ-zoY"/>
-                    <constraint firstAttribute="bottom" secondItem="lgq-L1-ccP" secondAttribute="bottom" id="Ful-v3-j3F"/>
-                    <constraint firstAttribute="bottom" secondItem="fsT-kp-ujr" secondAttribute="bottom" constant="16" id="JQD-B7-Q4S"/>
-                    <constraint firstAttribute="trailing" secondItem="LJM-Yq-6WR" secondAttribute="trailing" constant="16" id="Kxb-Wc-cWb"/>
-                    <constraint firstItem="lgq-L1-ccP" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.35" id="NIN-UX-uEb"/>
-                    <constraint firstItem="lgq-L1-ccP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OLD-xM-f82"/>
-                    <constraint firstItem="lgq-L1-ccP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ccV-Tb-OdA"/>
-                    <constraint firstAttribute="bottom" secondItem="6hQ-HC-ZiP" secondAttribute="bottom" constant="16" id="iy8-Vp-XAc"/>
-                    <constraint firstItem="fsT-kp-ujr" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="jP2-1I-a4L"/>
-                    <constraint firstItem="LJM-Yq-6WR" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="nOI-zs-veX"/>
-                    <constraint firstAttribute="trailing" secondItem="fsT-kp-ujr" secondAttribute="trailing" constant="16" id="utq-YI-dUG"/>
+                    <constraint firstAttribute="trailing" secondItem="jR0-BW-BM7" secondAttribute="trailing" id="HD6-dg-qKo"/>
+                    <constraint firstItem="jR0-BW-BM7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MOm-bQ-MkT"/>
+                    <constraint firstItem="jR0-BW-BM7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="RTO-S5-ChH"/>
+                    <constraint firstAttribute="bottom" secondItem="jR0-BW-BM7" secondAttribute="bottom" constant="8" id="oDx-j7-HYh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -64,7 +76,7 @@
                 <outlet property="exploreDesc" destination="LJM-Yq-6WR" id="3nu-I6-4ad"/>
                 <outlet property="exploreImgCard" destination="lgq-L1-ccP" id="jsz-A1-95Q"/>
                 <outlet property="explorePrice" destination="fsT-kp-ujr" id="bk0-1d-LzR"/>
-                <outlet property="tableCell" destination="H2p-sc-9uM" id="0xw-Cq-qEx"/>
+                <outlet property="exploreRec" destination="jR0-BW-BM7" id="Hiv-Bw-caH"/>
             </connections>
             <point key="canvasLocation" x="10.687022900763358" y="13.380281690140846"/>
         </tableViewCell>
@@ -72,5 +84,8 @@
     <resources>
         <image name="save_icon" width="24" height="24"/>
         <image name="watch" width="121" height="130"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

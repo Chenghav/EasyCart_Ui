@@ -44,6 +44,10 @@ extension ExploreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExploreTableViewCell
         cell.config(with: topItemsModel[indexPath.row])
+        // clear selection color
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.clear
+        cell.selectedBackgroundView = bgColorView
         return cell
     }
 }
@@ -51,7 +55,19 @@ extension ExploreViewController: UITableViewDataSource {
 
 extension ExploreViewController: UICollectionViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Top item"
+        return "Top items"
+    }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        
+        let font = UIFont.systemFont(ofSize: 16, weight: .semibold) // Adjust the font size and weight as needed
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font,
+            .foregroundColor: UIColor.black
+        ]
+        let title = tableView.dataSource?.tableView?(tableView, titleForHeaderInSection: section) ?? ""
+        let attributedString = NSAttributedString(string: title, attributes: attributes)
+        headerView.textLabel?.attributedText = attributedString
     }
 }
 
