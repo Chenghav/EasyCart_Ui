@@ -30,6 +30,12 @@ class SaveViewController: UIViewController{
         collectionView.delegate = self
         datas = Saves
         collectionView.register(SaveCollectionViewCell.nib(), forCellWithReuseIdentifier: "SaveCollectionViewCell")
+        let layout = UICollectionViewFlowLayout()
+                layout.scrollDirection = .vertical
+                layout.itemSize = CGSize(width: (collectionView.frame.size.width - 8 * 3) / 2, height: 203)
+                layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 16, right: 4)
+//                layout.minimumInteritemSpacing = 8
+                collectionView.collectionViewLayout = layout
     }
 
     // MARK:  - Outlets Action -
@@ -39,24 +45,28 @@ class SaveViewController: UIViewController{
 }
 
 extension SaveViewController : UICollectionViewDataSource, UICollectionViewDelegate {
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return datas.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SaveCollectionViewCell", for: indexPath) as! SaveCollectionViewCell
-        cell.layer.cornerRadius = 15
-        cell.layer.borderWidth  = 1
-        cell.layer.borderColor  = #colorLiteral(red: 0.9028397202, green: 0.8978739381, blue: 0.9108731151, alpha: 1)
         cell.setUp(with: datas[indexPath.row])
-        return cell
+        if indexPath.row == 0 {
+            return cell
+        }else {
+            cell.stack2.isHidden = true
+            cell.image2.isHidden = true
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let nextController = storyboard?.instantiateViewController(identifier: "CellSelectViewController") as? CellSelectViewController {
             nextController.selectedData = datas[indexPath.row]
             nextController.isFirstCellSelected = indexPath.row == 0
+
             navigationController?.pushViewController(nextController, animated: true)
         }
     }

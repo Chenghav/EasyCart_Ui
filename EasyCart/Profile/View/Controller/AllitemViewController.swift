@@ -14,6 +14,8 @@ class AllitemViewController: UIViewController, CarbonTabSwipeNavigationDelegate 
     var controllerNames      = ["All", "Purchased", "Sold", "Selling"]
     var carbonSwapNavigation = CarbonTabSwipeNavigation()
     
+    var selectedIndex  = 0
+    
     // MARK:  - Outlets -
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -39,6 +41,7 @@ class AllitemViewController: UIViewController, CarbonTabSwipeNavigationDelegate 
         carbonSwapNavigation.setSelectedColor(UIColor.purple, font: UIFont.systemFont(ofSize: 19, weight: .bold))
         carbonSwapNavigation.setIndicatorColor(UIColor.purple)
         carbonSwapNavigation.setIndicatorHeight(1)
+        carbonSwapNavigation.currentTabIndex = UInt(selectedIndex)
         carbonSwapNavigation.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             carbonSwapNavigation.view.topAnchor.constraint(equalTo: searchBar.topAnchor, constant: 60),

@@ -19,7 +19,7 @@
 		31EDD6672AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6662AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift */; };
 		31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */; };
 		31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */; };
-		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
+		5801A003D6A59B116B522EAD /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72E31C801B2E37511FFBB0E /* Pods_EasyCart.framework */; };
 		BB08BDEF2AD6B2F20075B32F /* DateOfitemCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08BDED2AD6B2F20075B32F /* DateOfitemCollCell.swift */; };
 		BB08BDF02AD6B2F20075B32F /* DateOfitemCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB08BDEE2AD6B2F20075B32F /* DateOfitemCollCell.xib */; };
 		BB08BDF62AD6CDAC0075B32F /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08BDF52AD6CDAC0075B32F /* ProductInfo.swift */; };
@@ -45,8 +45,6 @@
 		BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */; };
 		BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */; };
 		BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */; };
-		C2008A612ADFB77E008C07AA /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */; };
-		C2008A622ADFB77E008C07AA /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */; };
 		C2008A642ADFBADD008C07AA /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A632ADFBADD008C07AA /* SaveData.swift */; };
 		C2008A662ADFCB8B008C07AA /* CellSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */; };
 		C2008A692ADFDDA3008C07AA /* PopUPForSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */; };
@@ -64,6 +62,7 @@
 		C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF982ADE6C2000C5752A /* PopBankSetUp.swift */; };
 		C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF9A2ADE7D7600C5752A /* Demoable.swift */; };
 		C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BDF9C2ADE883900C5752A /* Demoable1.swift */; };
+		C2AAAEFE2AE6524200B46DC5 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C2AAAEFD2AE6524200B46DC5 /* FittedSheets */; };
 		C2B9B6F42AE22D280009B0A8 /* AddItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9B6F22AE22D280009B0A8 /* AddItemsCollectionViewCell.swift */; };
 		C2B9B6F52AE22D280009B0A8 /* AddItemsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B9B6F32AE22D280009B0A8 /* AddItemsCollectionViewCell.xib */; };
 		C2B9B6F72AE22FB60009B0A8 /* AddItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9B6F62AE22FB60009B0A8 /* AddItems.swift */; };
@@ -72,6 +71,8 @@
 		C2BFB21E2AE0EAAB00FFA7D7 /* AddMorePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */; };
 		C2BFB2202AE0EDD600FFA7D7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */; };
 		C2BFB2222AE11FE700FFA7D7 /* AddItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */; };
+		C2EE177A2AE7733E00F29329 /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */; };
+		C2EE177B2AE7733E00F29329 /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */; };
 		DFBF14FC2AE627D200653EF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFBF14FB2AE627D200653EF1 /* GoogleService-Info.plist */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
 		DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67502AD65046006ECEE7 /* AppDelegate.swift */; };
@@ -186,9 +187,6 @@
 		31EDD6662AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDemoable.swift; sourceTree = "<group>"; };
 		31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopUpViewController.swift; sourceTree = "<group>"; };
-		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
-		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
-		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB08BDED2AD6B2F20075B32F /* DateOfitemCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfitemCollCell.swift; sourceTree = "<group>"; };
 		BB08BDEE2AD6B2F20075B32F /* DateOfitemCollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateOfitemCollCell.xib; sourceTree = "<group>"; };
 		BB08BDF52AD6CDAC0075B32F /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
@@ -198,6 +196,7 @@
 		BB560DAE2ADE3A7100DBB585 /* SlideClickCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideClickCVC.swift; sourceTree = "<group>"; };
 		BB560DAF2ADE3A7100DBB585 /* SlideClickCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideClickCVC.xib; sourceTree = "<group>"; };
 		BB560DB32ADE4A1000DBB585 /* ReduisExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduisExtension.swift; sourceTree = "<group>"; };
+		BB831188FF68C10D1F85536C /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA013D72AD6999A0051BD7B /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
 		BBA013D92AD699F60051BD7B /* DataOfItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfItem.swift; sourceTree = "<group>"; };
 		BBA013DB2AD69C800051BD7B /* HomeDetailCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailCV.swift; sourceTree = "<group>"; };
@@ -214,8 +213,6 @@
 		BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
 		BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
 		BF401E632AD6A2D100F5FBE9 /* MoreDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailData.swift; sourceTree = "<group>"; };
-		C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
-		C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
 		C2008A632ADFBADD008C07AA /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSelectViewController.swift; sourceTree = "<group>"; };
 		C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUPForSave.swift; sourceTree = "<group>"; };
@@ -242,6 +239,8 @@
 		C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMorePop.swift; sourceTree = "<group>"; };
 		C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsViewController.swift; sourceTree = "<group>"; };
+		C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
 		DFBF14FB2AE627D200653EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFDB67502AD65046006ECEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDB67512AD65046006ECEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -340,6 +339,8 @@
 		E3A891D82ADD26D5006E63C7 /* addressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressData.swift; sourceTree = "<group>"; };
 		E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
 		E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
+		F72E31C801B2E37511FFBB0E /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD603D44D3C696200927533 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,9 +348,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AAAEFE2AE6524200B46DC5 /* FittedSheets in Frameworks */,
 				DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */,
 				C26D6A102AD67CFF000235A8 /* FittedSheets in Frameworks */,
-				71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */,
+				5801A003D6A59B116B522EAD /* Pods_EasyCart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,21 +475,21 @@
 			path = UploadAttachment;
 			sourceTree = "<group>";
 		};
-		4247E8D571EB9320A3CB6A37 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		642EEE30391A8ED1D2E9DC73 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */,
-				8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */,
+				BB831188FF68C10D1F85536C /* Pods-EasyCart.debug.xcconfig */,
+				FFD603D44D3C696200927533 /* Pods-EasyCart.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CA700F0A77373E0A903C3EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72E31C801B2E37511FFBB0E /* Pods_EasyCart.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BB560DB22ADE49D600DBB585 /* Extension */ = {
@@ -622,9 +624,9 @@
 		C2008A582ADFB54D008C07AA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */,
 				C268B5362AE0388200197B31 /* AddMoreCollectionViewCell.xib */,
 				C2B9B6F32AE22D280009B0A8 /* AddItemsCollectionViewCell.xib */,
+				C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -642,9 +644,9 @@
 		C2008A5A2ADFB581008C07AA /* Custom cell */ = {
 			isa = PBXGroup;
 			children = (
-				C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */,
 				C268B5352AE0388200197B31 /* AddMoreCollectionViewCell.swift */,
 				C2B9B6F22AE22D280009B0A8 /* AddItemsCollectionViewCell.swift */,
+				C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */,
 			);
 			path = "Custom cell";
 			sourceTree = "<group>";
@@ -683,7 +685,7 @@
 				C2BD61D32AD3B7A100939CA7 /* EasyCart */,
 				C2BD61D22AD3B7A100939CA7 /* Products */,
 				642EEE30391A8ED1D2E9DC73 /* Pods */,
-				4247E8D571EB9320A3CB6A37 /* Frameworks */,
+				6CA700F0A77373E0A903C3EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1192,11 +1194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2BD61E82AD3B7A300939CA7 /* Build configuration list for PBXNativeTarget "EasyCart" */;
 			buildPhases = (
-				3A56BC186CF1AD1BCCB1C207 /* [CP] Check Pods Manifest.lock */,
+				91B486B42F00BB57B29C9845 /* [CP] Check Pods Manifest.lock */,
 				C2BD61CD2AD3B7A100939CA7 /* Sources */,
 				C2BD61CE2AD3B7A100939CA7 /* Frameworks */,
 				C2BD61CF2AD3B7A100939CA7 /* Resources */,
-				B7E89664C4D1A15692D4C10D /* [CP] Embed Pods Frameworks */,
+				7851EE00788756CE4A329686 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1206,6 +1208,7 @@
 			packageProductDependencies = (
 				DFD5E7ED2AD50CB4006E101F /* Kingfisher */,
 				C26D6A0F2AD67CFF000235A8 /* FittedSheets */,
+				C2AAAEFD2AE6524200B46DC5 /* FittedSheets */,
 			);
 			productName = EasyCart;
 			productReference = C2BD61D12AD3B7A100939CA7 /* EasyCart.app */;
@@ -1267,6 +1270,7 @@
 				DFDB67F62AD65787006ECEE7 /* InfoTVC.xib in Resources */,
 				BBA013E22AD69D610051BD7B /* SlideCollectionViewCell.xib in Resources */,
 				DFDB67F82AD65787006ECEE7 /* DiscountTVC.xib in Resources */,
+				C2EE177B2AE7733E00F29329 /* SaveCollectionViewCell.xib in Resources */,
 				DFDB68CB2AD67446006ECEE7 /* PayTableViewCell.xib in Resources */,
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
 				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
@@ -1300,7 +1304,6 @@
 				E3A891CA2ADD25BC006E63C7 /* AddressAddTableViewCell.xib in Resources */,
 				BB560DB12ADE3A7100DBB585 /* SlideClickCVC.xib in Resources */,
 				DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */,
-				C2008A622ADFB77E008C07AA /* SaveCollectionViewCell.xib in Resources */,
 				BBA013DE2AD69C950051BD7B /* HomeDetailSB.storyboard in Resources */,
 				DFBF14FC2AE627D200653EF1 /* GoogleService-Info.plist in Resources */,
 			);
@@ -1309,7 +1312,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A56BC186CF1AD1BCCB1C207 /* [CP] Check Pods Manifest.lock */ = {
+		7851EE00788756CE4A329686 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B486B42F00BB57B29C9845 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1329,23 +1349,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7E89664C4D1A15692D4C10D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCart/Pods-EasyCart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1400,6 +1403,7 @@
 				31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */,
 				BB08BDF62AD6CDAC0075B32F /* ProductInfo.swift in Sources */,
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
+				C2EE177A2AE7733E00F29329 /* SaveCollectionViewCell.swift in Sources */,
 				DFDB67F52AD65787006ECEE7 /* CategoryTVC.swift in Sources */,
 				312A8E0D2AE132D00099E11A /* WriteReportTableViewCell.swift in Sources */,
 				BB560DB02ADE3A7100DBB585 /* SlideClickCVC.swift in Sources */,
@@ -1459,7 +1463,6 @@
 				BBA013E12AD69D610051BD7B /* SlideCollectionViewCell.swift in Sources */,
 				BB08BDF92AD6CEB80075B32F /* ProductListCVC.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
-				C2008A612ADFB77E008C07AA /* SaveCollectionViewCell.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
@@ -1608,7 +1611,7 @@
 		};
 		C2BD61E92AD3B7A300939CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */;
+			baseConfigurationReference = BB831188FF68C10D1F85536C /* Pods-EasyCart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1648,7 +1651,7 @@
 		};
 		C2BD61EA2AD3B7A300939CA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */;
+			baseConfigurationReference = FFD603D44D3C696200927533 /* Pods-EasyCart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1731,6 +1734,10 @@
 		C26D6A0F2AD67CFF000235A8 /* FittedSheets */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C26D6A0E2AD67CFF000235A8 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
+		};
+		C2AAAEFD2AE6524200B46DC5 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = FittedSheets;
 		};
 		DFD5E7ED2AD50CB4006E101F /* Kingfisher */ = {

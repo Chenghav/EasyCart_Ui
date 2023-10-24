@@ -43,7 +43,7 @@ extension Demoable1 {
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
-            shrinkPresentingViewController: true,
+            shrinkPresentingViewController: false,
             useInlineMode: useInlineMode
         )
         
