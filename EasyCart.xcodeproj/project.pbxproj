@@ -44,8 +44,6 @@
 		BF401E5A2AD6872E00F5FBE9 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */; };
 		BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */; };
 		BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */; };
-		C2008A612ADFB77E008C07AA /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */; };
-		C2008A622ADFB77E008C07AA /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */; };
 		C2008A642ADFBADD008C07AA /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A632ADFBADD008C07AA /* SaveData.swift */; };
 		C2008A662ADFCB8B008C07AA /* CellSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */; };
 		C2008A692ADFDDA3008C07AA /* PopUPForSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */; };
@@ -212,8 +210,6 @@
 		BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
 		BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
 		BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
-		C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
-		C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
 		C2008A632ADFBADD008C07AA /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSelectViewController.swift; sourceTree = "<group>"; };
 		C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUPForSave.swift; sourceTree = "<group>"; };
@@ -612,7 +608,6 @@
 		C2008A582ADFB54D008C07AA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				C2008A602ADFB77E008C07AA /* SaveCollectionViewCell.xib */,
 				C268B5362AE0388200197B31 /* AddMoreCollectionViewCell.xib */,
 				C2B9B6F32AE22D280009B0A8 /* AddItemsCollectionViewCell.xib */,
 			);
@@ -632,7 +627,6 @@
 		C2008A5A2ADFB581008C07AA /* Custom cell */ = {
 			isa = PBXGroup;
 			children = (
-				C2008A5F2ADFB77E008C07AA /* SaveCollectionViewCell.swift */,
 				C268B5352AE0388200197B31 /* AddMoreCollectionViewCell.swift */,
 				C2B9B6F22AE22D280009B0A8 /* AddItemsCollectionViewCell.swift */,
 			);
@@ -1289,7 +1283,6 @@
 				E3A891CA2ADD25BC006E63C7 /* AddressAddTableViewCell.xib in Resources */,
 				BB560DB12ADE3A7100DBB585 /* SlideClickCVC.xib in Resources */,
 				DFDB688B2AD65E25006ECEE7 /* Storyboard1.storyboard in Resources */,
-				C2008A622ADFB77E008C07AA /* SaveCollectionViewCell.xib in Resources */,
 				BBA013DE2AD69C950051BD7B /* HomeDetailSB.storyboard in Resources */,
 				DFBF14FC2AE627D200653EF1 /* GoogleService-Info.plist in Resources */,
 			);
@@ -1447,7 +1440,6 @@
 				BBA013E12AD69D610051BD7B /* SlideCollectionViewCell.swift in Sources */,
 				BB08BDF92AD6CEB80075B32F /* ProductListCVC.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
-				C2008A612ADFB77E008C07AA /* SaveCollectionViewCell.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
