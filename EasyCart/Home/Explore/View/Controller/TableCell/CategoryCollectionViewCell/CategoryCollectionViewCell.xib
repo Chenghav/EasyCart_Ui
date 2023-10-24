@@ -26,7 +26,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="94730753d727dcf2e5a5509f0630a81e" translatesAutoresizingMaskIntoConstraints="NO" id="sYH-Ql-wbz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sYH-Ql-wbz">
                                 <rect key="frame" x="16" y="34.666666666666664" width="35" height="34.999999999999993"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="KLS-Hz-hCN"/>
@@ -61,7 +61,4 @@
             <point key="canvasLocation" x="158.01526717557252" y="7.746478873239437"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="94730753d727dcf2e5a5509f0630a81e" width="1024" height="1024"/>
-    </resources>
 </document>

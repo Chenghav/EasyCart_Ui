@@ -1,15 +1,14 @@
 
+
 import Foundation
 import FittedSheets
 import UIKit
 
-protocol NotificationDemoable {
-    
+protocol CategoryDemovable {
+   
 }
-
 // MARK:  - PopUp FittedSheets -
-extension NotificationDemoable {
-    
+extension CategoryDemovable {
     static func addSheetEventLogging(to sheet: SheetViewController) {
         let previousDidDismiss = sheet.didDismiss
         sheet.didDismiss = {
@@ -29,22 +28,23 @@ extension NotificationDemoable {
             previousSizeChanged?(sheet , size, height)
         }
     }
-    static func openDemo(from parent: UIViewController, in view: UIView?) {
+    
+    static func openCategoryDetails(from parent: UIViewController, in view: UIView?) {
+        
         let useInlineMode = view != nil
         
-        let controller = UIStoryboard(name: "NotificationSB", bundle: nil).instantiateViewController(withIdentifier: "NotificationPopUpViewController") as! NotificationPopUpViewController
+        let controller = UIStoryboard(name: "Explore", bundle: nil).instantiateViewController(withIdentifier: "CategoryDetailsViewController") as! CategoryDetailsViewController
         
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
-            shrinkPresentingViewController: false,
+            shrinkPresentingViewController: true,
             useInlineMode: useInlineMode
         )
-        
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
-        sheetController.setSizes([.fixed(390)])
-        
+        sheetController.setSizes([.fullscreen])
         parent.present(sheetController, animated: true, completion: nil)
+        
     }
 }

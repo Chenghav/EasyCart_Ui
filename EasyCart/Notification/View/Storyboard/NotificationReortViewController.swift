@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotificationReortViewController: UIViewController {
+class 	NotificationReortViewController: UIViewController {
     
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
@@ -27,17 +27,17 @@ class NotificationReortViewController: UIViewController {
         pickerImage.delegate = self
         
     }
+    
+    @IBAction func btnClose(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func btnUploadScreenShot(_ sender: Any) {
         self.pickerImage.allowsEditing = false
         self.pickerImage.sourceType = .photoLibrary
         self.pickerImage.delegate = self
         self.present(self.pickerImage, animated: true, completion: nil)
         print("---\(pickerImage)")
-    }
-    
-    @IBAction func btnBack(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-        print("hello")
     }
     
 }

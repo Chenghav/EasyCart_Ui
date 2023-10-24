@@ -230,7 +230,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="reportNotification:" destination="BPt-KB-M87" eventType="touchUpInside" id="oPg-4w-qZh"/>
-                                                    <segue destination="7DL-oc-cnT" kind="show" id="iQz-Oq-EdX"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_Message" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-sT-up0">
@@ -303,7 +302,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-Jj-o1g">
-                                <rect key="frame" x="16" y="119" width="398" height="534.66666666666663"/>
+                                <rect key="frame" x="16" y="126" width="398" height="534.66666666666663"/>
                                 <color key="backgroundColor" red="0.96947616339999998" green="0.96947616339999998" blue="0.96947616339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WriteREeportCell" rowHeight="200" id="P4h-3C-51V" customClass="WriteReportTableViewCell" customModule="EasyCart" customModuleProvider="target">
@@ -488,7 +487,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-ea-4US" userLabel="Upload screenshot">
-                                <rect key="frame" x="16" y="653.66666666666663" width="398" height="56"/>
+                                <rect key="frame" x="16" y="660.66666666666663" width="398" height="56"/>
                                 <color key="tintColor" red="0.50907570120000001" green="0.18043109769999999" blue="0.89069223399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="square.and.arrow.up" catalog="system" title="  Upload screenshot">
@@ -499,26 +498,59 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact your local law enforcement for immediate help if you’re in danger or the victim of a scam." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-Ub-4Ww">
-                                <rect key="frame" x="16" y="725.66666666666663" width="398" height="38.333333333333371"/>
+                                <rect key="frame" x="16" y="732.66666666666663" width="398" height="38.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" red="0.54366594550000003" green="0.55010795589999995" blue="0.62157958749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-G6-F3o">
+                                <rect key="frame" x="16" y="56" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Bw4-7W-6aK"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZXH-29-FSB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" title=""/>
+                                <connections>
+                                    <action selector="btnClose:" destination="7DL-oc-cnT" eventType="touchUpInside" id="Rzk-61-Lz0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report a problem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENQ-lH-UWc">
+                                <rect key="frame" x="149" y="65.666666666666671" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-FV-bZI">
+                                <rect key="frame" x="375" y="60" width="39" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="0.5084239841" green="0.17955571410000001" blue="0.89039832350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.5084239841" green="0.17955571410000001" blue="0.89039832350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xyB-hS-HgB"/>
                         <color key="backgroundColor" red="0.96947616339999998" green="0.96947616339999998" blue="0.96947616339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="U7A-Jj-o1g" firstAttribute="leading" secondItem="xyB-hS-HgB" secondAttribute="leading" constant="16" id="4Ih-1R-hiR"/>
+                            <constraint firstItem="U7A-Jj-o1g" firstAttribute="top" secondItem="vyJ-G6-F3o" secondAttribute="bottom" constant="30" id="CHC-O3-XZd"/>
+                            <constraint firstItem="xyB-hS-HgB" firstAttribute="trailing" secondItem="2fx-FV-bZI" secondAttribute="trailing" constant="16" id="EQq-ok-nqu"/>
                             <constraint firstItem="9AC-Ub-4Ww" firstAttribute="top" secondItem="vgQ-ea-4US" secondAttribute="bottom" constant="16" id="GOB-BW-w2f"/>
+                            <constraint firstItem="vyJ-G6-F3o" firstAttribute="leading" secondItem="xyB-hS-HgB" secondAttribute="leading" constant="16" id="Jl9-OT-0xw"/>
                             <constraint firstAttribute="trailing" secondItem="9AC-Ub-4Ww" secondAttribute="trailing" constant="16" id="Mhn-js-tpQ"/>
                             <constraint firstItem="vgQ-ea-4US" firstAttribute="leading" secondItem="xyB-hS-HgB" secondAttribute="leading" constant="16" id="UKc-C4-fVR"/>
                             <constraint firstItem="vgQ-ea-4US" firstAttribute="top" secondItem="U7A-Jj-o1g" secondAttribute="bottom" id="V5I-bk-nUs"/>
+                            <constraint firstItem="ENQ-lH-UWc" firstAttribute="centerX" secondItem="oO5-fo-RdV" secondAttribute="centerX" id="ZJ9-3u-mwD"/>
                             <constraint firstItem="U7A-Jj-o1g" firstAttribute="height" secondItem="oO5-fo-RdV" secondAttribute="height" multiplier="0.573753" id="bWV-JT-6pB"/>
+                            <constraint firstItem="2fx-FV-bZI" firstAttribute="centerY" secondItem="vyJ-G6-F3o" secondAttribute="centerY" id="f4L-fV-Ua1"/>
                             <constraint firstItem="9AC-Ub-4Ww" firstAttribute="leading" secondItem="xyB-hS-HgB" secondAttribute="leading" constant="16" id="g45-SH-J5W"/>
                             <constraint firstItem="vgQ-ea-4US" firstAttribute="height" secondItem="oO5-fo-RdV" secondAttribute="height" multiplier="0.06" id="kAh-JB-xfY"/>
+                            <constraint firstItem="vyJ-G6-F3o" firstAttribute="top" secondItem="oO5-fo-RdV" secondAttribute="top" constant="56" id="n24-Vz-6DW"/>
                             <constraint firstItem="xyB-hS-HgB" firstAttribute="trailing" secondItem="vgQ-ea-4US" secondAttribute="trailing" constant="16" id="o2T-bR-1Px"/>
+                            <constraint firstItem="ENQ-lH-UWc" firstAttribute="centerY" secondItem="vyJ-G6-F3o" secondAttribute="centerY" id="oje-aV-Vfh"/>
                             <constraint firstItem="xyB-hS-HgB" firstAttribute="trailing" secondItem="U7A-Jj-o1g" secondAttribute="trailing" constant="16" id="qjq-cy-Rcl"/>
-                            <constraint firstItem="U7A-Jj-o1g" firstAttribute="top" secondItem="xyB-hS-HgB" secondAttribute="top" constant="16" id="yUn-k5-GqY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Report a problem" id="nOG-a9-2Bn">
@@ -543,7 +575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7B-k8-zi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4161" y="-35"/>
+            <point key="canvasLocation" x="4160.9302325581393" y="-35.407725321888414"/>
         </scene>
         <!--Notification-->
         <scene sceneID="E6P-hF-hOt">
@@ -594,6 +626,7 @@
         <image name="notification_option" width="24" height="24"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
+        <image name="xmark" width="33" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -601,7 +634,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

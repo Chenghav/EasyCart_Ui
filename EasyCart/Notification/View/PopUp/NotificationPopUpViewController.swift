@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotificationPopUpViewController: UIViewController {
+class NotificationPopUpViewController: UIViewController, ReportDemovable {
 
     @IBOutlet weak var removeNotificatoinRec: UIView!
     @IBOutlet weak var reportNotificationRec: UIView!
@@ -51,9 +51,7 @@ class NotificationPopUpViewController: UIViewController {
         userName.text = "Salin"
     }
     @IBAction func reportNotification(_ sender: Any) {
-        if let nextController = storyboard?.instantiateViewController(identifier: "NotificationReortViewController") as? NotificationReortViewController {
-            navigationController?.pushViewController(nextController, animated: true)
-        }
+        NotificationPopUpViewController.self.openReport(from: self, in: nil)
     }
 
     

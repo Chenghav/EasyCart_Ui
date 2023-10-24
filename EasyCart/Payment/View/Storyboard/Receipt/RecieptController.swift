@@ -8,16 +8,22 @@
 import Foundation
 import UIKit
 class RecieptController : UIViewController, UITableViewDelegate, UITableViewDataSource, ReceiptDemoable {
-    var replceReceiptTitle: UILabel?
-    var receiptImage: UIImage?
     
+    
+    
+  
     @IBOutlet weak var receiptTitle: UILabel!
     @IBOutlet weak var tableReciept: UITableView!
+    
+    
+    var replceReceiptTitle = ""
+    var receiptImage = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let customView = CustomView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-//               customView.backgroundColor = UIColor.white
-//               view.addSubview(customView)
+
+        receiptTitle.text = replceReceiptTitle
+        
         tableReciept.delegate = self
         tableReciept.dataSource = self
         tableReciept.register(UINib(nibName: "ReceiptTableViewCell", bundle: .none), forCellReuseIdentifier: "ReceiptTableViewCell")
@@ -36,11 +42,14 @@ class RecieptController : UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableReciept.dequeueReusableCell(withIdentifier: "ReceiptTableViewCell", for: indexPath) as! ReceiptTableViewCell
-        cell.receiptSign.image = receiptImage
+        cell.receiptSign.image = UIImage(named: receiptImage)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 463
     }
 
+    
+    
+    
 }
