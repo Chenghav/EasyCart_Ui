@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="80N-bf-P7D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="80N-bf-P7D">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -206,9 +206,11 @@
                             <constraint firstItem="LOm-DP-d8Q" firstAttribute="top" secondItem="V0c-ku-yda" secondAttribute="bottom" id="ut1-Qk-z37"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="ico_addPrimary" id="E2Z-md-KF8"/>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="iconav_close" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="V0c-ku-yda" id="moe-fc-aT9"/>
                     </connections>
@@ -334,6 +336,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="dancing-banana.gif" width="365" height="360"/>
+        <image name="ico_addPrimary" width="38" height="38"/>
         <image name="ico_addPrimary_1" width="38" height="38"/>
         <image name="ico_clear" width="24" height="24"/>
         <image name="iconav_close" width="45" height="44"/>

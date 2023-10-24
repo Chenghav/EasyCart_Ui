@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias Completion = ()-> Void
+typealias Completions = ()-> Void
 class ButtonCVC: UICollectionViewCell{
     
     var imagePicker : Completion = {}
