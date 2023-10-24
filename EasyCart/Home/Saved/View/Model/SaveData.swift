@@ -10,11 +10,17 @@ import UIKit
 
 struct Save{
     let Title : String
-    let image : UIImage?
+    let image1 : UIImage?
+    let image2 : UIImage?
+    let image3 : UIImage?
+    let image4 : UIImage?
 }
 
 
 var Saves : [Save] = [
-    Save(Title: "All posts", image: UIImage(named: "ico_addPrimary")),
-    Save(Title: "Save item", image: UIImage(named: "apple_watch"))
+    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
+    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
+    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
+    
+
 ]

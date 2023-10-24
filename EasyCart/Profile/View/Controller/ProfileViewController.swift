@@ -90,6 +90,15 @@ extension ProfileViewController : UITableViewDataSource, UITableViewDelegate {
                 
             }else {
                 if let nextController = storyboard?.instantiateViewController(identifier: "AllitemViewController") as? AllitemViewController {
+                    if indexPath.row == 0 {
+                        nextController.selectedIndex = 0
+                    } else if indexPath.row == 1 {
+                        nextController.selectedIndex = 3
+                    } else if indexPath.row == 2 {
+                        nextController.selectedIndex = 1
+                    } else if indexPath.row == 3 {
+                        nextController.selectedIndex = 2
+                    }
                     navigationController?.pushViewController(nextController, animated: true)
                 }
             }

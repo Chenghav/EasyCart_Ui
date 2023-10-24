@@ -33,6 +33,9 @@ class CellSelectViewController: UIViewController, PopUp, UICollectionViewDataSou
         title = selectedData.Title
         AddMoreBtn.layer.cornerRadius = 10
         AddMoreBtn.isHidden = isFirstCellSelected
+        if isFirstCellSelected {
+                navigationItem.rightBarButtonItem = nil
+            }
         }
     }
     

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 struct ThirdSection{
     let Map     : String
     let Linked  : String
@@ -14,5 +15,5 @@ struct ThirdSection{
 }
 
 var thirdSection : [ThirdSection] = [
-    ThirdSection(Map: "Map", Linked: "Linked", image: UIImage(named: "Frame 427319774")!)
+    ThirdSection(Map: "Map", Linked: "Linked", image: UIImage(named: "Frame 427319774")!),
 ]
