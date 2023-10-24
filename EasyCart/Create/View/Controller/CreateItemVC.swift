@@ -11,8 +11,11 @@ protocol CreateItemViewDelegate {
     func toggleSection(for header: CreateItemVC)
 }
 
-class CreateItemVC: UIViewController, CustomCellDelegate{
+class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
     
+    
+    let nameLabel = UILabel()
+    let detailLabel = UILabel()
     var modelsCategory = [CategoryFiel]()
     var modelsTitle = [Title]()
     var modelsPrice = [PriceFiel]()
@@ -33,7 +36,13 @@ class CreateItemVC: UIViewController, CustomCellDelegate{
     func didTapCell(){
         print("success")
     }
-    
+    func didToggleExpansionState() {
+        modelsExpand[0].isExpand.toggle() // Toggle the expansion state
+        
+        // Reload the appropriate row (assuming you have only one expandable row)
+        let indexPath = IndexPath(row: modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count, section: 1)
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -56,8 +65,14 @@ class CreateItemVC: UIViewController, CustomCellDelegate{
         modelsTitle.append(Title(name: "Tile", input: "Input"))
         modelsPrice.append(PriceFiel(name: "Price", input: "$0.00"))
         modelsDiscount.append(Discount(name: "Discount", input: "0%"))
-        modelsExpand.append(ListItemExpandable( name: "More Detail", item: ["hsa"], isExpand: false))
-        
+        modelsExpand.append(ListItemExpandable( name: "More Detail", item: [
+            Item(name: "Condition", detail: "Used, New..."),
+            Item(name: "Brand", detail: "Input"),
+            Item(name: "Model", detail: "Input"),
+            Item(name: "Color", detail: "Black, White..."),
+            Item(name: "Year", detail: "Input"),
+            Item(name: "Size", detail: "Input"),
+            Item(name: "Type", detail: "Input"),], isExpand: false))
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -122,6 +137,8 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             }else{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
+                labelCel.configureContent(isExpand: modelsExpand[0].isExpand)
+                labelCel.delegate = self
                 return labelCel
             }
         }else{
@@ -153,18 +170,18 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }
     }
     // MARK: - Expanable didSelectRowAt -
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.section == 1 {
+//            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
+//                modelsExpand[0].isExpand.toggle()
+//                tableView.reloadRows(at: [indexPath], with: .automatic)
+//            }
+//        }
+//    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 {
-            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
-                // Toggle the expandable state
-                modelsExpand[0].isExpand.toggle()
-                // Reload the cell to apply the change
-                tableView.reloadRows(at: [indexPath], with: .automatic)
-            }
+        if indexPath.section == 1{
+            didToggleExpansionState()
         }
-    }
-    func reloadRow(header: ExpanableTVC, section: Int){
-        
     }
 }
  // MARK: - upload Image -

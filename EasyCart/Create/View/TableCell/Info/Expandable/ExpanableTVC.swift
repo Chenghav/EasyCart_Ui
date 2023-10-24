@@ -10,9 +10,8 @@ import UIKit
 //protocol CustomTableViewCellDelegate {
 //    func reloadRow(header: ExpanableTVC, section: Int)
 //}
+
 class ExpanableTVC: UITableViewCell {
-//    var delegate: CustomTableViewCellDelegate?
-//    var section: Int!
     
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbSubTitle: UITextField!
