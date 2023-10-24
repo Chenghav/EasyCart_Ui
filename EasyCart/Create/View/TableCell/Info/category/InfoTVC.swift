@@ -35,6 +35,9 @@ class InfoTVC: UITableViewCell {
         // Configure the view for the selected state
         
     }
+    func configureInfoCate(with data : CategoryFiel ){
+        self.lbName.text = data.name
+    }
     
     @IBAction func category(_ sender: UIButton) {
         delegate?.didSelectCustomCell()

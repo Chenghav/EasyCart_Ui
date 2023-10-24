@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol CustomTableViewCellDelegate {
-    func reloadRow(sender: MoreDetailTVC, flag: Bool)
-}
-
 class MoreDetailTVC: UITableViewCell {
 
     @IBOutlet weak var headerTitle: UILabel!
@@ -30,5 +26,7 @@ class MoreDetailTVC: UITableViewCell {
     @IBAction func btnExpandable(_ sender: UIButton) {
         
     }
-    
+    func configureExpandable(with data : ListItemExpandable ){
+        self.headerTitle.text = data.name
+    }
 }

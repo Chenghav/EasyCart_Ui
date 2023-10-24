@@ -10,13 +10,12 @@ import UIKit
 
 
 class ListItemExpandable {
-    let title: String
-    let subTitle: String
+    var name: String
+    var item: [String]
     var isExpand: Bool
-    init(title: String, subTitle: String, isExpand: Bool) {
-        self.title = title
-        self.subTitle = subTitle
+    init(name: String, item: [String], isExpand: Bool) {
+        self.name = name
+        self.item = item
         self.isExpand = isExpand
     }
 }
-

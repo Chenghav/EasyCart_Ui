@@ -17,6 +17,10 @@
 		BF401E5A2AD6872E00F5FBE9 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */; };
 		BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */; };
 		BF401E5E2AD6874200F5FBE9 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */; };
+		BF4D01762AE77286005705D8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D01752AE77286005705D8 /* Category.swift */; };
+		BF4D01782AE772A1005705D8 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D01772AE772A1005705D8 /* Title.swift */; };
+		BF4D017A2AE772BA005705D8 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D01792AE772BA005705D8 /* Price.swift */; };
+		BF4D017C2AE772CA005705D8 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D017B2AE772CA005705D8 /* Discount.swift */; };
 		BF5F6CA22ADFDBC10083C474 /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F6CA12ADFDBC10083C474 /* Expandable.swift */; };
 		BF6F30522AE1021A00354E73 /* ExpanableTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F30502AE1021A00354E73 /* ExpanableTVC.swift */; };
 		BF6F30532AE1021A00354E73 /* ExpanableTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6F30512AE1021A00354E73 /* ExpanableTVC.xib */; };
@@ -120,6 +124,10 @@
 		BF401E582AD6872E00F5FBE9 /* PriceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
 		BF401E5B2AD6874200F5FBE9 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
 		BF401E5C2AD6874200F5FBE9 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
+		BF4D01752AE77286005705D8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BF4D01772AE772A1005705D8 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		BF4D01792AE772BA005705D8 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		BF4D017B2AE772CA005705D8 /* Discount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
 		BF5F6CA12ADFDBC10083C474 /* Expandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
 		BF6F30502AE1021A00354E73 /* ExpanableTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpanableTVC.swift; sourceTree = "<group>"; };
 		BF6F30512AE1021A00354E73 /* ExpanableTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpanableTVC.xib; sourceTree = "<group>"; };
@@ -290,6 +298,10 @@
 			children = (
 				BF5F6CA12ADFDBC10083C474 /* Expandable.swift */,
 				DFDB67D92AD65787006ECEE7 /* CategoryData.swift */,
+				BF4D01752AE77286005705D8 /* Category.swift */,
+				BF4D01772AE772A1005705D8 /* Title.swift */,
+				BF4D01792AE772BA005705D8 /* Price.swift */,
+				BF4D017B2AE772CA005705D8 /* Discount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -943,6 +955,7 @@
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				BF319A462ADE706D00E43FAE /* CollectionImageCVC.swift in Sources */,
+				BF4D017A2AE772BA005705D8 /* Price.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */,
@@ -963,6 +976,7 @@
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
 				BF5F6CA22ADFDBC10083C474 /* Expandable.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
+				BF4D017C2AE772CA005705D8 /* Discount.swift in Sources */,
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
 				BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
@@ -976,6 +990,7 @@
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
+				BF4D01782AE772A1005705D8 /* Title.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
@@ -991,6 +1006,7 @@
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
 				DFDB67F92AD65787006ECEE7 /* DiscountTVC.swift in Sources */,
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
+				BF4D01762AE77286005705D8 /* Category.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
 				BF401E552AD6871A00F5FBE9 /* TitleTVC.swift in Sources */,
 				DFDB68812AD65DBA006ECEE7 /* TableViewCell.swift in Sources */,
