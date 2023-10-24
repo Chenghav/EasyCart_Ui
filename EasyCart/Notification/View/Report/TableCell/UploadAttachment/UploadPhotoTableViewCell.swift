@@ -84,7 +84,7 @@ extension UploadPhotoTableViewCell: UICollectionViewDataSource {
 extension UploadPhotoTableViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if photo.count == 0{
-            return CGSize(width: collectionView.frame.size.width, height: (collectionView.frame.size.width))
+            return CGSize(width: collectionView.frame.size.width, height: (collectionView.frame.size.height))
         }else{
             return CGSize(width: collectionView.frame.size.width / 4 , height: (collectionView.frame.size.width))
         }
