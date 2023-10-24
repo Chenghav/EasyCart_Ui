@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
+class ExploreViewController: UIViewController, CategoryDemovable {
     
     
     @IBOutlet weak var collectonView: UICollectionView!
@@ -32,7 +32,22 @@ class ExploreViewController: UIViewController {
 
 extension ExploreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        return 125
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Top items"
+    }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        
+        let font = UIFont.systemFont(ofSize: 16, weight: .semibold) // Adjust the font size and weight as needed
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font,
+            .foregroundColor: UIColor.black
+        ]
+        let title = tableView.dataSource?.tableView?(tableView, titleForHeaderInSection: section) ?? ""
+        let attributedString = NSAttributedString(string: title, attributes: attributes)
+        headerView.textLabel?.attributedText = attributedString
     }
 }
 
@@ -54,20 +69,13 @@ extension ExploreViewController: UITableViewDataSource {
 
 
 extension ExploreViewController: UICollectionViewDelegate {
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Top items"
-    }
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard let headerView = view as? UITableViewHeaderFooterView else { return }
-        
-        let font = UIFont.systemFont(ofSize: 16, weight: .semibold) // Adjust the font size and weight as needed
-        let attributes: [NSAttributedString.Key: Any] = [
-            .font: font,
-            .foregroundColor: UIColor.black
-        ]
-        let title = tableView.dataSource?.tableView?(tableView, titleForHeaderInSection: section) ?? ""
-        let attributedString = NSAttributedString(string: title, attributes: attributes)
-        headerView.textLabel?.attributedText = attributedString
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        print("dfdfdf")
+    //        ExploreViewController.self.openCategoryDetails(from: self, in: nil)
+    //    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        ExploreViewController.self.openCategoryDetails(from: self, in: nil)
     }
 }
 
@@ -86,18 +94,18 @@ extension ExploreViewController: UICollectionViewDataSource {
 
 extension ExploreViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-           return UIEdgeInsets(top: 16, left: 16, bottom: 10, right: 16)
-       }
-
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           let collectionViewWidth = UIScreen.main.bounds.width - 42
-           return CGSize(width: collectionViewWidth/2, height: 194/3)
-       }
-
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-           return 10
-       }
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-           return 10
-       }
+        return UIEdgeInsets(top: 16, left: 16, bottom: 10, right: 16)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = UIScreen.main.bounds.width - 42
+        return CGSize(width: collectionViewWidth/2, height: 194/3)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
 }

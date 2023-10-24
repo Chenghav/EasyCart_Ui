@@ -1,15 +1,19 @@
+//
+//  ReportDemovable.swift
+//  EasyCart
+//
+//  Created by KOSIGN Imac on 23/10/23.
+//
 
 import Foundation
 import FittedSheets
 import UIKit
 
-protocol NotificationDemoable {
-    
+protocol ReportDemovable {
+   
 }
-
 // MARK:  - PopUp FittedSheets -
-extension NotificationDemoable {
-    
+extension ReportDemovable {
     static func addSheetEventLogging(to sheet: SheetViewController) {
         let previousDidDismiss = sheet.didDismiss
         sheet.didDismiss = {
@@ -29,22 +33,23 @@ extension NotificationDemoable {
             previousSizeChanged?(sheet , size, height)
         }
     }
-    static func openDemo(from parent: UIViewController, in view: UIView?) {
+    
+    static func openReport(from parent: UIViewController, in view: UIView?) {
+        
         let useInlineMode = view != nil
         
-        let controller = UIStoryboard(name: "NotificationSB", bundle: nil).instantiateViewController(withIdentifier: "NotificationPopUpViewController") as! NotificationPopUpViewController
+        let controller = UIStoryboard(name: "NotificationSB", bundle: nil).instantiateViewController(withIdentifier: "NotificationReortViewController") as! NotificationReortViewController
         
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
-            shrinkPresentingViewController: false,
+            shrinkPresentingViewController: true,
             useInlineMode: useInlineMode
         )
-        
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
-        sheetController.setSizes([.fixed(390)])
-        
+        sheetController.setSizes([.fullscreen])
         parent.present(sheetController, animated: true, completion: nil)
+        
     }
 }

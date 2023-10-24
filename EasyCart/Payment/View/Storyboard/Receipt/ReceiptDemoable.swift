@@ -10,8 +10,7 @@ import FittedSheets
 import UIKit
 
 protocol ReceiptDemoable {
-    var receiptImage: UIImage? { get set }
-    var replceReceiptTitle: UILabel? { get set }
+
 }
 // MARK:  - PopUp FittedSheets -
 extension ReceiptDemoable {
@@ -35,13 +34,15 @@ extension ReceiptDemoable {
         }
     }
     
-    static func openReceipt(from parent: UIViewController, in view: UIView?, receiptImage: UIImage?, replaceReceiptTitle: UILabel?) {
+    static func openReceipt(from parent: UIViewController, in view: UIView?, receiptImage: String, replaceReceiptTitle: String) {
+
         let useInlineMode = view != nil
         
         let controller = UIStoryboard(name: "PaymentSb", bundle: nil).instantiateViewController(withIdentifier: "RecieptController") as! RecieptController
         
-        controller.receiptImage = receiptImage // Pass the receipt image to the controller
-        controller.receiptTitle = replaceReceiptTitle
+        controller.receiptImage = receiptImage
+        controller.replceReceiptTitle = replaceReceiptTitle
+        
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,

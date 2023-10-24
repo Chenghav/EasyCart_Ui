@@ -136,9 +136,8 @@ extension NotificationViewController: UITableViewDelegate {
         // Change the color of notificationRec
         cell.notificationRec.backgroundColor = #colorLiteral(red: 0.9000977278, green: 0.9119441509, blue: 1, alpha: 1)
         // Navigation to receipt
-        let receiptImage = UIImage(named: "receive_notification_sign")
-        let receiptTitle = UILabel() // Create a new UILabel instance
-        receiptTitle.text = "Receive an order"
+        let receiptImage = "receive_notification_sign"
+        let receiptTitle = "Receive an order"
         NotificationViewController.openReceipt(from: self, in: nil, receiptImage: receiptImage, replaceReceiptTitle: receiptTitle)
         
     }

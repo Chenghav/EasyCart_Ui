@@ -10,10 +10,6 @@ import UIKit
 
 
 class PaymentController : UIViewController, UITableViewDelegate, UITableViewDataSource, ReceiptDemoable {
-    var receiptImage: UIImage?
-    
-    var replceReceiptTitle: UILabel?
-    
     
     let sections = ["1","2","3"]
     @IBOutlet weak var mytableView: UITableView!
@@ -44,9 +40,8 @@ class PaymentController : UIViewController, UITableViewDelegate, UITableViewData
         } else if sections[indexPath.section] == "3"{
             let cell = mytableView.dequeueReusableCell(withIdentifier: "PayTableViewCell", for: indexPath) as! PayTableViewCell
             // Navigation to receipt
-            let receiptImage = UIImage(named: "redarrow")
-            let receiptTitle = UILabel() // Create a new UILabel instance
-            receiptTitle.text = "Receive an order"
+            let receiptImage = "redarrow"
+            let receiptTitle = "Success" // Create a new UILabel instance
             cell.openReceipt = { [weak self] in
                 PaymentController.openReceipt(from: self!, in: nil, receiptImage: receiptImage, replaceReceiptTitle: receiptTitle)
             }

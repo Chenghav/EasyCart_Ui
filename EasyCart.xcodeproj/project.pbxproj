@@ -61,6 +61,7 @@
 		C2BFB21E2AE0EAAB00FFA7D7 /* AddMorePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */; };
 		C2BFB2202AE0EDD600FFA7D7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */; };
 		C2BFB2222AE11FE700FFA7D7 /* AddItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */; };
+		DF4E26D02AE6636200DC9FE7 /* ReportDemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E26CF2AE6636200DC9FE7 /* ReportDemovable.swift */; };
 		C2EE177A2AE7733E00F29329 /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */; };
 		C2EE177B2AE7733E00F29329 /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */; };
 		DF6C00352AE7CA3A00CEB822 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C000D2AE7CA3A00CEB822 /* CategoryData.swift */; };
@@ -163,6 +164,9 @@
 		DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */; };
 		DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */; };
 		DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C92AD67446006ECEE7 /* PaymentController.swift */; };
+		DFEDFA432AE79AE600BF3736 /* CategoryDemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEDFA422AE79AE600BF3736 /* CategoryDemovable.swift */; };
+		DFEDFA452AE79B5B00BF3736 /* CategoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEDFA442AE79B5B00BF3736 /* CategoryDetailsViewController.swift */; };
+		DFEDFA492AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEDFA482AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift */; };
 		E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36DD1532ADF943C00B22CBB /* RecieptController.swift */; };
 		E3A891CA2ADD25BC006E63C7 /* AddressAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */; };
 		E3A891CB2ADD25BC006E63C7 /* SectionAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */; };
@@ -235,6 +239,7 @@
 		C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMorePop.swift; sourceTree = "<group>"; };
 		C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsViewController.swift; sourceTree = "<group>"; };
+		DF4E26CF2AE6636200DC9FE7 /* ReportDemovable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDemovable.swift; sourceTree = "<group>"; };
 		C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF6C000D2AE7CA3A00CEB822 /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
@@ -336,6 +341,9 @@
 		DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		DFDB68C92AD67446006ECEE7 /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		DFEDFA422AE79AE600BF3736 /* CategoryDemovable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDemovable.swift; sourceTree = "<group>"; };
+		DFEDFA442AE79B5B00BF3736 /* CategoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewController.swift; sourceTree = "<group>"; };
+		DFEDFA482AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E36DD1532ADF943C00B22CBB /* RecieptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
 		E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAddTableViewCell.xib; sourceTree = "<group>"; };
 		E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionAddTableViewCell.xib; sourceTree = "<group>"; };
@@ -456,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				31EDD65C2AE11D4E0097A6A8 /* TableCell */,
+				DF4E26CF2AE6636200DC9FE7 /* ReportDemovable.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -949,6 +958,7 @@
 		DFDB68252AD65968006ECEE7 /* CategoryCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				DFEDFA412AE79AC900BF3736 /* PopUp */,
 				DFDB68262AD65968006ECEE7 /* CategoryCollectionViewCell.swift */,
 				DFDB68272AD65968006ECEE7 /* CategoryCollectionViewCell.xib */,
 			);
@@ -1197,6 +1207,16 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		DFEDFA412AE79AC900BF3736 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDFA442AE79B5B00BF3736 /* CategoryDetailsViewController.swift */,
+				DFEDFA422AE79AE600BF3736 /* CategoryDemovable.swift */,
+				DFEDFA482AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		E3A891D72ADD26D5006E63C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1402,6 +1422,7 @@
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
+				DF4E26D02AE6636200DC9FE7 /* ReportDemovable.swift in Sources */,
 				31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */,
 				DF6C00372AE7CA3A00CEB822 /* Expandable.swift in Sources */,
 				C2B9B6F72AE22FB60009B0A8 /* AddItems.swift in Sources */,
@@ -1412,6 +1433,7 @@
 				DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */,
 				DFDB68842AD65DBA006ECEE7 /* AllitemViewController.swift in Sources */,
 				BB360BC72ADFDDC900B5BBF3 /* LayoutBuilder.swift in Sources */,
+				DFEDFA432AE79AE600BF3736 /* CategoryDemovable.swift in Sources */,
 				BB560DB42ADE4A1000DBB585 /* ReduisExtension.swift in Sources */,
 				DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
@@ -1449,6 +1471,7 @@
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
 				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
+				DFEDFA492AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift in Sources */,
 				DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */,
 				C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */,
 				DF6C004C2AE7CA3A00CEB822 /* CreateItemVC.swift in Sources */,
@@ -1468,6 +1491,7 @@
 				E3A891D12ADD25BC006E63C7 /* AddressAddTableViewCell.swift in Sources */,
 				E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */,
 				C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */,
+				DFEDFA452AE79B5B00BF3736 /* CategoryDetailsViewController.swift in Sources */,
 				31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
