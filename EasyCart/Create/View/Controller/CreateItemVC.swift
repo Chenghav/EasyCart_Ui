@@ -7,17 +7,42 @@
 
 import UIKit
 
-class CreateItemVC: UIViewController{
+protocol CreateItemViewDelegate {
+    func toggleSection(for header: CreateItemVC)
+}
+
+class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
+    
+    
+    let nameLabel = UILabel()
+    let detailLabel = UILabel()
+    var modelsCategory = [CategoryFiel]()
+    var modelsTitle = [Title]()
+    var modelsPrice = [PriceFiel]()
+    var modelsDiscount = [Discount]()
+    var modelsExpand = [ListItemExpandable]()
+    func didSelectCustomCell() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
     var isReloadCollection = false
+    var isExpandable = false
+    var sectionIndex = -1
     
     func didTapCell(){
         print("success")
     }
-    
-    @IBOutlet weak var btnPost: UIButton!
+    func didToggleExpansionState() {
+        modelsExpand[0].isExpand.toggle() // Toggle the expansion state
+        
+        // Reload the appropriate row (assuming you have only one expandable row)
+        let indexPath = IndexPath(row: modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count, section: 1)
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -29,12 +54,28 @@ class CreateItemVC: UIViewController{
         tableView.register(UINib(nibName: "TitleTVC", bundle: .none), forCellReuseIdentifier: "TitleTVC")
         tableView.register(UINib(nibName: "PriceTVC", bundle: .none), forCellReuseIdentifier: "PriceTVC")
         tableView.register(UINib(nibName: "MoreDetailTVC", bundle: .none), forCellReuseIdentifier: "MoreDetailTVC")
-        
+        tableView.register(UINib(nibName: "ExpanableTVC", bundle: .none), forCellReuseIdentifier: "ExpandableTVC")
         
         tableView.delegate = self
         tableView.dataSource = self
         pickerImage.delegate = self
+        tableView.reloadData()
         
+        modelsCategory.append(CategoryFiel(name: "Category"))
+        modelsTitle.append(Title(name: "Tile", input: "Input"))
+        modelsPrice.append(PriceFiel(name: "Price", input: "$0.00"))
+        modelsDiscount.append(Discount(name: "Discount", input: "0%"))
+        modelsExpand.append(ListItemExpandable( name: "More Detail", item: [
+            Item(name: "Condition", detail: "Used, New..."),
+            Item(name: "Brand", detail: "Input"),
+            Item(name: "Model", detail: "Input"),
+            Item(name: "Color", detail: "Black, White..."),
+            Item(name: "Year", detail: "Input"),
+            Item(name: "Size", detail: "Input"),
+            Item(name: "Type", detail: "Input"),], isExpand: false))
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 }
 
@@ -47,7 +88,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         if section == 0 {
             return 1
         }else if section == 1 {
-            return 5
+            return modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count + modelsExpand.count
         }else if section == 2 {
             return 1
         }
@@ -63,7 +104,6 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 cell.ReloadCollection(isReloadCollection: self.isReloadCollection)
                 self.isReloadCollection = false
             }
-            
             cell.imagePicker = {
                 self.pickerImage.allowsEditing = false
                 self.pickerImage.sourceType = .photoLibrary
@@ -71,23 +111,34 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 self.present(self.pickerImage, animated: true, completion: nil)
                 
             }
-            
             return cell
         }else if indexPath.section == 1{
-            if indexPath.row == 0{
+            let currentIndex = indexPath.row
+            if currentIndex < modelsCategory.count {
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "InfoTVC", for: indexPath) as! InfoTVC
+                labelCel.configureInfoCate(with: modelsCategory[currentIndex])
+                labelCel.selectionStyle = .none
                 return labelCel
-            }else if indexPath.row == 1 {
-                let TitleCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
-                return TitleCel
-            }else if indexPath.row == 2{
+            } else if currentIndex < (modelsTitle.count + modelsCategory.count){
+                let labelCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
+                labelCel.configureTitle(with: modelsTitle[currentIndex - modelsCategory.count])
+                labelCel.selectionStyle = .none
+                return labelCel
+            }else if currentIndex < (modelsPrice.count + modelsTitle.count + modelsCategory.count){
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "PriceTVC", for: indexPath) as! PriceTVC
+                labelCel.configurePrice(with: modelsPrice[currentIndex - modelsCategory.count - modelsTitle.count])
+                labelCel.selectionStyle = .none
                 return labelCel
-            }else if indexPath.row == 3{
+            }else if currentIndex < (modelsDiscount.count + modelsPrice.count + modelsTitle.count + modelsCategory.count){
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "DiscountTVC", for: indexPath) as! DiscountTVC
+                labelCel.configureDiscout(with: modelsDiscount[currentIndex - modelsCategory.count - modelsTitle.count - modelsDiscount.count])
+                labelCel.selectionStyle = .none
                 return labelCel
-            }else if indexPath.row == 4 {
+            }else{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
+                labelCel.selectionStyle = .none
+                labelCel.configureContent(isExpand: modelsExpand[0].isExpand)
+                labelCel.delegate = self
                 return labelCel
             }
         }else{
@@ -101,33 +152,49 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         if indexPath.section == 0{
             return 147
         }else if indexPath.section == 1{
-            if indexPath.row == 3 {
+            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count {
                 return 62
             }else{
-                return 50
+                if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
+                    if modelsExpand[0].isExpand {
+                        return 200
+                    } else {
+                        return 50
+                    }
+                } else {
+                    return 50
+                }
             }
         }else{
             return 167
         }
     }
+    // MARK: - Expanable didSelectRowAt -
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.section == 1 {
+//            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
+//                modelsExpand[0].isExpand.toggle()
+//                tableView.reloadRows(at: [indexPath], with: .automatic)
+//            }
+//        }
+//    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
-            if indexPath.section == 1{
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
+        if indexPath.section == 1{
+            didToggleExpansionState()
         }
     }
 }
-
+ // MARK: - upload Image -
 extension CreateItemVC: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.originalImage] as? UIImage{
             if image.count == 0{
                 image.append(selectedImage)
+                image.append(selectedImage)
             }else{
                 image.insert(selectedImage, at: image.count - 1)
             }
-            
+             
             dismiss(animated: true)
             self.isReloadCollection = true
             tableView.reloadData()

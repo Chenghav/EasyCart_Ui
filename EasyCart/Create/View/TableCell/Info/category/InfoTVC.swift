@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol CustomCellDelegate: class {
+    func didSelectCustomCell()
+}
 class InfoTVC: UITableViewCell {
+    
+    weak var delegate: CustomCellDelegate?
+    
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var btnSelect: UIButton!
     
@@ -27,7 +33,14 @@ class InfoTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+    }
+    func configureInfoCate(with data : CategoryFiel ){
+        self.lbName.text = data.name
     }
     
+    @IBAction func category(_ sender: UIButton) {
+        delegate?.didSelectCustomCell()
+    }
     
 }

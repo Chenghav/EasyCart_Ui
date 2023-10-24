@@ -8,7 +8,9 @@
 import UIKit
 
 class PriceTVC: UITableViewCell {
-
+    @IBOutlet weak var LbTitle: UILabel!
+    @IBOutlet weak var input: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +20,10 @@ class PriceTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configurePrice(with data : PriceFiel ){
+        self.LbTitle.text = data.name
+        self.input.text = data.input
     }
     
 }

@@ -40,6 +40,9 @@
                             </attributedString>
                             <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="category:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wlA-TX-GF8"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

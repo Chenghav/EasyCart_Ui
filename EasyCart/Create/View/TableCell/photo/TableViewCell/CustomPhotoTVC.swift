@@ -44,7 +44,7 @@ extension CustomPhotoTVC: UICollectionViewDelegate, UICollectionViewDataSource{
             cell.imagepicker = {
                 self.imagePicker()
             }
-            if indexPath.item == photo.count - 1{
+            if indexPath.item == photo.count - 1 {
                 cell.uiImage.isHidden = true
                 cell.btnAddImage.isHidden = false
             }else{
@@ -72,23 +72,18 @@ extension CustomPhotoTVC: UICollectionViewDelegate, UICollectionViewDataSource{
             return photo.count
         }
     }
-    
-    func collectioxnView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "beforeUploadCell", for: indexPath) as! ButtonCVC
-        return cell
-    }
 }
 
 extension CustomPhotoTVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if photo.count == 0{
-            return CGSize(width: UIScreen.main.bounds.width, height: 80)
+            return CGSize(width: collectionView.frame.size.width, height: 80)
         }else{
-            return CGSize(width: (collectionView.frame.size.width / 3) - 10, height: (collectionView.frame.size.width / 3))
+            return CGSize(width: (collectionView.frame.size.width / 3) , height: 80)
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
     }
 }
 

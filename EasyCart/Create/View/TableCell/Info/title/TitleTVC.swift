@@ -8,7 +8,9 @@
 import UIKit
 
 class TitleTVC: UITableViewCell {
-
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbInput: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +20,10 @@ class TitleTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configureTitle(with data : Title ){
+        self.lbTitle.text = data.name
+        self.lbInput.text = data.input
     }
     
 }
