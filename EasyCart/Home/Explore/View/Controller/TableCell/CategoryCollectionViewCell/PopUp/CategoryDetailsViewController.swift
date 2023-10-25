@@ -8,13 +8,20 @@
 import UIKit
 
 class CategoryDetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: (collectionView.frame.size.width - 8 * 3) / 2, height: 203)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 16, right: 4)
+        //                layout.minimumInteritemSpacing = 8
+        collectionView.collectionViewLayout = layout
     }
     
     @IBAction func btnClose(_ sender: Any) {
@@ -28,7 +35,7 @@ extension CategoryDetailsViewController: UICollectionViewDelegate {
 
 extension CategoryDetailsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return categoryModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -36,5 +43,8 @@ extension CategoryDetailsViewController: UICollectionViewDataSource {
         return collectionCell
     }
     
+    
+}
+extension CategoryDetailsViewController: UICollectionViewDelegateFlowLayout {
     
 }
