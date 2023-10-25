@@ -7,10 +7,6 @@
 
 import UIKit
 
-//protocol CustomTableViewCellDelegate {
-//    func reloadRow(header: ExpanableTVC, section: Int)
-//}
-
 class ExpanableTVC: UITableViewCell {
     
     @IBOutlet weak var lbTitle: UILabel!
@@ -23,20 +19,10 @@ class ExpanableTVC: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-//        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectHeaderView)))
-
-        // Configure the view for the selected state
     }
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectHeaderView)))
-//    }
-//    @objc func selectHeaderView(gesture: UITapGestureRecognizer){
-//        let cell = gesture.view as! ExpanableTVC
-//        delegate?.reloadRow(header: self, section: cell.section)
-//    }
     
-    func configureExpandable(with data : ListItemExpandable ){
+    func configureExpandable(with data: CreateItemInfo){
         self.lbTitle.text = data.name
+        self.lbSubTitle.text = data.description
     }
 }

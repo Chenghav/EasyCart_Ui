@@ -26,9 +26,9 @@ class DiscountTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configureDiscout(with data: Discount){
+    func configureDiscout(with data: CreateItemInfo){
         self.lbName.text = data.name
-        self.lbInput.text = data.name
+        self.lbInput.text = data.description
     }
     
 }

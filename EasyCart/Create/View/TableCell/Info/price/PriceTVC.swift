@@ -21,9 +21,8 @@ class PriceTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configurePrice(with data : PriceFiel ){
+    func configurePrice(with data : CreateItemInfo){
         self.LbTitle.text = data.name
-        self.input.text = data.input
     }
     
 }

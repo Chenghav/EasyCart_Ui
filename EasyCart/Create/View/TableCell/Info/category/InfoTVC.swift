@@ -35,7 +35,7 @@ class InfoTVC: UITableViewCell {
         // Configure the view for the selected state
         
     }
-    func configureInfoCate(with data : CategoryFiel ){
+    func configureInfoCate(with data : CreateItemInfo ){
         self.lbName.text = data.name
     }
     
