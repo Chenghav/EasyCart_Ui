@@ -23,7 +23,6 @@ class ExploreViewController: UIViewController, CategoryDemovable {
         collectonView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionCell")
         tableView.register(UINib(nibName: "ExploreTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
-        
     }
     
     
@@ -33,6 +32,9 @@ class ExploreViewController: UIViewController, CategoryDemovable {
 extension ExploreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 125
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 32
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Top items"
@@ -69,11 +71,6 @@ extension ExploreViewController: UITableViewDataSource {
 
 
 extension ExploreViewController: UICollectionViewDelegate {
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        print("dfdfdf")
-    //        ExploreViewController.self.openCategoryDetails(from: self, in: nil)
-    //    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         ExploreViewController.self.openCategoryDetails(from: self, in: nil)
     }
