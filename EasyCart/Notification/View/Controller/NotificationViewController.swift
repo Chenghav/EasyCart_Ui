@@ -95,6 +95,7 @@ class NotificationViewController: UIViewController, NotificationDemoable, Receip
 }
 
 extension NotificationViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }

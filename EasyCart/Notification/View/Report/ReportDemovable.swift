@@ -43,7 +43,7 @@ extension ReportDemovable {
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
-            shrinkPresentingViewController: true,
+            shrinkPresentingViewController: false,
             useInlineMode: useInlineMode
         )
         let sheetController = SheetViewController(controller: controller, options: options)

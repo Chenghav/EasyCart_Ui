@@ -14,23 +14,26 @@ class AttachmentCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-
-//        setupButtonAppearance()
+        // Initialization code
+        
+        let borderColorSelected:UIColor = UIColor.purple
+        var borderWidth:CGFloat = 3
+        var cornerRadius:CGFloat = 10
+        let border = CAShapeLayer()
+        border.lineWidth = borderWidth
+        border.frame = btnAddImages.bounds
+        border.lineDashPattern = [4, 4]
+        border.strokeColor = borderColorSelected.cgColor
+        border.fillColor = nil
+        border.path = UIBezierPath(roundedRect: btnAddImages.bounds, cornerRadius:cornerRadius).cgPath
+        btnAddImages.layer.addSublayer(border)
+        
+        btnAddImages.layer.cornerRadius = cornerRadius
+        btnAddImages.layer.masksToBounds = true
         
     }
     @IBAction func btnAddImages(_ sender: Any) {
         imagepicker()
     }
-    private func setupButtonAppearance() {
-        btnAddImages.layer.cornerRadius = 10
-        btnAddImages.layer.masksToBounds = true
-        
-        let borderLayer = CAShapeLayer()
-        borderLayer.strokeColor = UIColor.black.cgColor
-        borderLayer.lineDashPattern = [4, 4]
-        borderLayer.fillColor = nil
-        borderLayer.path = UIBezierPath(roundedRect: btnAddImages.bounds, cornerRadius: 10).cgPath
-        borderLayer.frame = btnAddImages.bounds
-        btnAddImages.layer.addSublayer(borderLayer)
-    }
+
 }
