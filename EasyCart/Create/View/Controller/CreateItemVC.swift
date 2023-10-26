@@ -114,6 +114,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             case .MoreDetails:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
+                
                 return labelCel
             default:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "ExpanableTVC", for: indexPath) as! ExpanableTVC
