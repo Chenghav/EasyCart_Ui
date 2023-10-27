@@ -7,12 +7,16 @@
 
 import UIKit
 
-class CollectionImageCVC: UICollectionViewCell {
+typealias DeleteImage = ()-> Void
+class CollectionImageCVC: UICollectionViewCell, PopUpDiscard{
 
     var imagepicker : Completion = {}
+    var deleteImage: DeleteImage = {}
+    var parentVC: UIViewController?
     
     @IBOutlet weak var btnAddImage: UIButton!
     @IBOutlet weak var uiImage: UIImageView!
+    @IBOutlet weak var btnDiscard: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,6 +55,17 @@ class CollectionImageCVC: UICollectionViewCell {
  
     @IBAction func uploadImageMore(_ sender: Any) {
         imagepicker()
+        
+    }
+    @IBAction func Discards(_ sender: Any) {
+        //        let vc = DiscardItemTVC()
+                deleteImage()
+                print("hello")
+        //
+//                CreateItemVC.openDemo(from: self, in: nil)
+//        if let parentVC = parentVC {
+//            CreateItemVC.openDemo(from: parentVC, in: nil)
+//        }
     }
 }
 

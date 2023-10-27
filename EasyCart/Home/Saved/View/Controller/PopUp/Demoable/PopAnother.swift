@@ -49,7 +49,7 @@ extension PopAnother {
         
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
-        sheetController.setSizes([.fixed(209)])
+        sheetController.setSizes([.fixed(240)])
         
         
         parent.present(sheetController, animated: true, completion: nil)
