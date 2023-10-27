@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 
 
-class AddressController : UIViewController, UITableViewDelegate, UITableViewDataSource, AddressAddTableViewCellDelegate {
+class AddressController : UIViewController, UITableViewDelegate, UITableViewDataSource, AddressAddTableViewCellDelegate, AddressTableViewCellDelegate {
  
-    
+    var userInputs: [Int: String] = [:]
+    var addressModel: Address = Address()
     let sections = ["1","2","3"]
     var selectedCellIndexPath: IndexPath?
     @IBOutlet weak var mytableViewAdd: UITableView!
@@ -23,11 +24,25 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
         mytableViewAdd.register(UINib(nibName: "SectionAddTableViewCell", bundle: .none), forCellReuseIdentifier: "SectionAddTableViewCell")
         mytableViewAdd.register(UINib(nibName: "AddressAddTableViewCell", bundle: .none), forCellReuseIdentifier: "AddressAddTableViewCell")
         mytableViewAdd.layer.cornerRadius = 10
+    
        
         
         
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+          
+            AddressData.remove(at: indexPath.row)
+            
+            userInputs.removeValue(forKey: indexPath.row)
+            
+        
+            mytableViewAdd.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
   
+    
+    
     @IBAction func bntback(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -42,6 +57,7 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableVieaw: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if sections[indexPath.section] == "1"{
             let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "AddressTableViewCell") as! AddressTableViewCell
+            cell.delegate = self
             return cell
         } else if sections[indexPath.section] == "2" {
             let cell = mytableViewAdd.dequeueReusableCell(withIdentifier: "SectionAddTableViewCell") as! SectionAddTableViewCell
@@ -52,9 +68,10 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
             
             if indexPath == selectedCellIndexPath {
                       cell.iamgebtn.setImage(UIImage(named: "Checkbox"), for: .normal)
+               
                       cell.isSelectedCell = true
                   } else {
-                      cell.iamgebtn.setImage(UIImage(named: "Uncheck"), for: .normal)
+                      cell.iamgebtn.setImage(UIImage(named: "Unchecked"), for: .normal)
                       cell.isSelectedCell = false
                   }
             cell.delegate = self
@@ -65,6 +82,7 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
+      
         if indexPath == [1,0]{
             
           return
@@ -84,6 +102,16 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
     func didTapButtonInCell(_ cell: AddressAddTableViewCell) {
         if let indexPath = mytableViewAdd.indexPath(for: cell) {
                     if sections[indexPath.section] == "3" {
+                        // Perform the navigation when the button is tapped in the cell
+                        self.performSegue(withIdentifier: "Add", sender: self)
+                    }
+                }
+    }
+    
+    
+    func didTapButton(_ cell: AddressTableViewCell) {
+        if let indexPath = mytableViewAdd.indexPath(for: cell) {
+                    if sections[indexPath.section] == "1" {
                         // Perform the navigation when the button is tapped in the cell
                         self.performSegue(withIdentifier: "Add", sender: self)
                     }
@@ -111,7 +139,6 @@ class AddressController : UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-   
     
 
 }

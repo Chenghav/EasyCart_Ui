@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Search Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SearchController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SearchController" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchController" id="Y6W-OH-hqX" customClass="SearchController" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3VS-Zw-ua0">
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="3VS-Zw-ua0">
                                 <rect key="frame" x="-2" y="85" width="392" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="tus-Iv-zTh"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="E2l-b9-PEV"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-AV-Bki">
-                                <rect key="frame" x="0.0" y="163" width="393" height="606"/>
+                                <rect key="frame" x="0.0" y="145" width="393" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ScM-V0-VHe">
                                     <size key="itemSize" width="390" height="52"/>
@@ -42,17 +46,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE4-qT-Uhx">
-                                            <rect key="frame" x="8" y="15" width="43.333333333333336" height="21"/>
+                                            <rect key="frame" x="8" y="14" width="43.333333333333336" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwP-O9-y8B">
-                                            <rect key="frame" x="287" y="8" width="98" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="S4U-Z2-I62"/>
-                                                <constraint firstAttribute="width" constant="98" id="dq9-Qy-Pe0"/>
-                                            </constraints>
+                                            <rect key="frame" x="315" y="8" width="76" height="33.333333333333336"/>
                                             <buttonConfiguration key="configuration" style="plain" title="See All">
                                                 <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <attributedString key="attributedSubtitle"/>
@@ -62,9 +62,9 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="IE4-qT-Uhx" firstAttribute="leading" secondItem="ufc-8e-qok" secondAttribute="leadingMargin" id="HP5-8o-dcG"/>
-                                        <constraint firstItem="bwP-O9-y8B" firstAttribute="centerY" secondItem="IE4-qT-Uhx" secondAttribute="centerY" id="RKo-dW-Fhs"/>
-                                        <constraint firstItem="IE4-qT-Uhx" firstAttribute="top" secondItem="ufc-8e-qok" secondAttribute="topMargin" constant="7" id="bnU-J3-uVh"/>
-                                        <constraint firstAttribute="trailing" secondItem="bwP-O9-y8B" secondAttribute="trailing" constant="8" id="t2v-P2-jdf"/>
+                                        <constraint firstItem="IE4-qT-Uhx" firstAttribute="top" secondItem="ufc-8e-qok" secondAttribute="topMargin" constant="6" id="bnU-J3-uVh"/>
+                                        <constraint firstItem="bwP-O9-y8B" firstAttribute="centerY" secondItem="IE4-qT-Uhx" secondAttribute="centerY" id="dG7-TM-dZq"/>
+                                        <constraint firstItem="bwP-O9-y8B" firstAttribute="trailing" secondItem="ufc-8e-qok" secondAttribute="trailingMargin" constant="6" id="fN7-S0-Sts"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="btnSeeAll" destination="bwP-O9-y8B" id="e1K-Uf-JJy"/>
@@ -81,7 +81,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3VS-Zw-ua0" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="-18" id="0uG-FJ-qzA"/>
-                            <constraint firstItem="8Sl-AV-Bki" firstAttribute="top" secondItem="3VS-Zw-ua0" secondAttribute="bottom" constant="34" id="Mkr-Lk-eVk"/>
+                            <constraint firstItem="8Sl-AV-Bki" firstAttribute="top" secondItem="3VS-Zw-ua0" secondAttribute="bottom" constant="16" id="Mkr-Lk-eVk"/>
                             <constraint firstItem="8Sl-AV-Bki" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TG9-r0-cqT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3VS-Zw-ua0" secondAttribute="trailing" constant="3" id="Z1C-mu-cHe"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8Sl-AV-Bki" secondAttribute="bottom" id="aQt-u2-yFG"/>
@@ -89,8 +89,6 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Sl-AV-Bki" secondAttribute="trailing" id="xV5-Vk-qGp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="ico_searchstar" id="xhX-lo-2PY"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="myCollectionView" destination="8Sl-AV-Bki" id="7ny-wO-9Uv"/>
                         <outlet property="searchBar" destination="3VS-Zw-ua0" id="V4u-t4-lx3"/>
@@ -102,7 +100,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ico_searchstar" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

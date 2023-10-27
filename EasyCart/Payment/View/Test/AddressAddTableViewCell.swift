@@ -10,6 +10,7 @@ import Foundation
 protocol AddressAddTableViewCellDelegate: AnyObject {
     func didTapButtonInCell(_ cell: AddressAddTableViewCell)
 }
+
 class AddressAddTableViewCell: UITableViewCell {
     var isSelectedCell: Bool = false
     @IBOutlet weak var iamgebtn: UIButton!
@@ -19,12 +20,15 @@ class AddressAddTableViewCell: UITableViewCell {
     @IBOutlet weak var addresslb: UILabel!
     @IBOutlet weak var buidlinglb: UILabel!
     weak var delegate: AddressAddTableViewCellDelegate?
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
        
       
     }
+ 
    
     @IBAction func buttonTapped(_ sender: UIButton) {
         delegate?.didTapButtonInCell(self)
