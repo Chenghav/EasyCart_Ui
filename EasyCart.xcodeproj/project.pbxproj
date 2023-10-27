@@ -18,30 +18,30 @@
 		31EDD6672AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDD6662AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift */; };
 		31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */; };
 		31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */; };
-		5206DF1A2AEBAA4500AE6373 /* CreateItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEF12AEBAA4500AE6373 /* CreateItemVM.swift */; };
-		5206DF1B2AEBAA4500AE6373 /* CreateItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEF32AEBAA4500AE6373 /* CreateItemModel.swift */; };
-		5206DF1C2AEBAA4500AE6373 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEF42AEBAA4500AE6373 /* CategoryData.swift */; };
-		5206DF1D2AEBAA4500AE6373 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEF82AEBAA4500AE6373 /* CategoryTVC.swift */; };
-		5206DF1E2AEBAA4500AE6373 /* InfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DEFB2AEBAA4500AE6373 /* InfoTVC.xib */; };
-		5206DF1F2AEBAA4500AE6373 /* InfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEFC2AEBAA4500AE6373 /* InfoTVC.swift */; };
-		5206DF202AEBAA4500AE6373 /* TitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DEFE2AEBAA4500AE6373 /* TitleTVC.swift */; };
-		5206DF212AEBAA4500AE6373 /* TitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DEFF2AEBAA4500AE6373 /* TitleTVC.xib */; };
-		5206DF222AEBAA4500AE6373 /* ExpanableTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF012AEBAA4500AE6373 /* ExpanableTVC.xib */; };
-		5206DF232AEBAA4500AE6373 /* ExpanableTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF022AEBAA4500AE6373 /* ExpanableTVC.swift */; };
-		5206DF242AEBAA4500AE6373 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF042AEBAA4500AE6373 /* DiscountTVC.xib */; };
-		5206DF252AEBAA4500AE6373 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF052AEBAA4500AE6373 /* DiscountTVC.swift */; };
-		5206DF262AEBAA4500AE6373 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF072AEBAA4500AE6373 /* MoreDetailTVC.xib */; };
-		5206DF272AEBAA4500AE6373 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF082AEBAA4500AE6373 /* MoreDetailTVC.swift */; };
-		5206DF282AEBAA4500AE6373 /* PriceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF0A2AEBAA4500AE6373 /* PriceTVC.swift */; };
-		5206DF292AEBAA4500AE6373 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF0B2AEBAA4500AE6373 /* PriceTVC.xib */; };
-		5206DF2A2AEBAA4500AE6373 /* ButtonCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF0E2AEBAA4500AE6373 /* ButtonCVC.swift */; };
-		5206DF2B2AEBAA4500AE6373 /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF0F2AEBAA4500AE6373 /* CollectionImageCVC.swift */; };
-		5206DF2C2AEBAA4500AE6373 /* PopUpDiscard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF112AEBAA4500AE6373 /* PopUpDiscard.swift */; };
-		5206DF2D2AEBAA4500AE6373 /* DiscardItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF122AEBAA4500AE6373 /* DiscardItemTVC.swift */; };
-		5206DF2E2AEBAA4500AE6373 /* CustomPhotoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF142AEBAA4500AE6373 /* CustomPhotoTVC.swift */; };
-		5206DF2F2AEBAA4500AE6373 /* CreateItemSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF162AEBAA4500AE6373 /* CreateItemSB.storyboard */; };
-		5206DF302AEBAA4500AE6373 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF182AEBAA4500AE6373 /* CreateItemVC.swift */; };
-		5206DF312AEBAA4500AE6373 /* CategoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF192AEBAA4500AE6373 /* CategoryTC.swift */; };
+		5206DF622AEBAEF000AE6373 /* CreateItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF392AEBAEF000AE6373 /* CreateItemVM.swift */; };
+		5206DF632AEBAEF000AE6373 /* CreateItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF3B2AEBAEF000AE6373 /* CreateItemModel.swift */; };
+		5206DF642AEBAEF000AE6373 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF3C2AEBAEF000AE6373 /* CategoryData.swift */; };
+		5206DF652AEBAEF000AE6373 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF402AEBAEF000AE6373 /* CategoryTVC.swift */; };
+		5206DF662AEBAEF000AE6373 /* InfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF432AEBAEF000AE6373 /* InfoTVC.xib */; };
+		5206DF672AEBAEF000AE6373 /* InfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF442AEBAEF000AE6373 /* InfoTVC.swift */; };
+		5206DF682AEBAEF000AE6373 /* TitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF462AEBAEF000AE6373 /* TitleTVC.swift */; };
+		5206DF692AEBAEF000AE6373 /* TitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF472AEBAEF000AE6373 /* TitleTVC.xib */; };
+		5206DF6A2AEBAEF000AE6373 /* ExpanableTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF492AEBAEF000AE6373 /* ExpanableTVC.xib */; };
+		5206DF6B2AEBAEF000AE6373 /* ExpanableTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF4A2AEBAEF000AE6373 /* ExpanableTVC.swift */; };
+		5206DF6C2AEBAEF000AE6373 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF4C2AEBAEF000AE6373 /* DiscountTVC.xib */; };
+		5206DF6D2AEBAEF000AE6373 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF4D2AEBAEF000AE6373 /* DiscountTVC.swift */; };
+		5206DF6E2AEBAEF000AE6373 /* MoreDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF4F2AEBAEF000AE6373 /* MoreDetailTVC.xib */; };
+		5206DF6F2AEBAEF000AE6373 /* MoreDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF502AEBAEF000AE6373 /* MoreDetailTVC.swift */; };
+		5206DF702AEBAEF000AE6373 /* PriceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF522AEBAEF000AE6373 /* PriceTVC.swift */; };
+		5206DF712AEBAEF000AE6373 /* PriceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF532AEBAEF000AE6373 /* PriceTVC.xib */; };
+		5206DF722AEBAEF000AE6373 /* ButtonCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF562AEBAEF000AE6373 /* ButtonCVC.swift */; };
+		5206DF732AEBAEF000AE6373 /* CollectionImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF572AEBAEF000AE6373 /* CollectionImageCVC.swift */; };
+		5206DF742AEBAEF000AE6373 /* PopUpDiscard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF592AEBAEF000AE6373 /* PopUpDiscard.swift */; };
+		5206DF752AEBAEF000AE6373 /* DiscardItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF5A2AEBAEF000AE6373 /* DiscardItemTVC.swift */; };
+		5206DF762AEBAEF000AE6373 /* CustomPhotoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF5C2AEBAEF000AE6373 /* CustomPhotoTVC.swift */; };
+		5206DF772AEBAEF000AE6373 /* CreateItemSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5206DF5E2AEBAEF000AE6373 /* CreateItemSB.storyboard */; };
+		5206DF782AEBAEF000AE6373 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF602AEBAEF000AE6373 /* CreateItemVC.swift */; };
+		5206DF792AEBAEF000AE6373 /* CategoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206DF612AEBAEF000AE6373 /* CategoryTC.swift */; };
 		52A704112AEB8B5D00A7BAFF /* CategoryNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704042AEB8B5D00A7BAFF /* CategoryNibCell.xib */; };
 		52A704122AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704052AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib */; };
 		52A704132AEB8B5D00A7BAFF /* SearchSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A704062AEB8B5D00A7BAFF /* SearchSb.storyboard */; };
@@ -208,30 +208,30 @@
 		31EDD6662AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		31EFE70B2ADF962800EA6040 /* NotificationDemoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDemoable.swift; sourceTree = "<group>"; };
 		31EFE70D2ADF96AC00EA6040 /* NotificationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopUpViewController.swift; sourceTree = "<group>"; };
-		5206DEF12AEBAA4500AE6373 /* CreateItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVM.swift; sourceTree = "<group>"; };
-		5206DEF32AEBAA4500AE6373 /* CreateItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemModel.swift; sourceTree = "<group>"; };
-		5206DEF42AEBAA4500AE6373 /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
-		5206DEF82AEBAA4500AE6373 /* CategoryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
-		5206DEFB2AEBAA4500AE6373 /* InfoTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTVC.xib; sourceTree = "<group>"; };
-		5206DEFC2AEBAA4500AE6373 /* InfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTVC.swift; sourceTree = "<group>"; };
-		5206DEFE2AEBAA4500AE6373 /* TitleTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTVC.swift; sourceTree = "<group>"; };
-		5206DEFF2AEBAA4500AE6373 /* TitleTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTVC.xib; sourceTree = "<group>"; };
-		5206DF012AEBAA4500AE6373 /* ExpanableTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpanableTVC.xib; sourceTree = "<group>"; };
-		5206DF022AEBAA4500AE6373 /* ExpanableTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpanableTVC.swift; sourceTree = "<group>"; };
-		5206DF042AEBAA4500AE6373 /* DiscountTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
-		5206DF052AEBAA4500AE6373 /* DiscountTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
-		5206DF072AEBAA4500AE6373 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
-		5206DF082AEBAA4500AE6373 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
-		5206DF0A2AEBAA4500AE6373 /* PriceTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTVC.swift; sourceTree = "<group>"; };
-		5206DF0B2AEBAA4500AE6373 /* PriceTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
-		5206DF0E2AEBAA4500AE6373 /* ButtonCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCVC.swift; sourceTree = "<group>"; };
-		5206DF0F2AEBAA4500AE6373 /* CollectionImageCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionImageCVC.swift; sourceTree = "<group>"; };
-		5206DF112AEBAA4500AE6373 /* PopUpDiscard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDiscard.swift; sourceTree = "<group>"; };
-		5206DF122AEBAA4500AE6373 /* DiscardItemTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardItemTVC.swift; sourceTree = "<group>"; };
-		5206DF142AEBAA4500AE6373 /* CustomPhotoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoTVC.swift; sourceTree = "<group>"; };
-		5206DF162AEBAA4500AE6373 /* CreateItemSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemSB.storyboard; sourceTree = "<group>"; };
-		5206DF182AEBAA4500AE6373 /* CreateItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
-		5206DF192AEBAA4500AE6373 /* CategoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTC.swift; sourceTree = "<group>"; };
+		5206DF392AEBAEF000AE6373 /* CreateItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVM.swift; sourceTree = "<group>"; };
+		5206DF3B2AEBAEF000AE6373 /* CreateItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemModel.swift; sourceTree = "<group>"; };
+		5206DF3C2AEBAEF000AE6373 /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		5206DF402AEBAEF000AE6373 /* CategoryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
+		5206DF432AEBAEF000AE6373 /* InfoTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTVC.xib; sourceTree = "<group>"; };
+		5206DF442AEBAEF000AE6373 /* InfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTVC.swift; sourceTree = "<group>"; };
+		5206DF462AEBAEF000AE6373 /* TitleTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTVC.swift; sourceTree = "<group>"; };
+		5206DF472AEBAEF000AE6373 /* TitleTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTVC.xib; sourceTree = "<group>"; };
+		5206DF492AEBAEF000AE6373 /* ExpanableTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpanableTVC.xib; sourceTree = "<group>"; };
+		5206DF4A2AEBAEF000AE6373 /* ExpanableTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpanableTVC.swift; sourceTree = "<group>"; };
+		5206DF4C2AEBAEF000AE6373 /* DiscountTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
+		5206DF4D2AEBAEF000AE6373 /* DiscountTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
+		5206DF4F2AEBAEF000AE6373 /* MoreDetailTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailTVC.xib; sourceTree = "<group>"; };
+		5206DF502AEBAEF000AE6373 /* MoreDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailTVC.swift; sourceTree = "<group>"; };
+		5206DF522AEBAEF000AE6373 /* PriceTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTVC.swift; sourceTree = "<group>"; };
+		5206DF532AEBAEF000AE6373 /* PriceTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceTVC.xib; sourceTree = "<group>"; };
+		5206DF562AEBAEF000AE6373 /* ButtonCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCVC.swift; sourceTree = "<group>"; };
+		5206DF572AEBAEF000AE6373 /* CollectionImageCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionImageCVC.swift; sourceTree = "<group>"; };
+		5206DF592AEBAEF000AE6373 /* PopUpDiscard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDiscard.swift; sourceTree = "<group>"; };
+		5206DF5A2AEBAEF000AE6373 /* DiscardItemTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardItemTVC.swift; sourceTree = "<group>"; };
+		5206DF5C2AEBAEF000AE6373 /* CustomPhotoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoTVC.swift; sourceTree = "<group>"; };
+		5206DF5E2AEBAEF000AE6373 /* CreateItemSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemSB.storyboard; sourceTree = "<group>"; };
+		5206DF602AEBAEF000AE6373 /* CreateItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
+		5206DF612AEBAEF000AE6373 /* CategoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTC.swift; sourceTree = "<group>"; };
 		52A704042AEB8B5D00A7BAFF /* CategoryNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryNibCell.xib; sourceTree = "<group>"; };
 		52A704052AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCollectionNibCell.xib; sourceTree = "<group>"; };
 		52A704062AEB8B5D00A7BAFF /* SearchSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchSb.storyboard; sourceTree = "<group>"; };
@@ -509,177 +509,177 @@
 			path = UploadAttachment;
 			sourceTree = "<group>";
 		};
-		5206DEEF2AEBAA4500AE6373 /* Create */ = {
+		5206DF372AEBAEF000AE6373 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF02AEBAA4500AE6373 /* ViewModel */,
-				5206DEF22AEBAA4500AE6373 /* Model */,
-				5206DEF52AEBAA4500AE6373 /* View */,
+				5206DF382AEBAEF000AE6373 /* ViewModel */,
+				5206DF3A2AEBAEF000AE6373 /* Model */,
+				5206DF3D2AEBAEF000AE6373 /* View */,
 			);
 			path = Create;
 			sourceTree = "<group>";
 		};
-		5206DEF02AEBAA4500AE6373 /* ViewModel */ = {
+		5206DF382AEBAEF000AE6373 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF12AEBAA4500AE6373 /* CreateItemVM.swift */,
+				5206DF392AEBAEF000AE6373 /* CreateItemVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5206DEF22AEBAA4500AE6373 /* Model */ = {
+		5206DF3A2AEBAEF000AE6373 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF32AEBAA4500AE6373 /* CreateItemModel.swift */,
-				5206DEF42AEBAA4500AE6373 /* CategoryData.swift */,
+				5206DF3B2AEBAEF000AE6373 /* CreateItemModel.swift */,
+				5206DF3C2AEBAEF000AE6373 /* CategoryData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5206DEF52AEBAA4500AE6373 /* View */ = {
+		5206DF3D2AEBAEF000AE6373 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF62AEBAA4500AE6373 /* TableCell */,
-				5206DF152AEBAA4500AE6373 /* Storyboard */,
-				5206DF172AEBAA4500AE6373 /* Controller */,
+				5206DF3E2AEBAEF000AE6373 /* TableCell */,
+				5206DF5D2AEBAEF000AE6373 /* Storyboard */,
+				5206DF5F2AEBAEF000AE6373 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5206DEF62AEBAA4500AE6373 /* TableCell */ = {
+		5206DF3E2AEBAEF000AE6373 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF72AEBAA4500AE6373 /* category */,
-				5206DEF92AEBAA4500AE6373 /* Info */,
-				5206DF0C2AEBAA4500AE6373 /* photo */,
+				5206DF3F2AEBAEF000AE6373 /* category */,
+				5206DF412AEBAEF000AE6373 /* Info */,
+				5206DF542AEBAEF000AE6373 /* photo */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
 		};
-		5206DEF72AEBAA4500AE6373 /* category */ = {
+		5206DF3F2AEBAEF000AE6373 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEF82AEBAA4500AE6373 /* CategoryTVC.swift */,
+				5206DF402AEBAEF000AE6373 /* CategoryTVC.swift */,
 			);
 			path = category;
 			sourceTree = "<group>";
 		};
-		5206DEF92AEBAA4500AE6373 /* Info */ = {
+		5206DF412AEBAEF000AE6373 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEFA2AEBAA4500AE6373 /* category */,
-				5206DEFD2AEBAA4500AE6373 /* title */,
-				5206DF002AEBAA4500AE6373 /* Expandable */,
-				5206DF032AEBAA4500AE6373 /* discount */,
-				5206DF062AEBAA4500AE6373 /* moreDetail */,
-				5206DF092AEBAA4500AE6373 /* price */,
+				5206DF422AEBAEF000AE6373 /* category */,
+				5206DF452AEBAEF000AE6373 /* title */,
+				5206DF482AEBAEF000AE6373 /* Expandable */,
+				5206DF4B2AEBAEF000AE6373 /* discount */,
+				5206DF4E2AEBAEF000AE6373 /* moreDetail */,
+				5206DF512AEBAEF000AE6373 /* price */,
 			);
 			path = Info;
 			sourceTree = "<group>";
 		};
-		5206DEFA2AEBAA4500AE6373 /* category */ = {
+		5206DF422AEBAEF000AE6373 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEFB2AEBAA4500AE6373 /* InfoTVC.xib */,
-				5206DEFC2AEBAA4500AE6373 /* InfoTVC.swift */,
+				5206DF432AEBAEF000AE6373 /* InfoTVC.xib */,
+				5206DF442AEBAEF000AE6373 /* InfoTVC.swift */,
 			);
 			path = category;
 			sourceTree = "<group>";
 		};
-		5206DEFD2AEBAA4500AE6373 /* title */ = {
+		5206DF452AEBAEF000AE6373 /* title */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEFE2AEBAA4500AE6373 /* TitleTVC.swift */,
-				5206DEFF2AEBAA4500AE6373 /* TitleTVC.xib */,
+				5206DF462AEBAEF000AE6373 /* TitleTVC.swift */,
+				5206DF472AEBAEF000AE6373 /* TitleTVC.xib */,
 			);
 			path = title;
 			sourceTree = "<group>";
 		};
-		5206DF002AEBAA4500AE6373 /* Expandable */ = {
+		5206DF482AEBAEF000AE6373 /* Expandable */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF012AEBAA4500AE6373 /* ExpanableTVC.xib */,
-				5206DF022AEBAA4500AE6373 /* ExpanableTVC.swift */,
+				5206DF492AEBAEF000AE6373 /* ExpanableTVC.xib */,
+				5206DF4A2AEBAEF000AE6373 /* ExpanableTVC.swift */,
 			);
 			path = Expandable;
 			sourceTree = "<group>";
 		};
-		5206DF032AEBAA4500AE6373 /* discount */ = {
+		5206DF4B2AEBAEF000AE6373 /* discount */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF042AEBAA4500AE6373 /* DiscountTVC.xib */,
-				5206DF052AEBAA4500AE6373 /* DiscountTVC.swift */,
+				5206DF4C2AEBAEF000AE6373 /* DiscountTVC.xib */,
+				5206DF4D2AEBAEF000AE6373 /* DiscountTVC.swift */,
 			);
 			path = discount;
 			sourceTree = "<group>";
 		};
-		5206DF062AEBAA4500AE6373 /* moreDetail */ = {
+		5206DF4E2AEBAEF000AE6373 /* moreDetail */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF072AEBAA4500AE6373 /* MoreDetailTVC.xib */,
-				5206DF082AEBAA4500AE6373 /* MoreDetailTVC.swift */,
+				5206DF4F2AEBAEF000AE6373 /* MoreDetailTVC.xib */,
+				5206DF502AEBAEF000AE6373 /* MoreDetailTVC.swift */,
 			);
 			path = moreDetail;
 			sourceTree = "<group>";
 		};
-		5206DF092AEBAA4500AE6373 /* price */ = {
+		5206DF512AEBAEF000AE6373 /* price */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF0A2AEBAA4500AE6373 /* PriceTVC.swift */,
-				5206DF0B2AEBAA4500AE6373 /* PriceTVC.xib */,
+				5206DF522AEBAEF000AE6373 /* PriceTVC.swift */,
+				5206DF532AEBAEF000AE6373 /* PriceTVC.xib */,
 			);
 			path = price;
 			sourceTree = "<group>";
 		};
-		5206DF0C2AEBAA4500AE6373 /* photo */ = {
+		5206DF542AEBAEF000AE6373 /* photo */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF0D2AEBAA4500AE6373 /* CollectionCell */,
-				5206DF102AEBAA4500AE6373 /* DiscardItem */,
-				5206DF132AEBAA4500AE6373 /* TableViewCell */,
+				5206DF552AEBAEF000AE6373 /* CollectionCell */,
+				5206DF582AEBAEF000AE6373 /* DiscardItem */,
+				5206DF5B2AEBAEF000AE6373 /* TableViewCell */,
 			);
 			path = photo;
 			sourceTree = "<group>";
 		};
-		5206DF0D2AEBAA4500AE6373 /* CollectionCell */ = {
+		5206DF552AEBAEF000AE6373 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF0E2AEBAA4500AE6373 /* ButtonCVC.swift */,
-				5206DF0F2AEBAA4500AE6373 /* CollectionImageCVC.swift */,
+				5206DF562AEBAEF000AE6373 /* ButtonCVC.swift */,
+				5206DF572AEBAEF000AE6373 /* CollectionImageCVC.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
 		};
-		5206DF102AEBAA4500AE6373 /* DiscardItem */ = {
+		5206DF582AEBAEF000AE6373 /* DiscardItem */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF112AEBAA4500AE6373 /* PopUpDiscard.swift */,
-				5206DF122AEBAA4500AE6373 /* DiscardItemTVC.swift */,
+				5206DF592AEBAEF000AE6373 /* PopUpDiscard.swift */,
+				5206DF5A2AEBAEF000AE6373 /* DiscardItemTVC.swift */,
 			);
 			path = DiscardItem;
 			sourceTree = "<group>";
 		};
-		5206DF132AEBAA4500AE6373 /* TableViewCell */ = {
+		5206DF5B2AEBAEF000AE6373 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF142AEBAA4500AE6373 /* CustomPhotoTVC.swift */,
+				5206DF5C2AEBAEF000AE6373 /* CustomPhotoTVC.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		5206DF152AEBAA4500AE6373 /* Storyboard */ = {
+		5206DF5D2AEBAEF000AE6373 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF162AEBAA4500AE6373 /* CreateItemSB.storyboard */,
+				5206DF5E2AEBAEF000AE6373 /* CreateItemSB.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		5206DF172AEBAA4500AE6373 /* Controller */ = {
+		5206DF5F2AEBAEF000AE6373 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5206DF182AEBAA4500AE6373 /* CreateItemVC.swift */,
-				5206DF192AEBAA4500AE6373 /* CategoryTC.swift */,
+				5206DF602AEBAEF000AE6373 /* CreateItemVC.swift */,
+				5206DF612AEBAEF000AE6373 /* CategoryTC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1094,7 +1094,7 @@
 		C2BD61D32AD3B7A100939CA7 /* EasyCart */ = {
 			isa = PBXGroup;
 			children = (
-				5206DEEF2AEBAA4500AE6373 /* Create */,
+				5206DF372AEBAEF000AE6373 /* Create */,
 				52A7041C2AEB8E6400A7BAFF /* Payment */,
 				52A704012AEB8B5D00A7BAFF /* Search */,
 				BB560DB22ADE49D600DBB585 /* Extension */,
@@ -1392,13 +1392,13 @@
 				52A704482AEB8E6400A7BAFF /* AddressTableViewCell.xib in Resources */,
 				DFDB68782AD65DBA006ECEE7 /* TableViewCell.xib in Resources */,
 				52A704442AEB8E6400A7BAFF /* PayTableViewCell.xib in Resources */,
-				5206DF222AEBAA4500AE6373 /* ExpanableTVC.xib in Resources */,
+				5206DF6A2AEBAEF000AE6373 /* ExpanableTVC.xib in Resources */,
 				52A7044C2AEB8E6400A7BAFF /* ReceiptTableViewCell.xib in Resources */,
 				52A7050D2AEBA6D000A7BAFF /* CutomCollectionViewCell.xib in Resources */,
 				52A704C32AEBA69800A7BAFF /* AddItemsCollectionViewCell.xib in Resources */,
 				DFDB68762AD65DBA006ECEE7 /* Section1TableViewCell.xib in Resources */,
 				52A704C52AEBA69800A7BAFF /* AddAnotherCollectionCollectionViewCell.xib in Resources */,
-				5206DF1E2AEBAA4500AE6373 /* InfoTVC.xib in Resources */,
+				5206DF662AEBAEF000AE6373 /* InfoTVC.xib in Resources */,
 				DFDB68302AD65968006ECEE7 /* ExploreTableViewCell.xib in Resources */,
 				52A704492AEB8E6400A7BAFF /* PaymentSb.storyboard in Resources */,
 				52A704422AEB8E6400A7BAFF /* TotalTableViewCell.xib in Resources */,
@@ -1407,9 +1407,9 @@
 				52A705052AEBA6D000A7BAFF /* SlideClickCVC.xib in Resources */,
 				52A704472AEB8E6400A7BAFF /* DeliveryTableViewCell.xib in Resources */,
 				52A704C42AEBA69800A7BAFF /* AddMoreCollectionViewCell.xib in Resources */,
-				5206DF292AEBAA4500AE6373 /* PriceTVC.xib in Resources */,
+				5206DF712AEBAEF000AE6373 /* PriceTVC.xib in Resources */,
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
-				5206DF242AEBAA4500AE6373 /* DiscountTVC.xib in Resources */,
+				5206DF6C2AEBAEF000AE6373 /* DiscountTVC.xib in Resources */,
 				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
 				52A7044F2AEB8E6400A7BAFF /* NewAddressTableViewCell.xib in Resources */,
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
@@ -1424,15 +1424,15 @@
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
-				5206DF262AEBAA4500AE6373 /* MoreDetailTVC.xib in Resources */,
+				5206DF6E2AEBAEF000AE6373 /* MoreDetailTVC.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
 				52A705042AEBA6D000A7BAFF /* SlideCollectionViewCell.xib in Resources */,
 				52A704122AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib in Resources */,
 				52A704452AEB8E6400A7BAFF /* SectionAddTableViewCell.xib in Resources */,
 				52A705022AEBA6D000A7BAFF /* DateOfitemCollCell.xib in Resources */,
-				5206DF212AEBAA4500AE6373 /* TitleTVC.xib in Resources */,
+				5206DF692AEBAEF000AE6373 /* TitleTVC.xib in Resources */,
 				DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */,
-				5206DF2F2AEBAA4500AE6373 /* CreateItemSB.storyboard in Resources */,
+				5206DF772AEBAEF000AE6373 /* CreateItemSB.storyboard in Resources */,
 				52A704142AEB8B5D00A7BAFF /* PopularNibCell.xib in Resources */,
 				DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */,
 				DFBF14FC2AE627D200653EF1 /* GoogleService-Info.plist in Resources */,
@@ -1490,7 +1490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDB687F2AD65DBA006ECEE7 /* EditProfileViewController.swift in Sources */,
-				5206DF1D2AEBAA4500AE6373 /* CategoryTVC.swift in Sources */,
+				5206DF652AEBAEF000AE6373 /* CategoryTVC.swift in Sources */,
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				52A704D22AEBA69800A7BAFF /* AddItemsCollectionViewCell.swift in Sources */,
 				52A704DC2AEBA69800A7BAFF /* AddItems.swift in Sources */,
@@ -1502,10 +1502,10 @@
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
-				5206DF272AEBAA4500AE6373 /* MoreDetailTVC.swift in Sources */,
+				5206DF6F2AEBAEF000AE6373 /* MoreDetailTVC.swift in Sources */,
 				52A704402AEB8E6400A7BAFF /* AddressController.swift in Sources */,
 				52A705072AEBA6D000A7BAFF /* ProductListCVC.swift in Sources */,
-				5206DF1B2AEBAA4500AE6373 /* CreateItemModel.swift in Sources */,
+				5206DF632AEBAEF000AE6373 /* CreateItemModel.swift in Sources */,
 				C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				52A704CA2AEBA69800A7BAFF /* PopUPForSave.swift in Sources */,
@@ -1513,10 +1513,10 @@
 				31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */,
 				52A7050B2AEBA6D000A7BAFF /* SlideCollectionViewCell.swift in Sources */,
 				C26DA0732AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift in Sources */,
-				5206DF282AEBAA4500AE6373 /* PriceTVC.swift in Sources */,
+				5206DF702AEBAEF000AE6373 /* PriceTVC.swift in Sources */,
 				DFDB68862AD65DBA006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
 				DFDB68842AD65DBA006ECEE7 /* AllitemViewController.swift in Sources */,
-				5206DF2C2AEBAA4500AE6373 /* PopUpDiscard.swift in Sources */,
+				5206DF742AEBAEF000AE6373 /* PopUpDiscard.swift in Sources */,
 				52A704502AEB8E6400A7BAFF /* PayTableViewCell.swift in Sources */,
 				52A704DD2AEBA69800A7BAFF /* AddAnotherCollection.swift in Sources */,
 				52A704D32AEBA69800A7BAFF /* AddAnotherCollectionCollectionViewCell.swift in Sources */,
@@ -1549,7 +1549,7 @@
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				52A704CC2AEBA69800A7BAFF /* CreateNewViewController.swift in Sources */,
-				5206DF2B2AEBAA4500AE6373 /* CollectionImageCVC.swift in Sources */,
+				5206DF732AEBAEF000AE6373 /* CollectionImageCVC.swift in Sources */,
 				52A704192AEB8B5D00A7BAFF /* SectionCellNib.swift in Sources */,
 				52A704D02AEBA69800A7BAFF /* SaveCollectionViewCell.swift in Sources */,
 				52A704D82AEBA69800A7BAFF /* SaveViewController.swift in Sources */,
@@ -1558,20 +1558,20 @@
 				52A704C62AEBA69800A7BAFF /* PopAnother.swift in Sources */,
 				C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */,
 				52A704D62AEBA69800A7BAFF /* ForPostViewController.swift in Sources */,
-				5206DF1F2AEBAA4500AE6373 /* InfoTVC.swift in Sources */,
+				5206DF672AEBAEF000AE6373 /* InfoTVC.swift in Sources */,
 				52A704C72AEBA69800A7BAFF /* DeleteCollectionPop.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				52A704C92AEBA69800A7BAFF /* CreateNewPop.swift in Sources */,
 				315540852ADE42F600BFF8B5 /* NotificationTableViewCell.swift in Sources */,
 				52A7050A2AEBA6D000A7BAFF /* DateOfitemCollCell.swift in Sources */,
-				5206DF2E2AEBAA4500AE6373 /* CustomPhotoTVC.swift in Sources */,
+				5206DF762AEBAEF000AE6373 /* CustomPhotoTVC.swift in Sources */,
 				C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */,
 				31EDD6672AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift in Sources */,
 				52A7050E2AEBA6D000A7BAFF /* TabMainViewController.swift in Sources */,
-				5206DF1A2AEBAA4500AE6373 /* CreateItemVM.swift in Sources */,
+				5206DF622AEBAEF000AE6373 /* CreateItemVM.swift in Sources */,
 				52A704D12AEBA69800A7BAFF /* EmptyCollectionViewCell.swift in Sources */,
-				5206DF302AEBAA4500AE6373 /* CreateItemVC.swift in Sources */,
-				5206DF252AEBAA4500AE6373 /* DiscountTVC.swift in Sources */,
+				5206DF782AEBAEF000AE6373 /* CreateItemVC.swift in Sources */,
+				5206DF6D2AEBAEF000AE6373 /* DiscountTVC.swift in Sources */,
 				52A7044D2AEB8E6400A7BAFF /* ReceiptTableViewCell.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				52A7041B2AEB8B5D00A7BAFF /* CategoryModelData.swift in Sources */,
@@ -1589,14 +1589,14 @@
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
 				52A704162AEB8B5D00A7BAFF /* PopularNibCell.swift in Sources */,
 				52A704D42AEBA69800A7BAFF /* ForViewPostCollectionViewCell.swift in Sources */,
-				5206DF1C2AEBAA4500AE6373 /* CategoryData.swift in Sources */,
+				5206DF642AEBAEF000AE6373 /* CategoryData.swift in Sources */,
 				52A705002AEBA6D000A7BAFF /* DataOfItem.swift in Sources */,
 				52A704CD2AEBA69800A7BAFF /* AddAnotherCollectionViewController.swift in Sources */,
 				52A7050C2AEBA6D000A7BAFF /* collection.swift in Sources */,
-				5206DF312AEBAA4500AE6373 /* CategoryTC.swift in Sources */,
+				5206DF792AEBAEF000AE6373 /* CategoryTC.swift in Sources */,
 				C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
-				5206DF2A2AEBAA4500AE6373 /* ButtonCVC.swift in Sources */,
+				5206DF722AEBAEF000AE6373 /* ButtonCVC.swift in Sources */,
 				52A7044B2AEB8E6400A7BAFF /* RecieptController.swift in Sources */,
 				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				52A704FF2AEBA6D000A7BAFF /* image.swift in Sources */,
@@ -1605,11 +1605,11 @@
 				52A705102AEBA6D000A7BAFF /* HomeViewController.swift in Sources */,
 				52A7044A2AEB8E6400A7BAFF /* ReceiptDemoable.swift in Sources */,
 				52A704C82AEBA69800A7BAFF /* AddMorePop.swift in Sources */,
-				5206DF202AEBAA4500AE6373 /* TitleTVC.swift in Sources */,
+				5206DF682AEBAEF000AE6373 /* TitleTVC.swift in Sources */,
 				52A704172AEB8B5D00A7BAFF /* SearchController.swift in Sources */,
 				52A704DB2AEBA69800A7BAFF /* AddMore.swift in Sources */,
 				52A704D52AEBA69800A7BAFF /* AddMoreCollectionViewCell.swift in Sources */,
-				5206DF2D2AEBAA4500AE6373 /* DiscardItemTVC.swift in Sources */,
+				5206DF752AEBAEF000AE6373 /* DiscardItemTVC.swift in Sources */,
 				315540802ADE35D100BFF8B5 /* NotificationViewController.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
 				52A705122AEBA6D000A7BAFF /* CustomTabBar.swift in Sources */,
@@ -1619,7 +1619,7 @@
 				DFDB68812AD65DBA006ECEE7 /* TableViewCell.swift in Sources */,
 				52A704CF2AEBA69800A7BAFF /* DeleteCollectionViewController.swift in Sources */,
 				52A704FE2AEBA6D000A7BAFF /* ProductInfo.swift in Sources */,
-				5206DF232AEBAA4500AE6373 /* ExpanableTVC.swift in Sources */,
+				5206DF6B2AEBAEF000AE6373 /* ExpanableTVC.swift in Sources */,
 				52A705092AEBA6D000A7BAFF /* LayoutBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
