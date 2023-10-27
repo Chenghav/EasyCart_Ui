@@ -19,13 +19,16 @@ class PopSaveViewController: UIViewController, CreatePop, PopDelete{
         View1.heightAnchor.constraint(equalToConstant: 52).isActive = true
         View2.heightAnchor.constraint(equalToConstant: 52).isActive = true
     }
-    @IBAction func EditCollectionName(_ sender: Any) {
+    @IBAction func EditCollectionName(_ sender: UIButton) {
 //        self.dismiss(animated: true)
-    PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
+//    PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
        
-//        self.dismiss(animated: true, completion: {
-//        PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
-//                    })
+        self.dismiss(animated: true, completion: {
+            
+            
+            print("jjhjh")
+            PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
+                    })
     }
     
     @IBAction func DeleteCollectionBtn(_ sender: Any) {
