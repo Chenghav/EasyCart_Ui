@@ -1,18 +1,39 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '11.0'
 
 target 'EasyCart' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'CarbonKit'
+  pod 'CarbonKit'
   # Pods for Easycart
-  post_install do |pi|
-    pi.pods_project.targets.each do |t|
-      t.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+
+  # Pods for EasyCart
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+end
+
+#post_install do |pi|
+#  pi.pods_project.targets.each do |t|
+#    t.build_configurations.each do |config|
+#      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+#    end
+#  end
+#end
+
+post_install do |installer|
+  installer.aggregate_targets.each do |target|
+    target.xcconfigs.each do |variant, xcconfig|
+      xcconfig_path = target.client_root + target.xcconfig_relative_path(variant)
+      IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
+    end
+  end
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.base_configuration_reference.is_a? Xcodeproj::Project::Object::PBXFileReference
+        xcconfig_path = config.base_configuration_reference.real_path
+        IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
       end
     end
   end
-  # Pods for EasyCart
-
 end

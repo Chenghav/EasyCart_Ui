@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		52C39A5B2AEB4B140024B2C5 /* CategoryModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */; };
+		52C39A652AEB71D40024B2C5 /* ReceiptDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C39A612AEB71D40024B2C5 /* ReceiptDemoable.swift */; };
+		52C39A662AEB71D40024B2C5 /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C39A622AEB71D40024B2C5 /* RecieptController.swift */; };
+		52C39A672AEB71D40024B2C5 /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C39A632AEB71D40024B2C5 /* ReceiptTableViewCell.xib */; };
+		52C39A682AEB71D40024B2C5 /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C39A642AEB71D40024B2C5 /* ReceiptTableViewCell.swift */; };
+		52C39A6B2AEB74D70024B2C5 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = 52C39A6A2AEB74D70024B2C5 /* FittedSheets */; };
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
@@ -103,7 +108,6 @@
 		DFDB68D12AD67446006ECEE7 /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */; };
 		DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */; };
 		DFDB68D32AD67446006ECEE7 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB68C92AD67446006ECEE7 /* PaymentController.swift */; };
-		E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36DD1532ADF943C00B22CBB /* RecieptController.swift */; };
 		E3A891CA2ADD25BC006E63C7 /* AddressAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */; };
 		E3A891CB2ADD25BC006E63C7 /* SectionAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */; };
 		E3A891CC2ADD25BC006E63C7 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A891BE2ADD25BC006E63C7 /* AddressTableViewCell.xib */; };
@@ -116,12 +120,14 @@
 		E3A891D32ADD25BC006E63C7 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */; };
 		E3A891D42ADD25BC006E63C7 /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891C72ADD25BC006E63C7 /* AddressController.swift */; };
 		E3A891D92ADD26D5006E63C7 /* addressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A891D82ADD26D5006E63C7 /* addressData.swift */; };
-		E3AB7E022ADFBBE500AF4E37 /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */; };
-		E3AB7E032ADFBBE500AF4E37 /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModelData.swift; sourceTree = "<group>"; };
+		52C39A612AEB71D40024B2C5 /* ReceiptDemoable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptDemoable.swift; sourceTree = "<group>"; };
+		52C39A622AEB71D40024B2C5 /* RecieptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
+		52C39A632AEB71D40024B2C5 /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
+		52C39A642AEB71D40024B2C5 /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,7 +226,6 @@
 		DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		DFDB68C92AD67446006ECEE7 /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
-		E36DD1532ADF943C00B22CBB /* RecieptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
 		E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAddTableViewCell.xib; sourceTree = "<group>"; };
 		E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionAddTableViewCell.xib; sourceTree = "<group>"; };
 		E3A891BE2ADD25BC006E63C7 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
@@ -233,8 +238,6 @@
 		E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
 		E3A891C72ADD25BC006E63C7 /* AddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
 		E3A891D82ADD26D5006E63C7 /* addressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressData.swift; sourceTree = "<group>"; };
-		E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
-		E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */,
+				52C39A6B2AEB74D70024B2C5 /* FittedSheets in Frameworks */,
 				71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +268,17 @@
 				52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		52C39A602AEB71D40024B2C5 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				52C39A612AEB71D40024B2C5 /* ReceiptDemoable.swift */,
+				52C39A622AEB71D40024B2C5 /* RecieptController.swift */,
+				52C39A632AEB71D40024B2C5 /* ReceiptTableViewCell.xib */,
+				52C39A642AEB71D40024B2C5 /* ReceiptTableViewCell.swift */,
+			);
+			path = Receipt;
 			sourceTree = "<group>";
 		};
 		52C957452AE8F5E6000D87EA /* Test */ = {
@@ -757,6 +772,7 @@
 		DFDB68BE2AD67446006ECEE7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				52C39A602AEB71D40024B2C5 /* Receipt */,
 				E3A891BC2ADD25BC006E63C7 /* AddressAddTableViewCell.xib */,
 				E3A891BD2ADD25BC006E63C7 /* SectionAddTableViewCell.xib */,
 				E3A891BE2ADD25BC006E63C7 /* AddressTableViewCell.xib */,
@@ -767,7 +783,6 @@
 				DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */,
 				DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */,
 				DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */,
-				E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -775,8 +790,6 @@
 		DFDB68C42AD67446006ECEE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
-				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
 				E3A891C22ADD25BC006E63C7 /* SectionAddTableViewCell.swift */,
 				DFDB68C92AD67446006ECEE7 /* PaymentController.swift */,
 				DFDB68C52AD67446006ECEE7 /* PayTableViewCell.swift */,
@@ -831,6 +844,7 @@
 			name = EasyCart;
 			packageProductDependencies = (
 				DFD5E7ED2AD50CB4006E101F /* Kingfisher */,
+				52C39A6A2AEB74D70024B2C5 /* FittedSheets */,
 			);
 			productName = EasyCart;
 			productReference = C2BD61D12AD3B7A100939CA7 /* EasyCart.app */;
@@ -863,6 +877,7 @@
 			mainGroup = C2BD61C82AD3B7A100939CA7;
 			packageReferences = (
 				DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				52C39A692AEB74D70024B2C5 /* XCRemoteSwiftPackageReference "FittedSheets" */,
 			);
 			productRefGroup = C2BD61D22AD3B7A100939CA7 /* Products */;
 			projectDirPath = "";
@@ -900,10 +915,10 @@
 				E3A891CE2ADD25BC006E63C7 /* NewAddressTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
 				DFDB67FD2AD65787006ECEE7 /* CustomeFieldTVC.xib in Resources */,
+				52C39A672AEB71D40024B2C5 /* ReceiptTableViewCell.xib in Resources */,
 				DFDB68452AD65D67006ECEE7 /* CutomCollectionViewCell.xib in Resources */,
 				DFDB68752AD65DBA006ECEE7 /* ThirdSectionTableViewCell.xib in Resources */,
 				DFDB687A2AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.xib in Resources */,
-				E3AB7E032ADFBBE500AF4E37 /* ReceiptTableViewCell.xib in Resources */,
 				DFDB689F2AD65FB2006ECEE7 /* PopularNibCell.xib in Resources */,
 				DFDB68022AD65787006ECEE7 /* ButtonCVC.xib in Resources */,
 				E3A891CD2ADD25BC006E63C7 /* AddressSb.storyboard in Resources */,
@@ -971,7 +986,6 @@
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
-				E3AB7E022ADFBBE500AF4E37 /* ReceiptTableViewCell.swift in Sources */,
 				DFDB676F2AD6514C006ECEE7 /* SaveViewController.swift in Sources */,
 				DFDB68D02AD67446006ECEE7 /* DeliveryTableViewCell.swift in Sources */,
 				DFDB68852AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
@@ -984,6 +998,7 @@
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DFDB68042AD65787006ECEE7 /* CreateItemVC.swift in Sources */,
 				DFDB67F42AD65787006ECEE7 /* CategoryData.swift in Sources */,
+				52C39A652AEB71D40024B2C5 /* ReceiptDemoable.swift in Sources */,
 				E3A891D42ADD25BC006E63C7 /* AddressController.swift in Sources */,
 				DFDB68A12AD65FB2006ECEE7 /* SectionCellNib.swift in Sources */,
 				DFDB68862AD65DBA006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
@@ -1020,10 +1035,11 @@
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
 				E3A891D12ADD25BC006E63C7 /* AddressAddTableViewCell.swift in Sources */,
+				52C39A682AEB71D40024B2C5 /* ReceiptTableViewCell.swift in Sources */,
 				DFDB67F72AD65787006ECEE7 /* InfoTVC.swift in Sources */,
-				E36DD1542ADF943C00B22CBB /* RecieptController.swift in Sources */,
 				DFDB67FB2AD65787006ECEE7 /* Data.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
+				52C39A662AEB71D40024B2C5 /* RecieptController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
@@ -1269,6 +1285,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		52C39A692AEB74D70024B2C5 /* XCRemoteSwiftPackageReference "FittedSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gordontucker/FittedSheets.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -1280,6 +1304,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		52C39A6A2AEB74D70024B2C5 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52C39A692AEB74D70024B2C5 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
+		};
 		DFD5E7ED2AD50CB4006E101F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DFD5E7EC2AD50CB4006E101F /* XCRemoteSwiftPackageReference "Kingfisher" */;
