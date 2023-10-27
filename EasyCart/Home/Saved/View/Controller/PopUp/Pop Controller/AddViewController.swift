@@ -6,8 +6,7 @@
 //
 
 import UIKit
-
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, PopAnother  {
     
     // MARK:  - Outlets -
     @IBOutlet weak var View2: UIView!
@@ -20,6 +19,9 @@ class AddViewController: UIViewController {
         View1.layer.cornerRadius = 10
         View2.layer.cornerRadius = 10
         
+    }
+    @IBAction func AddAnotherCollection(_ sender: Any) {
+        AddViewController.Pop(from: self, in: nil)
     }
     
 }

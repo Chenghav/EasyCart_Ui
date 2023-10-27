@@ -24,5 +24,7 @@ let notificationModel : [NotificationModel] = [
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T09:22:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T06:22:09.000+00:00"),
     NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-17T06:22:09.000+00:00"),
-    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-23T06:22:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-27T06:22:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-27T06:22:09.000+00:00"),
+    NotificationModel(notificationTitle: "You receive an order", notificatoinImage: UIImage(named: "notification_user")!, notificationDesc: "$1,000.00 from Krong Kampuchea", notificationCreatAt: "2023-10-25T06:22:09.000+00:00"),
 ]

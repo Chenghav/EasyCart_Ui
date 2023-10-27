@@ -7,10 +7,12 @@
 
 import UIKit
 
-class SaveViewController: UIViewController{
+class SaveViewController: UIViewController, CreatePop, UISearchBarDelegate{
 
     // MARK:  - Proterties -
     var datas = [Save]()
+    var filter = [String]()
+    
 
     // MARK:  - Outlets -
     @IBOutlet weak var searchBar: UISearchBar!
@@ -26,20 +28,24 @@ class SaveViewController: UIViewController{
         self.searchBar.searchTextField.layer.cornerRadius = 9
         self.searchBar.searchTextField.clipsToBounds = true
         createBtn.layer.cornerRadius = 10
-
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        searchBar.delegate = self
         datas = Saves
         collectionView.register(SaveCollectionViewCell.nib(), forCellWithReuseIdentifier: "SaveCollectionViewCell")
         let layout = UICollectionViewFlowLayout()
                 layout.scrollDirection = .vertical
                 layout.itemSize = CGSize(width: (collectionView.frame.size.width - 8 * 3) / 2, height: 203)
                 layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 16, right: 4)
-//                layout.minimumInteritemSpacing = 8
+
                 collectionView.collectionViewLayout = layout
     }
 
     // MARK:  - Outlets Action -
     @IBAction func CreateButton(_ sender: Any) {
+        SaveViewController.PopNew(from: self, in: nil, btnName: "Create", titleLab1: "New Collection")
     }
+  
  
 }
 
@@ -62,13 +68,20 @@ extension SaveViewController : UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let nextController = storyboard?.instantiateViewController(identifier: "CellSelectViewController") as? CellSelectViewController {
-            nextController.selectedData = datas[indexPath.row]
-            nextController.isFirstCellSelected = indexPath.row == 0
-
-            navigationController?.pushViewController(nextController, animated: true)
+        if indexPath.row == 0 {
+            if let nextController = storyboard?.instantiateViewController(identifier: "ForPostViewController") as? ForPostViewController {
+                navigationController?.pushViewController(nextController, animated: true)
+            }
+        }else {
+            if let nextController = storyboard?.instantiateViewController(identifier: "CellSelectViewController") as? CellSelectViewController {
+                nextController.selectedData = datas[indexPath.row]
+                nextController.isFirstCellSelected = indexPath.row == 0
+                navigationController?.pushViewController(nextController, animated: true)
+            }
         }
+
     }
+
 
     
 }
