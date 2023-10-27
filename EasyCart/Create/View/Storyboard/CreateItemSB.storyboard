@@ -406,7 +406,7 @@
         <image name="dancing-banana.gif" width="365" height="360"/>
         <image name="done" width="339" height="322"/>
         <image name="ico_addPrimary" width="38" height="38"/>
-        <image name="iconav_close" width="45" height="44"/>
+        <image name="iconav_close" width="128" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

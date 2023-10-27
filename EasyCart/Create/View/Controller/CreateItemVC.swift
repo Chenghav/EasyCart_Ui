@@ -11,25 +11,20 @@ protocol CreateItemViewDelegate {
     func toggleSection(for header: CreateItemVC)
 }
 
-class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
+class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDetailTVCDelegate{
     
     let nameLabel = UILabel()
     let detailLabel = UILabel()
-    func didSelectCustomCell() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
     var isReloadCollection = false
     var isExpandable = false
     var sectionIndex = -1
     var createItemVM = CreateItemVM()
-    var currentlySelectedCellIndexPath: IndexPath?
     var didCollapse : Bool?
-    var indexPathDiselect : IndexPath?
+    //    var indexPathDiselect : IndexPath?
+    //    var currentlySelectedCellIndexPath: IndexPath?
+    var isExpanded = false
     
     func didTapCell(){
         print("success")
@@ -38,34 +33,14 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
     func didSelectCollectionCell(){
         CreateItemVC.openDemo(from: self, in: nil)
     }
-    
-//    @objc func didCollapeCell(_ sender: UIButton) {
-//
-//        let point        = sender.convert(CGPoint.zero, to: self.tableView)
-//          let indexPath    = self.tableView.indexPathForRow(at: point)!
-//          if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
-//              // unselect the selected one
-//              makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
-//              guard currentlySelectedCellIndexPath != indexPathDiselect else {
-//                  tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
-//                  self.currentlySelectedCellIndexPath = nil
-//                  if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
-//                      cell.expandbtn.setImage(UIImage(named: "up"), for: .normal)
-//                  }
-//                  return
-//              }
-//          }
-//        if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
-//            cell.expandbtn.setImage(UIImage(named: "down"), for: .normal)
-//          }
-//
-//          // Highlight the proper cell
-//          makeCellSelected(in: tableView, on: indexPathDiselect ?? IndexPath())
-//          currentlySelectedCellIndexPath = indexPathDiselect
-//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-//
-//        print("tappp")
-//    }
+    func didSelectCustomCell() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    func didToggleExpansionState() {
+        tableView.reloadData()
+    }
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -93,12 +68,14 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
  // MARK: - UITableViewDelegate -
 extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
         }else if section == 1{
+//            let count =  createItemVM.itemCell.count
+//            return didCollapse == true ? count : 5
             return createItemVM.itemCell.count
         }
         else{
@@ -122,6 +99,10 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 self.pickerImage.delegate = self
                 self.present(self.pickerImage, animated: true, completion: nil)
                 
+            }
+            
+            cell.popUpDiscard = {
+                CreateItemVC.openDemo(from: self, in: nil)
             }
             return cell
         }else if indexPath.section == 1{
@@ -149,8 +130,9 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
                 labelCel.configureMoreDetail(with: data)
+                labelCel.delegate = self
 //                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
-                self.indexPathDiselect = indexPath
+//                self.indexPathDiselect = indexPath
                 return labelCel
             case .CategoryMoreDetail:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "ExpanableTVC", for: indexPath) as! ExpanableTVC
@@ -165,14 +147,14 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         return UITableViewCell()
     }
     
-    func makeCellUnSelected(in tableView: UITableView, on indexPath: IndexPath) {
-        didCollapse = false
-        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-    }
-    func makeCellSelected(in tableView: UITableView, on indexPath: IndexPath) {
-        didCollapse = true
-        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-    }
+//    func makeCellUnSelected(in tableView: UITableView, on indexPath: IndexPath) {
+//        didCollapse = false
+//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+//    }
+//    func makeCellSelected(in tableView: UITableView, on indexPath: IndexPath) {
+//        didCollapse = true
+//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+//    }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
@@ -189,20 +171,25 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     }
     // MARK: - Expanable didSelectRowAt -
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
-            // unselect the selected one
-            makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
-            guard currentlySelectedCellIndexPath != indexPath  else {
-                tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
-                self.currentlySelectedCellIndexPath = nil
-                return
-            }
+        if indexPath.section == 1 {
+            //
+            //            print("Section 1")
+            //            if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
+            //                // unselect the selected one
+            //                makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
+            //                guard currentlySelectedCellIndexPath != indexPath  else {
+            //                    tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
+            //                    self.currentlySelectedCellIndexPath = nil
+            //                    return
+            //                }
+            //            }
+            //
+            //            // Highlight the proper cell
+            //            makeCellSelected(in: tableView, on: indexPath)
+            //            currentlySelectedCellIndexPath = indexPath
+            //            tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+            didToggleExpansionState()
         }
-        
-        // Highlight the proper cell
-        makeCellSelected(in: tableView, on: indexPath)
-        currentlySelectedCellIndexPath = indexPath
-        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
     }
 }
  // MARK: - upload Image -

@@ -38,7 +38,7 @@ extension PopUpDiscard {
     static func openDemo(from parent: UIViewController, in view: UIView?) {
         let useInlineMode = view != nil
         
-        let controller = UIStoryboard(name: "DiscardItemTVC", bundle: nil).instantiateViewController(withIdentifier: "DiscardItemTVC") as! DiscardItemTVC
+        let controller = UIStoryboard(name: "CreateItemSB", bundle: nil).instantiateViewController(withIdentifier: "DiscardItemTVC") as! DiscardItemTVC
         
         let options = SheetOptions(
             shouldExtendBackground: true,
