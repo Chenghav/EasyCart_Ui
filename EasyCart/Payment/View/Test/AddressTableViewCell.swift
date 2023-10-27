@@ -16,15 +16,16 @@ class AddressTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        myview.layer.cornerRadius = 10.0
-               myview.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-               myview.layer.masksToBounds = true
+//        myview.layer.cornerRadius = 10.0
+//               myview.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+//               myview.layer.masksToBounds = true
     }
 
     @IBAction func btnaddadderss(_ sender: Any) {
         delegate?.didTapButton(self)
         
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -9,10 +9,17 @@ import UIKit
 
 class CategoryNibCell: UICollectionViewCell {
 
+    @IBOutlet weak var cateBtn: UIButton!
     @IBOutlet weak var categoryView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
  
+    }
+    func setUpdataCate(with data: CategoryModelData ){
+        cateBtn.setTitle(data.category, for: .normal)
+        cateBtn.setImage(data.image, for: .normal)
+        
+       
     }
 
 }

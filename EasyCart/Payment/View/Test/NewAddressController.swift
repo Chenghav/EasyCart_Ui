@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 class NewAddressController : UIViewController, UITableViewDelegate, UITableViewDataSource{
-   
-    
     @IBOutlet weak var newTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +15,7 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
         newTableView.dataSource = self
         newTableView.register(UINib(nibName: "NewAddressTableViewCell", bundle: .none
         ), forCellReuseIdentifier: "NewAddressTableViewCell")
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -40,4 +39,6 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
         return 334
         
     }
+  
+    
 }

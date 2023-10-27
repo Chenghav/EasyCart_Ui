@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C39A5B2AEB4B140024B2C5 /* CategoryModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */; };
 		71B7000CCAA75C0B7FAD6A3B /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */; };
 		C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2BD61DD2AD3B7A100939CA7 /* EasyCart.xcdatamodeld */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
@@ -120,6 +121,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModelData.swift; sourceTree = "<group>"; };
 		715820B38BEBF21726B84EF6 /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
 		8751E22DCFDC3B7D611DDBA6 /* Pods-EasyCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.release.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.release.xcconfig"; sourceTree = "<group>"; };
 		9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,26 @@
 				9F9119F17A08392AA5A5AFB2 /* Pods_EasyCart.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C39A592AEB44E20024B2C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C39A5A2AEB4B140024B2C5 /* CategoryModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52C957452AE8F5E6000D87EA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E3A891C52ADD25BC006E63C7 /* NewAddressTableViewCell.swift */,
+				E3A891C42ADD25BC006E63C7 /* AddressAddTableViewCell.swift */,
+				E3A891C32ADD25BC006E63C7 /* NewAddressController.swift */,
+				E3A891C72ADD25BC006E63C7 /* AddressController.swift */,
+				E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		642EEE30391A8ED1D2E9DC73 /* Pods */ = {
@@ -682,6 +704,7 @@
 		DFDB688D2AD65FB2006ECEE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52C39A592AEB44E20024B2C5 /* Model */,
 				DFDB688E2AD65FB2006ECEE7 /* Storyboard */,
 				DFDB68982AD65FB2006ECEE7 /* Controller */,
 			);
@@ -694,12 +717,7 @@
 				DFDB688F2AD65FB2006ECEE7 /* CategoryNibCell.xib */,
 				DFDB68902AD65FB2006ECEE7 /* RecentCollectionNibCell.xib */,
 				DFDB68912AD65FB2006ECEE7 /* SearchSb.storyboard */,
-				DFDB68922AD65FB2006ECEE7 /* CategoryNibCell.swift */,
-				DFDB68932AD65FB2006ECEE7 /* PopularNibCell.swift */,
 				DFDB68942AD65FB2006ECEE7 /* PopularNibCell.xib */,
-				DFDB68952AD65FB2006ECEE7 /* PopularSection.swift */,
-				DFDB68962AD65FB2006ECEE7 /* SectionCellNib.swift */,
-				DFDB68972AD65FB2006ECEE7 /* RecentCollectionNibCell.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -707,7 +725,12 @@
 		DFDB68982AD65FB2006ECEE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFDB68922AD65FB2006ECEE7 /* CategoryNibCell.swift */,
+				DFDB68932AD65FB2006ECEE7 /* PopularNibCell.swift */,
+				DFDB68962AD65FB2006ECEE7 /* SectionCellNib.swift */,
+				DFDB68972AD65FB2006ECEE7 /* RecentCollectionNibCell.swift */,
 				DFDB68992AD65FB2006ECEE7 /* SearchController.swift */,
+				DFDB68952AD65FB2006ECEE7 /* PopularSection.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -723,6 +746,7 @@
 		DFDB68BD2AD67446006ECEE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52C957452AE8F5E6000D87EA /* Test */,
 				E3A891D72ADD26D5006E63C7 /* Model */,
 				DFDB68BE2AD67446006ECEE7 /* Storyboard */,
 				DFDB68C42AD67446006ECEE7 /* Controller */,
@@ -743,8 +767,6 @@
 				DFDB68C02AD67446006ECEE7 /* PayTableViewCell.xib */,
 				DFDB68C72AD67446006ECEE7 /* DeliveryTableViewCell.xib */,
 				DFDB68C32AD67446006ECEE7 /* OrderTableViewCell.xib */,
-				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
-				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
 				E3AB7E012ADFBBE500AF4E37 /* ReceiptTableViewCell.xib */,
 			);
 			path = Storyboard;
@@ -753,13 +775,10 @@
 		DFDB68C42AD67446006ECEE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E3AB7E002ADFBBE500AF4E37 /* ReceiptTableViewCell.swift */,
+				E36DD1532ADF943C00B22CBB /* RecieptController.swift */,
 				E3A891C22ADD25BC006E63C7 /* SectionAddTableViewCell.swift */,
-				E3A891C32ADD25BC006E63C7 /* NewAddressController.swift */,
-				E3A891C42ADD25BC006E63C7 /* AddressAddTableViewCell.swift */,
-				E3A891C72ADD25BC006E63C7 /* AddressController.swift */,
 				DFDB68C92AD67446006ECEE7 /* PaymentController.swift */,
-				E3A891C52ADD25BC006E63C7 /* NewAddressTableViewCell.swift */,
-				E3A891C62ADD25BC006E63C7 /* AddressTableViewCell.swift */,
 				DFDB68C52AD67446006ECEE7 /* PayTableViewCell.swift */,
 				DFDB68C62AD67446006ECEE7 /* DeliveryTableViewCell.swift */,
 				DFDB68C82AD67446006ECEE7 /* OrderTableViewCell.swift */,
@@ -991,6 +1010,7 @@
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
 				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
+				52C39A5B2AEB4B140024B2C5 /* CategoryModelData.swift in Sources */,
 				DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
@@ -1094,7 +1114,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1148,7 +1167,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1176,6 +1194,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1210,6 +1229,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
