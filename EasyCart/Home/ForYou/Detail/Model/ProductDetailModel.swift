@@ -6,7 +6,7 @@
 //
 
 import UIKit
-struct ProductInfo {
+struct ProductDetailModel {
     var condition: String
     var brand: String
     var model: String
