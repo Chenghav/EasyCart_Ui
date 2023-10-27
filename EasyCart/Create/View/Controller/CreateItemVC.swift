@@ -11,7 +11,13 @@ protocol CreateItemViewDelegate {
     func toggleSection(for header: CreateItemVC)
 }
 
-class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDetailTVCDelegate{
+class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailTVCDelegate{
+    func didSelectInfoCell() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     
     let nameLabel = UILabel()
     let detailLabel = UILabel()
@@ -27,13 +33,8 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDeta
         print("success")
     }
     
-    func didSelectCollectionCell(){
-        CreateItemVC.openDemo(from: self, in: nil)
-    }
-    func didSelectCustomCell() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+    func didSelectCollectionCell() {
+        CreateItemVC.openDemo(from: self, in: nil, btnName: "Button Name", titleLab1: "Title Label 1")
     }
     func didToggleExpansionState() {
         tableView.reloadData()
@@ -101,7 +102,8 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             }
             
             cell.popUpDiscard = {
-                CreateItemVC.openDemo(from: self, in: nil)
+                CreateItemVC.openDemo(from: self, in: nil, btnName: "Button Name", titleLab1: "Title Label 1")
+                
             }
             return cell
         }else if indexPath.section == 1{

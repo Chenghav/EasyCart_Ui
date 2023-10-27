@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol CustomCellDelegate: class {
-    func didSelectCustomCell()
+protocol InfoTVCDelegate: AnyObject {
+    func didSelectInfoCell()
 }
 class InfoTVC: UITableViewCell {
     
-    weak var delegate: CustomCellDelegate?
+    weak var delegate: InfoTVCDelegate?
     
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var btnSelect: UIButton!
@@ -40,7 +40,7 @@ class InfoTVC: UITableViewCell {
     }
     
     @IBAction func category(_ sender: UIButton) {
-        delegate?.didSelectCustomCell()
+        delegate?.didSelectInfoCell()
     }
     
 }

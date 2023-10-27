@@ -35,7 +35,7 @@ extension PopUpDiscard {
             previousSizeChanged?(sheet , size, height)
         }
     }
-    static func openDemo(from parent: UIViewController, in view: UIView?) {
+    static func openDemo(from parent: UIViewController, in view: UIView?, btnName : String?, titleLab1: String?) {
         let useInlineMode = view != nil
         
         let controller = UIStoryboard(name: "CreateItemSB", bundle: nil).instantiateViewController(withIdentifier: "DiscardItemTVC") as! DiscardItemTVC

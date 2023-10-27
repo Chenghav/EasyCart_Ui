@@ -87,6 +87,7 @@
                                                                             <constraint firstAttribute="height" constant="24" id="6MC-4q-1oX"/>
                                                                             <constraint firstAttribute="width" constant="24" id="aWO-RR-V2e"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system" title=" "/>
                                                                         <connections>
@@ -94,10 +95,11 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-H2-AC3">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="80"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="FrameAddmore" title=" "/>
                                                                         <connections>
                                                                             <action selector="uploadImageMore:" destination="ijq-1R-3b2" eventType="touchUpInside" id="Nvl-4q-SSh"/>
                                                                         </connections>
@@ -105,15 +107,15 @@
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="uet-Hz-3HO" secondAttribute="bottom" id="5Cd-1p-Dpn"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="MvN-H2-AC3" secondAttribute="trailing" id="FHe-N0-dmT"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Yxj-Gz-Cdy" secondAttribute="trailing" id="JVd-nZ-3zz"/>
+                                                                    <constraint firstItem="MvN-H2-AC3" firstAttribute="top" secondItem="ufP-nk-A7W" secondAttribute="top" id="LQD-bx-USv"/>
                                                                     <constraint firstItem="uet-Hz-3HO" firstAttribute="top" secondItem="ufP-nk-A7W" secondAttribute="top" id="a8t-La-jMK"/>
                                                                     <constraint firstItem="uet-Hz-3HO" firstAttribute="leading" secondItem="ufP-nk-A7W" secondAttribute="leading" id="cPD-Fh-MWt"/>
                                                                     <constraint firstAttribute="trailing" secondItem="uet-Hz-3HO" secondAttribute="trailing" id="d28-ul-F2A"/>
-                                                                    <constraint firstItem="MvN-H2-AC3" firstAttribute="leading" secondItem="ufP-nk-A7W" secondAttribute="leading" id="d5g-pQ-E8S"/>
-                                                                    <constraint firstItem="MvN-H2-AC3" firstAttribute="top" secondItem="ufP-nk-A7W" secondAttribute="top" id="hNS-ma-jap"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="MvN-H2-AC3" secondAttribute="bottom" id="peS-Nh-T9O"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="MvN-H2-AC3" secondAttribute="bottom" id="dC6-OK-GjV"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="MvN-H2-AC3" secondAttribute="trailing" constant="-6" id="fdN-no-aFc"/>
                                                                     <constraint firstItem="Yxj-Gz-Cdy" firstAttribute="top" secondItem="ufP-nk-A7W" secondAttribute="top" id="rTv-bk-OBP"/>
+                                                                    <constraint firstItem="MvN-H2-AC3" firstAttribute="leading" secondItem="ufP-nk-A7W" secondAttribute="leading" id="vAJ-r7-tWx"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="80" height="80"/>
@@ -130,20 +132,22 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
+                                                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
                                                                         <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="FrameBefore" title=" "/>
                                                                         <connections>
                                                                             <action selector="didTapPickerImage:" destination="VoC-KD-SuA" eventType="touchUpInside" id="dv1-k6-J8y"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="bottom" secondItem="TaZ-h5-0IC" secondAttribute="bottom" id="6Rn-v4-7Kz"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="TaZ-h5-0IC" secondAttribute="trailing" id="PnK-hi-Klz"/>
-                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="leading" secondItem="sUc-lt-lgL" secondAttribute="leading" id="WZj-mp-BcL"/>
-                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="top" secondItem="sUc-lt-lgL" secondAttribute="top" id="noZ-YQ-tk5"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="top" secondItem="sUc-lt-lgL" secondAttribute="top" id="2xR-J0-dAE"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="TaZ-h5-0IC" secondAttribute="bottom" id="GUI-BM-pbN"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="TaZ-h5-0IC" secondAttribute="trailing" id="SHm-Cy-XfU"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="centerY" secondItem="sUc-lt-lgL" secondAttribute="centerY" id="ffS-2w-X0U"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="centerX" secondItem="sUc-lt-lgL" secondAttribute="centerX" id="pH5-Uu-0Ve"/>
+                                                                    <constraint firstItem="TaZ-h5-0IC" firstAttribute="leading" secondItem="sUc-lt-lgL" secondAttribute="leading" id="y4s-SK-Xwt"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="326" height="80"/>
@@ -223,7 +227,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" id="uvZ-yk-guv">
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -238,7 +244,7 @@
         <!--Category-->
         <scene sceneID="PvL-nh-KGp">
             <objects>
-                <viewController storyboardIdentifier="CategoryTC" id="kNO-fL-Kz1" customClass="CategoryTC" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryTC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kNO-fL-Kz1" customClass="CategoryTC" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B6N-u0-9Ct">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +301,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Category" id="XzA-Ry-F9V">
-                        <barButtonItem key="leftBarButtonItem" image="iconav_close" landscapeImage="iconav_close" id="Ef7-te-RhL">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" id="Ef7-te-RhL">
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                             <connections>
                                 <segue destination="VDX-9Y-SXJ" kind="push" id="zP1-MT-6I8"/>
                             </connections>
@@ -355,7 +362,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discard the item?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihE-wG-ZMZ">
-                                <rect key="frame" x="138.66666666666669" y="75" width="152.66666666666669" height="14"/>
+                                <rect key="frame" x="138.66666666666669" y="75" width="152.66666666666669" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152.66999999999999" id="Eyk-Dm-c08"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -395,9 +405,10 @@
                         <viewLayoutGuide key="safeArea" id="pJx-Sh-6Mn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="top" secondItem="pJx-Sh-6Mn" secondAttribute="top" constant="16" id="Isd-U7-p2K"/>
-                            <constraint firstItem="dEP-bb-OyS" firstAttribute="top" secondItem="ihE-wG-ZMZ" secondAttribute="bottom" constant="24" id="n1t-x3-5n6"/>
-                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="centerX" secondItem="JBN-W1-DP4" secondAttribute="centerX" id="ztY-de-P6q"/>
+                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="top" secondItem="pJx-Sh-6Mn" secondAttribute="top" constant="16" id="LV5-mv-I6q"/>
+                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="leading" secondItem="pJx-Sh-6Mn" secondAttribute="leading" constant="138.66999999999999" id="Sb3-Vn-4xt"/>
+                            <constraint firstItem="pJx-Sh-6Mn" firstAttribute="trailing" secondItem="ihE-wG-ZMZ" secondAttribute="trailing" constant="138.66999999999999" id="nzF-qG-UEp"/>
+                            <constraint firstItem="dEP-bb-OyS" firstAttribute="top" secondItem="ihE-wG-ZMZ" secondAttribute="bottom" constant="14" id="sHa-d3-ACQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -415,9 +426,13 @@
         <segue reference="zP1-MT-6I8"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="FrameAddmore" width="80" height="80"/>
+        <image name="FrameBefore" width="326" height="80"/>
         <image name="dancing-banana.gif" width="365" height="360"/>
-        <image name="iconav_close" width="128" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
