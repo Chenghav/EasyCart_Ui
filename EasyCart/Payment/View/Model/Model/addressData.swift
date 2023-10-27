@@ -13,6 +13,6 @@ struct Address{
 }
 var AddressData: [Address] = [
     Address(building: "Tela office building", street: "Russin federation blvd.(#110), Khan Sen Sok, Phn Penh Cambodia", user: "Cheata, +855 93-222-333"),
-
+    Address(building: "Tela office building", street: "Russin federation blvd.(#110), Khan Sen Sok, Phn Penh Cambodia", user: "Cheata, +855 93-222-333"),
 ]
 
