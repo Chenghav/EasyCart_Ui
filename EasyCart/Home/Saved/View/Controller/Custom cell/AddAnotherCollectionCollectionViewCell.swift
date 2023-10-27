@@ -19,6 +19,7 @@ class AddAnotherCollectionCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        imageView1.layer.cornerRadius = 10
     }
 
     func setUp(with add : AddAnother){

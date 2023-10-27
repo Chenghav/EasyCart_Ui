@@ -51,8 +51,10 @@ extension PopUp {
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
         sheetController.setSizes([.fixed(253)])
-                
+
         parent.present(sheetController, animated: true, completion: nil)
+        
+        
     }
 }
 

@@ -11,6 +11,8 @@ class PopSaveViewController: UIViewController, CreatePop, PopDelete{
     
     @IBOutlet weak var View1: UIView!
     @IBOutlet weak var View2: UIView!
+
+    var vc1: CellSelectViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,12 @@ class PopSaveViewController: UIViewController, CreatePop, PopDelete{
         View2.heightAnchor.constraint(equalToConstant: 52).isActive = true
     }
     @IBAction func EditCollectionName(_ sender: Any) {
+//        self.dismiss(animated: true)
     PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
+       
+//        self.dismiss(animated: true, completion: {
+//        PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
+//                    })
     }
     
     @IBAction func DeleteCollectionBtn(_ sender: Any) {

@@ -26,9 +26,17 @@ class ForPostViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     
+    @IBAction func goFineSomeBtn(_ sender: Any) {
+        if let nextController = storyboard?.instantiateViewController(identifier: "HomeViewController") as? HomeViewController {
+            nextController.selectedIndex = 0
+            navigationController?.pushViewController(nextController, animated: true)
+        }
+    }
+    
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
