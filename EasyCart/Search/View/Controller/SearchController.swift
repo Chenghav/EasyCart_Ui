@@ -78,7 +78,7 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
             case .Popular:
                 return isSearching ? 0 : 5
             case .Category:
-                return isSearching ? 0 : 5
+                return isSearching ? 0 : 6
             }
         }
         return 0
@@ -100,10 +100,11 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
                 
             case .Popular:
                 let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "PopularNibCell", for: indexPath) as! PopularNibCell
+                cell.setupwithdata(with: CateModelData[indexPath.row] )
                 return cell
             case .Category:
                 let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "CategoryNibCell", for: indexPath) as! CategoryNibCell
-                
+                cell.setUpdataCate(with: CateData[indexPath.row] )
                 return cell
             }
         }
@@ -191,7 +192,7 @@ extension SearchController : UICollectionViewDelegateFlowLayout{
 
             case .Popular:
                 let availableWidth = (view.bounds.width - 47) / 3
-                            return CGSize(width: availableWidth, height: 33)
+                            return CGSize(width: availableWidth, height: 37)
             case .Category:
 
                 let availableWidth = (view.bounds.width - 42) / 2
@@ -231,6 +232,7 @@ extension SearchController : UICollectionViewDelegateFlowLayout{
         return 5
 
     }
+    
        
     
 }

@@ -8,8 +8,7 @@
 import UIKit
 
 class PayTableViewCell: UITableViewCell {
-    
-    var openReceipt: (() -> Void)?
+
     @IBOutlet weak var qrkhview: UIView!
 
     @IBOutlet weak var cashview: UIView!
@@ -33,11 +32,6 @@ class PayTableViewCell: UITableViewCell {
 
         
         
-    }
-    @IBAction func openReceipt(_ sender: Any) {
-        openReceipt?()
-    }
-    
-    
+       }
     
 }
