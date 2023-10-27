@@ -43,6 +43,7 @@ extension BankPopViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PopBankTableViewCell", for: indexPath) as! PopBankTableViewCell
         cell.setUp(with: section1[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
 
