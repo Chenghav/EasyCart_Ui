@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Controller-->
+        <!--Search-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="SearchController" id="Y6W-OH-hqX" customClass="SearchController" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-AV-Bki">
-                                <rect key="frame" x="0.0" y="145" width="393" height="673"/>
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ScM-V0-VHe">
                                     <size key="itemSize" width="390" height="52"/>
@@ -89,6 +89,8 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Sl-AV-Bki" secondAttribute="trailing" id="xV5-Vk-qGp"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="ico_searchstar" id="udz-Ox-sL5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="myCollectionView" destination="8Sl-AV-Bki" id="7ny-wO-9Uv"/>
                         <outlet property="searchBar" destination="3VS-Zw-ua0" id="V4u-t4-lx3"/>
@@ -100,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ico_searchstar" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
