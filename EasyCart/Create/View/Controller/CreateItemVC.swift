@@ -16,7 +16,7 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
     let nameLabel = UILabel()
     let detailLabel = UILabel()
     func didSelectCustomCell() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -39,33 +39,33 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
         CreateItemVC.openDemo(from: self, in: nil)
     }
     
-    @objc func didCollapeCell(_ sender: UIButton) {
-        
-        let point        = sender.convert(CGPoint.zero, to: self.tableView)
-          let indexPath    = self.tableView.indexPathForRow(at: point)!
-          if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
-              // unselect the selected one
-              makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
-              guard currentlySelectedCellIndexPath != indexPathDiselect else {
-                  tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
-                  self.currentlySelectedCellIndexPath = nil
-                  if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
-                      cell.expandbtn.setImage(UIImage(named: "up"), for: .normal)
-                  }
-                  return
-              }
-          }
-        if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
-            cell.expandbtn.setImage(UIImage(named: "down"), for: .normal)
-          }
-          
-          // Highlight the proper cell
-          makeCellSelected(in: tableView, on: indexPathDiselect ?? IndexPath())
-          currentlySelectedCellIndexPath = indexPathDiselect
-        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-
-        print("tappp")
-    }
+//    @objc func didCollapeCell(_ sender: UIButton) {
+//
+//        let point        = sender.convert(CGPoint.zero, to: self.tableView)
+//          let indexPath    = self.tableView.indexPathForRow(at: point)!
+//          if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
+//              // unselect the selected one
+//              makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
+//              guard currentlySelectedCellIndexPath != indexPathDiselect else {
+//                  tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
+//                  self.currentlySelectedCellIndexPath = nil
+//                  if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
+//                      cell.expandbtn.setImage(UIImage(named: "up"), for: .normal)
+//                  }
+//                  return
+//              }
+//          }
+//        if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
+//            cell.expandbtn.setImage(UIImage(named: "down"), for: .normal)
+//          }
+//
+//          // Highlight the proper cell
+//          makeCellSelected(in: tableView, on: indexPathDiselect ?? IndexPath())
+//          currentlySelectedCellIndexPath = indexPathDiselect
+//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+//
+//        print("tappp")
+//    }
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -131,6 +131,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             case .Categories:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "InfoTVC", for: indexPath) as! InfoTVC
                 labelCel.selectionStyle = .none
+                labelCel.delegate = self
                 return labelCel
             case .Titles:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
@@ -148,7 +149,7 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
                 labelCel.configureMoreDetail(with: data)
-                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
+//                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
                 self.indexPathDiselect = indexPath
                 return labelCel
             case .CategoryMoreDetail:

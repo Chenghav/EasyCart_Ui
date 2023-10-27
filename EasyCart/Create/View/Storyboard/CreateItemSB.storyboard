@@ -226,7 +226,7 @@
         <!--Category-->
         <scene sceneID="PvL-nh-KGp">
             <objects>
-                <viewController storyboardIdentifier="CategoryVC" id="kNO-fL-Kz1" customClass="CategoryTC" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryTC" id="kNO-fL-Kz1" customClass="CategoryTC" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B6N-u0-9Ct">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -12,6 +12,7 @@ class CollectionImageCVC: UICollectionViewCell, PopUpDiscard{
 
     var imagepicker : Completion = {}
     var deleteImage: DeleteImage = {}
+    var parentVC: UIViewController?
     
     @IBOutlet weak var btnAddImage: UIButton!
     @IBOutlet weak var uiImage: UIImageView!
@@ -57,11 +58,14 @@ class CollectionImageCVC: UICollectionViewCell, PopUpDiscard{
         
     }
     @IBAction func Discards(_ sender: Any) {
-//        let vc = DiscardItemTVC()
-        deleteImage()
-        print("hello")
-//
-//        CreateItemVC.openDemo(from: selt, in: nil)
+        //        let vc = DiscardItemTVC()
+                deleteImage()
+                print("hello")
+        //
+//                CreateItemVC.openDemo(from: self, in: nil)
+//        if let parentVC = parentVC {
+//            CreateItemVC.openDemo(from: parentVC, in: nil)
+//        }
     }
 }
 

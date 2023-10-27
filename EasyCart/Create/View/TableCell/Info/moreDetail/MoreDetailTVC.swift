@@ -32,12 +32,12 @@ class MoreDetailTVC: UITableViewCell {
     func configureMoreDetail(with data : CreateItemInfo){
         self.headerTitle.text = data.name
     }
-//    func configureContent(isExpand: Bool) {
-//        
-//        if isExpand {
-//            expandbtn.setImage(UIImage(systemName: "chevron.down"), for: .normal)
-//        } else {
-//            expandbtn.setImage(UIImage(systemName: "chevron.up"), for: .normal)
-//        }
-//    }
+    func configureContent(isExpand: Bool) {
+        
+        if isExpand {
+            expandbtn.setImage(UIImage(systemName: "chevron.down"), for: .normal)
+        } else {
+            expandbtn.setImage(UIImage(systemName: "chevron.up"), for: .normal)
+        }
+    }
 }

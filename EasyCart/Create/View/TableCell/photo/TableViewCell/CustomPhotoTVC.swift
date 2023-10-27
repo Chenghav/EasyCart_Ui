@@ -45,6 +45,9 @@ extension CustomPhotoTVC: UICollectionViewDelegate, UICollectionViewDataSource{
             cell.imagepicker = {
                 self.imagePicker()
             }
+            cell.deleteImage = {
+                self.popUpDiscard()
+            }
             if indexPath.item == photo.count - 1 {
                 cell.uiImage.isHidden = true
                 cell.btnAddImage.isHidden = false
