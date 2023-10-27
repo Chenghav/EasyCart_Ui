@@ -36,28 +36,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-HC-ZiP">
-                                <rect key="frame" x="287" y="61" width="17" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="les-La-QGp">
+                                <rect key="frame" x="280" y="58" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="17" id="0Uq-Ab-xpC"/>
-                                    <constraint firstAttribute="height" constant="21" id="OBi-Ip-ezo"/>
+                                    <constraint firstAttribute="height" constant="24" id="SH5-yp-6nM"/>
+                                    <constraint firstAttribute="width" constant="24" id="t0g-if-v8c"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="save_icon" title=""/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lgq-L1-ccP" firstAttribute="top" secondItem="jR0-BW-BM7" secondAttribute="top" id="2x3-pD-DmN"/>
                             <constraint firstAttribute="bottom" secondItem="lgq-L1-ccP" secondAttribute="bottom" id="88K-yp-xn2"/>
-                            <constraint firstAttribute="trailing" secondItem="6hQ-HC-ZiP" secondAttribute="trailing" constant="16" id="C6U-M6-agA"/>
                             <constraint firstItem="lgq-L1-ccP" firstAttribute="width" secondItem="jR0-BW-BM7" secondAttribute="width" multiplier="0.3" id="EP8-wW-TzD"/>
-                            <constraint firstAttribute="bottom" secondItem="6hQ-HC-ZiP" secondAttribute="bottom" constant="16" id="GGG-vp-YGq"/>
                             <constraint firstAttribute="trailing" secondItem="LJM-Yq-6WR" secondAttribute="trailing" constant="16" id="LOo-cE-eAE"/>
                             <constraint firstAttribute="bottom" secondItem="fsT-kp-ujr" secondAttribute="bottom" constant="19.5" id="LcC-l4-GcS"/>
                             <constraint firstItem="lgq-L1-ccP" firstAttribute="leading" secondItem="jR0-BW-BM7" secondAttribute="leading" id="Rae-c7-R52"/>
                             <constraint firstItem="fsT-kp-ujr" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="TMa-GX-pfw"/>
                             <constraint firstItem="LJM-Yq-6WR" firstAttribute="top" secondItem="jR0-BW-BM7" secondAttribute="top" constant="16" id="WBP-pD-C3T"/>
+                            <constraint firstAttribute="bottom" secondItem="les-La-QGp" secondAttribute="bottom" constant="16" id="euh-5P-0p0"/>
+                            <constraint firstAttribute="trailing" secondItem="les-La-QGp" secondAttribute="trailing" constant="16" id="fLe-ko-rwT"/>
                             <constraint firstAttribute="trailing" secondItem="fsT-kp-ujr" secondAttribute="trailing" constant="16" id="jRu-8e-zgP"/>
                             <constraint firstItem="LJM-Yq-6WR" firstAttribute="leading" secondItem="lgq-L1-ccP" secondAttribute="trailing" constant="16" id="yED-bj-Enj"/>
                         </constraints>
@@ -73,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.9534102082" green="0.96242624519999997" blue="0.9698640704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
+                <outlet property="bookMark" destination="les-La-QGp" id="TQK-BQ-4wa"/>
                 <outlet property="exploreDesc" destination="LJM-Yq-6WR" id="3nu-I6-4ad"/>
                 <outlet property="exploreImgCard" destination="lgq-L1-ccP" id="jsz-A1-95Q"/>
                 <outlet property="explorePrice" destination="fsT-kp-ujr" id="bk0-1d-LzR"/>
@@ -82,7 +81,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="save_icon" width="24" height="24"/>
         <image name="watch" width="121" height="130"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

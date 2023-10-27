@@ -17,15 +17,28 @@ class CutomCollectionViewCell: UICollectionViewCell {
     // MARK:  - Life Cycle -
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCheckBoxTap))
+        bookMark.isUserInteractionEnabled = true
+        bookMark.addGestureRecognizer(tapGesture)
     }
-    
+    @objc func handleCheckBoxTap() {
+        if bookMark.image == UIImage(named: "icon") {
+            bookMark.image = UIImage(named: "ico_bookmark")
+        } else {
+            bookMark.image = UIImage(named: "icon")
+
+        }
+    }
     // MARK:  - Functions -
     func config(with conllection: Collection) {
         imageCus.image = conllection.image
         LabCus.text    = conllection.product
         LabPri.text    = conllection.price
-        bookMark.image = conllection.book
-    }
+        if conllection.imageAssetName == "ico_bookmark" {
+            bookMark.image = UIImage(named: "ico_bookmark")
+        } else if conllection.imageAssetName == "icon" {
+            bookMark.image = UIImage(named: "icon")
 
+        }
+    }
 }

@@ -21,9 +21,8 @@ class TitleTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configureTitle(with data : Title ){
+    func configureTitle(with data : CreateItemInfo ){
         self.lbTitle.text = data.name
-        self.lbInput.text = data.input
     }
     
 }

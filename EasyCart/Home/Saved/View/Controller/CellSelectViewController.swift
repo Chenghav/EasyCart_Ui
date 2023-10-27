@@ -54,6 +54,9 @@ class CellSelectViewController: UIViewController, PopUp, UICollectionViewDataSou
       
     @IBAction func moreBtn(_ sender: Any) {
         CellSelectViewController.Pop(from: self, in: nil)
+//        self.dismiss(animated: true, completion:{
+//            CellSelectViewController.Pop(from: self, in: nil)
+//        })
     }
     
     @IBAction func AddMoreButton(_ sender: Any) {

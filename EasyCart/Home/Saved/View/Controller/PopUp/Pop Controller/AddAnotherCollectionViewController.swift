@@ -33,5 +33,4 @@ class AddAnotherCollectionViewController: UIViewController, UICollectionViewData
         return cell
     }
     
-
 }

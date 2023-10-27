@@ -23,6 +23,11 @@ class YourClass {
             AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
             AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
             AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
+            AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
+            AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
+            AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
+            AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
+            AddAnother(image: UIImage(named: "iPhone")!, lab1: "iPhone 15Promax"),
         ]
             AddAnothers.append(AddAnother(image: UIImage(named: "Button (1)")!, lab1: "Create"))
         }

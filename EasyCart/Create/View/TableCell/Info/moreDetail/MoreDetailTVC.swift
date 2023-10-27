@@ -29,14 +29,15 @@ class MoreDetailTVC: UITableViewCell {
     @IBAction func btnExpandable(_ sender: UIButton) {
         delegate?.didToggleExpansionState()
     }
-    func configureExpandable(with data : ListItemExpandable){
+    func configureMoreDetail(with data : CreateItemInfo){
         self.headerTitle.text = data.name
     }
     func configureContent(isExpand: Bool) {
+        
         if isExpand {
-            expandbtn.setImage(UIImage(named: "chevron.down"), for: .normal)
+            expandbtn.setImage(UIImage(systemName: "chevron.down"), for: .normal)
         } else {
-            expandbtn.setImage(UIImage(named: "chevron"), for: .normal)
+            expandbtn.setImage(UIImage(systemName: "chevron.up"), for: .normal)
         }
     }
 }

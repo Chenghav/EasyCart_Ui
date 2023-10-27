@@ -13,6 +13,7 @@ class ExploreTableViewCell: UITableViewCell {
     @IBOutlet weak var exploreImgCard: UIImageView!
     @IBOutlet weak var explorePrice: UILabel!
     @IBOutlet weak var exploreDesc: UILabel!
+    @IBOutlet weak var bookMark: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -25,14 +26,29 @@ class ExploreTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCheckBoxTap))
+        bookMark.isUserInteractionEnabled = true
+        bookMark.addGestureRecognizer(tapGesture)
         // Configure the view for the selected state
     }
-    
+    @objc func handleCheckBoxTap() {
+        if bookMark.image == UIImage(named: "icon") {
+            bookMark.image = UIImage(named: "ico_bookmark")
+        } else {
+            bookMark.image = UIImage(named: "icon")
+
+        }
+    }
     func config(with topItems: TopItemsModel){
         exploreImgCard.image = topItems.topItemsImage
         explorePrice.text = topItems.price
         exploreDesc.text = topItems.desc
+        if topItems.imageAssetName == "ico_bookmark" {
+            bookMark.image = UIImage(named: "ico_bookmark")
+        } else if topItems.imageAssetName == "icon" {
+            bookMark.image = UIImage(named: "icon")
+
+        }
     }
     
 }

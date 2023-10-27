@@ -1,20 +1,20 @@
 //
-//  PopAnother.swift
+//  PopUpDiscard.swift
 //  EasyCart
 //
-//  Created by Ly Chenghav on 25/10/23.
+//  Created by Lamo Nin on 10/27/23.
 //
 
 import Foundation
-import FittedSheets
 import UIKit
+import FittedSheets
 
-protocol PopAnother {
+protocol PopUpDiscard {
 
 }
 
 // MARK:  - PopUp FittedSheets -
-extension PopAnother {
+extension PopUpDiscard {
     
     static func addSheetEventLogging(to sheet: SheetViewController) {
         let previousDidDismiss = sheet.didDismiss
@@ -35,11 +35,11 @@ extension PopAnother {
             previousSizeChanged?(sheet , size, height)
         }
     }
-    static func Pop(from parent: UIViewController, in view: UIView?) {
+    static func openDemo(from parent: UIViewController, in view: UIView?) {
         let useInlineMode = view != nil
         
-        let controller = UIStoryboard(name: "Storyboard1", bundle: nil).instantiateViewController(withIdentifier: "AddAnotherCollectionViewController") as! AddAnotherCollectionViewController
-
+        let controller = UIStoryboard(name: "CreateItemSB", bundle: nil).instantiateViewController(withIdentifier: "DiscardItemTVC") as! DiscardItemTVC
+        
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,

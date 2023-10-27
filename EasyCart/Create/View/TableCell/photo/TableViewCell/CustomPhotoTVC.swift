@@ -12,6 +12,7 @@ class CustomPhotoTVC: UITableViewCell {
     var imagePicker: Completion = {}
     var photo : [UIImage] = []
     let picker = UIImagePickerController()
+    var popUpDiscard: DeleteImage = {}
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
@@ -43,6 +44,9 @@ extension CustomPhotoTVC: UICollectionViewDelegate, UICollectionViewDataSource{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "uploadImageCell", for: indexPath) as! CollectionImageCVC
             cell.imagepicker = {
                 self.imagePicker()
+            }
+            cell.deleteImage = {
+                self.popUpDiscard()
             }
             if indexPath.item == photo.count - 1 {
                 cell.uiImage.isHidden = true

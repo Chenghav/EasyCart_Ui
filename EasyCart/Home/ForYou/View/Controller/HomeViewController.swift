@@ -29,6 +29,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
     var currentViewControllerIndex          : UInt = 0
     var isCollectionViewControllerVisible   = true
     var isCustomCellVisible                 = true
+    var selectedIndex  = 0
     
     // MARK:  - Life Cycle -
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         navigationController?.navigationBar.shadowImage = UIImage()
         carbonSwapNavigation = CarbonTabSwipeNavigation(items: controllerName, delegate: self)
         carbonSwapNavigation.insert(intoRootViewController: self)
-        carbonSwapNavigation.carbonSegmentedControl?.backgroundColor = UIColor.white
+        carbonSwapNavigation.carbonSegmentedControl?.backgroundColor = #colorLiteral(red: 0.9511644244, green: 0.9611126781, blue: 0.9695445895, alpha: 1)
         carbonSwapNavigation.setTabBarHeight(40)
         carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 0)
         carbonSwapNavigation.carbonSegmentedControl?.setWidth(view.frame.width / 3, forSegmentAt: 1)
@@ -47,7 +48,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonSwapNavigation.setIndicatorColor(#colorLiteral(red: 0.437166661, green: 0.06278865784, blue: 0.8730230927, alpha: 1))
         carbonSwapNavigation.setIndicatorHeight(1)
         layoutToChange.image = isImageSelected ? UIImage(named: "4Grid") : UIImage(named: "ico_list")
-        
+        carbonSwapNavigation.currentTabIndex = UInt(selectedIndex)
     }
     
     // MARK:  - Actions -

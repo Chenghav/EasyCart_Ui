@@ -11,38 +11,37 @@ protocol CreateItemViewDelegate {
     func toggleSection(for header: CreateItemVC)
 }
 
-class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
-    
+class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDetailTVCDelegate{
     
     let nameLabel = UILabel()
     let detailLabel = UILabel()
-    var modelsCategory = [CategoryFiel]()
-    var modelsTitle = [Title]()
-    var modelsPrice = [PriceFiel]()
-    var modelsDiscount = [Discount]()
-    var modelsExpand = [ListItemExpandable]()
-    func didSelectCustomCell() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryVC") as? CategoryTC{
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
     var image: [UIImage] = []
     let pickerImage = UIImagePickerController()
     var isReloadCollection = false
     var isExpandable = false
     var sectionIndex = -1
+    var createItemVM = CreateItemVM()
+    var didCollapse : Bool?
+    //    var indexPathDiselect : IndexPath?
+    //    var currentlySelectedCellIndexPath: IndexPath?
+    var isExpanded = false
     
     func didTapCell(){
         print("success")
     }
-    func didToggleExpansionState() {
-        modelsExpand[0].isExpand.toggle() // Toggle the expansion state
-        
-        // Reload the appropriate row (assuming you have only one expandable row)
-        let indexPath = IndexPath(row: modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count, section: 1)
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+    
+    func didSelectCollectionCell(){
+        CreateItemVC.openDemo(from: self, in: nil)
     }
+    func didSelectCustomCell() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    func didToggleExpansionState() {
+        tableView.reloadData()
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -51,28 +50,15 @@ class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
         
         tableView.register(InfoTVC.nib(), forCellReuseIdentifier: "InfoTVC")
         tableView.register(DiscountTVC.nib(), forCellReuseIdentifier: "DiscountTVC")
-        tableView.register(UINib(nibName: "TitleTVC", bundle: .none), forCellReuseIdentifier: "TitleTVC")
-        tableView.register(UINib(nibName: "PriceTVC", bundle: .none), forCellReuseIdentifier: "PriceTVC")
-        tableView.register(UINib(nibName: "MoreDetailTVC", bundle: .none), forCellReuseIdentifier: "MoreDetailTVC")
-        tableView.register(UINib(nibName: "ExpanableTVC", bundle: .none), forCellReuseIdentifier: "ExpandableTVC")
-        
+        tableView.register(UINib(nibName: "TitleTVC", bundle: nil), forCellReuseIdentifier: "TitleTVC")
+        tableView.register(UINib(nibName: "PriceTVC", bundle: nil), forCellReuseIdentifier: "PriceTVC")
+        tableView.register(UINib(nibName: "MoreDetailTVC", bundle: nil), forCellReuseIdentifier: "MoreDetailTVC")
+        tableView.register(UINib(nibName: "ExpanableTVC", bundle: nil), forCellReuseIdentifier: "ExpanableTVC")
+        createItemVM.initData()
         tableView.delegate = self
         tableView.dataSource = self
         pickerImage.delegate = self
         tableView.reloadData()
-        
-        modelsCategory.append(CategoryFiel(name: "Category"))
-        modelsTitle.append(Title(name: "Tile", input: "Input"))
-        modelsPrice.append(PriceFiel(name: "Price", input: "$0.00"))
-        modelsDiscount.append(Discount(name: "Discount", input: "0%"))
-        modelsExpand.append(ListItemExpandable( name: "More Detail", item: [
-            Item(name: "Condition", detail: "Used, New..."),
-            Item(name: "Brand", detail: "Input"),
-            Item(name: "Model", detail: "Input"),
-            Item(name: "Color", detail: "Black, White..."),
-            Item(name: "Year", detail: "Input"),
-            Item(name: "Size", detail: "Input"),
-            Item(name: "Type", detail: "Input"),], isExpand: false))
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -82,14 +68,17 @@ class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
  // MARK: - UITableViewDelegate -
 extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
-        }else if section == 1 {
-            return modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count + modelsExpand.count
-        }else if section == 2 {
+        }else if section == 1{
+//            let count =  createItemVM.itemCell.count
+//            return didCollapse == true ? count : 5
+            return createItemVM.itemCell.count
+        }
+        else{
             return 1
         }
         return 0
@@ -111,34 +100,44 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 self.present(self.pickerImage, animated: true, completion: nil)
                 
             }
+            
+            cell.popUpDiscard = {
+                CreateItemVC.openDemo(from: self, in: nil)
+            }
             return cell
         }else if indexPath.section == 1{
-            let currentIndex = indexPath.row
-            if currentIndex < modelsCategory.count {
+            
+            let data = createItemVM.itemCell[indexPath.row].value as! CreateItemInfo
+            switch data.rowType{
+            case .Categories:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "InfoTVC", for: indexPath) as! InfoTVC
-                labelCel.configureInfoCate(with: modelsCategory[currentIndex])
                 labelCel.selectionStyle = .none
+                labelCel.delegate = self
                 return labelCel
-            } else if currentIndex < (modelsTitle.count + modelsCategory.count){
+            case .Titles:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
-                labelCel.configureTitle(with: modelsTitle[currentIndex - modelsCategory.count])
                 labelCel.selectionStyle = .none
                 return labelCel
-            }else if currentIndex < (modelsPrice.count + modelsTitle.count + modelsCategory.count){
+            case .Price:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "PriceTVC", for: indexPath) as! PriceTVC
-                labelCel.configurePrice(with: modelsPrice[currentIndex - modelsCategory.count - modelsTitle.count])
                 labelCel.selectionStyle = .none
                 return labelCel
-            }else if currentIndex < (modelsDiscount.count + modelsPrice.count + modelsTitle.count + modelsCategory.count){
+            case .Discounts:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "DiscountTVC", for: indexPath) as! DiscountTVC
-                labelCel.configureDiscout(with: modelsDiscount[currentIndex - modelsCategory.count - modelsTitle.count - modelsDiscount.count])
                 labelCel.selectionStyle = .none
                 return labelCel
-            }else{
+            case .MoreDetails:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
-                labelCel.configureContent(isExpand: modelsExpand[0].isExpand)
+                labelCel.configureMoreDetail(with: data)
                 labelCel.delegate = self
+//                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
+//                self.indexPathDiselect = indexPath
+                return labelCel
+            case .CategoryMoreDetail:
+                let labelCel = tableView.dequeueReusableCell(withIdentifier: "ExpanableTVC", for: indexPath) as! ExpanableTVC
+                labelCel.selectionStyle = .none
+                labelCel.configureExpandable(with: data)
                 return labelCel
             }
         }else{
@@ -147,39 +146,48 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }
         return UITableViewCell()
     }
+    
+//    func makeCellUnSelected(in tableView: UITableView, on indexPath: IndexPath) {
+//        didCollapse = false
+//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+//    }
+//    func makeCellSelected(in tableView: UITableView, on indexPath: IndexPath) {
+//        didCollapse = true
+//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+//    }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
             return 147
         }else if indexPath.section == 1{
-            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count {
+            if indexPath.row  == 3{
                 return 62
             }else{
-                if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
-                    if modelsExpand[0].isExpand {
-                        return 200
-                    } else {
-                        return 50
-                    }
-                } else {
-                    return 50
-                }
+                return 50
             }
         }else{
             return 167
         }
     }
     // MARK: - Expanable didSelectRowAt -
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.section == 1 {
-//            if indexPath.row == modelsCategory.count + modelsTitle.count + modelsPrice.count + modelsDiscount.count {
-//                modelsExpand[0].isExpand.toggle()
-//                tableView.reloadRows(at: [indexPath], with: .automatic)
-//            }
-//        }
-//    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1{
+        if indexPath.section == 1 {
+            //
+            //            print("Section 1")
+            //            if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
+            //                // unselect the selected one
+            //                makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
+            //                guard currentlySelectedCellIndexPath != indexPath  else {
+            //                    tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
+            //                    self.currentlySelectedCellIndexPath = nil
+            //                    return
+            //                }
+            //            }
+            //
+            //            // Highlight the proper cell
+            //            makeCellSelected(in: tableView, on: indexPath)
+            //            currentlySelectedCellIndexPath = indexPath
+            //            tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
             didToggleExpansionState()
         }
     }

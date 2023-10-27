@@ -16,8 +16,8 @@ struct More{
 }
 
 let Mores : [More] = [
-    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Selling", moreDot: UIImage(named: "Frame 427319564")!),
-    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Sold out", moreDot: UIImage(named: "Frame 427319564")!),
-    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Purchased", moreDot: UIImage(named: "Frame 427319564")!),
+//    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Selling", moreDot: UIImage(named: "Frame 427319564")!),
+//    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Sold out", moreDot: UIImage(named: "Frame 427319564")!),
+//    More(image: UIImage(named: "Frame 427319611")!, lab1: "Apple Watch Ultra the 2nd generation", lab2: "Purchased", moreDot: UIImage(named: "Frame 427319564")!),
 ]
 
