@@ -9,9 +9,21 @@ import UIKit
 
 class AddAnotherCollectionCollectionViewCell: UICollectionViewCell {
 
+    static let identifier = "AddAnotherCollectionCollectionViewCell"
+    static func nib() -> UINib{
+        return UINib(nibName: "AddAnotherCollectionCollectionViewCell", bundle: nil)
+    }
+    
+    @IBOutlet weak var LabName: UILabel!
+    @IBOutlet weak var imageView1: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    func setUp(with add : AddAnother){
+        LabName.text     = add.lab1
+        imageView1.image = add.image
+    }
+    
 }

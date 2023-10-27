@@ -8,5 +8,10 @@
 import UIKit
 
 class EmptyCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var backHomeBtn: UIButton!
     
+    func setButtonTitle(title: String, image: UIImage?) {
+        backHomeBtn.setTitle(title, for: .normal)
+        backHomeBtn.setImage(image, for: .normal)
+    }
 }

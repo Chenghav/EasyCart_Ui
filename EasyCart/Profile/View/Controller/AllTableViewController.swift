@@ -63,21 +63,11 @@ extension AllTableViewController : UITableViewDataSource, UITableViewDelegate{
    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-//            let headerView              = UIView()
             let headerView           = UILabel()
             headerView.text          = "Today"
             headerView.textColor     = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             headerView.font          = UIFont.boldSystemFont(ofSize: 16)
-            headerView.textAlignment = .left
-//            let sectionView          = UIView()
-//
-//            let sectionImage = UIImage(named: "ico_chevdown (1)")
-//            let sectionImageView = UIImageView(image: sectionImage)
-//            sectionImageView.frame = CGRect(x: 3, y: 10, width: 24, height: 24)
-//
-//            headerView.addSubview(headerViewLab)
-//            headerView.addSubview(sectionView)
-            
+            headerView.textAlignment = .left 
             return headerView
         }else if section == 1 {
             let headerView           = UILabel()

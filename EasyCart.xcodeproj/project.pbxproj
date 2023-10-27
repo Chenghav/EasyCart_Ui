@@ -71,8 +71,20 @@
 		C2BFB21E2AE0EAAB00FFA7D7 /* AddMorePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */; };
 		C2BFB2202AE0EDD600FFA7D7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */; };
 		C2BFB2222AE11FE700FFA7D7 /* AddItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */; };
+		C2DE24EF2AE8BA1600A1FD25 /* AddAnotherCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24EE2AE8BA1600A1FD25 /* AddAnotherCollectionViewController.swift */; };
+		C2DE24F42AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24F22AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.swift */; };
+		C2DE24F52AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DE24F32AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.xib */; };
+		C2DE24F72AE8BD2B00A1FD25 /* AddAnotherCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24F62AE8BD2B00A1FD25 /* AddAnotherCollection.swift */; };
+		C2DE24F92AE8BEF500A1FD25 /* PopAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24F82AE8BEF500A1FD25 /* PopAnother.swift */; };
+		C2DE24FB2AE8D14500A1FD25 /* EmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24FA2AE8D14500A1FD25 /* EmptyCollectionViewCell.swift */; };
+		C2DE24FF2AE9093E00A1FD25 /* ForPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE24FE2AE9093E00A1FD25 /* ForPostViewController.swift */; };
+		C2DE25012AE9127600A1FD25 /* ForViewPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE25002AE9127600A1FD25 /* ForViewPostCollectionViewCell.swift */; };
+		C2E8C7422AEA240000E04FFF /* DeleteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8C7412AEA240000E04FFF /* DeleteCollectionViewController.swift */; };
+		C2E8C7442AEA242100E04FFF /* DeleteCollectionPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8C7432AEA242100E04FFF /* DeleteCollectionPop.swift */; };
 		C2EE177A2AE7733E00F29329 /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */; };
 		C2EE177B2AE7733E00F29329 /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */; };
+		C2FFAA5D2AE82B2E00CC0535 /* CreateNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFAA5C2AE82B2E00CC0535 /* CreateNewViewController.swift */; };
+		C2FFAA5F2AE82B5E00CC0535 /* CreateNewPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFAA5E2AE82B5E00CC0535 /* CreateNewPop.swift */; };
 		DFBF14FC2AE627D200653EF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFBF14FB2AE627D200653EF1 /* GoogleService-Info.plist */; };
 		DFD5E7EE2AD50CB4006E101F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DFD5E7ED2AD50CB4006E101F /* Kingfisher */; };
 		DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB67502AD65046006ECEE7 /* AppDelegate.swift */; };
@@ -239,8 +251,20 @@
 		C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMorePop.swift; sourceTree = "<group>"; };
 		C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsViewController.swift; sourceTree = "<group>"; };
+		C2DE24EE2AE8BA1600A1FD25 /* AddAnotherCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnotherCollectionViewController.swift; sourceTree = "<group>"; };
+		C2DE24F22AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnotherCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2DE24F32AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAnotherCollectionCollectionViewCell.xib; sourceTree = "<group>"; };
+		C2DE24F62AE8BD2B00A1FD25 /* AddAnotherCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnotherCollection.swift; sourceTree = "<group>"; };
+		C2DE24F82AE8BEF500A1FD25 /* PopAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnother.swift; sourceTree = "<group>"; };
+		C2DE24FA2AE8D14500A1FD25 /* EmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2DE24FE2AE9093E00A1FD25 /* ForPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForPostViewController.swift; sourceTree = "<group>"; };
+		C2DE25002AE9127600A1FD25 /* ForViewPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForViewPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2E8C7412AEA240000E04FFF /* DeleteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCollectionViewController.swift; sourceTree = "<group>"; };
+		C2E8C7432AEA242100E04FFF /* DeleteCollectionPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCollectionPop.swift; sourceTree = "<group>"; };
 		C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
+		C2FFAA5C2AE82B2E00CC0535 /* CreateNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewViewController.swift; sourceTree = "<group>"; };
+		C2FFAA5E2AE82B5E00CC0535 /* CreateNewPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPop.swift; sourceTree = "<group>"; };
 		DFBF14FB2AE627D200653EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFDB67502AD65046006ECEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDB67512AD65046006ECEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -624,6 +648,7 @@
 		C2008A582ADFB54D008C07AA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C2DE24F32AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.xib */,
 				C268B5362AE0388200197B31 /* AddMoreCollectionViewCell.xib */,
 				C2B9B6F32AE22D280009B0A8 /* AddItemsCollectionViewCell.xib */,
 				C2EE17792AE7733E00F29329 /* SaveCollectionViewCell.xib */,
@@ -637,6 +662,7 @@
 				C2008A632ADFBADD008C07AA /* SaveData.swift */,
 				C2BFB21B2AE0E20400FFA7D7 /* AddMore.swift */,
 				C2B9B6F62AE22FB60009B0A8 /* AddItems.swift */,
+				C2DE24F62AE8BD2B00A1FD25 /* AddAnotherCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -647,6 +673,9 @@
 				C268B5352AE0388200197B31 /* AddMoreCollectionViewCell.swift */,
 				C2B9B6F22AE22D280009B0A8 /* AddItemsCollectionViewCell.swift */,
 				C2EE17782AE7733E00F29329 /* SaveCollectionViewCell.swift */,
+				C2DE24F22AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.swift */,
+				C2DE24FA2AE8D14500A1FD25 /* EmptyCollectionViewCell.swift */,
+				C2DE25002AE9127600A1FD25 /* ForViewPostCollectionViewCell.swift */,
 			);
 			path = "Custom cell";
 			sourceTree = "<group>";
@@ -654,10 +683,8 @@
 		C2008A672ADFDD71008C07AA /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */,
-				C2008A6A2ADFDE07008C07AA /* PopSaveViewController.swift */,
-				C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */,
-				C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */,
+				C2DE24F12AE8BAC000A1FD25 /* Demoable */,
+				C2DE24F02AE8BA1C00A1FD25 /* Pop Controller */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -718,6 +745,30 @@
 			path = EasyCart;
 			sourceTree = "<group>";
 		};
+		C2DE24F02AE8BA1C00A1FD25 /* Pop Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFAA5C2AE82B2E00CC0535 /* CreateNewViewController.swift */,
+				C2BFB21F2AE0EDD600FFA7D7 /* AddViewController.swift */,
+				C2DE24EE2AE8BA1600A1FD25 /* AddAnotherCollectionViewController.swift */,
+				C2008A6A2ADFDE07008C07AA /* PopSaveViewController.swift */,
+				C2E8C7412AEA240000E04FFF /* DeleteCollectionViewController.swift */,
+			);
+			path = "Pop Controller";
+			sourceTree = "<group>";
+		};
+		C2DE24F12AE8BAC000A1FD25 /* Demoable */ = {
+			isa = PBXGroup;
+			children = (
+				C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */,
+				C2BFB21D2AE0EAAB00FFA7D7 /* AddMorePop.swift */,
+				C2FFAA5E2AE82B5E00CC0535 /* CreateNewPop.swift */,
+				C2DE24F82AE8BEF500A1FD25 /* PopAnother.swift */,
+				C2E8C7432AEA242100E04FFF /* DeleteCollectionPop.swift */,
+			);
+			path = Demoable;
+			sourceTree = "<group>";
+		};
 		DFDB674F2AD65046006ECEE7 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -763,6 +814,7 @@
 				DFDB67582AD6514C006ECEE7 /* SaveViewController.swift */,
 				C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */,
 				C2BFB2212AE11FE700FFA7D7 /* AddItemsViewController.swift */,
+				C2DE24FE2AE9093E00A1FD25 /* ForPostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1259,6 +1311,7 @@
 			files = (
 				BF401E562AD6871A00F5FBE9 /* TitleTVC.xib in Resources */,
 				DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */,
+				C2DE24F52AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.xib in Resources */,
 				DFDB68782AD65DBA006ECEE7 /* TableViewCell.xib in Resources */,
 				DFDB689A2AD65FB2006ECEE7 /* CategoryNibCell.xib in Resources */,
 				DFDB689C2AD65FB2006ECEE7 /* SearchSb.storyboard in Resources */,
@@ -1399,6 +1452,7 @@
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
 				C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */,
+				C2DE24F72AE8BD2B00A1FD25 /* AddAnotherCollection.swift in Sources */,
 				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
 				31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */,
 				BB08BDF62AD6CDAC0075B32F /* ProductInfo.swift in Sources */,
@@ -1415,19 +1469,26 @@
 				C2BFB21C2AE0E20400FFA7D7 /* AddMore.swift in Sources */,
 				E3A891D92ADD26D5006E63C7 /* addressData.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
+				C2DE24FF2AE9093E00A1FD25 /* ForPostViewController.swift in Sources */,
 				C2008A662ADFCB8B008C07AA /* CellSelectViewController.swift in Sources */,
 				C2008A6B2ADFDE07008C07AA /* PopSaveViewController.swift in Sources */,
+				C2E8C7442AEA242100E04FFF /* DeleteCollectionPop.swift in Sources */,
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
+				C2DE24F42AE8BC7000A1FD25 /* AddAnotherCollectionCollectionViewCell.swift in Sources */,
 				E3A891D32ADD25BC006E63C7 /* AddressTableViewCell.swift in Sources */,
 				BF401E5D2AD6874200F5FBE9 /* MoreDetailTVC.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
+				C2DE24FB2AE8D14500A1FD25 /* EmptyCollectionViewCell.swift in Sources */,
 				BF319A412ADE3D8900E43FAE /* CustomPhotoTVC.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
+				C2DE24F92AE8BEF500A1FD25 /* PopAnother.swift in Sources */,
 				DFDB68472AD65D67006ECEE7 /* CollectionViewCell.swift in Sources */,
 				DFDB68A22AD65FB2006ECEE7 /* RecentCollectionNibCell.swift in Sources */,
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
+				C2FFAA5D2AE82B2E00CC0535 /* CreateNewViewController.swift in Sources */,
 				DFDB689D2AD65FB2006ECEE7 /* CategoryNibCell.swift in Sources */,
 				C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */,
+				C2DE24EF2AE8BA1600A1FD25 /* AddAnotherCollectionViewController.swift in Sources */,
 				C2BD61DF2AD3B7A100939CA7 /* EasyCart.xcdatamodeld in Sources */,
 				DFDB68A32AD65FB2006ECEE7 /* SearchController.swift in Sources */,
 				DFDB684A2AD65D67006ECEE7 /* CutomCollectionViewCell.swift in Sources */,
@@ -1438,6 +1499,7 @@
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				BB08BDEF2AD6B2F20075B32F /* DateOfitemCollCell.swift in Sources */,
 				DFDB689E2AD65FB2006ECEE7 /* PopularNibCell.swift in Sources */,
+				C2E8C7422AEA240000E04FFF /* DeleteCollectionViewController.swift in Sources */,
 				BF401E642AD6A2D100F5FBE9 /* MoreDetailData.swift in Sources */,
 				C2BFB21E2AE0EAAB00FFA7D7 /* AddMorePop.swift in Sources */,
 				DFDB68D22AD67446006ECEE7 /* OrderTableViewCell.swift in Sources */,
@@ -1457,6 +1519,8 @@
 				C2BFB2222AE11FE700FFA7D7 /* AddItemsViewController.swift in Sources */,
 				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
+				C2DE25012AE9127600A1FD25 /* ForViewPostCollectionViewCell.swift in Sources */,
+				C2FFAA5F2AE82B5E00CC0535 /* CreateNewPop.swift in Sources */,
 				C2BFB2202AE0EDD600FFA7D7 /* AddViewController.swift in Sources */,
 				C2B9B6F42AE22D280009B0A8 /* AddItemsCollectionViewCell.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,

@@ -17,6 +17,7 @@ class CreateNewViewController: UIViewController, CreatePop {
         super.viewDidLoad()
         titleLab.text = titleLabel
         rightBtn.setTitle(titleButton, for: .normal)
+        
     }
     
 

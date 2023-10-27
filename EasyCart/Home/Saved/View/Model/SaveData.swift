@@ -19,11 +19,6 @@ struct Save{
 
 var Saves : [Save] = [
     Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    Save(Title: "All Posts", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
-    
+    Save(Title: "My Pets", image1: UIImage(named: "A9ICZf")!, image2: UIImage(named: "A9ICZf")!, image3: UIImage(named: "A9ICZf")!, image4: UIImage(named: "A9ICZf")!),
 
 ]
