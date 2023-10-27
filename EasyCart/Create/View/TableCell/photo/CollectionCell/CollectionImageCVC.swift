@@ -38,17 +38,7 @@ class CollectionImageCVC: UICollectionViewCell, PopUpDiscard{
         
         btnAddImage.layer.cornerRadius = cornerRadius
         btnAddImage.layer.masksToBounds = true
-        
-//        let yourColor = UIColor.red.cgColor
-//        let yourBorder = CAShapeLayer()
-//        yourBorder.strokeColor = yourColor
-//        yourBorder.lineDashPattern = [4, 4]
-//        yourBorder.frame = btnAddImage.bounds
-//        yourBorder.fillColor = nil
-//        yourBorder.path = UIBezierPath(rect: btnAddImage.bounds).cgPath
-//        btnAddImage.layer.addSublayer(yourBorder)
-        
-        //        btnAddImage.layer.cornerRadius = 10
+
         uiImage.layer.cornerRadius = 10
         
     }
@@ -58,14 +48,8 @@ class CollectionImageCVC: UICollectionViewCell, PopUpDiscard{
         
     }
     @IBAction func Discards(_ sender: Any) {
-        //        let vc = DiscardItemTVC()
-                deleteImage()
-                print("hello")
-        //
-//                CreateItemVC.openDemo(from: self, in: nil)
-//        if let parentVC = parentVC {
-//            CreateItemVC.openDemo(from: parentVC, in: nil)
-//        }
+        deleteImage()
+        print("hello")
     }
 }
 

@@ -20,9 +20,25 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-DP-d8Q">
                                 <rect key="frame" x="0.0" y="815" width="430" height="117"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DT-RF-vKk">
+                                        <rect key="frame" x="16" y="16" width="398" height="35"/>
+                                        <color key="backgroundColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Post">
+                                            <color key="baseForegroundColor" red="0.89820247890000005" green="0.89775156970000003" blue="0.91372770069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="Post:" destination="VDX-9Y-SXJ" eventType="touchUpInside" id="K11-EZ-ja1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8DT-RF-vKk" secondAttribute="trailing" constant="16" id="3cO-cC-7qk"/>
+                                    <constraint firstItem="8DT-RF-vKk" firstAttribute="top" secondItem="LOm-DP-d8Q" secondAttribute="top" constant="16" id="MWC-bx-MKQ"/>
                                     <constraint firstAttribute="height" constant="117" id="RgW-j5-tcy"/>
+                                    <constraint firstItem="8DT-RF-vKk" firstAttribute="leading" secondItem="LOm-DP-d8Q" secondAttribute="leading" constant="16" id="ydh-Zt-hMP"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="147" estimatedRowHeight="-1" sectionHeaderHeight="16" estimatedSectionHeaderHeight="-1" sectionFooterHeight="16" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-ku-yda">
@@ -79,10 +95,9 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-H2-AC3">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="done" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
                                                                         <connections>
                                                                             <action selector="uploadImageMore:" destination="ijq-1R-3b2" eventType="touchUpInside" id="Nvl-4q-SSh"/>
                                                                         </connections>
@@ -115,18 +130,15 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
+                                                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-h5-0IC">
                                                                         <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
-                                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                                        <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="dancing-banana.gif" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title=" "/>
                                                                         <connections>
                                                                             <action selector="didTapPickerImage:" destination="VoC-KD-SuA" eventType="touchUpInside" id="dv1-k6-J8y"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.77065739200000005" green="0.51510139030000002" blue="0.93668967439999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="TaZ-h5-0IC" secondAttribute="bottom" id="6Rn-v4-7Kz"/>
                                                                     <constraint firstAttribute="trailing" secondItem="TaZ-h5-0IC" secondAttribute="trailing" id="PnK-hi-Klz"/>
@@ -210,12 +222,12 @@
                             <constraint firstItem="LOm-DP-d8Q" firstAttribute="top" secondItem="V0c-ku-yda" secondAttribute="bottom" id="ut1-Qk-z37"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ico_addPrimary" id="E2Z-md-KF8"/>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnPost" destination="8DT-RF-vKk" id="xmJ-w6-Mfe"/>
                         <outlet property="tableView" destination="V0c-ku-yda" id="moe-fc-aT9"/>
                     </connections>
                 </viewController>
@@ -404,8 +416,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="dancing-banana.gif" width="365" height="360"/>
-        <image name="done" width="339" height="322"/>
-        <image name="ico_addPrimary" width="38" height="38"/>
         <image name="iconav_close" width="128" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
@@ -417,14 +427,8 @@
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

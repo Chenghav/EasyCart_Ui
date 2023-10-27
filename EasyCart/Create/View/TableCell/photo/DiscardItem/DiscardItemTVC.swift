@@ -26,6 +26,7 @@ class DiscardItemTVC: UIViewController {
         btnDiscard.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
     @IBAction func Discard(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func Editing(_ sender: Any) {
         dismiss(animated: true, completion: nil)

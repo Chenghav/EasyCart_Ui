@@ -22,10 +22,7 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDeta
     var sectionIndex = -1
     var createItemVM = CreateItemVM()
     var didCollapse : Bool?
-    //    var indexPathDiselect : IndexPath?
-    //    var currentlySelectedCellIndexPath: IndexPath?
     var isExpanded = false
-    
     func didTapCell(){
         print("success")
     }
@@ -42,6 +39,7 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDeta
         tableView.reloadData()
     }
     
+    @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -62,20 +60,21 @@ class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard, MoreDeta
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        btnPost.layer.cornerRadius = 10
+    }
+    @IBAction func Post(_ sender: UIButton) {
     }
 }
 
  // MARK: - UITableViewDelegate -
 extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 3
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
         }else if section == 1{
-//            let count =  createItemVM.itemCell.count
-//            return didCollapse == true ? count : 5
             return createItemVM.itemCell.count
         }
         else{
@@ -146,15 +145,6 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }
         return UITableViewCell()
     }
-    
-//    func makeCellUnSelected(in tableView: UITableView, on indexPath: IndexPath) {
-//        didCollapse = false
-//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-//    }
-//    func makeCellSelected(in tableView: UITableView, on indexPath: IndexPath) {
-//        didCollapse = true
-//        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
-//    }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
@@ -172,22 +162,6 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     // MARK: - Expanable didSelectRowAt -
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            //
-            //            print("Section 1")
-            //            if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
-            //                // unselect the selected one
-            //                makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
-            //                guard currentlySelectedCellIndexPath != indexPath  else {
-            //                    tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
-            //                    self.currentlySelectedCellIndexPath = nil
-            //                    return
-            //                }
-            //            }
-            //
-            //            // Highlight the proper cell
-            //            makeCellSelected(in: tableView, on: indexPath)
-            //            currentlySelectedCellIndexPath = indexPath
-            //            tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
             didToggleExpansionState()
         }
     }
