@@ -29,8 +29,18 @@ class SearchController : UIViewController, RecentCollectionNibCellDelegate{
     private let spacing:CGFloat = 16.0
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var myCollectionView: UICollectionView!
+    var isRecentSectionHidden: Bool {
+        return isSearching || recentSearchQueries.isEmpty
+    }
+    var allRecentSearchQueries: [String] = []
     
-    
+    var expandedSection: SearchSection? {
+        didSet {
+            myCollectionView.reloadData()
+        }
+    }
+ 
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,20 +58,15 @@ class SearchController : UIViewController, RecentCollectionNibCellDelegate{
                }
         searchBar?.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
                   self.searchBar?.searchTextField.clipsToBounds = true
-//        let layout = UICollectionViewFlowLayout()
-//               layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
-//               layout.minimumLineSpacing = spacing
-//               layout.minimumInteritemSpacing = spacing
-//               self.myCollectionView?.collectionViewLayout = layout
-
+        allRecentSearchQueries = recentSearchQueries
         
-        //        let layout = UICollectionViewFlowLayout()
-        //                let itemSizewidth =  (UIScreen.main.bounds.width / 3 ) - 16
-        //                layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        //                layout.itemSize = CGSize(width: itemSizewidth, height: itemSizewidth)
-        //                layout.minimumInteritemSpacing = 0
-        //                layout.minimumLineSpacing = 16
-        //                myCollectionView.collectionViewLayout = layout
+        var expandedSection: SearchSection?
+
+
+
+
+
+
       
     }
 }
@@ -74,7 +79,15 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
         if let searchSection = SearchSection(rawValue: section) {
             switch searchSection {
             case .Recent:
-                return isSearching ? 0 : recentSearchQueries.count
+                if isSearching {
+                    return 0
+                } else {
+                    if searchSection == expandedSection {
+                        return recentSearchQueries.count
+                    } else {
+                        return min(3, recentSearchQueries.count)
+                    }
+                }
             case .Popular:
                 return isSearching ? 0 : 5
             case .Category:
@@ -84,19 +97,22 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
         return 0
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if isSearching {
+            return sections.count - 1
+        }
         return sections.count
     }
-     
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let searchSection = SearchSection(rawValue: indexPath.section) {
             switch searchSection {
             case .Recent:
-               
-                    let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "RecentCollectionNibCell", for: indexPath) as! RecentCollectionNibCell
-                    cell.recentLb?.text = recentSearchQueries[indexPath.row]
-                    cell.delegate = self
-                    return cell
+                
+                let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "RecentCollectionNibCell", for: indexPath) as! RecentCollectionNibCell
+                cell.recentLb?.text = recentSearchQueries[indexPath.row]
+                cell.delegate = self
+                return cell
                 
             case .Popular:
                 let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "PopularNibCell", for: indexPath) as! PopularNibCell
@@ -113,10 +129,10 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         currentSearchText = searchText
-            isSearching = !searchText.isEmpty
-            myCollectionView.reloadData()
-
-            }
+        isSearching = !searchText.isEmpty
+        myCollectionView.reloadData()
+        
+    }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchText = currentSearchText, !searchText.isEmpty {
             saveSearchQuery(searchText)
@@ -128,59 +144,68 @@ extension SearchController : UICollectionViewDelegate, UICollectionViewDataSourc
         if query.count > 1 {
             recentSearchQueries.insert(query, at: 0)
             if recentSearchQueries.count > 5 {
-              recentSearchQueries.removeLast()
+                recentSearchQueries.removeLast(recentSearchQueries.count - 5)
             }
-
+            
             UserDefaults.standard.set(recentSearchQueries, forKey: "RecentSearchQueries")
-          }
         }
+    }
     func deleteRecentSearch(_ searchText: String) {
         if let index = recentSearchQueries.firstIndex(of: searchText) {
-              recentSearchQueries.remove(at: index)
-              UserDefaults.standard.set(recentSearchQueries, forKey: "RecentSearchQueries")
-              myCollectionView.reloadData()
-          }
-      }
+            recentSearchQueries.remove(at: index)
+            UserDefaults.standard.set(recentSearchQueries, forKey: "RecentSearchQueries")
+            myCollectionView.reloadData()
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-                if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerTitle", for: indexPath) as? SectionCellNib {
-                            if isSearching {
-                                sectionHeader.titleLb.isHidden = true
-                                sectionHeader.btnSeeAll.isHidden = true
-                            } else {
-                                sectionHeader.titleLb.isHidden = false
-                                sectionHeader.titleLb.text = "\(sections[indexPath.section])"
-                                switch sections[indexPath.section] {
-                                case .Recent:
-                                    sectionHeader.btnSeeAll.isHidden = false
-                                case .Popular, .Category:
-                                    sectionHeader.btnSeeAll.isHidden = true
-                                }
-                            }
-                            return sectionHeader
-                        }
-                        return UICollectionReusableView()
-                    }
+        print(indexPath)
    
+        
+        
+        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerTitle", for: indexPath) as? SectionCellNib {
+            if isSearching {
+                           sectionHeader.titleLb.isHidden = true
+                           sectionHeader.btnSeeAll.isHidden = true
+            } else {
+                sectionHeader.titleLb.isHidden = false
+                sectionHeader.titleLb.text = "\(sections[indexPath.section])"
     
+            }
+            switch sections[indexPath.section] {
+            case .Recent:
+                if isSearching {
+                    
+                    sectionHeader.titleLb.isHidden = true
+                    sectionHeader.btnSeeAll.isHidden = true
+                    
+                } else {
+                    sectionHeader.titleLb.isHidden = false
+                    sectionHeader.btnSeeAll.isHidden = false
+                    sectionHeader.seeAllAction = { [weak self] in
+                        self?.expandedSection = .Recent
+                        self?.myCollectionView.reloadData()
+                    }
+                }
+            case .Popular, .Category:
+                sectionHeader.btnSeeAll.isHidden = true
+            }
+          
+            return sectionHeader
+            
+        }
+        self.myCollectionView.reloadData()
+        return UICollectionReusableView()
+    }
 }
+
+
 
 // MARK:  - UICollectionViewDelegateFlowLayout -
 
 extension SearchController : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let numberOfItemsPerRow:CGFloat = 4
-//                let spacingBetweenCells:CGFloat = 16
-//
-//        let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 4) * spacingBetweenCells) //Amount of total spacing in a row
-//
-//                if let collection = self.myCollectionView{
-//                    let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
-//                    return CGSize(width: width, height: width)
-//                }else{
-//                    return CGSize(width: 0, height: 0)
-//                }
+
 
       let cellSpacing: CGFloat = 16
         if let searchSection = SearchSection(rawValue: indexPath.section) {
@@ -231,6 +256,17 @@ extension SearchController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 5
 
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if let searchSection = SearchSection(rawValue: section) {
+            switch searchSection {
+            case .Recent:
+                return isRecentSectionHidden ? .zero : CGSize(width: collectionView.bounds.size.width, height: 50)
+            default:
+                return CGSize(width: collectionView.bounds.size.width, height: 50)
+            }
+        }
+        return .zero
     }
     
        

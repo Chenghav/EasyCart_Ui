@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class NewAddressController : UIViewController, UITableViewDelegate, UITableViewDataSource{
+    @IBOutlet weak var btnbacktoaddress: UIBarButtonItem!
     @IBOutlet weak var newTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,19 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
         return cell
         
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        if indexPath == [0,0]{
+            performSegue(withIdentifier: "tolocation", sender: self)
+        }else{
+            return
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let detailsVC = segue.destination as! LocationViewController
+   
+    }
+ 
    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -39,6 +53,8 @@ class NewAddressController : UIViewController, UITableViewDelegate, UITableViewD
         return 334
         
     }
+    
+  
   
     
 }
