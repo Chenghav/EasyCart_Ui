@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopSaveViewController: UIViewController {
+class PopSaveViewController: UIViewController, CreatePop{
     
     @IBOutlet weak var View1: UIView!
     @IBOutlet weak var View2: UIView!
@@ -17,5 +17,8 @@ class PopSaveViewController: UIViewController {
         View1.heightAnchor.constraint(equalToConstant: 52).isActive = true
         View2.heightAnchor.constraint(equalToConstant: 52).isActive = true
     }
-
+    @IBAction func EditCollectionName(_ sender: Any) {
+        PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
+    }
+    
 }

@@ -21,5 +21,8 @@ class AddViewController: UIViewController {
         View2.layer.cornerRadius = 10
         
     }
+    @IBAction func AddAnotherCollection(_ sender: Any) {
+        
+    }
     
 }
