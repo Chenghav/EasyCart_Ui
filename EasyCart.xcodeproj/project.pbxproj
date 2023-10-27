@@ -47,31 +47,6 @@
 		52A7025F2AEB4B0500A7BAFF /* AddItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A702432AEB4B0400A7BAFF /* AddItems.swift */; };
 		52A702602AEB4B0500A7BAFF /* AddAnotherCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A702442AEB4B0400A7BAFF /* AddAnotherCollection.swift */; };
 		52A702622AEB4C2D00A7BAFF /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A702612AEB4C2D00A7BAFF /* Storyboard1.storyboard */; };
-		52A703E82AEB8ADA00A7BAFF /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703CA2AEB8AD900A7BAFF /* NewAddressController.swift */; };
-		52A703E92AEB8ADA00A7BAFF /* AddressAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703CB2AEB8AD900A7BAFF /* AddressAddTableViewCell.swift */; };
-		52A703EA2AEB8ADA00A7BAFF /* NewAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703CC2AEB8AD900A7BAFF /* NewAddressTableViewCell.swift */; };
-		52A703EB2AEB8ADA00A7BAFF /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703CD2AEB8AD900A7BAFF /* AddressController.swift */; };
-		52A703EC2AEB8ADA00A7BAFF /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703CE2AEB8AD900A7BAFF /* AddressTableViewCell.swift */; };
-		52A703ED2AEB8ADA00A7BAFF /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D02AEB8AD900A7BAFF /* TotalTableViewCell.xib */; };
-		52A703EE2AEB8ADA00A7BAFF /* AddressAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D12AEB8AD900A7BAFF /* AddressAddTableViewCell.xib */; };
-		52A703EF2AEB8ADA00A7BAFF /* PayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D22AEB8AD900A7BAFF /* PayTableViewCell.xib */; };
-		52A703F02AEB8ADA00A7BAFF /* SectionAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D32AEB8AD900A7BAFF /* SectionAddTableViewCell.xib */; };
-		52A703F12AEB8ADA00A7BAFF /* AddressSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D42AEB8AD900A7BAFF /* AddressSb.storyboard */; };
-		52A703F22AEB8ADA00A7BAFF /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D52AEB8AD900A7BAFF /* DeliveryTableViewCell.xib */; };
-		52A703F32AEB8ADA00A7BAFF /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D62AEB8AD900A7BAFF /* AddressTableViewCell.xib */; };
-		52A703F42AEB8ADA00A7BAFF /* PaymentSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A703D72AEB8AD900A7BAFF /* PaymentSb.storyboard */; };
-		52A703F52AEB8ADA00A7BAFF /* ReceiptDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703D92AEB8AD900A7BAFF /* ReceiptDemoable.swift */; };
-		52A703F62AEB8ADA00A7BAFF /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703DA2AEB8AD900A7BAFF /* RecieptController.swift */; };
-		52A703F72AEB8ADA00A7BAFF /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703DB2AEB8AD900A7BAFF /* ReceiptTableViewCell.xib */; };
-		52A703F82AEB8ADA00A7BAFF /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703DC2AEB8AD900A7BAFF /* ReceiptTableViewCell.swift */; };
-		52A703F92AEB8ADA00A7BAFF /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703DD2AEB8AD900A7BAFF /* OrderTableViewCell.xib */; };
-		52A703FA2AEB8ADA00A7BAFF /* NewAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A703DE2AEB8AD900A7BAFF /* NewAddressTableViewCell.xib */; };
-		52A703FB2AEB8ADA00A7BAFF /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E02AEB8AD900A7BAFF /* PayTableViewCell.swift */; };
-		52A703FC2AEB8ADA00A7BAFF /* SectionAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E12AEB8AD900A7BAFF /* SectionAddTableViewCell.swift */; };
-		52A703FD2AEB8ADA00A7BAFF /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E22AEB8AD900A7BAFF /* DeliveryTableViewCell.swift */; };
-		52A703FE2AEB8ADA00A7BAFF /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E32AEB8AD900A7BAFF /* OrderTableViewCell.swift */; };
-		52A703FF2AEB8ADA00A7BAFF /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E42AEB8AD900A7BAFF /* PaymentController.swift */; };
-		52A704002AEB8ADA00A7BAFF /* addressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A703E72AEB8AD900A7BAFF /* addressData.swift */; };
 		52A704112AEB8B5D00A7BAFF /* CategoryNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704042AEB8B5D00A7BAFF /* CategoryNibCell.xib */; };
 		52A704122AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704052AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib */; };
 		52A704132AEB8B5D00A7BAFF /* SearchSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A704062AEB8B5D00A7BAFF /* SearchSb.storyboard */; };
@@ -83,6 +58,31 @@
 		52A704192AEB8B5D00A7BAFF /* SectionCellNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7040D2AEB8B5D00A7BAFF /* SectionCellNib.swift */; };
 		52A7041A2AEB8B5D00A7BAFF /* RecentCollectionNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7040E2AEB8B5D00A7BAFF /* RecentCollectionNibCell.swift */; };
 		52A7041B2AEB8B5D00A7BAFF /* CategoryModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704102AEB8B5D00A7BAFF /* CategoryModelData.swift */; };
+		52A7043D2AEB8E6400A7BAFF /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7041F2AEB8E6400A7BAFF /* NewAddressController.swift */; };
+		52A7043E2AEB8E6400A7BAFF /* AddressAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704202AEB8E6400A7BAFF /* AddressAddTableViewCell.swift */; };
+		52A7043F2AEB8E6400A7BAFF /* NewAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704212AEB8E6400A7BAFF /* NewAddressTableViewCell.swift */; };
+		52A704402AEB8E6400A7BAFF /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704222AEB8E6400A7BAFF /* AddressController.swift */; };
+		52A704412AEB8E6400A7BAFF /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704232AEB8E6400A7BAFF /* AddressTableViewCell.swift */; };
+		52A704422AEB8E6400A7BAFF /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704252AEB8E6400A7BAFF /* TotalTableViewCell.xib */; };
+		52A704432AEB8E6400A7BAFF /* AddressAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704262AEB8E6400A7BAFF /* AddressAddTableViewCell.xib */; };
+		52A704442AEB8E6400A7BAFF /* PayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704272AEB8E6400A7BAFF /* PayTableViewCell.xib */; };
+		52A704452AEB8E6400A7BAFF /* SectionAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704282AEB8E6400A7BAFF /* SectionAddTableViewCell.xib */; };
+		52A704462AEB8E6400A7BAFF /* AddressSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A704292AEB8E6400A7BAFF /* AddressSb.storyboard */; };
+		52A704472AEB8E6400A7BAFF /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A7042A2AEB8E6400A7BAFF /* DeliveryTableViewCell.xib */; };
+		52A704482AEB8E6400A7BAFF /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A7042B2AEB8E6400A7BAFF /* AddressTableViewCell.xib */; };
+		52A704492AEB8E6400A7BAFF /* PaymentSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A7042C2AEB8E6400A7BAFF /* PaymentSb.storyboard */; };
+		52A7044A2AEB8E6400A7BAFF /* ReceiptDemoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7042E2AEB8E6400A7BAFF /* ReceiptDemoable.swift */; };
+		52A7044B2AEB8E6400A7BAFF /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7042F2AEB8E6400A7BAFF /* RecieptController.swift */; };
+		52A7044C2AEB8E6400A7BAFF /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704302AEB8E6400A7BAFF /* ReceiptTableViewCell.xib */; };
+		52A7044D2AEB8E6400A7BAFF /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704312AEB8E6400A7BAFF /* ReceiptTableViewCell.swift */; };
+		52A7044E2AEB8E6400A7BAFF /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704322AEB8E6400A7BAFF /* OrderTableViewCell.xib */; };
+		52A7044F2AEB8E6400A7BAFF /* NewAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A704332AEB8E6400A7BAFF /* NewAddressTableViewCell.xib */; };
+		52A704502AEB8E6400A7BAFF /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704352AEB8E6400A7BAFF /* PayTableViewCell.swift */; };
+		52A704512AEB8E6400A7BAFF /* SectionAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704362AEB8E6400A7BAFF /* SectionAddTableViewCell.swift */; };
+		52A704522AEB8E6400A7BAFF /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704372AEB8E6400A7BAFF /* DeliveryTableViewCell.swift */; };
+		52A704532AEB8E6400A7BAFF /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704382AEB8E6400A7BAFF /* OrderTableViewCell.swift */; };
+		52A704542AEB8E6400A7BAFF /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A704392AEB8E6400A7BAFF /* PaymentController.swift */; };
+		52A704552AEB8E6400A7BAFF /* addressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7043C2AEB8E6400A7BAFF /* addressData.swift */; };
 		5801A003D6A59B116B522EAD /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72E31C801B2E37511FFBB0E /* Pods_EasyCart.framework */; };
 		BB08BDEF2AD6B2F20075B32F /* DateOfitemCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08BDED2AD6B2F20075B32F /* DateOfitemCollCell.swift */; };
 		BB08BDF02AD6B2F20075B32F /* DateOfitemCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB08BDEE2AD6B2F20075B32F /* DateOfitemCollCell.xib */; };
@@ -238,31 +238,6 @@
 		52A702432AEB4B0400A7BAFF /* AddItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItems.swift; sourceTree = "<group>"; };
 		52A702442AEB4B0400A7BAFF /* AddAnotherCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnotherCollection.swift; sourceTree = "<group>"; };
 		52A702612AEB4C2D00A7BAFF /* Storyboard1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
-		52A703CA2AEB8AD900A7BAFF /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAddressController.swift; sourceTree = "<group>"; };
-		52A703CB2AEB8AD900A7BAFF /* AddressAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressAddTableViewCell.swift; sourceTree = "<group>"; };
-		52A703CC2AEB8AD900A7BAFF /* NewAddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAddressTableViewCell.swift; sourceTree = "<group>"; };
-		52A703CD2AEB8AD900A7BAFF /* AddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
-		52A703CE2AEB8AD900A7BAFF /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
-		52A703D02AEB8AD900A7BAFF /* TotalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D12AEB8AD900A7BAFF /* AddressAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAddTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D22AEB8AD900A7BAFF /* PayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D32AEB8AD900A7BAFF /* SectionAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionAddTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D42AEB8AD900A7BAFF /* AddressSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddressSb.storyboard; sourceTree = "<group>"; };
-		52A703D52AEB8AD900A7BAFF /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D62AEB8AD900A7BAFF /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
-		52A703D72AEB8AD900A7BAFF /* PaymentSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PaymentSb.storyboard; sourceTree = "<group>"; };
-		52A703D92AEB8AD900A7BAFF /* ReceiptDemoable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptDemoable.swift; sourceTree = "<group>"; };
-		52A703DA2AEB8AD900A7BAFF /* RecieptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
-		52A703DB2AEB8AD900A7BAFF /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
-		52A703DC2AEB8AD900A7BAFF /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
-		52A703DD2AEB8AD900A7BAFF /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
-		52A703DE2AEB8AD900A7BAFF /* NewAddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAddressTableViewCell.xib; sourceTree = "<group>"; };
-		52A703E02AEB8AD900A7BAFF /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
-		52A703E12AEB8AD900A7BAFF /* SectionAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionAddTableViewCell.swift; sourceTree = "<group>"; };
-		52A703E22AEB8AD900A7BAFF /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
-		52A703E32AEB8AD900A7BAFF /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
-		52A703E42AEB8AD900A7BAFF /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
-		52A703E72AEB8AD900A7BAFF /* addressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressData.swift; sourceTree = "<group>"; };
 		52A704042AEB8B5D00A7BAFF /* CategoryNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryNibCell.xib; sourceTree = "<group>"; };
 		52A704052AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCollectionNibCell.xib; sourceTree = "<group>"; };
 		52A704062AEB8B5D00A7BAFF /* SearchSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchSb.storyboard; sourceTree = "<group>"; };
@@ -274,6 +249,31 @@
 		52A7040D2AEB8B5D00A7BAFF /* SectionCellNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCellNib.swift; sourceTree = "<group>"; };
 		52A7040E2AEB8B5D00A7BAFF /* RecentCollectionNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentCollectionNibCell.swift; sourceTree = "<group>"; };
 		52A704102AEB8B5D00A7BAFF /* CategoryModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModelData.swift; sourceTree = "<group>"; };
+		52A7041F2AEB8E6400A7BAFF /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAddressController.swift; sourceTree = "<group>"; };
+		52A704202AEB8E6400A7BAFF /* AddressAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressAddTableViewCell.swift; sourceTree = "<group>"; };
+		52A704212AEB8E6400A7BAFF /* NewAddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAddressTableViewCell.swift; sourceTree = "<group>"; };
+		52A704222AEB8E6400A7BAFF /* AddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
+		52A704232AEB8E6400A7BAFF /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		52A704252AEB8E6400A7BAFF /* TotalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
+		52A704262AEB8E6400A7BAFF /* AddressAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAddTableViewCell.xib; sourceTree = "<group>"; };
+		52A704272AEB8E6400A7BAFF /* PayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTableViewCell.xib; sourceTree = "<group>"; };
+		52A704282AEB8E6400A7BAFF /* SectionAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionAddTableViewCell.xib; sourceTree = "<group>"; };
+		52A704292AEB8E6400A7BAFF /* AddressSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddressSb.storyboard; sourceTree = "<group>"; };
+		52A7042A2AEB8E6400A7BAFF /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		52A7042B2AEB8E6400A7BAFF /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		52A7042C2AEB8E6400A7BAFF /* PaymentSb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PaymentSb.storyboard; sourceTree = "<group>"; };
+		52A7042E2AEB8E6400A7BAFF /* ReceiptDemoable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptDemoable.swift; sourceTree = "<group>"; };
+		52A7042F2AEB8E6400A7BAFF /* RecieptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
+		52A704302AEB8E6400A7BAFF /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
+		52A704312AEB8E6400A7BAFF /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		52A704322AEB8E6400A7BAFF /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		52A704332AEB8E6400A7BAFF /* NewAddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAddressTableViewCell.xib; sourceTree = "<group>"; };
+		52A704352AEB8E6400A7BAFF /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		52A704362AEB8E6400A7BAFF /* SectionAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionAddTableViewCell.swift; sourceTree = "<group>"; };
+		52A704372AEB8E6400A7BAFF /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		52A704382AEB8E6400A7BAFF /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		52A704392AEB8E6400A7BAFF /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		52A7043C2AEB8E6400A7BAFF /* addressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressData.swift; sourceTree = "<group>"; };
 		BB08BDED2AD6B2F20075B32F /* DateOfitemCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfitemCollCell.swift; sourceTree = "<group>"; };
 		BB08BDEE2AD6B2F20075B32F /* DateOfitemCollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateOfitemCollCell.xib; sourceTree = "<group>"; };
 		BB08BDF52AD6CDAC0075B32F /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
@@ -610,94 +610,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		52A703C72AEB8AD900A7BAFF /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-				52A703C82AEB8AD900A7BAFF /* View */,
-			);
-			path = Payment;
-			sourceTree = "<group>";
-		};
-		52A703C82AEB8AD900A7BAFF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				52A703C92AEB8AD900A7BAFF /* Test */,
-				52A703CF2AEB8AD900A7BAFF /* Storyboard */,
-				52A703DF2AEB8AD900A7BAFF /* Controller */,
-				52A703E52AEB8AD900A7BAFF /* Model */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		52A703C92AEB8AD900A7BAFF /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				52A703CA2AEB8AD900A7BAFF /* NewAddressController.swift */,
-				52A703CB2AEB8AD900A7BAFF /* AddressAddTableViewCell.swift */,
-				52A703CC2AEB8AD900A7BAFF /* NewAddressTableViewCell.swift */,
-				52A703CD2AEB8AD900A7BAFF /* AddressController.swift */,
-				52A703CE2AEB8AD900A7BAFF /* AddressTableViewCell.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		52A703CF2AEB8AD900A7BAFF /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				52A703D02AEB8AD900A7BAFF /* TotalTableViewCell.xib */,
-				52A703D12AEB8AD900A7BAFF /* AddressAddTableViewCell.xib */,
-				52A703D22AEB8AD900A7BAFF /* PayTableViewCell.xib */,
-				52A703D32AEB8AD900A7BAFF /* SectionAddTableViewCell.xib */,
-				52A703D42AEB8AD900A7BAFF /* AddressSb.storyboard */,
-				52A703D52AEB8AD900A7BAFF /* DeliveryTableViewCell.xib */,
-				52A703D62AEB8AD900A7BAFF /* AddressTableViewCell.xib */,
-				52A703D72AEB8AD900A7BAFF /* PaymentSb.storyboard */,
-				52A703D82AEB8AD900A7BAFF /* Receipt */,
-				52A703DD2AEB8AD900A7BAFF /* OrderTableViewCell.xib */,
-				52A703DE2AEB8AD900A7BAFF /* NewAddressTableViewCell.xib */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		52A703D82AEB8AD900A7BAFF /* Receipt */ = {
-			isa = PBXGroup;
-			children = (
-				52A703D92AEB8AD900A7BAFF /* ReceiptDemoable.swift */,
-				52A703DA2AEB8AD900A7BAFF /* RecieptController.swift */,
-				52A703DB2AEB8AD900A7BAFF /* ReceiptTableViewCell.xib */,
-				52A703DC2AEB8AD900A7BAFF /* ReceiptTableViewCell.swift */,
-			);
-			path = Receipt;
-			sourceTree = "<group>";
-		};
-		52A703DF2AEB8AD900A7BAFF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				52A703E02AEB8AD900A7BAFF /* PayTableViewCell.swift */,
-				52A703E12AEB8AD900A7BAFF /* SectionAddTableViewCell.swift */,
-				52A703E22AEB8AD900A7BAFF /* DeliveryTableViewCell.swift */,
-				52A703E32AEB8AD900A7BAFF /* OrderTableViewCell.swift */,
-				52A703E42AEB8AD900A7BAFF /* PaymentController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		52A703E52AEB8AD900A7BAFF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				52A703E62AEB8AD900A7BAFF /* Model */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		52A703E62AEB8AD900A7BAFF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				52A703E72AEB8AD900A7BAFF /* addressData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		52A704012AEB8B5D00A7BAFF /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,6 +656,94 @@
 			isa = PBXGroup;
 			children = (
 				52A704102AEB8B5D00A7BAFF /* CategoryModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A7041C2AEB8E6400A7BAFF /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				52A7041D2AEB8E6400A7BAFF /* View */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		52A7041D2AEB8E6400A7BAFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A7041E2AEB8E6400A7BAFF /* Test */,
+				52A704242AEB8E6400A7BAFF /* Storyboard */,
+				52A704342AEB8E6400A7BAFF /* Controller */,
+				52A7043A2AEB8E6400A7BAFF /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52A7041E2AEB8E6400A7BAFF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				52A7041F2AEB8E6400A7BAFF /* NewAddressController.swift */,
+				52A704202AEB8E6400A7BAFF /* AddressAddTableViewCell.swift */,
+				52A704212AEB8E6400A7BAFF /* NewAddressTableViewCell.swift */,
+				52A704222AEB8E6400A7BAFF /* AddressController.swift */,
+				52A704232AEB8E6400A7BAFF /* AddressTableViewCell.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		52A704242AEB8E6400A7BAFF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				52A704252AEB8E6400A7BAFF /* TotalTableViewCell.xib */,
+				52A704262AEB8E6400A7BAFF /* AddressAddTableViewCell.xib */,
+				52A704272AEB8E6400A7BAFF /* PayTableViewCell.xib */,
+				52A704282AEB8E6400A7BAFF /* SectionAddTableViewCell.xib */,
+				52A704292AEB8E6400A7BAFF /* AddressSb.storyboard */,
+				52A7042A2AEB8E6400A7BAFF /* DeliveryTableViewCell.xib */,
+				52A7042B2AEB8E6400A7BAFF /* AddressTableViewCell.xib */,
+				52A7042C2AEB8E6400A7BAFF /* PaymentSb.storyboard */,
+				52A7042D2AEB8E6400A7BAFF /* Receipt */,
+				52A704322AEB8E6400A7BAFF /* OrderTableViewCell.xib */,
+				52A704332AEB8E6400A7BAFF /* NewAddressTableViewCell.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		52A7042D2AEB8E6400A7BAFF /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				52A7042E2AEB8E6400A7BAFF /* ReceiptDemoable.swift */,
+				52A7042F2AEB8E6400A7BAFF /* RecieptController.swift */,
+				52A704302AEB8E6400A7BAFF /* ReceiptTableViewCell.xib */,
+				52A704312AEB8E6400A7BAFF /* ReceiptTableViewCell.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		52A704342AEB8E6400A7BAFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52A704352AEB8E6400A7BAFF /* PayTableViewCell.swift */,
+				52A704362AEB8E6400A7BAFF /* SectionAddTableViewCell.swift */,
+				52A704372AEB8E6400A7BAFF /* DeliveryTableViewCell.swift */,
+				52A704382AEB8E6400A7BAFF /* OrderTableViewCell.swift */,
+				52A704392AEB8E6400A7BAFF /* PaymentController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52A7043A2AEB8E6400A7BAFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52A7043B2AEB8E6400A7BAFF /* Model */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A7043B2AEB8E6400A7BAFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52A7043C2AEB8E6400A7BAFF /* addressData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -873,8 +873,8 @@
 		C2BD61D32AD3B7A100939CA7 /* EasyCart */ = {
 			isa = PBXGroup;
 			children = (
+				52A7041C2AEB8E6400A7BAFF /* Payment */,
 				52A704012AEB8B5D00A7BAFF /* Search */,
-				52A703C72AEB8AD900A7BAFF /* Payment */,
 				DF6C004E2AE7D9F300CEB822 /* Create */,
 				BB560DB22ADE49D600DBB585 /* Extension */,
 				315540782ADE351400BFF8B5 /* Notification */,
@@ -1373,34 +1373,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A703EE2AEB8ADA00A7BAFF /* AddressAddTableViewCell.xib in Resources */,
+				52A704432AEB8E6400A7BAFF /* AddressAddTableViewCell.xib in Resources */,
 				DFDB67882AD65156006ECEE7 /* Main.storyboard in Resources */,
 				DF6C007F2AE7D9F300CEB822 /* InfoTVC.xib in Resources */,
 				52A704132AEB8B5D00A7BAFF /* SearchSb.storyboard in Resources */,
+				52A704482AEB8E6400A7BAFF /* AddressTableViewCell.xib in Resources */,
 				DF6C00822AE7D9F300CEB822 /* TitleTVC.xib in Resources */,
-				52A703F32AEB8ADA00A7BAFF /* AddressTableViewCell.xib in Resources */,
 				DFDB68782AD65DBA006ECEE7 /* TableViewCell.xib in Resources */,
-				52A703EF2AEB8ADA00A7BAFF /* PayTableViewCell.xib in Resources */,
-				52A703F72AEB8ADA00A7BAFF /* ReceiptTableViewCell.xib in Resources */,
+				52A704442AEB8E6400A7BAFF /* PayTableViewCell.xib in Resources */,
+				52A7044C2AEB8E6400A7BAFF /* ReceiptTableViewCell.xib in Resources */,
 				DF6C00872AE7D9F300CEB822 /* MoreDetailTVC.xib in Resources */,
 				DF6C008E2AE7D9F300CEB822 /* CreateItemSB.storyboard in Resources */,
 				BB08BDFA2AD6CEB80075B32F /* ProductListCVC.xib in Resources */,
 				DFDB68762AD65DBA006ECEE7 /* Section1TableViewCell.xib in Resources */,
 				DFDB68302AD65968006ECEE7 /* ExploreTableViewCell.xib in Resources */,
-				52A703F42AEB8ADA00A7BAFF /* PaymentSb.storyboard in Resources */,
-				52A703ED2AEB8ADA00A7BAFF /* TotalTableViewCell.xib in Resources */,
-				52A703F12AEB8ADA00A7BAFF /* AddressSb.storyboard in Resources */,
 				52A702462AEB4B0500A7BAFF /* AddItemsCollectionViewCell.xib in Resources */,
+				52A704492AEB8E6400A7BAFF /* PaymentSb.storyboard in Resources */,
+				52A704422AEB8E6400A7BAFF /* TotalTableViewCell.xib in Resources */,
+				52A704462AEB8E6400A7BAFF /* AddressSb.storyboard in Resources */,
 				DFDB68772AD65DBA006ECEE7 /* SecondSectionTableViewCell.xib in Resources */,
-				52A703F22AEB8ADA00A7BAFF /* DeliveryTableViewCell.xib in Resources */,
 				BBA013E22AD69D610051BD7B /* SlideCollectionViewCell.xib in Resources */,
+				52A704472AEB8E6400A7BAFF /* DeliveryTableViewCell.xib in Resources */,
 				52A702482AEB4B0500A7BAFF /* AddAnotherCollectionCollectionViewCell.xib in Resources */,
 				DFDB68332AD65A67006ECEE7 /* Explore.storyboard in Resources */,
 				3155407E2ADE357500BFF8B5 /* NotificationSB.storyboard in Resources */,
-				52A703FA2AEB8ADA00A7BAFF /* NewAddressTableViewCell.xib in Resources */,
-				52A703F92AEB8ADA00A7BAFF /* OrderTableViewCell.xib in Resources */,
 				52A702472AEB4B0500A7BAFF /* AddMoreCollectionViewCell.xib in Resources */,
+				52A7044F2AEB8E6400A7BAFF /* NewAddressTableViewCell.xib in Resources */,
 				DFDB68792AD65DBA006ECEE7 /* BankSetupTableViewCell.xib in Resources */,
+				52A7044E2AEB8E6400A7BAFF /* OrderTableViewCell.xib in Resources */,
 				52A704112AEB8B5D00A7BAFF /* CategoryNibCell.xib in Resources */,
 				C28BDF972ADE6AD500C5752A /* PopBankTableViewCell.xib in Resources */,
 				DFDB67872AD65156006ECEE7 /* LaunchScreen.storyboard in Resources */,
@@ -1415,9 +1415,9 @@
 				52A702452AEB4B0500A7BAFF /* SaveCollectionViewCell.xib in Resources */,
 				DFDB687B2AD65DBA006ECEE7 /* LogOutTableViewCell.xib in Resources */,
 				DFDB687C2AD65DBA006ECEE7 /* ThirdCellsTableViewCell.xib in Resources */,
-				52A703F02AEB8ADA00A7BAFF /* SectionAddTableViewCell.xib in Resources */,
 				52A704122AEB8B5D00A7BAFF /* RecentCollectionNibCell.xib in Resources */,
 				BB08BDF02AD6B2F20075B32F /* DateOfitemCollCell.xib in Resources */,
+				52A704452AEB8E6400A7BAFF /* SectionAddTableViewCell.xib in Resources */,
 				DFDB682E2AD65968006ECEE7 /* CategoryCollectionViewCell.xib in Resources */,
 				52A704142AEB8B5D00A7BAFF /* PopularNibCell.xib in Resources */,
 				DFDB67862AD65156006ECEE7 /* Assets.xcassets in Resources */,
@@ -1481,47 +1481,48 @@
 				DFDB682C2AD65968006ECEE7 /* TopItemsModel.swift in Sources */,
 				DF6C007C2AE7D9F300CEB822 /* Discount.swift in Sources */,
 				DFDB67522AD65046006ECEE7 /* AppDelegate.swift in Sources */,
+				52A704522AEB8E6400A7BAFF /* DeliveryTableViewCell.swift in Sources */,
 				DFDB686E2AD65DBA006ECEE7 /* SecondSection.swift in Sources */,
 				52A7024E2AEB4B0500A7BAFF /* AddViewController.swift in Sources */,
-				52A703FF2AEB8ADA00A7BAFF /* PaymentController.swift in Sources */,
 				52A702582AEB4B0500A7BAFF /* AddMoreCollectionViewCell.swift in Sources */,
 				31E9FC8E2ADFCAD60057CC47 /* NotificationReortViewController.swift in Sources */,
 				DF6C00792AE7D9F300CEB822 /* Price.swift in Sources */,
 				DFDB68852AD65DBA006ECEE7 /* ThirdCellsTableViewCell.swift in Sources */,
 				52A7024D2AEB4B0500A7BAFF /* PopUPForSave.swift in Sources */,
-				52A703EC2AEB8ADA00A7BAFF /* AddressTableViewCell.swift in Sources */,
 				DFDB68722AD65DBA006ECEE7 /* Section3.swift in Sources */,
 				DFDB68462AD65D67006ECEE7 /* TabMainViewController.swift in Sources */,
 				BBA013DC2AD69C800051BD7B /* HomeDetailCV.swift in Sources */,
 				DFDB684C2AD65D67006ECEE7 /* CollectionViewController.swift in Sources */,
 				DF6C007A2AE7D9F300CEB822 /* Expandable.swift in Sources */,
-				52A703F82AEB8ADA00A7BAFF /* ReceiptTableViewCell.swift in Sources */,
 				315540822ADE390500BFF8B5 /* NotificationModel.swift in Sources */,
 				DFDB68872AD65DBA006ECEE7 /* ProfileViewController.swift in Sources */,
 				52A7025C2AEB4B0500A7BAFF /* CellSelectViewController.swift in Sources */,
+				52A704402AEB8E6400A7BAFF /* AddressController.swift in Sources */,
 				C28BDF962ADE6AD500C5752A /* PopBankTableViewCell.swift in Sources */,
 				DFDB678D2AD65167006ECEE7 /* NetworkConstans.swift in Sources */,
 				DF4E26D02AE6636200DC9FE7 /* ReportDemovable.swift in Sources */,
 				31EDD6582AE0FD910097A6A8 /* AttachmentCollectionViewCell.swift in Sources */,
 				C26DA0732AD92418008C2A37 /* ForAllitemSec1TableViewCell.swift in Sources */,
-				52A703F62AEB8ADA00A7BAFF /* RecieptController.swift in Sources */,
 				DFDB68862AD65DBA006ECEE7 /* BankSetupTableViewCell.swift in Sources */,
 				DFDB68842AD65DBA006ECEE7 /* AllitemViewController.swift in Sources */,
 				52A7024A2AEB4B0500A7BAFF /* DeleteCollectionPop.swift in Sources */,
 				BB360BC72ADFDDC900B5BBF3 /* LayoutBuilder.swift in Sources */,
+				52A704502AEB8E6400A7BAFF /* PayTableViewCell.swift in Sources */,
 				DFEDFA432AE79AE600BF3736 /* CategoryDemovable.swift in Sources */,
 				52A7025D2AEB4B0500A7BAFF /* SaveData.swift in Sources */,
 				BB560DB42ADE4A1000DBB585 /* ReduisExtension.swift in Sources */,
 				52A702512AEB4B0500A7BAFF /* PopSaveViewController.swift in Sources */,
 				DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
-				52A703EB2AEB8ADA00A7BAFF /* AddressController.swift in Sources */,
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
 				C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */,
+				52A704412AEB8E6400A7BAFF /* AddressTableViewCell.swift in Sources */,
 				DFDB682F2AD65968006ECEE7 /* ExploreTableViewCell.swift in Sources */,
 				31EFE70C2ADF962800EA6040 /* NotificationDemoable.swift in Sources */,
 				BB08BDF62AD6CDAC0075B32F /* ProductInfo.swift in Sources */,
 				DF6C008D2AE7D9F300CEB822 /* CustomPhotoTVC.swift in Sources */,
+				52A7043F2AEB8E6400A7BAFF /* NewAddressTableViewCell.swift in Sources */,
+				52A704552AEB8E6400A7BAFF /* addressData.swift in Sources */,
 				DF6C00882AE7D9F300CEB822 /* MoreDetailTVC.swift in Sources */,
 				52A702492AEB4B0500A7BAFF /* PopAnother.swift in Sources */,
 				DFDB684B2AD65D67006ECEE7 /* CustomTabBar.swift in Sources */,
@@ -1529,17 +1530,18 @@
 				312A8E0D2AE132D00099E11A /* WriteReportTableViewCell.swift in Sources */,
 				BB560DB02ADE3A7100DBB585 /* SlideClickCVC.swift in Sources */,
 				DF6C007E2AE7D9F300CEB822 /* CategoryTVC.swift in Sources */,
+				52A704532AEB8E6400A7BAFF /* OrderTableViewCell.swift in Sources */,
 				DFDB68822AD65DBA006ECEE7 /* LogOutTableViewCell.swift in Sources */,
 				BBA013D82AD6999A0051BD7B /* image.swift in Sources */,
 				DFDB68742AD65DBA006ECEE7 /* FirstSectionEdit.swift in Sources */,
 				52A702572AEB4B0500A7BAFF /* ForViewPostCollectionViewCell.swift in Sources */,
 				DF6C008F2AE7D9F300CEB822 /* CreateItemVC.swift in Sources */,
+				52A704512AEB8E6400A7BAFF /* SectionAddTableViewCell.swift in Sources */,
+				52A7043E2AEB8E6400A7BAFF /* AddressAddTableViewCell.swift in Sources */,
 				52A702522AEB4B0500A7BAFF /* DeleteCollectionViewController.swift in Sources */,
-				52A704002AEB8ADA00A7BAFF /* addressData.swift in Sources */,
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
 				DF6C00782AE7D9F300CEB822 /* CategoryData.swift in Sources */,
 				DFDB67842AD65156006ECEE7 /* ViewController.swift in Sources */,
-				52A703FD2AEB8ADA00A7BAFF /* DeliveryTableViewCell.swift in Sources */,
 				DFDB682D2AD65968006ECEE7 /* CategoryCollectionViewCell.swift in Sources */,
 				52A702532AEB4B0500A7BAFF /* SaveCollectionViewCell.swift in Sources */,
 				52A702602AEB4B0500A7BAFF /* AddAnotherCollection.swift in Sources */,
@@ -1548,7 +1550,6 @@
 				DFDB68802AD65DBA006ECEE7 /* Section1TableViewCell.swift in Sources */,
 				DFEDFA492AE7A16600BF3736 /* CategoryDetailsCollectionViewCell.swift in Sources */,
 				52A7025B2AEB4B0500A7BAFF /* SaveViewController.swift in Sources */,
-				52A703E92AEB8ADA00A7BAFF /* AddressAddTableViewCell.swift in Sources */,
 				DF6C008C2AE7D9F300CEB822 /* CollectionImageCVC.swift in Sources */,
 				DF6C00892AE7D9F300CEB822 /* PriceTVC.swift in Sources */,
 				C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */,
@@ -1562,25 +1563,23 @@
 				52A7024F2AEB4B0500A7BAFF /* CreateNewViewController.swift in Sources */,
 				C28BDF992ADE6C2000C5752A /* PopBankSetUp.swift in Sources */,
 				31EDD6672AE126FE0097A6A8 /* UploadPhotoTableViewCell.swift in Sources */,
+				52A7044D2AEB8E6400A7BAFF /* ReceiptTableViewCell.swift in Sources */,
 				52A702592AEB4B0500A7BAFF /* ForPostViewController.swift in Sources */,
 				DFDB687D2AD65DBA006ECEE7 /* ThirdSectionTableViewCell.swift in Sources */,
 				52A7041B2AEB8B5D00A7BAFF /* CategoryModelData.swift in Sources */,
+				52A7043D2AEB8E6400A7BAFF /* NewAddressController.swift in Sources */,
 				DF6C007B2AE7D9F300CEB822 /* Title.swift in Sources */,
-				52A703FC2AEB8ADA00A7BAFF /* SectionAddTableViewCell.swift in Sources */,
 				BB08BDEF2AD6B2F20075B32F /* DateOfitemCollCell.swift in Sources */,
-				52A703EA2AEB8ADA00A7BAFF /* NewAddressTableViewCell.swift in Sources */,
 				52A7025F2AEB4B0500A7BAFF /* AddItems.swift in Sources */,
 				52A702562AEB4B0500A7BAFF /* AddAnotherCollectionCollectionViewCell.swift in Sources */,
 				52A7041A2AEB8B5D00A7BAFF /* RecentCollectionNibCell.swift in Sources */,
 				C28BDF9B2ADE7D7600C5752A /* Demoable.swift in Sources */,
-				52A703F52AEB8ADA00A7BAFF /* ReceiptDemoable.swift in Sources */,
 				52A702552AEB4B0500A7BAFF /* AddItemsCollectionViewCell.swift in Sources */,
 				DFEDFA452AE79B5B00BF3736 /* CategoryDetailsViewController.swift in Sources */,
 				52A704152AEB8B5D00A7BAFF /* CategoryNibCell.swift in Sources */,
 				DF6C00902AE7D9F300CEB822 /* CategoryTC.swift in Sources */,
 				DF6C00842AE7D9F300CEB822 /* ExpanableTVC.swift in Sources */,
 				31EFE70E2ADF96AC00EA6040 /* NotificationPopUpViewController.swift in Sources */,
-				52A703E82AEB8ADA00A7BAFF /* NewAddressController.swift in Sources */,
 				52A7025E2AEB4B0500A7BAFF /* AddMore.swift in Sources */,
 				DFDB68892AD65DBA006ECEE7 /* PopLogOutViewController.swift in Sources */,
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
@@ -1588,16 +1587,16 @@
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
 				DF6C00862AE7D9F300CEB822 /* DiscountTVC.swift in Sources */,
 				52A704162AEB8B5D00A7BAFF /* PopularNibCell.swift in Sources */,
-				52A703FB2AEB8ADA00A7BAFF /* PayTableViewCell.swift in Sources */,
 				C28BDF9D2ADE883900C5752A /* Demoable1.swift in Sources */,
 				DF6C007D2AE7D9F300CEB822 /* Category.swift in Sources */,
 				DFDB678C2AD65167006ECEE7 /* APICaller.swift in Sources */,
+				52A7044B2AEB8E6400A7BAFF /* RecieptController.swift in Sources */,
 				C26DA0762AD98E7D008C2A37 /* ForAllitemSection.swift in Sources */,
 				DFDB687E2AD65DBA006ECEE7 /* ConnectBankViewController.swift in Sources */,
-				52A703FE2AEB8ADA00A7BAFF /* OrderTableViewCell.swift in Sources */,
 				DFDB68702AD65DBA006ECEE7 /* Bank.swift in Sources */,
 				BBA013E12AD69D610051BD7B /* SlideCollectionViewCell.swift in Sources */,
 				DF6C00812AE7D9F300CEB822 /* TitleTVC.swift in Sources */,
+				52A7044A2AEB8E6400A7BAFF /* ReceiptDemoable.swift in Sources */,
 				52A704172AEB8B5D00A7BAFF /* SearchController.swift in Sources */,
 				BB08BDF92AD6CEB80075B32F /* ProductListCVC.swift in Sources */,
 				DFDB68482AD65D67006ECEE7 /* HomeViewController.swift in Sources */,
@@ -1606,6 +1605,7 @@
 				DFDB68442AD65D67006ECEE7 /* collection.swift in Sources */,
 				52A7025A2AEB4B0500A7BAFF /* AddItemsViewController.swift in Sources */,
 				DFDB68832AD65DBA006ECEE7 /* SecondSectionTableViewCell.swift in Sources */,
+				52A704542AEB8E6400A7BAFF /* PaymentController.swift in Sources */,
 				31EDD65A2AE0FE650097A6A8 /* AttachmentButton.swift in Sources */,
 				52A702542AEB4B0500A7BAFF /* EmptyCollectionViewCell.swift in Sources */,
 				DFDB68812AD65DBA006ECEE7 /* TableViewCell.swift in Sources */,
