@@ -24,7 +24,10 @@ class CreateNewViewController: UIViewController, CreatePop {
     @IBAction func rightBtnAction(_ sender: Any) {
         if rightBtn.titleLabel?.text == "Done" {
             self.dismiss(animated: true, completion: nil)
+        }else{
+            self.dismiss(animated: true, completion: nil)
         }
+        
     }
     
 }

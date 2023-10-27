@@ -63,7 +63,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="H9M-4X-CzZ">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="e5p-jm-0oH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2iM-mx-tmL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2iM-mx-tmL">
                                 <rect key="frame" x="16" y="7" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -1022,20 +1022,11 @@ will still be saved in All Posts.</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-uN-ZvF">
-                                <rect key="frame" x="81" y="59" width="230" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="jiz-mC-zGj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzF-FA-mfF">
                                 <rect key="frame" x="301" y="59" width="92" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="NU5-OP-RoL"/>
-                                    <constraint firstAttribute="height" constant="20" id="iq7-6j-obB"/>
+                                    <constraint firstAttribute="height" constant="20" id="7rA-Xr-Yhm"/>
+                                    <constraint firstAttribute="width" constant="92" id="u2m-f8-6mT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create">
@@ -1050,7 +1041,7 @@ will still be saved in All Posts.</string>
                                 <rect key="frame" x="17" y="106" width="358" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="KhN-KF-Ezu"/>
+                                    <constraint firstAttribute="height" constant="40" id="RHL-eX-mvN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1063,17 +1054,26 @@ will still be saved in All Posts.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_lock" translatesAutoresizingMaskIntoConstraints="NO" id="HYW-NK-mFb">
                                 <rect key="frame" x="17" y="155" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="E7b-nS-hIE"/>
-                                    <constraint firstAttribute="height" constant="24" id="IWg-gh-yn5"/>
+                                    <constraint firstAttribute="height" constant="24" id="f6w-mi-0yI"/>
+                                    <constraint firstAttribute="width" constant="24" id="wsz-5D-986"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only you can view this conllection." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfr-9u-xaE">
                                 <rect key="frame" x="46" y="159" width="200" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Cgb-Lb-M32"/>
-                                    <constraint firstAttribute="height" constant="15" id="h14-xh-iHd"/>
+                                    <constraint firstAttribute="width" constant="200" id="6UQ-hk-1om"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-uN-ZvF">
+                                <rect key="frame" x="81" y="63" width="230" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wBm-CR-a8b"/>
+                                    <constraint firstAttribute="width" constant="230" id="zdd-l0-Y3Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1081,18 +1081,19 @@ will still be saved in All Posts.</string>
                         <viewLayoutGuide key="safeArea" id="aVk-ng-sVk"/>
                         <color key="backgroundColor" red="0.95619362590000001" green="0.96231085059999999" blue="0.96928626299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="aVk-ng-sVk" firstAttribute="trailing" secondItem="1Ec-uN-ZvF" secondAttribute="trailing" constant="82" id="0Kf-MJ-B9y"/>
-                            <constraint firstItem="HzF-FA-mfF" firstAttribute="top" secondItem="aVk-ng-sVk" secondAttribute="top" id="0l3-aw-Sez"/>
-                            <constraint firstItem="Pfr-9u-xaE" firstAttribute="leading" secondItem="HYW-NK-mFb" secondAttribute="trailing" constant="5" id="8mD-Ia-VHC"/>
-                            <constraint firstItem="HYW-NK-mFb" firstAttribute="top" secondItem="nE8-ZE-Abt" secondAttribute="bottom" constant="9" id="A14-AU-Pbe"/>
-                            <constraint firstItem="1Ec-uN-ZvF" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="81" id="BVm-Le-rK3"/>
-                            <constraint firstItem="1Ec-uN-ZvF" firstAttribute="top" secondItem="aVk-ng-sVk" secondAttribute="top" id="FOr-mi-Jlk"/>
-                            <constraint firstItem="HzF-FA-mfF" firstAttribute="trailing" secondItem="aVk-ng-sVk" secondAttribute="trailing" id="IdS-7K-dzN"/>
-                            <constraint firstItem="aVk-ng-sVk" firstAttribute="trailing" secondItem="nE8-ZE-Abt" secondAttribute="trailing" constant="18" id="RA7-D3-EaF"/>
-                            <constraint firstItem="nE8-ZE-Abt" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="17" id="XJk-P3-sDk"/>
-                            <constraint firstItem="nE8-ZE-Abt" firstAttribute="top" secondItem="1Ec-uN-ZvF" secondAttribute="bottom" constant="27" id="Zbt-Ao-hYq"/>
-                            <constraint firstItem="HYW-NK-mFb" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="17" id="c9h-Ts-Bqi"/>
-                            <constraint firstItem="Pfr-9u-xaE" firstAttribute="top" secondItem="nE8-ZE-Abt" secondAttribute="bottom" constant="13" id="tnK-or-dNq"/>
+                            <constraint firstItem="1Ec-uN-ZvF" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="81" id="6yF-8X-lOm"/>
+                            <constraint firstItem="aVk-ng-sVk" firstAttribute="trailing" secondItem="nE8-ZE-Abt" secondAttribute="trailing" constant="18" id="Dcb-DS-S7F"/>
+                            <constraint firstItem="HYW-NK-mFb" firstAttribute="top" secondItem="nE8-ZE-Abt" secondAttribute="bottom" constant="9" id="WJ0-LI-5zV"/>
+                            <constraint firstItem="Pfr-9u-xaE" firstAttribute="top" secondItem="nE8-ZE-Abt" secondAttribute="bottom" constant="13" id="Xvp-cj-MDM"/>
+                            <constraint firstItem="nE8-ZE-Abt" firstAttribute="top" secondItem="1Ec-uN-ZvF" secondAttribute="bottom" constant="23" id="XzV-gf-tEl"/>
+                            <constraint firstItem="HzF-FA-mfF" firstAttribute="top" secondItem="aVk-ng-sVk" secondAttribute="top" id="Y4R-FQ-EK6"/>
+                            <constraint firstItem="1Ec-uN-ZvF" firstAttribute="top" secondItem="aVk-ng-sVk" secondAttribute="top" constant="4" id="ajp-fK-fcM"/>
+                            <constraint firstItem="Pfr-9u-xaE" firstAttribute="leading" secondItem="HYW-NK-mFb" secondAttribute="trailing" constant="5" id="d7X-oO-HH2"/>
+                            <constraint firstItem="nE8-ZE-Abt" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="17" id="dmZ-zA-5Oc"/>
+                            <constraint firstItem="HYW-NK-mFb" firstAttribute="leading" secondItem="aVk-ng-sVk" secondAttribute="leading" constant="17" id="lWl-bY-jS1"/>
+                            <constraint firstItem="aVk-ng-sVk" firstAttribute="trailing" secondItem="1Ec-uN-ZvF" secondAttribute="trailing" constant="82" id="pjw-L7-qlg"/>
+                            <constraint firstItem="HzF-FA-mfF" firstAttribute="trailing" secondItem="aVk-ng-sVk" secondAttribute="trailing" id="tRW-nf-NQr"/>
+                            <constraint firstItem="HYW-NK-mFb" firstAttribute="top" secondItem="nE8-ZE-Abt" secondAttribute="bottom" constant="9" id="vrz-N6-isO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1929,13 +1930,13 @@ CQ
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
