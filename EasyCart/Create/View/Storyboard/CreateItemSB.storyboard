@@ -210,7 +210,7 @@
                             <constraint firstItem="LOm-DP-d8Q" firstAttribute="top" secondItem="V0c-ku-yda" secondAttribute="bottom" id="ut1-Qk-z37"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ico_addPrimary" id="E2Z-md-KF8"/>
+                    <tabBarItem key="tabBarItem" title="" image="ico_addFilled" id="E2Z-md-KF8"/>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
                     </navigationItem>
@@ -405,7 +405,7 @@
     <resources>
         <image name="dancing-banana.gif" width="365" height="360"/>
         <image name="done" width="339" height="322"/>
-        <image name="ico_addPrimary" width="38" height="38"/>
+        <image name="ico_addFilled" width="24" height="24"/>
         <image name="iconav_close" width="128" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
