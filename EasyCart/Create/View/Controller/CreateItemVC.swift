@@ -11,8 +11,7 @@ protocol CreateItemViewDelegate {
     func toggleSection(for header: CreateItemVC)
 }
 
-class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
-    
+class CreateItemVC: UIViewController, CustomCellDelegate, PopUpDiscard{
     
     let nameLabel = UILabel()
     let detailLabel = UILabel()
@@ -28,12 +27,46 @@ class CreateItemVC: UIViewController, CustomCellDelegate, MoreDetailTVCDelegate{
     var isExpandable = false
     var sectionIndex = -1
     var createItemVM = CreateItemVM()
+    var currentlySelectedCellIndexPath: IndexPath?
+    var didCollapse : Bool?
+    var indexPathDiselect : IndexPath?
     
     func didTapCell(){
         print("success")
     }
-    func didToggleExpansionState() {
+    
+    func didSelectCollectionCell(){
+        CreateItemVC.openDemo(from: self, in: nil)
     }
+    
+    @objc func didCollapeCell(_ sender: UIButton) {
+        
+        let point        = sender.convert(CGPoint.zero, to: self.tableView)
+          let indexPath    = self.tableView.indexPathForRow(at: point)!
+          if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
+              // unselect the selected one
+              makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
+              guard currentlySelectedCellIndexPath != indexPathDiselect else {
+                  tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
+                  self.currentlySelectedCellIndexPath = nil
+                  if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
+                      cell.expandbtn.setImage(UIImage(named: "up"), for: .normal)
+                  }
+                  return
+              }
+          }
+        if let cell = self.tableView.cellForRow(at: indexPath) as? MoreDetailTVC {
+            cell.expandbtn.setImage(UIImage(named: "down"), for: .normal)
+          }
+          
+          // Highlight the proper cell
+          makeCellSelected(in: tableView, on: indexPathDiselect ?? IndexPath())
+          currentlySelectedCellIndexPath = indexPathDiselect
+        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+
+        print("tappp")
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life Cycle -
@@ -114,11 +147,14 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             case .MoreDetails:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "MoreDetailTVC", for: indexPath) as! MoreDetailTVC
                 labelCel.selectionStyle = .none
-                
+                labelCel.configureMoreDetail(with: data)
+                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
+                self.indexPathDiselect = indexPath
                 return labelCel
-            default:
+            case .CategoryMoreDetail:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "ExpanableTVC", for: indexPath) as! ExpanableTVC
                 labelCel.selectionStyle = .none
+                labelCel.configureExpandable(with: data)
                 return labelCel
             }
         }else{
@@ -126,6 +162,15 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
             return cellDesc
         }
         return UITableViewCell()
+    }
+    
+    func makeCellUnSelected(in tableView: UITableView, on indexPath: IndexPath) {
+        didCollapse = false
+        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
+    }
+    func makeCellSelected(in tableView: UITableView, on indexPath: IndexPath) {
+        didCollapse = true
+        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -143,9 +188,20 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     }
     // MARK: - Expanable didSelectRowAt -
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1{
-            didToggleExpansionState()
+        if let currentlySelectedCellIndexPath = currentlySelectedCellIndexPath {
+            // unselect the selected one
+            makeCellUnSelected(in: tableView, on: currentlySelectedCellIndexPath)
+            guard currentlySelectedCellIndexPath != indexPath  else {
+                tableView.deselectRow(at: currentlySelectedCellIndexPath , animated: true)
+                self.currentlySelectedCellIndexPath = nil
+                return
+            }
         }
+        
+        // Highlight the proper cell
+        makeCellSelected(in: tableView, on: indexPath)
+        currentlySelectedCellIndexPath = indexPath
+        tableView.reloadSections(IndexSet(integer: Rowtype.MoreDetails.rawValue), with: .none)
     }
 }
  // MARK: - upload Image -

@@ -12,6 +12,7 @@ class CustomPhotoTVC: UITableViewCell {
     var imagePicker: Completion = {}
     var photo : [UIImage] = []
     let picker = UIImagePickerController()
+    var popUpDiscard: DeleteImage = {}
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {

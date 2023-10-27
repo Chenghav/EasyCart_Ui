@@ -37,6 +37,8 @@
 		BBA013E22AD69D610051BD7B /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA013E02AD69D610051BD7B /* SlideCollectionViewCell.xib */; };
 		BF31F2E12AE8FFE000CD95D9 /* CreateItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31F2E02AE8FFE000CD95D9 /* CreateItemModel.swift */; };
 		BF31F2E42AE9127400CD95D9 /* CreateItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31F2E32AE9127400CD95D9 /* CreateItemVM.swift */; };
+		BF448AB32AEB494D002BCB98 /* DiscardItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF448AB22AEB494D002BCB98 /* DiscardItemTVC.swift */; };
+		BF448AB52AEB4E60002BCB98 /* PopUpDiscard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF448AB42AEB4E60002BCB98 /* PopUpDiscard.swift */; };
 		C2008A642ADFBADD008C07AA /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A632ADFBADD008C07AA /* SaveData.swift */; };
 		C2008A662ADFCB8B008C07AA /* CellSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */; };
 		C2008A692ADFDDA3008C07AA /* PopUPForSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */; };
@@ -212,6 +214,8 @@
 		BBA013E02AD69D610051BD7B /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		BF31F2E02AE8FFE000CD95D9 /* CreateItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemModel.swift; sourceTree = "<group>"; };
 		BF31F2E32AE9127400CD95D9 /* CreateItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemVM.swift; sourceTree = "<group>"; };
+		BF448AB22AEB494D002BCB98 /* DiscardItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardItemTVC.swift; sourceTree = "<group>"; };
+		BF448AB42AEB4E60002BCB98 /* PopUpDiscard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDiscard.swift; sourceTree = "<group>"; };
 		C2008A632ADFBADD008C07AA /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		C2008A652ADFCB8B008C07AA /* CellSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSelectViewController.swift; sourceTree = "<group>"; };
 		C2008A682ADFDDA3008C07AA /* PopUPForSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUPForSave.swift; sourceTree = "<group>"; };
@@ -576,6 +580,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BF448AAF2AEB4823002BCB98 /* DiscardItem */ = {
+			isa = PBXGroup;
+			children = (
+				BF448AB22AEB494D002BCB98 /* DiscardItemTVC.swift */,
+				BF448AB42AEB4E60002BCB98 /* PopUpDiscard.swift */,
+			);
+			path = DiscardItem;
+			sourceTree = "<group>";
+		};
 		C2008A572ADF9780008C07AA /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -799,6 +812,7 @@
 		DF6C006D2AE7D9F300CEB822 /* photo */ = {
 			isa = PBXGroup;
 			children = (
+				BF448AAF2AEB4823002BCB98 /* DiscardItem */,
 				DF6C006E2AE7D9F300CEB822 /* CollectionCell */,
 				DF6C00712AE7D9F300CEB822 /* TableViewCell */,
 			);
@@ -1431,6 +1445,7 @@
 				DFEDFA432AE79AE600BF3736 /* CategoryDemovable.swift in Sources */,
 				BB560DB42ADE4A1000DBB585 /* ReduisExtension.swift in Sources */,
 				DFDB68882AD65DBA006ECEE7 /* FirstEditSectionTableViewCell.swift in Sources */,
+				BF448AB52AEB4E60002BCB98 /* PopUpDiscard.swift in Sources */,
 				DFDB68712AD65DBA006ECEE7 /* Section1.swift in Sources */,
 				DFDB682B2AD65968006ECEE7 /* CategoryModel.swift in Sources */,
 				C26DA06F2AD92023008C2A37 /* AllTableViewController.swift in Sources */,
@@ -1455,6 +1470,7 @@
 				DFDB686F2AD65DBA006ECEE7 /* Section2.swift in Sources */,
 				C2008A662ADFCB8B008C07AA /* CellSelectViewController.swift in Sources */,
 				DF6C00782AE7D9F300CEB822 /* CategoryData.swift in Sources */,
+				BF448AB32AEB494D002BCB98 /* DiscardItemTVC.swift in Sources */,
 				C2008A6B2ADFDE07008C07AA /* PopSaveViewController.swift in Sources */,
 				DFDB68CF2AD67446006ECEE7 /* PayTableViewCell.swift in Sources */,
 				E3A891D32ADD25BC006E63C7 /* AddressTableViewCell.swift in Sources */,

@@ -72,14 +72,17 @@
                                                                             <constraint firstAttribute="width" constant="24" id="aWO-RR-V2e"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_clear" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system" title=" "/>
+                                                                        <connections>
+                                                                            <action selector="Discards:" destination="ijq-1R-3b2" eventType="touchUpInside" id="SDs-wu-Rek"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-H2-AC3">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="done" title=" "/>
                                                                         <connections>
                                                                             <action selector="uploadImageMore:" destination="ijq-1R-3b2" eventType="touchUpInside" id="Nvl-4q-SSh"/>
                                                                         </connections>
@@ -101,6 +104,7 @@
                                                             <size key="customSize" width="80" height="80"/>
                                                             <connections>
                                                                 <outlet property="btnAddImage" destination="MvN-H2-AC3" id="ENk-sS-i14"/>
+                                                                <outlet property="btnDiscard" destination="Yxj-Gz-Cdy" id="mFM-mg-zGi"/>
                                                                 <outlet property="uiImage" destination="uet-Hz-3HO" id="VyQ-F8-a2z"/>
                                                             </connections>
                                                         </collectionViewCell>
@@ -116,7 +120,7 @@
                                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                                         <color key="tintColor" red="0.40024790170000002" green="0.10268995910000001" blue="0.83926665779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_addPrimary_1" title=" "/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="dancing-banana.gif" title=" "/>
                                                                         <connections>
                                                                             <action selector="didTapPickerImage:" destination="VoC-KD-SuA" eventType="touchUpInside" id="dv1-k6-J8y"/>
                                                                         </connections>
@@ -208,7 +212,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ico_addPrimary" id="E2Z-md-KF8"/>
                     <navigationItem key="navigationItem" title="Add item" id="6lp-pj-aBD">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="iconav_close" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" landscapeImage="iconav_close" id="uvZ-yk-guv"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -330,16 +334,80 @@
             </objects>
             <point key="canvasLocation" x="1091" y="-709"/>
         </scene>
+        <!--DiscardItemTVC-->
+        <scene sceneID="5dk-3X-df4">
+            <objects>
+                <viewController storyboardIdentifier="DiscardItemTVC" title="DiscardItemTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MMi-GU-q7c" customClass="DiscardItemTVC" customModule="EasyCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JBN-W1-DP4">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discard the item?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihE-wG-ZMZ">
+                                <rect key="frame" x="138.66666666666669" y="75" width="152.66666666666669" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" id="dEP-bb-OyS">
+                                <rect key="frame" x="35" y="113" width="361" height="82.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-gQ-3zr">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="33.333333333333336"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Discard">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="Discard:" destination="MMi-GU-q7c" eventType="touchUpInside" id="c0g-fr-mlq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfF-Ba-3yv">
+                                        <rect key="frame" x="0.0" y="49.333333333333329" width="361" height="33.333333333333329"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue Editing">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="Editing:" destination="MMi-GU-q7c" eventType="touchUpInside" id="pw4-Eq-7w4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="qEq-Oy-zGt"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pJx-Sh-6Mn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="top" secondItem="pJx-Sh-6Mn" secondAttribute="top" constant="16" id="Isd-U7-p2K"/>
+                            <constraint firstItem="dEP-bb-OyS" firstAttribute="top" secondItem="ihE-wG-ZMZ" secondAttribute="bottom" constant="24" id="n1t-x3-5n6"/>
+                            <constraint firstItem="ihE-wG-ZMZ" firstAttribute="centerX" secondItem="JBN-W1-DP4" secondAttribute="centerX" id="ztY-de-P6q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnDiscard" destination="rbf-gQ-3zr" id="2e9-qB-P1x"/>
+                        <outlet property="btnEdit" destination="JfF-Ba-3yv" id="lKf-nb-pNN"/>
+                        <outlet property="lab1" destination="ihE-wG-ZMZ" id="7e6-N4-nM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tw5-7P-Grb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984.6511627906975" y="4.5064377682403434"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="zP1-MT-6I8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="dancing-banana.gif" width="365" height="360"/>
+        <image name="done" width="339" height="322"/>
         <image name="ico_addPrimary" width="38" height="38"/>
-        <image name="ico_addPrimary_1" width="38" height="38"/>
-        <image name="ico_clear" width="24" height="24"/>
         <image name="iconav_close" width="45" height="44"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -351,6 +419,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
