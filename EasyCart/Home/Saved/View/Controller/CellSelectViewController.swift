@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FittedSheets
 
 class CellSelectViewController: UIViewController, PopUp, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
@@ -53,10 +54,21 @@ class CellSelectViewController: UIViewController, PopUp, UICollectionViewDataSou
     }
       
     @IBAction func moreBtn(_ sender: Any) {
-        CellSelectViewController.Pop(from: self, in: nil)
-//        self.dismiss(animated: true, completion:{
-//            CellSelectViewController.Pop(from: self, in: nil)
-//        })
+        let useInlineMode = view != nil
+        let controller = UIStoryboard(name: "Storyboard1", bundle: nil).instantiateViewController(withIdentifier: "PopSaveViewController") as! PopSaveViewController
+        controller.vc1 = self
+        let options = SheetOptions(
+            shouldExtendBackground: true,
+            useFullScreenMode: true,
+            shrinkPresentingViewController: false,
+            useInlineMode: useInlineMode
+        )
+        
+        let sheetController = SheetViewController(controller: controller, options: options)
+        sheetController.allowPullingPastMaxHeight = false
+        sheetController.setSizes([.fixed(253)])
+
+        self.present(sheetController, animated: true, completion: nil)
     }
     
     @IBAction func AddMoreButton(_ sender: Any) {

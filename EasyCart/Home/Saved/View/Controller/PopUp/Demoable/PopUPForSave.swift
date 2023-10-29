@@ -39,7 +39,6 @@ extension PopUp {
         let useInlineMode = view != nil
         
         let controller = UIStoryboard(name: "Storyboard1", bundle: nil).instantiateViewController(withIdentifier: "PopSaveViewController") as! PopSaveViewController
-
         let options = SheetOptions(
             shouldExtendBackground: true,
             useFullScreenMode: true,
@@ -50,7 +49,7 @@ extension PopUp {
         
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
-        sheetController.setSizes([.fixed(253)])
+        sheetController.setSizes([.fixed(290)])
 
         parent.present(sheetController, animated: true, completion: nil)
         
