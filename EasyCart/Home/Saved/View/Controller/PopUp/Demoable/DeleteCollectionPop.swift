@@ -49,7 +49,7 @@ extension PopDelete {
         
         let sheetController = SheetViewController(controller: controller, options: options)
         sheetController.allowPullingPastMaxHeight = false
-        sheetController.setSizes([.fixed(252)])
+        sheetController.setSizes([.fixed(290)])
         
         
         parent.present(sheetController, animated: true, completion: nil)

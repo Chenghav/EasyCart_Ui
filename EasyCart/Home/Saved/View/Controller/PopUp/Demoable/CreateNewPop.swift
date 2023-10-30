@@ -35,6 +35,7 @@ extension CreatePop {
             previousSizeChanged?(sheet , size, height)
         }
     }
+    
     static func PopNew(from parent: UIViewController, in view: UIView?,btnName : String?, titleLab1: String?) {
         let useInlineMode = view != nil
         
@@ -53,7 +54,9 @@ extension CreatePop {
         sheetController.setSizes([.fixed(200)])
         
         
-        parent.present(sheetController, animated: true, completion: nil)
+        parent.present(sheetController, animated: true) {
+            
+        }
     }
 }
 
