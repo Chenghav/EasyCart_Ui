@@ -45,8 +45,6 @@ class SaveViewController: UIViewController, CreatePop, UISearchBarDelegate{
     @IBAction func CreateButton(_ sender: Any) {
         SaveViewController.PopNew(from: self, in: nil, btnName: "Create", titleLab1: "New Collection")
     }
-  
- 
 }
 
 extension SaveViewController : UICollectionViewDataSource, UICollectionViewDelegate {

@@ -1124,8 +1124,8 @@
 			children = (
 				52A704F82AEBA6D000A7BAFF /* TabMainViewController.swift */,
 				52A704F92AEBA6D000A7BAFF /* CollectionViewCell.swift */,
-				52A704FA2AEBA6D000A7BAFF /* HomeViewController.swift */,
 				52A704FB2AEBA6D000A7BAFF /* CutomCollectionViewCell.swift */,
+				52A704FA2AEBA6D000A7BAFF /* HomeViewController.swift */,
 				52A704FC2AEBA6D000A7BAFF /* CustomTabBar.swift */,
 				52A704FD2AEBA6D000A7BAFF /* CollectionViewController.swift */,
 			);

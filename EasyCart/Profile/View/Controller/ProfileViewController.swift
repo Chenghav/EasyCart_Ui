@@ -7,9 +7,7 @@
 
 import UIKit
 import FittedSheets
-
-
-
+import Alamofire
 
 class ProfileViewController: UIViewController,Demoable {
 
@@ -18,6 +16,8 @@ class ProfileViewController: UIViewController,Demoable {
     var section2 = [Section]()
     var section3 = [Section3]()
     
+    let url = URL(string: "http://110.74.194.123:6969/api/v1/user/userprofile")!
+    var user : userProfile?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,6 +35,33 @@ class ProfileViewController: UIViewController,Demoable {
         section3 = Section3s
         tableView.reloadData()
     }
+//    func getProfileData(){
+//        AF.request(url,method: .get).validate().responseJSON{
+//            response in
+//            if let jsonData = response.data {
+//                do{
+//                    let decoder = JSONDecoder()
+//                    let object = try decoder.decode(userProfile.self, from: jsonData)
+//                    
+//                    DispatchQueue.main.async{
+//                        if self.articles == nil {
+//                            self.articles = object
+//                        } else {
+//                            self.articles?.payload.append(contentsOf: object.payload ?? [])
+//                        }
+//                        self.tableView.reloadData()
+//                        self.FetchingData = false
+//                    }
+//                } catch {
+//                    print(error.localizedDescription)
+//                    self.FetchingData = false
+//                }
+//            } else if let error = response.error {
+//                print(error.localizedDescription)
+//                self.FetchingData = false
+//            }
+//        }
+//    }
     }
 
 
@@ -115,6 +142,21 @@ extension ProfileViewController : UITableViewDataSource, UITableViewDelegate {
                 return 34
             }
         }
+    struct userProfile: Codable {
+        let payload: Payload
+        let message: String
+        let code: Int
+        let error: Bool
+        let date: String
+    }
+
+    struct Payload: Codable {
+        let id: Int
+        let name, email, password, phoneNumber: String
+        let profilePhoto: String
+        let status: Bool
+        let googleLink, maplink, createDate, shopAdress: String
+    }
 }
 
 

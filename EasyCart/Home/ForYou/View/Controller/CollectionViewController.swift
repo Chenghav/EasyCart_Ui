@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class CollectionViewController: UIViewController{
 
     // MARK:  - Properties -
@@ -77,5 +79,9 @@ extension CollectionViewController:  UICollectionViewDataSource,UICollectionView
                    return cell
                }
         }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "SentTo", sender: self)
+print("Hrloooo")
+    }
 }
 

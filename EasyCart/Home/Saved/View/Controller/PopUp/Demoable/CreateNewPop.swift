@@ -53,10 +53,14 @@ extension CreatePop {
         sheetController.allowPullingPastMaxHeight = false
         sheetController.setSizes([.fixed(200)])
         
-        
-        parent.present(sheetController, animated: true) {
-            
+        let pop1 = parent as! PopSaveViewController
+        pop1.dismiss(animated: true){
+            pop1.vc1?.present(sheetController, animated: true)
         }
+        
+        let pop2 = parent as! SaveViewController
+        pop2.present(sheetController, animated: true, completion: nil)
+        
     }
 }
 

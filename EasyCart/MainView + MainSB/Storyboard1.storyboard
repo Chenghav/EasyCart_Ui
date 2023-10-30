@@ -63,7 +63,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="H9M-4X-CzZ">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="e5p-jm-0oH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2iM-mx-tmL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2iM-mx-tmL">
                                 <rect key="frame" x="16" y="7" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -85,6 +85,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOk-OI-e0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1770.2290076335878" y="725.35211267605632"/>
+        </scene>
+        <!--ViewDetailCV-->
+        <scene sceneID="JSd-Wt-eBQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ViewDetailCV" storyboardName="ViewDetail" referencedIdentifier="ViewDetailCV" id="TVz-4L-tB2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kPx-KM-wCJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haw-tJ-ceP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4369" y="1626"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="3Xz-CU-N6u">
@@ -173,13 +183,15 @@
                             <constraint firstAttribute="bottom" secondItem="a7M-ua-0WL" secondAttribute="bottom" id="prk-CG-vdm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dLB-Mq-Pht"/>
                     <connections>
                         <outlet property="collectionView" destination="a7M-ua-0WL" id="fju-fl-r6L"/>
+                        <segue destination="TVz-4L-tB2" kind="show" identifier="SentTo" id="TjM-jP-pQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJN-Tj-VOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4445" y="1470"/>
+            <point key="canvasLocation" x="-3518.320610687023" y="1469.7183098591549"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="5ix-Og-l0q">
@@ -319,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ns3-Le-bhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2747.3282442748091" y="1469.7183098591549"/>
+            <point key="canvasLocation" x="-1820.6106870229007" y="1469.7183098591549"/>
         </scene>
         <!--Cell Select View Controller-->
         <scene sceneID="6Mr-2U-cxu">
@@ -503,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtT-Nm-ggq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1825" y="1470"/>
+            <point key="canvasLocation" x="-898.47328244274809" y="1469.7183098591549"/>
         </scene>
         <!--H-->
         <scene sceneID="HlE-Br-Okk">
@@ -595,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39m-VX-ZIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-985" y="1470"/>
+            <point key="canvasLocation" x="-58.778625954198468" y="1469.7183098591549"/>
         </scene>
         <!--All Posts-->
         <scene sceneID="34O-3c-5Xl">
@@ -741,7 +753,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eN-Bo-ciZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-211.4503816793893" y="1469.7183098591549"/>
+            <point key="canvasLocation" x="715.26717557251902" y="1469.7183098591549"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="k52-yP-7on">
@@ -933,13 +945,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete this collection?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orz-Se-1Ff">
-                                <rect key="frame" x="46" y="59" width="303" height="24"/>
+                                <rect key="frame" x="46" y="59" width="300" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwp-12-aVa">
-                                <rect key="frame" x="46" y="107" width="303" height="33.666666666666657"/>
+                                <rect key="frame" x="46" y="107" width="300" height="33.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Q4N-bi-Onh"/>
                                 </constraints>
@@ -950,10 +962,10 @@ will still be saved in All Posts.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="66S-Zw-w93">
-                                <rect key="frame" x="16" y="164.66666666666666" width="361" height="103.99999999999997"/>
+                                <rect key="frame" x="16" y="164.66666666666666" width="358" height="103.99999999999997"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw4-fn-iuH">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="04u-7y-izg"/>
@@ -971,7 +983,7 @@ will still be saved in All Posts.</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0M-Hm-EPB">
-                                        <rect key="frame" x="0.0" y="60" width="361" height="44"/>
+                                        <rect key="frame" x="0.0" y="60" width="358" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="fdN-dw-ZCI"/>
@@ -1626,7 +1638,7 @@ CQ
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0i-pQ-mCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2263" y="1453"/>
+            <point key="canvasLocation" x="3188.5496183206105" y="1452.8169014084508"/>
         </scene>
         <!--Items Details-->
         <scene sceneID="t99-rt-mjs">
@@ -1667,7 +1679,7 @@ CQ
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Uz-aY-VKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3999" y="1451"/>
+            <point key="canvasLocation" x="4924.4274809160306" y="1450.7042253521126"/>
         </scene>
         <!--All Table View Controller-->
         <scene sceneID="AZj-Tt-6df">
@@ -1801,7 +1813,7 @@ CQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySs-zo-Md4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="uU1-Ea-ffJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4921" y="1451"/>
+            <point key="canvasLocation" x="5846.5648854961828" y="1450.7042253521126"/>
         </scene>
         <!--Home-->
         <scene sceneID="Lsl-9S-8UA">
@@ -1882,7 +1894,7 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8u-98-kW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3173" y="1453"/>
+            <point key="canvasLocation" x="4098.4732824427483" y="1452.8169014084508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TwQ-lr-oQJ">
@@ -1900,7 +1912,7 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4l-i4-7zX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3608" y="1470"/>
+            <point key="canvasLocation" x="-2681.679389312977" y="1469.7183098591549"/>
         </scene>
     </scenes>
     <resources>
@@ -1929,13 +1941,13 @@ CQ
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

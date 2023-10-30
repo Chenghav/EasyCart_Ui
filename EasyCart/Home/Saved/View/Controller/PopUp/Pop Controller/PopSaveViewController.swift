@@ -21,24 +21,7 @@ class PopSaveViewController: UIViewController, CreatePop, PopDelete{
         View2.heightAnchor.constraint(equalToConstant: 52).isActive = true
     }
     @IBAction func EditCollectionName(_ sender: Any) {
-                let useInlineMode = view != nil
-                
-                let controller = UIStoryboard(name: "Storyboard1", bundle: nil).instantiateViewController(withIdentifier: "CreateNewViewController") as! CreateNewViewController
-                let options = SheetOptions(
-                    shouldExtendBackground: true,
-                    useFullScreenMode: true,
-                    shrinkPresentingViewController: false,
-                    useInlineMode: useInlineMode
-                )
-                
-                let sheetController = SheetViewController(controller: controller, options: options)
-                sheetController.allowPullingPastMaxHeight = false
-                sheetController.setSizes([.fixed(220)])
-                let pop2 = self
-                self.dismiss(animated: true){
-                    pop2.vc1.present(sheetController, animated: true, completion: nil)
-                }
-
+        PopSaveViewController.PopNew(from: self, in: nil, btnName: "Done", titleLab1: "Edit")
     }
     
     @IBAction func DeleteCollectionBtn(_ sender: Any) {
