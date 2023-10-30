@@ -7,12 +7,13 @@
 
 import UIKit
 struct ProductDetailModel {
-    var condition: String
-    var brand: String
-    var model: String
-    var colore: String
-    var year: String
-    var size: String
-    var type: String
-    var discription: String
+    var condition   : String? = "condition"
+    var brand       : String? = "brand"
+    var model       : String? = "model"
+    var colore      : String? = "colore"
+    var year        : String? = "year"
+    var size        : String? = "size"
+    var type        : String? = "type"
+    var discription : String? = "discription"
 }
+

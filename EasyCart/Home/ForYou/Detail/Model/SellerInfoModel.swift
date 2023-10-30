@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct SellerInfoTableCell {
+struct SellerInfoModel {
     var username        : String
     var email           : String
     var phoneNumber     : String
