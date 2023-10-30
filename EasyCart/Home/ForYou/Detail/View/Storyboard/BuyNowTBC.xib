@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="BuyNowTBC" customModule="EasyCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8g-YD-2jT">
+                        <rect key="frame" x="0.0" y="6" width="267" height="44"/>
+                        <color key="backgroundColor" red="0.40000003579999999" green="0.1019607931" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="267" id="5iZ-Pf-E6P"/>
+                            <constraint firstAttribute="height" constant="44" id="Sed-xm-oWH"/>
+                        </constraints>
+                        <color key="tintColor" red="0.95686274770000002" green="0.96078431610000004" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Buy Now">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcG-dd-wdJ">
+                        <rect key="frame" x="272" y="6" width="72" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="vHo-Q5-DKb"/>
+                            <constraint firstAttribute="height" constant="44" id="vgt-VM-8QS"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <imageReference key="image" image="bookmark.fill" catalog="system" symbolScale="small"/>
+                            <attributedString key="attributedTitle">
+                                <fragment content="  Save">
+                                    <attributes>
+                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="widthBorder">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="SavebtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CUa-Xa-NQc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274770000002" green="0.96078431610000004" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="e8g-YD-2jT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Hql-Fi-A4F"/>
+                    <constraint firstItem="NcG-dd-wdJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="l0A-SY-gh3"/>
+                    <constraint firstItem="e8g-YD-2jT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p5P-H0-tu9"/>
+                    <constraint firstAttribute="trailing" secondItem="NcG-dd-wdJ" secondAttribute="trailing" constant="14" id="pKz-TH-VnQ"/>
+                    <constraint firstItem="NcG-dd-wdJ" firstAttribute="leading" secondItem="e8g-YD-2jT" secondAttribute="trailing" constant="5" id="rY6-jc-74f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buy" destination="e8g-YD-2jT" id="V5L-tR-ZHy"/>
+            </connections>
+            <point key="canvasLocation" x="140.45801526717557" y="9.8591549295774659"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
+    </resources>
+</document>

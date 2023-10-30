@@ -1,14 +1,17 @@
 //
-//  LocationTBC.swift
+//  ProductDataTableViewCell.swift
 //  EasyCart
 //
-//  Created by Hen Ty on 22/10/23.
+//  Created by Hen Ty on 26/10/23.
 //
 
 import UIKit
 
-class LocationTBC: UITableViewCell {
+class ProductDataTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewCell: UIView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var data: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +22,5 @@ class LocationTBC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

@@ -9,15 +9,27 @@ import UIKit
 
 class ProductInfoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewCell: UIView!
+    @IBOutlet weak var statusButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setExpanded()
+        setCollapsed()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+  
 
-        // Configure the view for the selected state
+    func setExpanded() {
+        statusButton.setImage(UIImage(named: "chevright"), for: .normal)
     }
 
+    func setCollapsed() {
+        statusButton.setImage(UIImage(named: "chevbuttom") , for: .normal)
+    }
+    
+    
 }
+
