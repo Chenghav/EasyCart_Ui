@@ -12,6 +12,7 @@ protocol MoreDetailTVCDelegate: AnyObject {
 class MoreDetailTVC: UITableViewCell {
     
     var delegate: MoreDetailTVCDelegate?
+    
     @IBOutlet weak var headerTitle: UILabel!
     @IBOutlet weak var expandbtn: UIButton!
     

@@ -8,14 +8,16 @@
 import Foundation
 import UIKit
 
-class CategoryData{
+enum Rowtypes : Int , CaseIterable {
+    case CategotySelec
+}
+
+struct CategoryData{
     var image: UIImage
     var title: String
     var desc: String
-    
-    init(image: UIImage, title: String, desc: String) {
-        self.image = image
-        self.title = title
-        self.desc = desc
-    }
+    var rowType: Rowtypes
+}
+struct CategoriesModel <T> {
+    var value : T
 }

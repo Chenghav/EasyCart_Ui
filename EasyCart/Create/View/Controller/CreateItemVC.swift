@@ -12,12 +12,16 @@ protocol CreateItemViewDelegate {
 }
 
 class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailTVCDelegate{
+    
+    func didToggleExpansionState() {
+        return tableView.reloadData()
+    }
+    
     func didSelectInfoCell() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
     
     let nameLabel = UILabel()
     let detailLabel = UILabel()
@@ -36,9 +40,6 @@ class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailT
     func didSelectCollectionCell() {
         CreateItemVC.openDemo(from: self, in: nil, btnName: "Button Name", titleLab1: "Title Label 1")
     }
-    func didToggleExpansionState() {
-        tableView.reloadData()
-    }
     
     @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -53,6 +54,7 @@ class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailT
         tableView.register(UINib(nibName: "PriceTVC", bundle: nil), forCellReuseIdentifier: "PriceTVC")
         tableView.register(UINib(nibName: "MoreDetailTVC", bundle: nil), forCellReuseIdentifier: "MoreDetailTVC")
         tableView.register(UINib(nibName: "ExpanableTVC", bundle: nil), forCellReuseIdentifier: "ExpanableTVC")
+        
         createItemVM.initData()
         tableView.delegate = self
         tableView.dataSource = self
@@ -154,6 +156,12 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }else if indexPath.section == 1{
             if indexPath.row  == 3{
                 return 62
+            }else if indexPath.row == 4 {
+                if isExpanded {
+                    return 200
+                } else {
+                    return 50
+                }
             }else{
                 return 50
             }

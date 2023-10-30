@@ -13,7 +13,7 @@ class CategoryTC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    var models = [CategoryData]()
+    var models = CategoriesVM()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,50 +22,31 @@ class CategoryTC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+//        tableView.register(CategoryTVC.self, forCellReuseIdentifier: "CategoryTVC")
         
-        if let imageDrinks = UIImage(named: "ico_drinks") {
-            models.append(CategoryData(image: imageDrinks, title: "Vehicle", desc: "Motor, car, truck, etc."))
-        }
-
-        if let imageIcon = UIImage(named: "icon_1") {
-            models.append(CategoryData(image: imageIcon, title: "Vehicle", desc: "Motor, car, truck, etc."))
-        }
-
-        if let imageDevices = UIImage(named: "ico_devices_1") {
-            models.append(CategoryData(image: imageDevices, title: "Electronic devices", desc: "Smartphone, tablet, laptop, etc."))
-        }
-
-        if let imageHouse = UIImage(named: "ico_house_1") {
-            models.append(CategoryData(image: imageHouse, title: "Properties", desc: "House, condo, land, etc."))
-        }
-
-        if let imageFan = UIImage(named: "ico_fan") {
-            models.append(CategoryData(image: imageFan, title: "Furniture", desc: "Table, refrigerator, drawer, etc."))
-        }
-
-        if let imagePaw = UIImage(named: "ico_paw") {
-            models.append(CategoryData(image: imagePaw, title: "Pet", desc: "Dog, cat, bird, etc."))
-        }
-
-        if let imageGuitar = UIImage(named: "ico_guitar") {
-            models.append(CategoryData(image: imageGuitar, title: "Hobbies", desc: "Guitar, stickers, posters, etc."))
-        }
-
+        models.initData()
     }
 
 }
 
 extension CategoryTC: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return models.categoryCell.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryTVC
-        cell.configure(with: models[indexPath.row])
-        return cell
+        let data = models.categoryCell[indexPath.row].value as! CategoryData
+        switch data.rowType {
+        case .CategotySelec:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTVC", for: indexPath) as! CategoryTVC
+            cell.configure(with: data)
+            cell.selectionStyle = .none
+            return cell
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 79
