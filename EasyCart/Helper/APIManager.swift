@@ -26,7 +26,8 @@ class APIManager {
                     }
                     print("login response \(json)")
                 } catch {
-                    print("error \(error)")
+                    print("error \(error.localizedDescription)")
+                    completionHandler(false)
                 }
             case .failure(let err):
                 print(err.localizedDescription)

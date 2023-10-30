@@ -18,7 +18,7 @@ class ViewController: UIViewController, UINavigationBarDelegate {
     // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBar.delegate = self
+        //        navigationController?.navigationBar.delegate = self
         let topColor = #colorLiteral(red: 0.9333333333, green: 0.8980392157, blue: 0.9843137255, alpha: 1)
         let bottomColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let gradientLayer = CAGradientLayer()
@@ -46,11 +46,25 @@ class ViewController: UIViewController, UINavigationBarDelegate {
     
     // MARK: - Outlet Actions -
     @IBAction func googleConection(_ sender: Any) {
+        
+        // Create and start the activity indicator
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.center = view.center
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        
+        
         GIDSignIn.sharedInstance.signIn(withPresenting: self)
         { result, error in
+            
+            defer {
+                activityIndicator.stopAnimating()
+                activityIndicator.removeFromSuperview()
+            }
+            
             guard error == nil else {
-                // ...
-                print("error NIL")
+                // Handle error condition
+                print("Google Sign-In Error: \(error!)")
                 return
             }
             guard let user = result?.user,
@@ -76,7 +90,7 @@ class ViewController: UIViewController, UINavigationBarDelegate {
                     secondViewController.modalPresentationStyle = .fullScreen
                     self.present(secondViewController, animated: true, completion: nil)
                 } else {
-                    print("error \(error)")
+                    print("error")
                 }
             }
             
@@ -88,7 +102,6 @@ class ViewController: UIViewController, UINavigationBarDelegate {
                 }
                 else{
                     print("credential \(credential)")
-                    
                 }
                 return
             }
