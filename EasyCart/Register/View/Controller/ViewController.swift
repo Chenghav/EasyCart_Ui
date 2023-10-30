@@ -10,12 +10,15 @@ import GoogleSignIn
 import FirebaseAuth
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationBarDelegate {
     
     @IBOutlet weak var googleBtn: UIButton!
     @IBOutlet var viewMain: UIView!
+    
+    // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationController?.navigationBar.delegate = self
         let topColor = #colorLiteral(red: 0.9333333333, green: 0.8980392157, blue: 0.9843137255, alpha: 1)
         let bottomColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let gradientLayer = CAGradientLayer()
@@ -41,7 +44,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+    // MARK: - Outlet Actions -
     @IBAction func googleConection(_ sender: Any) {
         GIDSignIn.sharedInstance.signIn(withPresenting: self)
         { result, error in
@@ -56,12 +59,28 @@ class ViewController: UIViewController {
             else {
                 return
             }
-            print("IDToken \(idToken) IDToken")
-            print("UUI \(user.userID)")
-            print("username \(user.profile?.name)")
-            print("email \(user.profile?.email)")
+            
+            guard let userName = user.profile?.name else { return }
+            guard let email = user.profile?.email else { return }
+            guard let password = user.userID else { return }
+            guard let photoProfile = user.profile?.imageURL(withDimension: 200)?.absoluteString else { return }
+            
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,                                                 accessToken: user.accessToken.tokenString)
-            print(user)
+            // call register endPoint
+            let register = RegisterModel(userName: userName, email: email, password: password, phoneNumber: "null", address: "null", photoProfile: photoProfile, role: "USER", googleLink: "google.com", maplink: "null")
+            APIManager.shareInstant.RegisterAPI(register: register) {
+                (isSuccess) in
+                if isSuccess {
+                    let storyboard = UIStoryboard(name: "Storyboard1", bundle: nil)
+                    let secondViewController = storyboard.instantiateViewController(withIdentifier: "TabMainViewController")
+                    secondViewController.modalPresentationStyle = .fullScreen
+                    self.present(secondViewController, animated: true, completion: nil)
+                } else {
+                    print("error \(error)")
+                }
+            }
+            
+            
             Auth.auth().signIn(with: credential){_,_ in
                 if let error = error {
                     print("Firebase Authentication Error: \(error.localizedDescription)")
@@ -69,10 +88,7 @@ class ViewController: UIViewController {
                 }
                 else{
                     print("credential \(credential)")
-                    let storyboard = UIStoryboard(name: "Storyboard1", bundle: nil)
-                    let secondViewController = storyboard.instantiateViewController(withIdentifier: "TabMainViewController")
-                    secondViewController.modalPresentationStyle = .fullScreen
-                    self.present(secondViewController, animated: true, completion: nil)
+                    
                 }
                 return
             }
