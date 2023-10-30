@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ProductViewData {
+struct ProductViewDataModel {
     var productId             : String?
     var productName           : String?
     var productPrice          : String?

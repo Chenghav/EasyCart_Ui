@@ -6,7 +6,7 @@
 //
 
 import UIKit
-struct Location{
-    var googleLink: String
-    var mapLink: UIImage
+struct LocationModel {
+    var googleLink  : String
+    var mapLink     : UIImage
 }
