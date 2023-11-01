@@ -9,7 +9,8 @@ import UIKit
 
 class DiscountTVC: UITableViewCell {
     @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbInput: UILabel!
+    
+    @IBOutlet weak var lbInput: UITextField!
     
     static let identifier = "DiscountTVC"
         static func nib() -> UINib{
@@ -25,6 +26,7 @@ class DiscountTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        lbInput.placeholder = "0%"
     }
     func configureDiscout(with data: CreateItemInfo){
         self.lbName.text = data.name

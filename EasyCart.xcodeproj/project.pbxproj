@@ -132,6 +132,7 @@
 		52A705152AEBA75E00A7BAFF /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A705142AEBA75E00A7BAFF /* Storyboard1.storyboard */; };
 		5801A003D6A59B116B522EAD /* Pods_EasyCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72E31C801B2E37511FFBB0E /* Pods_EasyCart.framework */; };
 		BB560DB42ADE4A1000DBB585 /* ReduisExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB560DB32ADE4A1000DBB585 /* ReduisExtension.swift */; };
+		BF30A5892AF288E2001584B7 /* DescTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30A5882AF288E2001584B7 /* DescTVC.swift */; };
 		BF9172022AEF56EC00C3C8CC /* CategoriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9172012AEF56EC00C3C8CC /* CategoriesVM.swift */; };
 		C26D6A102AD67CFF000235A8 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C26D6A0F2AD67CFF000235A8 /* FittedSheets */; };
 		C26DA06D2AD7DBDA008C2A37 /* BankPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */; };
@@ -324,6 +325,7 @@
 		52A705142AEBA75E00A7BAFF /* Storyboard1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
 		BB560DB32ADE4A1000DBB585 /* ReduisExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduisExtension.swift; sourceTree = "<group>"; };
 		BB831188FF68C10D1F85536C /* Pods-EasyCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCart.debug.xcconfig"; path = "Target Support Files/Pods-EasyCart/Pods-EasyCart.debug.xcconfig"; sourceTree = "<group>"; };
+		BF30A5882AF288E2001584B7 /* DescTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescTVC.swift; sourceTree = "<group>"; };
 		BF9172012AEF56EC00C3C8CC /* CategoriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVM.swift; sourceTree = "<group>"; };
 		C26DA06C2AD7DBDA008C2A37 /* BankPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPopViewController.swift; sourceTree = "<group>"; };
 		C26DA06E2AD92023008C2A37 /* AllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 		5206DF3E2AEBAEF000AE6373 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				BF30A5872AF288BD001584B7 /* Desc */,
 				5206DF3F2AEBAEF000AE6373 /* category */,
 				5206DF412AEBAEF000AE6373 /* Info */,
 				5206DF542AEBAEF000AE6373 /* photo */,
@@ -1058,6 +1061,14 @@
 				BB560DB32ADE4A1000DBB585 /* ReduisExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF30A5872AF288BD001584B7 /* Desc */ = {
+			isa = PBXGroup;
+			children = (
+				BF30A5882AF288E2001584B7 /* DescTVC.swift */,
+			);
+			path = Desc;
 			sourceTree = "<group>";
 		};
 		C2008A572ADF9780008C07AA /* PopUp */ = {
@@ -1603,6 +1614,7 @@
 				DFDB67532AD65046006ECEE7 /* SceneDelegate.swift in Sources */,
 				DFDB68732AD65DBA006ECEE7 /* ThirdSection.swift in Sources */,
 				DFDB68352AD65B1A006ECEE7 /* ExploreViewController.swift in Sources */,
+				BF30A5892AF288E2001584B7 /* DescTVC.swift in Sources */,
 				52A704162AEB8B5D00A7BAFF /* PopularNibCell.swift in Sources */,
 				5206DF642AEBAEF000AE6373 /* CategoryData.swift in Sources */,
 				52A705002AEBA6D000A7BAFF /* DataOfItem.swift in Sources */,

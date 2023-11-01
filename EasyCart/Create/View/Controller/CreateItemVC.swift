@@ -14,8 +14,11 @@ protocol CreateItemViewDelegate {
 class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailTVCDelegate{
     
     func didToggleExpansionState() {
-        return tableView.reloadData()
+        isExpanded = !isExpanded
+        isExpanded.toggle()
+        tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
     }
+    
     
     func didSelectInfoCell() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CategoryTC") as? CategoryTC{
@@ -31,8 +34,7 @@ class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailT
     var isExpandable = false
     var sectionIndex = -1
     var createItemVM = CreateItemVM()
-    var didCollapse : Bool?
-    var isExpanded = false
+    var isExpanded: Bool = false
     func didTapCell(){
         print("success")
     }
@@ -43,7 +45,6 @@ class CreateItemVC: UIViewController, InfoTVCDelegate, PopUpDiscard, MoreDetailT
     
     @IBOutlet weak var btnPost: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
     // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -134,8 +135,6 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
                 labelCel.selectionStyle = .none
                 labelCel.configureMoreDetail(with: data)
                 labelCel.delegate = self
-//                labelCel.expandbtn.addTarget(self, action: #selector(didCollapeCell), for: .touchUpInside)
-//                self.indexPathDiselect = indexPath
                 return labelCel
             case .CategoryMoreDetail:
                 let labelCel = tableView.dequeueReusableCell(withIdentifier: "ExpanableTVC", for: indexPath) as! ExpanableTVC
@@ -156,8 +155,8 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
         }else if indexPath.section == 1{
             if indexPath.row  == 3{
                 return 62
-            }else if indexPath.row == 4 {
-                if isExpanded {
+            }else if indexPath.row == 4{
+                if isExpanded == true{
                     return 200
                 } else {
                     return 50
@@ -171,7 +170,18 @@ extension CreateItemVC: UITableViewDelegate, UITableViewDataSource{
     }
     // MARK: - Expanable didSelectRowAt -
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 1 && indexPath.row == 4{
+            if sectionIndex == indexPath.row{
+                if isExpandable == false{
+                    return isExpanded = true
+                }else{
+                    return isExpanded = false
+                }
+            }else{
+                return isExpanded = true
+            }
+            return sectionIndex = indexPath.row
             didToggleExpansionState()
         }
     }

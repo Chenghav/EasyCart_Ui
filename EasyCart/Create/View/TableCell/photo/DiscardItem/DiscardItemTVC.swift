@@ -11,7 +11,6 @@ class DiscardItemTVC: UIViewController {
     
     @IBOutlet weak var btnDiscard: UIButton!
     @IBOutlet weak var btnEdit: UIButton!
-    @IBOutlet weak var lab1: UILabel!
     var titleButton : String?
     var titleLab : String?
     
@@ -21,12 +20,15 @@ class DiscardItemTVC: UIViewController {
         btnDiscard.layer.cornerRadius = 10
         btnEdit.layer.cornerRadius = 10
         btnDiscard.setTitle(titleButton, for: .normal)
-        lab1.text = titleLab
         btnEdit.heightAnchor.constraint(equalToConstant: 44).isActive = true
         btnDiscard.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        btnEdit.backgroundColor = .clear
+        btnEdit.layer.cornerRadius = 10
+        btnEdit.layer.borderWidth = 1
+        btnEdit.layer.borderColor = UIColor.black.cgColor
     }
     @IBAction func Discard(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
     }
     @IBAction func Editing(_ sender: Any) {
         dismiss(animated: true, completion: nil)

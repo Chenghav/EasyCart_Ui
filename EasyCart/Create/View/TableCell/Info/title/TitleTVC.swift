@@ -20,6 +20,7 @@ class TitleTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        lbInput.placeholder = "Input"
     }
     func configureTitle(with data : CreateItemInfo ){
         self.lbTitle.text = data.name

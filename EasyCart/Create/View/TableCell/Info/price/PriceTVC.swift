@@ -18,8 +18,18 @@ class PriceTVC: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
+        input.placeholder = "$0.00"
+        input.keyboardType = .numberPad
+        
+        // Create a NumberFormatter object.
+        let numberFormatter = NumberFormatter()
+        
+        // Set the number style of the NumberFormatter object.
+        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.numberStyle = .currency
     }
     func configurePrice(with data : CreateItemInfo){
         self.LbTitle.text = data.name
