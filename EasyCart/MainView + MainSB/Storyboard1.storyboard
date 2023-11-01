@@ -1381,6 +1381,7 @@ CQ
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView1" destination="qba-Ba-ZJr" id="wFO-9x-ezx"/>
                         <outlet property="tableView" destination="pjd-PG-Npq" id="ENU-QE-njO"/>
                     </connections>
                 </viewController>

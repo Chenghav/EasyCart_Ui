@@ -8,6 +8,7 @@
 import UIKit
 import FittedSheets
 import Alamofire
+import Kingfisher
 
 class ProfileViewController: UIViewController,Demoable {
 
@@ -17,9 +18,13 @@ class ProfileViewController: UIViewController,Demoable {
     var section3 = [Section3]()
     
     let url = URL(string: "http://110.74.194.123:6969/api/v1/user/userprofile")!
-    var user : userProfile?
+    let headers: HTTPHeaders = ["Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJseWNoZW5naGF2c2xveUBnbWFpbC5jb20iLCJpYXQiOjE2OTg2NTAyODUsImV4cCI6MTY5ODczNjY4NX0.Kam8A3U2JSjNcp-AP4vSzbR-9IcnVK9nz36UsfT7BFM"]
+    var user: [Payload] = []
+    var test : Payload?
+    var FetchingData: Bool = false
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageView1: UIImageView!
     
     // MARK:  - Life Cycle -
     override func  viewDidLoad() {
@@ -34,34 +39,32 @@ class ProfileViewController: UIViewController,Demoable {
         section2 = Sections
         section3 = Section3s
         tableView.reloadData()
+        getProfileData()
     }
-//    func getProfileData(){
-//        AF.request(url,method: .get).validate().responseJSON{
-//            response in
-//            if let jsonData = response.data {
-//                do{
-//                    let decoder = JSONDecoder()
-//                    let object = try decoder.decode(userProfile.self, from: jsonData)
-//                    
-//                    DispatchQueue.main.async{
-//                        if self.articles == nil {
-//                            self.articles = object
-//                        } else {
-//                            self.articles?.payload.append(contentsOf: object.payload ?? [])
-//                        }
-//                        self.tableView.reloadData()
-//                        self.FetchingData = false
-//                    }
-//                } catch {
-//                    print(error.localizedDescription)
-//                    self.FetchingData = false
-//                }
-//            } else if let error = response.error {
-//                print(error.localizedDescription)
-//                self.FetchingData = false
-//            }
-//        }
-//    }
+    func getProfileData() {
+        AF.request(url, method: .get, headers: headers).validate().responseJSON { response in
+            if let jsonData = response.data {
+                do {
+                    let decoder = JSONDecoder()
+                    let object = try decoder.decode(userProfile.self, from: jsonData)
+                    
+                    DispatchQueue.main.async {
+//                        self.user.append(object.payload)
+                        self.title = object.payload.name
+                        self.tableView.reloadData()
+                        self.FetchingData = false
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                    self.FetchingData = false
+                }
+            } else if let error = response.error {
+                print(error.localizedDescription)
+                self.FetchingData = false
+            }
+        }
+    }
+
     }
 
 
@@ -85,7 +88,6 @@ extension ProfileViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let currentSection = indexPath.section
-        
         if currentSection == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Section1TableViewCell", for: indexPath) as! Section1TableViewCell
             cell.config(with: section1[indexPath.row])

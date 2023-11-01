@@ -6,10 +6,14 @@
 //
 
 import UIKit
-//import FittedSheets
+import Alamofire
 
 class EditProfileViewController: UIViewController,Demoable{
     
+    let url = URL(string: "http://110.74.194.123:6969/api/v1/user/userprofile")!
+    let headers: HTTPHeaders = ["Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJseWNoZW5naGF2c2xveUBnbWFpbC5jb20iLCJpYXQiOjE2OTg2NTAyODUsImV4cCI6MTY5ODczNjY4NX0.Kam8A3U2JSjNcp-AP4vSzbR-9IcnVK9nz36UsfT7BFM"]
+    var user: Payload?
+    var FetchingData: Bool = false
     
     // MARK:  - Properties -
     var FirstSec  = [FirstSection]()
@@ -36,6 +40,7 @@ class EditProfileViewController: UIViewController,Demoable{
         SecondSec = secondSection
         ThirdSec  = thirdSection
         tableView.reloadData()
+        getProfileData()
     }
     
     // MARK:  - Outlet Actions -
@@ -43,6 +48,29 @@ class EditProfileViewController: UIViewController,Demoable{
         self.navigationController?.popViewController(animated: true)
     }
 
+    func getProfileData() {
+        AF.request(url, method: .get, headers: headers).validate().responseJSON { response in
+            if let jsonData = response.data {
+                do {
+                    let decoder = JSONDecoder()
+                    let object = try decoder.decode(userProfile.self, from: jsonData)
+                    
+                    DispatchQueue.main.async {
+//                        self.user.append(object.payload)
+                        self.user = object.payload
+                        self.tableView.reloadData()
+                        self.FetchingData = false
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                    self.FetchingData = false
+                }
+            } else if let error = response.error {
+                print(error.localizedDescription)
+                self.FetchingData = false
+            }
+        }
+    }
 }
 
 // MARK:  - UITableViewDataSource and UITableViewDelegate -
@@ -64,8 +92,24 @@ extension EditProfileViewController : UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FirstEditSectionTableViewCell", for: indexPath) as! FirstEditSectionTableViewCell
-            cell.setUp(with: FirstSec[indexPath.row])
-            if indexPath.row == 4 {
+            if indexPath.row == 0 {
+                cell.FirstLab.text  = "Name"
+                cell.SecondLab.text = user?.name
+            }else if indexPath.row == 1{
+                cell.FirstLab.text  = "Email"
+                cell.SecondLab.text = user?.email
+            }else if indexPath.row == 2{
+                cell.SecondLab.text = user?.phoneNumber
+                cell.FirstLab.text  = "Phone No."
+            } else if indexPath.row == 3 {
+                let passwordLength = user?.password.count ?? 0
+                let maskedPassword = String(repeating: "*", count: min(passwordLength, 10))
+                cell.SecondLab.text = maskedPassword
+                cell.FirstLab.text  = "Password"
+                cell.SecondLab.textColor = .black
+            }else if indexPath.row == 4 {
+                cell.SecondLab.text = user?.googleLink
+                cell.FirstLab.text  = "Google Link"
                 cell.SecondLab.textColor = #colorLiteral(red: 0.5210024118, green: 0.2106079459, blue: 0.9001228213, alpha: 1)
             }
             cell.selectionStyle = .none
@@ -74,12 +118,13 @@ extension EditProfileViewController : UITableViewDataSource, UITableViewDelegate
             let currentIndex = indexPath.row
             if currentIndex < SecondSec.count {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SecondSectionTableViewCell", for: indexPath) as! SecondSectionTableViewCell
-                cell.config(with: SecondSec[currentIndex])
+                cell.AddressDetail.text = user?.shopAdress
                 cell.selectionStyle = .none
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdCellsTableViewCell", for: indexPath) as! ThirdCellsTableViewCell
-                cell.setUps(with: ThirdSec[currentIndex - SecondSec.count])
+                cell.Linked.text = user?.maplink
+//                cell.setUps(with: ThirdSec[currentIndex - SecondSec.count])
                 cell.selectionStyle = .none
                 return cell
             }
@@ -119,5 +164,20 @@ extension EditProfileViewController : UITableViewDataSource, UITableViewDelegate
         }
         return 0
     }
+struct userProfile: Codable {
+    let payload: Payload
+    let message: String
+    let code: Int
+    let error: Bool
+    let date: String
+}
+
+struct Payload: Codable {
+    let id: Int
+    let name, email, password, phoneNumber: String
+    let profilePhoto: String
+    let status: Bool
+    let googleLink, maplink, createDate, shopAdress: String
+}
 
 
